@@ -1,11 +1,7 @@
-HabCam Survey Overview
-
-![HabCam Survey Crew on Deck](images/Crew%20on%20Deck.jpg)
-____________________________________________________
-
-
-
-Summary of Purpose
+<h1 align="center">HabCam Survey Overview</h1>
+<img width="624" height="503" alt="Crew on Deck" src="https://github.com/user-attachments/assets/6ca0a3f2-b34b-4620-9899-44309c44de9f" />
+<br>
+<h2 align="left">Summary of Purpose</h2>
 
 The Atlantic sea scallop is one of the most valuable fisheries in the United States (U.S.). The National Marine Fisheries Service (NMFS) is required to assess the status of sea scallop populations and set catch limits for sea scallops in Atlantic U.S. waters, typically implementing annual or biennial specifications through the New England Fishery Management Council (NEFMC). Monitoring the population status of sea scallops is a top priority for the Population & Ecosystems Monitoring & Analysis Division (PEMAD) at the Northeast Fisheries Science Center (NEFSC). 
 
