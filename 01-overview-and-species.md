@@ -6,7 +6,7 @@
 
 ---
 
-<img src="images/Crew%20on%20Deck.jpg" alt="HabCam Survey Crew on Deck" width="700"/>
+<img width="624" height="503" alt="Crew on Deck" src="https://github.com/user-attachments/assets/3a15d7f7-4501-4eaf-bc4f-ff76641e041d" />
 
 *HabCam Survey Crew on Deck*
 
@@ -24,7 +24,8 @@ The HABitat CAMera system (HABCAM) is a non-invasive, underwater imaging vehicle
 
 <div align="center">
 
-<img src="images/Scallops.jpg" alt="Sea Scallops on Seafloor" width="600"/>
+<img width="624" height="416" alt="Scallops" src="https://github.com/user-attachments/assets/385d7887-b0fb-4a2a-9758-4db18742d74b" />
+
 
 *High-resolution stereo imagery capturing sea scallops on the seafloor.*
 
@@ -53,7 +54,7 @@ For many years, the HabCam Survey and the Scallop Dredge Survey were integrated 
 
 <div align="center">
 
-<img src="images/HabCam%20on%20Deck.jpg" alt="HabCam Vehicle on Deck" width="600"/>
+<img width="624" height="404" alt="HabCam on Deck" src="https://github.com/user-attachments/assets/42f8824f-fba0-4d36-b74a-4e32abb0d16d" />
 
 *The HabCam vehicle prepared on deck before deployment.*
 
@@ -98,7 +99,7 @@ Our HabCam survey data are available by request[cite: 2]. To request data, pleas
 
 # About the Species: The Atlantic Sea Scallop
 
-<img src="images/Scallop%20Shell.jpg" alt="Atlantic Sea Scallop Shell" width="400"/>
+<img width="354" height="326" alt="Scallop Shell" src="https://github.com/user-attachments/assets/782086cd-d44c-4d16-8491-5123cee64c1e" />
 
 *Atlantic Sea Scallop (Placopecten magellanicus)*
 
@@ -125,7 +126,7 @@ According to the 2020 stock assessment, Atlantic sea scallop is **not overfished
 
 <div align="center">
 
-<img src="images/Face.jpg" alt="Large Atlantic Sea Scallop Shell Specimen" width="450"/>
+<img width="406" height="270" alt="Face" src="https://github.com/user-attachments/assets/b5ea5a05-a95b-4cfb-8358-3f7aff5025d1" />
 
 *Large Atlantic sea scallop specimen.*
 
@@ -139,7 +140,7 @@ Atlantic sea scallops are found in the Northwest Atlantic Ocean from Newfoundlan
 
 <div align="center">
 
-<img src="images/Stock%20Area.jpg" alt="US and Canadian Scallop Resource Map" width="600"/>
+<img width="616" height="429" alt="Stock Area" src="https://github.com/user-attachments/assets/a5b8c883-8a78-432b-a141-da6bbdbcdcc5" />
 
 *Map of US and Canadian scallop resource aggregations and commercial fishing activity.*
 
@@ -157,7 +158,7 @@ In 2023, commercial landings totaled **27.4 million pounds** of meats valued at 
 
 <div align="center">
 
-<img src="images/Deck%20Loaded.jpg" alt="Scallop Deck Harvest" width="550"/>
+<img width="407" height="306" alt="Deck Loaded" src="https://github.com/user-attachments/assets/6b322dcd-3c8d-4ee2-b3cc-7d89c410cc45" />
 
 *Harvested sea scallops being sorted on deck.*
 
@@ -181,7 +182,7 @@ In 2023, commercial landings totaled **27.4 million pounds** of meats valued at 
 
 <div align="center">
 
-<img src="images/Anatomy.png" alt="Scallop Anatomy Diagram" width="550"/>
+<img width="589" height="322" alt="Anatomy" src="https://github.com/user-attachments/assets/5e0a9f70-79a6-4e3d-89f5-5ced9f34fc15" />
 
 *Anatomy of the Atlantic Sea Scallop.*
 
