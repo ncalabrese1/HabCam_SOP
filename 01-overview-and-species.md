@@ -2,8 +2,20 @@
 
 # HabCam Survey Overview
 
-**Navigation:** [Home](README.md) | **01 Overview & Species** | [02 Hardware & Schematics](02-hardware-and-schematics.md) | [03 Checklists & Calibration](03-checklists-and-calibration.md) | [04 Software & Data](04-software-and-data.md) | [05 Staging & Sea Ops](05-staging-and-sea-ops.md)
+<div align="center">
 
+<table>
+  <tr>
+    <td><a href="README.md">Home</a></td>
+    <td><b>01 Overview</b></td>
+    <td><a href="02-hardware-and-schematics.md">02 Hardware</a></td>
+    <td><a href="03-checklists-and-calibration.md">03 Checklists</a></td>
+    <td><a href="04-software-and-data.md">04 Software</a></td>
+    <td><a href="05-staging-and-sea-ops.md">05 Sea Ops</a></td>
+  </tr>
+</table>
+
+</div>
 ---
 
 <img width="624" height="503" alt="Crew on Deck" src="https://github.com/user-attachments/assets/3a15d7f7-4501-4eaf-bc4f-ff76641e041d" />
@@ -188,7 +200,19 @@ In 2023, commercial landings totaled **27.4 million pounds** of meats valued at 
 <br>
 <hr>
 
-**Navigation:** [Home](README.md) | **01 Overview & Species** | [02 Hardware & Schematics](02-hardware-and-schematics.md) | [03 Checklists & Calibration](03-checklists-and-calibration.md) | [04 Software & Data](04-software-and-data.md) | [05 Staging & Sea Ops](05-staging-and-sea-ops.md)
+<div align="center">
 
+<table>
+  <tr>
+    <td><a href="README.md">Home</a></td>
+    <td><b>01 Overview</b></td>
+    <td><a href="02-hardware-and-schematics.md">02 Hardware</a></td>
+    <td><a href="03-checklists-and-calibration.md">03 Checklists</a></td>
+    <td><a href="04-software-and-data.md">04 Software</a></td>
+    <td><a href="05-staging-and-sea-ops.md">05 Sea Ops</a></td>
+  </tr>
+</table>
+
+</div>
 </div>
 
