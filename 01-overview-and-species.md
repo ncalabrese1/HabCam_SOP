@@ -1,4 +1,6 @@
 HabCam Survey Overview
+
+![HabCam Survey Crew on Deck](images/Crew%20on%20Deck.jpg)
 ____________________________________________________
 
 
