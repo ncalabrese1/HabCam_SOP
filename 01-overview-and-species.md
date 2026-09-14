@@ -206,11 +206,12 @@ In 2023, commercial landings totaled **27.4 million pounds** of meats valued at 
 <table>
   <tr>
     <td><a href="README.md">Home</a></td>
-    <td><b>01 Overview</b></td>
+    <td><a href="01-overview-and-species.md"><b>01 Overview</b></a></td>
     <td><a href="02-hardware-and-schematics.md">02 Hardware</a></td>
-    <td><a href="03-checklists-and-calibration.md">03 Checklists</a></td>
-    <td><a href="04-software-and-data.md">04 Software</a></td>
-    <td><a href="05-staging-and-sea-ops.md">05 Sea Ops</a></td>
+    <td><a href="03-software-and-data.md">03 Software</a></td>
+    <td><a href="04-staging-and-surveys.md">04 Staging</a></td>
+    <td><a href="05-data-processing-and-analysis.md">05 Data & Analysis</a></td>
+    <td><a href="06-maintenance-and-troubleshooting.md">06 Maintenance</a></td>
   </tr>
 </table>
 
