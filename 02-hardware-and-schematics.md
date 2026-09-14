@@ -2,11 +2,19 @@
 
 # HabCam Hardware, Schematics & Mounting Specifications
 
-<table>
-  
-**Navigation:**
+<div align="center">
 
-[Home](README.md) | [01 Hardware & Schematics](01-hardware-and-schematics.md) | [02 Software & Database](02-software-and-database.md) | [03 Staging & Surveys](03-staging-and-surveys.md) | [04 Data & Analysis](04-data-processing-and-analysis.md) | [05 Maintenance & Troubleshooting](05-maintenance-and-troubleshooting.md)
+<table>
+  <tr>
+    <td><a href="README.md">Home</a></td>
+    <td><a href="01-overview-and-species.md"><b>01 Overview</b></a></td>
+    <td><a href="02-hardware-and-schematics.md">02 Hardware</a></td>
+    <td><a href="03-software-and-data.md">03 Software</a></td>
+    <td><a href="04-staging-and-surveys.md">04 Staging</a></td>
+    <td><a href="05-data-processing-and-analysis.md">05 Data & Analysis</a></td>
+    <td><a href="06-maintenance-and-troubleshooting.md">06 Maintenance</a></td>
+  </tr>
+</table>
 
 </div>
 </table>
