@@ -3,14 +3,12 @@
 # HabCam Hardware, Schematics & Mounting Specifications
 
 <table>
-  <tr>
-    <td><a href="README.md">Home</a></td>
-    <td><a href="01-overview-and-species.md">01 Overview</a></td>
-    <td><b>02 Hardware</b></td>
-    <td><a href="03-checklists-and-calibration.md">03 Checklists</a></td>
-    <td><a href="04-software-and-data.md">04 Software</a></td>
-    <td><a href="05-staging-and-sea-ops.md">05 Sea Ops</a></td>
-  </tr>
+  
+**Navigation:**
+
+[Home](README.md) | [01 Hardware & Schematics](01-hardware-and-schematics.md) | [02 Software & Database](02-software-and-database.md) | [03 Staging & Surveys](03-staging-and-surveys.md) | [04 Data & Analysis](04-data-processing-and-analysis.md) | [05 Maintenance & Troubleshooting](05-maintenance-and-troubleshooting.md)
+
+</div>
 </table>
 
 </div>
@@ -2052,16 +2050,48 @@
   <li>Remove main bottle top clamps with 9/16" ratcheting wrench.</li>
   <li>Place the main bottle cradle on the table.</li>
   <li>Two people are needed to gently remove the main bottle from HabCam. One person climbs on top of the vehicle and gently slides the main bottle out of the back of the vehicle. The second person holds the weight in the back. Then both carry the bottle to the cradle.</li>
-  <li>Check the condition of top and bottom clamps on HabCam. If replacement is needed due to wear/damage, remove brackets from HabCam using 9/16" ratcheting wrenches.</li>
+<div align="center">
+  <img width="294" height="386" alt="Bottle on Vehicle" src="https://github.com/user-attachments/assets/37a206ef-fe0c-4f86-9049-5bb45f1032bb" />
+</div>
+  <li>
+        Check the condition of top and bottom clamps on HabCam. If replacement is needed due to wear/damage, remove brackets from HabCam using 9/16" ratcheting wrenches.
+  </li>
   <li>If replacing the main electronics bottle clamp, ensure rubber is applied to the inside of the clamp before reattaching to HabCam. Rubber can be attached to clamps using Pliobond 35.</li>
-  <li>To open the main electronics bottle, remove threaded rods along the outside of the main bottle using 7/16" ratcheting wrenches (there should be 4 of them).</li>
-  <li>Use a 3/16" hex wrench to pop-out the vacuum purge plug on the back of the main bottle. You should hear air escape upon loosening if it has not been opened since coming back from the field.</li>
+<div align="center">
+  <img width="437" height="327" alt="Bottle on Stand" src="https://github.com/user-attachments/assets/c61f26e2-d5b0-4072-8585-55aafc8ec513" />
+</div>
+  <li>
+    To open the main electronics bottle, remove threaded rods along the outside of the main bottle using 7/16" ratcheting wrenches (there should be 4 of them).
+  </li>
+  <div align="center">
+  <img width="380" height="285" alt="Pressure Portjpg" src="https://github.com/user-attachments/assets/a7c11ff6-0d0d-4f92-89c1-5e08a0ffdd6d" /> 
+  </div>
+    <li>
+     Use a 3/16" hex wrench to pop-out the vacuum purge plug on the back of the main bottle. You should hear air escape upon loosening if it has not been opened since coming back from the field.
+  </li>
   <li>Remove the end cap on the forward end cap (opposite side of the purge plug). There should be a label that says "open this end first". This end is opened first as it is NOT connected to the electronics chassis.</li>
+<div align="center">
+<img width="210" height="345" alt="Bottle Stood Up" src="https://github.com/user-attachments/assets/0d90fe47-1f67-49d7-9f84-21594386fce9" />
+<img width="465" height="357" alt="Inside Removed" src="https://github.com/user-attachments/assets/f829341b-0336-4250-bdca-83b2eb8ef16a" /> 
+</div>  
   <li>Use a rubber mallet to lightly bang on the back end of the cap's lip to loosen it.</li>
   <li>To remove the forward end cap, unplug ethernet cables, two mini amp-style and the 3 large amp-style connectors. Now take the cap completely out; when setting it down avoid bending the bulkheads as much as feasibly possible.</li>
-  <li>Use a mallet on the opposite cap's rim to loosen it from housing. Once loose, set on a soft pad on the floor upright with that cap facing upward, remove it with the electronic housing, and place it on the cradle.</li>
-  <li>On the underside of the main bottle, there is a removable prototype board, attached with screws. Using a small Phillips screwdriver, remove the screws from the standoffs. Take the plate off and replace the desiccant packs with fresh ones (4 large packs).</li>
-  <li>Check the suite of fuses to ensure they are properly connected with a multimeter. Set multimeter to continuity mode; you should hear a beep if connected properly.</li>
+  </li>
+    Use a mallet on the opposite cap's rim to loosen it from housing. Once loose, set on a soft pad on the floor upright with that cap facing upward, remove it with the electronic housing, and place it on the cradle.
+  </li>
+ <div align="center">
+<img width="340" height="255" alt="Prototype Board Removal 1" src="https://github.com/user-attachments/assets/27a6a393-9064-48cc-886a-dad14a4b6a94" />
+<img width="359" height="255" alt="Prototype Board Removal 2" src="https://github.com/user-attachments/assets/3e755bea-2450-4c32-85ac-5ac57245c2a7" />
+</div> 
+  <li>
+      On the underside of the main bottle, there is a removable prototype board, attached with screws. Using a small Phillips screwdriver, remove the screws from the standoffs. Take the plate off and replace the desiccant packs with fresh ones (4 large packs).
+  </li>
+ <div align="center">
+  <img width="348" height="463" alt="Fuses" src="https://github.com/user-attachments/assets/5d447f9f-20b8-4905-891b-a75f1440743f" /> 
+  </div>
+  <li>
+    Check the suite of fuses to ensure they are properly connected with a multimeter. Set multimeter to continuity mode; you should hear a beep if connected properly.
+  </li>
   <li>Turn on the vehicle by plugging in 3-pin power cable and fiber optic bulkhead (currently using Port 3). On the step-up transformer, turn on input, then output (in that order).</li>
   <li>Check that you can connect to both Moxas, both Guardasofts, and whatever sensors are plugged into the bottle (i.e. attitude sensor).</li>
   <li>If working, turn off main bottle by turning off output, then input on step-up transformer. Unplug 3-pin power cable and fiber optic bulkhead.</li>
@@ -2469,12 +2499,320 @@
   <li><a href="https://cdn.prod.website-files.com/64f5b41c95d2817bbfee10e3/6516ca9e3e360549609249fe_Teledyne%20PSA916%20Altimeter.pdf" target="_blank">Teledyne PSA 916 DataSheet PDF</a></li>
 </ul>
 
+<a name="weak-link"></a>
+<h2>1. Assembling the Weak Link</h2>
+
+<p>The mechanical weak link protects the primary tow cable and ship winch from catastrophic over-tension during seafloor snags. It is installed between the towing bridle and the mechanical cable clevis[cite: 6, 8].</p>
+
+<div align="center">
+  <!-- Placeholders for Weak Link Assembly Diagrams -->
+  <table>
+    <tr>
+      <td align="center">
+        [DROP WEAK LINK EXPLODED VIEW PHOTO HERE]
+        <br>
+        <b>Weak Link Housing & Shear Pin Alignment</b>
+      </td>
+      <td align="center">
+        [DROP WEAK LINK ASSEMBLED PHOTO HERE]
+        <br>
+        <b>Assembled Weak Link Attached to Tow Bridle</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<p><b>Assembly Procedure:</b></p>
+<ol>
+  <li>Align the large holes on the outer housing with the large holes on the padeye inner housing (bridle), positioning set screws facing upwards. Each side of the bridle and outer shell features one large hole and one small hole.</li>
+  <li>Slightly lift the bridle to slip the outer shell over the inner housing.</li>
+  <li>Rotate components until all matching holes align perfectly.</li>
+  <li>Insert the shear pin, wiggling the bridle and outer shell until the pin slides fully into position.</li>
+  <li>Ensure the shear pin is centered inside the body and sits completely flush on both sides.</li>
+  <li>Using a 3mm hex bit, tighten the set screws to <b>7.8 Nm</b> to lock the pin flush. (Note: Set torque on torque wrench prior to tightening).</li>
+  <li>Attach the mechanical clevis to the weak link using the primary termination bolts. Ensure the set screws remain secured and protected by a hose clamp.</li>
+</ol>
+
+<br>
+<hr>
+<br>
+
+<a name="fiber-termination"></a>
+<h2>2. Fiber Optic Termination Procedure</h2>
+
+<p>On NOAA Ship <i>Henry B. Bigelow</i>, the subsea fiber optic winch cable is cut annually prior to survey deployment, requiring a full mechanical and optical re-termination.</p>
+
+<h3>Part 1: Cable Stripping & Clevis Insertion</h3>
+<ol>
+  <li>Cut approximately 10 m (33 ft) off the ship's fiber optic cable using a grinder and cutting wheel to discard stressed wire previously wrapped around the hanging block. Attach a hose clamp immediately past the 33 ft mark to prevent armor unravelling.</li>
+  <li>Pay out wire into the starboard CTD lab onto a clean worktable.</li>
+  <li>Measure 24 ft from the open end and install a second hose clamp.</li>
+  <li>At the 24 ft mark, score the outermost layer of armor shielding wire using a Dremel tool (the cable contains 3 distinct shielding layers).</li>
+  <li>Peel back outer shield wires from the open end to the score mark until they snap off. Repeat for the remaining two inner shielding layers until the black rubber jacketing is exposed.</li>
+  <li>Measure 12 inches up from the 24 ft mark (25 ft from the open end) and mark with a Sharpie.</li>
+  <li>Remove hose clamps, insert the wire through the narrow end of the sandblasted clevis, and pull through until the 12-inch mark is visible inside the wider clevis well. Refasten a hose clamp at the 12-inch mark.</li>
+</ol>
+
+<br>
+
+<h3>Part 2: Creating the Wire Broom & Seating</h3>
+<div align="center">
+  <p><i>Steel Armor Wire Broom Formed and Seated inside Clevis Well.</i></p>
+</div>
+
+<br>
+
+<ol>
+  <li>Peel back all 3 layers of shield wire to the hose clamp and bend each strand 90&deg; outward to form an evenly spaced "broom".</li>
+  <li>Move the hose clamp to the cable section immediately behind the narrow clevis entry to prevent armor bird-caging.</li>
+  <li>Install two deck screw eyes 6 ft apart on the back deck. Secure the clevis to one screw eye using a 1-inch load pin, 2 ft strap, and 5/8-inch shackle.</li>
+  <li>Attach a Yale Grip rope line down the cable past the clevis using half-hitches. Connect a come-along winch between the rope shackle and the second deck screw eye in a straight line.</li>
+  <li>Operate the come-along winch to pull the cable broom 4 to 6 inches into the clevis well. Tighten a hose clamp against the base of the clevis once seated.</li>
+</ol>
+
+<br>
+
+<h3>Part 3: Socketfast Epoxy Potting</h3>
+<ol>
+  <li>Hang the termination vertically with the clevis broom facing upwards.</li>
+  <li>Slide 15 ft of Tygon tubing over the central black cable into the epoxy well to protect inner conductors from trimmed armor ends. Bend broom ends outward at 45&deg; away from the tubing.</li>
+  <li>Build a 2 to 3-inch reservoir around the clevis opening using splicing tape followed by electrical tape.</li>
+  <li>Mix Socketfast resin and catalyst thoroughly with a wooden stick for at least 2 minutes until warm.</li>
+  <li>Pour epoxy into the clevis well up to the tape reservoir. Lightly tap the clevis body with a hammer during pouring to release trapped air bubbles.</li>
+  <li>Bend any remaining wire ends away from Tygon tubing before curing.</li>
+  <li><b>Curing Options:</b> Allow to set at room temperature for 24 hours minimum, or uniformly heat the clevis at 180–200&deg;F using two heat guns for 30 minutes. Trim broom strands flush once cured.</li>
+  <li>Apply a boot using 6 rolls of 2-inch self-vulcanizing tape (tapered toward clevis) covered with 2–3 layers of electrical tape (~2.5 ft total length). Wrap 18-inch zip ties along 15–20 ft of trailing cable for fairing.</li>
+</ol>
+
+<br>
+
+<h3>Part 4: J-Box Entry & Power Wiring</h3>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        [DROP JBOX CONNECTOR ENTRY PHOTO HERE]
+        <br>
+        <b>J-Box Connector Gasket & Cap Assembly</b>
+      </td>
+      <td align="center">
+        [DROP JBOX POWER TERMINALS PHOTO HERE]
+        <br>
+        <b>12-10 AWG Ring Terminals on Power Block</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<ol>
+  <li>Score and remove 2 ft of outer black rubber jacketing to expose 3 power conductors (2 brown ground, 1 green hot) and 3 optical fiber lines (1 gray main, 1 red, 1 black). Snip off damaged wire tips.</li>
+  <li>Pass wires through the J-Box side connector cap, metal ring collar, and rubber gasket (flat side facing wire tip).</li>
+  <li>Push wire into the J-Box until 0.5 inches of black jacket is visible inside, securing a hose clamp against the inner wall to prevent slippage. Tighten the outer cap with a pipe wrench.</li>
+  <li>Strip power wire ends and crimp 12-10 AWG yellow ring terminals onto the green and brown conductors.</li>
+  <li>Fasten the green hot wire to the center terminal of the power block, and attach the two brown ground wires to the adjacent terminals.</li>
+</ol>
+
+<br>
+
+<h3>Part 5: 3M Hot Melt ST Fiber Optic Connectors</h3>
+
+<p>ST connectors are applied to gray (primary data), red, and black optical fibers using a 3M Hot Melt kit.</p>
+
+<ol>
+  <li>Slide yellow ST boots onto fiber lines. Use the 3M hotplate scale to mark strip lengths.</li>
+  <li>Fan out metal strength strands, bend backward along the jacket, and trim to 1/4 inch length.</li>
+  <li>Using a cleaned 3-hole stripper, strip inner buffer layers in short, straight strokes, wiping the glass with isopropyl alcohol and low-lint wipes after each pass.</li>
+  <li>Preheat the 3M oven for 6 minutes. Place an ST connector into an oven holder and heat for ~60 to 90 seconds until internal blue epoxy liquefies.</li>
+  <li>Immediately insert the stripped fiber straight into the hot ST ferrule until strength strands seat into the connector. Allow to cool for 3 minutes.</li>
+  <li>Snap the yellow boot over the rear connector housing and extract from the holder.</li>
+  <li>Lightly score the protruding glass tip perpendicular to the ferrule using a sapphire scribe, then gently cleave off the excess glass strand.</li>
+  <li>Perform air polishing on 9-micron gray film (15–20 figure-8 rotations) until flush with epoxy.</li>
+  <li>Perform wet pad polishing on green film using a puck until blue epoxy is completely removed, followed by final fine polishing on white film.</li>
+  <li>Inspect ferrule face under 200x viewing scope. Verify zero glass chips, cracks, or deep scratches across the central core.</li>
+</ol>
+
+<br>
+
+<div align="center">
+  [DROP FIBER SCOPE INSPECTION DIAGRAM HERE]
+  <p><i>Figure 2.2: Optical Scope Inspection: Clean Core (Pass) vs. Chipped / Scratched Ferrules (Fail).</i></p>
+</div>
+
+<br>
+
+<h3>Part 6: J-Box Bladder Sealing, Oil Fill & Vehicle Mounting</h3>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        [DROP JBOX BLADDER ASSEMBLY PHOTO HERE]
+        <br>
+        <b>Urethane Bladder & Retaining Plate</b>
+      </td>
+      <td align="center">
+        [DROP JBOX OIL FILL PHOTO HERE]
+        <br>
+        <b>Compensating Oil Vacuum Fill Setup</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<ol>
+  <li>Connect the primary gray ST fiber to the J-Box internal output coupler. Neatly coil backup red/black fibers inside the housing and secure with zip ties.</li>
+  <li>Place the yellow urethane bladder (indented side down) over the J-Box face, align the metal retaining plate, and insert 5mm Allen screws with lock/flat washers.</li>
+  <li>Tighten screws in a cross-star pattern until snug without over-extruding the bladder edges.</li>
+  <li>Connect oil pump tubing to one white quick-disconnect valve and an air purge bleed tube to the second valve. Pump compensating oil vertically until all internal air bubbles are purged.</li>
+  <li>Mount the oil-filled J-Box upside down on the port-aft side of HabCam, routing cables along the inside of the towing bridle. Plug output fibers into the Telemetry Bottle ports.</li>
+</ol>
+
+<br>
+<hr>
+<br>
+
+<a name="fiber-pull-test"></a>
+<h2>3. Fiber Optics Winch Pull Test Procedure</h2>
+
+<p>A proof load pull test verifies that the newly potted clevis termination, winch line, and A-frame structure meet safe working load (SWL) capacity prior to sea operations[cite: 5, 8].</p>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        [DROP WATER BAG RIGGING PHOTO HERE]
+        <br>
+        <b>Proof Load Water Bag Rigging Sequence</b>
+      </td>
+      <td align="center">
+        [DROP LOAD SENSOR READOUT PHOTO HERE]
+        <br>
+        <b>Digital Load Cell Display (10,000 lbs)</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<h3>Rigging Sequence & Load Test Steps</h3>
+
+<p><b>Rigging Stack Order:</b> Clevis &rarr; Swivel Shackle &rarr; Shackle &rarr; Load Sensor &rarr; Water Bag.</p>
+
+<ol>
+  <li>Coordinate with ship crew and Bosun to position the Coast Guard proof-test water bag on the aft deck[cite: 5]. Ensure HabCam J-Box and telemetry cables are secured out of the way.</li>
+  <li>Verify that a hose clamp is cinched tightly against the top of the clevis to act as a position slippage indicator.</li>
+  <li>Rig the load cell and water bag to the winch clevis in the specified order.</li>
+  <li>Fill the water bag slowly while monitoring real-time tension on the digital load sensor display.</li>
+  <li>Signal the Bosun to throttle back fill pumps at <b>9,000 lbs</b> tension, closing valves fully when tension hits <b>10,000 lbs</b> (110–125% operational rating).</li>
+  <li><b>Hold 10,000 lbs proof load static for 1 minute</b> to evaluate hydraulic brake holding capacity.</li>
+  <li>Drain the water bag and lower it onto the deck.</li>
+  <li><b>Slippage Verification:</b> Inspect the hose clamp position at the base of the clevis[cite: 5]. If the clevis slipped along the cable under load, the termination failed and must be cut and remade[cite: 5]. If zero slippage occurred, reconnect J-Box lines and perform final optical link tests.</li>
+</ol>
+
+<br>
+<hr>
+<br>
+
+<a name="fiber-diagrams"></a>
+<h2>4. NOAA Ship Henry B. Bigelow Fiber Optic Schematics</h2>
+
+<p>End-to-end optical and power interconnect schematics linking the topside Acoustics Room, winch slip ring, subsea J-Box, and HabCam Telemetry Bottle.</p>
+
+<h3>Acoustics Room Topside Rack Schematic</h3>
+<div align="center">
+  <!-- Schematic Sheet 1 -->
+  [DROP BIGELOW ACOUSTICS ROOM SCHEMATIC HERE]
+  <p><i>Figure 4.1: Topside Acoustics Room Fiber Optic Transceivers & Step-Up Transformer Junction (Sheet 1/3).</i></p>
+</div>
+
+<br>
+
+<h3>Ship Slip Ring Junction Box Schematic</h3>
+<div align="center">
+  <!-- Schematic Sheet 2 -->
+  [DROP BIGELOW SLIP RING JBOX SCHEMATIC HERE]
+  <p><i>Figure 4.2: Winch Drum Slip Ring Fiber & Power Pass-Through Wiring (Sheet 2/3).</i></p>
+</div>
+
+<br>
+
+<h3>HabCam Oil-Filled J-Box Interconnect Schematic</h3>
+<div align="center">
+  <!-- Schematic Sheet 3 -->
+  [DROP HABCAM V4 JUNCTION BOX SCHEMATIC HERE]
+  <p><i>Figure 4.3: Subsea Oil-Filled J-Box to Telemetry Bottle Interconnect (Sheet 3/3).</i></p>
+</div>
+
+<br>
+
+<h3>System Optical & Electrical Line Allocation</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Signal Line</th>
+      <th align="left">Winch Cable Wire Color</th>
+      <th align="left">Slip Ring Pass-Through</th>
+      <th align="left">J-Box Termination</th>
+      <th align="left">HabCam Bottle Target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Primary Fiber (Data 1)</b></td>
+      <td>Gray / Bare SM Fiber</td>
+      <td>Slip Ring Fiber #1</td>
+      <td>Coupled ST Connector</td>
+      <td>OptiLink J2 (Fiber 1)</td>
+    </tr>
+    <tr>
+      <td><b>Secondary Fiber (Data 2)</b></td>
+      <td>Red SM Fiber</td>
+      <td>Slip Ring Fiber #2</td>
+      <td>Internal Coiled Spare</td>
+      <td>Spare Optical Channel</td>
+    </tr>
+    <tr>
+      <td><b>Auxiliary Fiber (Data 3)</b></td>
+      <td>Black SM Fiber</td>
+      <td>Slip Ring Fiber #3</td>
+      <td>Internal Coiled Spare</td>
+      <td>Spare Optical Channel</td>
+    </tr>
+    <tr>
+      <td><b>AC High Voltage Power</b></td>
+      <td>Green Conductor</td>
+      <td>Green Power Wire</td>
+      <td>Center Terminal Block</td>
+      <td>J1 AC Input (120/240V)</td>
+    </tr>
+    <tr>
+      <td><b>AC Power Return / Ground</b></td>
+      <td>Brown Conductors (x2)</td>
+      <td>Orange / Red Power Wires</td>
+      <td>Outer Terminal Blocks</td>
+      <td>J1 AC Neutral / Ground</td>
+    </tr>
+  </tbody>
+</table>
 
 <div align="center">
 
 <br>
 <hr>
 
-**Navigation:** [Home](README.md) | [01 Overview](01-overview-and-species.md) | **02 Hardware** | [03 Checklists](03-checklists-and-calibration.md) | [04 Software](04-software-and-data.md) | [05 Sea Ops](05-staging-and-sea-ops.md)
+**Navigation:** 
+
+[Home](README.md) | [01 Hardware & Schematics](01-hardware-and-schematics.md) | [02 Software & Database](02-software-and-database.md) | [03 Staging & Surveys](03-staging-and-surveys.md) | [04 Data & Analysis](04-data-processing-and-analysis.md) | [05 Maintenance & Troubleshooting](05-maintenance-and-troubleshooting.md)
+
+</div>
 
 </div>
