@@ -332,6 +332,155 @@
 
 <br>
 
+<h3 id="sec-6-weeks" style="color: #2e7d32; text-align: left;">6 Weeks Out: WHOI Seawater Tank Calibration Test & Logistics</h3>
+
+<ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
+  <li><input type="checkbox"> Take vehicles to WHOI sea water tank test to calibrate equipment (<a href="https://example.com" target="_blank">Camera calibrations for dummies</a>)
+  <li><input type="checkbox"> Repair or Resolve any issues that came up during the WHOI tank test</li>
+  <li><input type="checkbox"> Store Vehicle at netloft until staging</li>
+  <li><input type="checkbox"> Pinger: Benthos UAT 376 acoustic transponder - replace batteries</li>
+</ul>
+
+<br>
+
+<h4 id="sec-6wk-calibration">Calibration</h4>
+
+<div align="center">
+<img width="510" height="680" alt="Calibration for Dummies" src="https://github.com/user-attachments/assets/8d6a9da0-36e2-4693-946e-39ed412aff16" />
+</div>
+
+<br>
+
+<h5 id="sec-6wk-reserving-tank">Reserving the Tank</h5>
+<p><i>[Insert reservation procedures, point of contact at WHOI, scheduling lead times, and facility access requirements here]</i></p>
+
+<h5 id="sec-6wk-transporting-vehicle">Transporting the Vehicle</h5>
+<p><i>[Insert vehicle transport logistics, truck/trailer loading steps, strapping protocols, and staging at the Sundance Tank here]</i></p>
+
+<h5 id="sec-6wk-setting-up-calibration">Setting Up Calibration</h5>
+<p><i>[Insert tank placement, water fills, sensor submersion setup, power hookups, and initial system checks here]</i></p>
+
+<h5 id="sec-6wk-collecting-data">Collecting Calibration Data</h5>
+
+<h6>1. Checkerboard Target Data Collection:</h6>
+<ul style="text-align: left;">
+  <li><b>Common Area Positioning:</b> Ensure the entire checkerboard is placed in the overlap zone (common area) between the left and right cameras' fields of view so it appears fully on both cameras.
+    <br><br>
+    <div align="center">
+      <img width="500" alt="Checkerboard Common Area Field of View" src="page_1_img_1_X5.jpg" />
+      <p><i>Checkerboard Positioned Within the Overlapping Common Viewing Area</i></p>
+    </div>
+  </li>
+  <li><b>Grid Coverage:</b> Divide the common viewing area into 9 equal regions and take photos in all 9 regions to ensure full spatial coverage.
+    <br><br>
+    <div align="center">
+      <img width="320" alt="9 Region Grid Overlay" src="page_2_img_2_X14.png" />
+      <p><i>9-Region Division Grid Across Common Field of View</i></p>
+    </div>
+  </li>
+  <li><b>Glare & Tilting:</b> Avoid direct strobe glare on the board (glare images will be rejected by estimation software). Tilting the board slightly is preferred over lying flat to minimize glare.</li>
+  <li><b>Altitude & Angle Sampling:</b> Capture images across 2–3 different vehicle altitudes and multiple angles (both flat and tilted).
+    <br><br>
+    <div align="center">
+      <img width="550" alt="2015 Checkerboard Calibration Array" src="page_3_img_1_X17.png" />
+      <p><i>Figure 1: Acceptable Checkerboard Sample Images Across Angles and Altitudes</i></p>
+    </div>
+  </li>
+</ul>
+
+<br>
+
+<h6>2. Scallop Target Data Collection:</h6>
+<ul style="text-align: left;">
+  <li><b>Placement:</b> Lay the scallop target board flat on the bottom of the dunk tank for accurate altimeter reference. Lower and raise the vehicle using the overhead crane.
+    <br><br>
+    <div align="center">
+      <img width="400" alt="Scallop Calibration Target Board" src="page_3_img_2_X19.jpg" />
+      <p><i>Physical Scallop Calibration Target Board with Known Shell Heights</i></p>
+    </div>
+  </li>
+  <li><b>Field-of-View Distribution:</b> Divide the full field of view into 9 regions. Capture images with the target in 5 regions of the left field of view and 2 regions at the far right of the right field of view (or 5 right / 2 far left).
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+            <img width="300" alt="Left FOV Target Grid" src="page_3_img_3_X20.png" />
+            <br>
+            <b>5 Regions Left FOV / 2 Regions Far Right</b>
+          </td>
+          <td align="center">
+            <img width="300" alt="Right FOV Target Grid" src="page_3_img_4_X21.png" />
+            <br>
+            <b>5 Regions Right FOV / 2 Regions Far Left</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+  <li><b>Varied Sampling:</b> Take photos at 2–3 distinct altitudes and varying tilt angles.</li>
+</ul>
+
+<br>
+
+<h6>3. Altitude Logging:</h6>
+<ul style="text-align: left;">
+  <li>Ensure the Engineering GUI is actively running and logging live altimeter depth/altitude data during all test passes.</li>
+</ul>
+
+<br>
+<hr>
+<br>
+
+<h5 id="sec-6wk-evaluation-criteria">Evaluation Criteria & Processing Iterations</h5>
+
+<h6>Criteria for a Successful Calibration:</h6>
+<ol style="text-align: left;">
+  <li><b>Visual Integrity:</b> Processed images must be undistorted with minimal black edge bands (black border pixels must represent &lt; 5% of total image pixels).
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+            <img width="380" alt="Bad Calibration Distortion" src="page_4_img_2_X26.png" />
+            <br>
+            <b>Bad Calibration: Heavy Distortion & Black Edge Bands (>10%)</b>
+          </td>
+          <td align="center">
+            <img width="380" alt="Good Calibration Output" src="page_5_img_1_X30.png" />
+            <br>
+            <b>Good Calibration: Minimal Edge Distortion (<5% Black Pixels)</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+  <li><b>Stereo Coverage Rate:</b> Successful stereo altitude estimates must be generated for &gt; 95% of total captured images.</li>
+  <li><b>Measurement Accuracy:</b> Estimated scallop shell lengths (calculated via stereo altitude) must fall within &plusmn;3% of true physical measurements.</li>
+</ol>
+
+<br>
+
+<h6>Step-by-Step Parameter Estimation Workflow:</h6>
+<ol style="text-align: left;">
+  <li>Estimate initial calibration parameters from selected checkerboard images.</li>
+  <li>Process all scallop target images using the candidate calibration parameters.</li>
+  <li>Inspect processed output images visually for optical distortion.</li>
+  <li>Calculate the percentage of black edge pixels (&lt; 5% threshold).</li>
+  <li>Determine the percentage of total images receiving valid stereo altitude estimates.</li>
+  <li>Annotate the scallop target board images in numbered sequence (1 through 9).
+    <br><br>
+    <div align="center">
+      <img width="350" alt="Numbered Scallop Annotation Sequence" src="page_5_img_3_X32.png" />
+      <p><i>Required Numbered Sequence (1–9) for Scallop Target Board Annotations</i></p>
+    </div>
+  </li>
+  <li>Calculate average percentage bias in estimated scallop shell height compared to ground truth.</li>
+  <li>Iterate image selection and parameter fitting until all three success criteria are satisfied.</li>
+</ol>
+
+</div>
+
 <div align="center">
 
 <table>
