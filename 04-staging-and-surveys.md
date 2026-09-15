@@ -21,8 +21,6 @@
 <br>
 
 
-<h1 id="staging-and-surveys">04 HabCam Staging & Survey Protocols</h1>
-
 <br>
 
 <h2 id="annual-timeline">1. Annual 12-Month Operational Calendar (Mid-May Survey Schedule)</h2>
@@ -153,15 +151,6 @@
 <h3 id="chk-8-weeks" style="color: #2e7d32; text-align: left;">8 Weeks out:</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Prepare HABCAM for WHOI Sundance Tank Calibration Test</li>
-  <li><input type="checkbox"> Attach/Install CTDs, ecotriplet puck, and Blueview forward looking sonar</li>
-  <li><input type="checkbox"> Open main electronics bottle, check fuses, inspect O-rings, replace desiccant and pull a vacuum</li>
-  <li><input type="checkbox"> After 24 hours, confirm PSI has remained stable: Pressure holds at 16 inHg. If leak or change in pressure is detected, likely to reinspect O-rings.</li>
-  <li><input type="checkbox"> Pull the camera plate and inspect O-rings in both housings. Refocus camera lenses if necessary.</li>
-  <li><input type="checkbox"> Attach altimeter and attitude sensors onto camera plate. Re-attach camera plate to HABCAM.</li>
-  <li><input type="checkbox"> Inspect underwater cables for damage and/or voltage leaks</li>
-  <li><input type="checkbox"> Regrease connector faces and plug into sensors</li>
-  <li><input type="checkbox"> Power on main electronics bottle and verify sensors are outputting data correctly on engineering GUI</li>
-  <li><input type="checkbox"> Connect to stereocameras and verify you are able to change trigger rate of cameras and strobes</li>
   <li><input type="checkbox"> Pack supply kit for WHOI sundance tank calibration test</li>
   <li><input type="checkbox"> If applicable, install chanos onto tow sled</li>
   <li><input type="checkbox"> Science center staffing call</li>
@@ -170,15 +159,9 @@
 <h3 id="chk-6-weeks" style="color: #2e7d32; text-align: left;">6 Weeks out:</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Take vehicles to WHOI sea water tank test to calibrate equipment (<a href="https://example.com" target="_blank">Camera calibrations for dummies</a>)</li>
-  <li><input type="checkbox"> Teledyne benthos PSA 916 sonar altimeter</li>
-  <li><input type="checkbox"> Attitude: Microstrain AHRS sensor (3DM-GX5-25-HRS)</li>
-  <li><input type="checkbox"> Stereocameras allied vision mako G-234C</li>
-  <li><input type="checkbox"> Arctic Rays Dragonfish mini strobes (underwater strobe)</li>
-  <li><input type="checkbox"> Seabird 37 and Seabird 49 CTDs</li>
-  <li><input type="checkbox"> Ecotriplet puck</li>
   <li><input type="checkbox"> Repair or Resolve any issues that came up during the WHOI tank test</li>
   <li><input type="checkbox"> Store Vehicle at netloft until staging</li>
-  <li><input type="checkbox"> Pinger: Benthos UAT 376 acoustic transponder - replace batteries</li>
+  <li><input type="checkbox"> Replace batteries in Pinger (Benthos UAT 376 acoustic transponder) </li>
 </ul>
 
 <h3 id="chk-5-weeks" style="color: #2e7d32; text-align: left;">5 Weeks out:</h3>
@@ -307,7 +290,48 @@
 <h4 id="sec-12wk-field-laptops">Field Laptop Sonar & Navigation Software</h4>
 <p><i>[Insert software installation steps for Coastal Explorer, BlueView sonar drivers, license key verifications, and laptop field profiles]</i></p>
 
-</div>
+<br>
+<hr>
+<br>
+
+<h3 id="sec-8-weeks" style="color: #2e7d32; text-align: left;">8 Weeks Out: Vehicle Bench Assembly & Pre-Calibration Prep</h3>
+
+<ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
+  <li><input type="checkbox"> Prepare HABCAM for WHOI Sundance Tank Calibration Test</li>
+  <li><input type="checkbox"> Pack supply kit for WHOI sundance tank calibration test</li>
+  <li><input type="checkbox"> If applicable, install chanos onto tow sled</li>
+  <li><input type="checkbox"> Science center staffing call</li>
+</ul>
+
+<br>
+
+<h4 id="sec-8wk-sundance-prep">Prepare HabCam for WHOI Sundance Tank Calibration Test</h4>
+<p><i>[Insert overview and general preparation steps for the WHOI Sundance Tank calibration deployment]</i></p>
+<ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
+  <li><input type="checkbox"> Attach/Install CTDs, ecotriplet puck, and Blueview forward looking sonar</li>
+  <li><input type="checkbox"> Open main electronics bottle, check fuses, inspect O-rings, replace desiccant and pull a vacuum</li>
+  <li><input type="checkbox"> After 24 hours, confirm PSI has remained stable: Pressure holds at 16 inHg. If leak or change in pressure is detected, likely to reinspect O-rings.</li>
+  <li><input type="checkbox"> Pull the camera plate and inspect O-rings in both housings. Refocus camera lenses if necessary.</li>
+  <li><input type="checkbox"> Attach altimeter and attitude sensors onto camera plate. Re-attach camera plate to HABCAM.</li>
+  <li><input type="checkbox"> Inspect underwater cables for damage and/or voltage leaks</li>
+  <li><input type="checkbox"> Regrease Connector Faces & Plug Into Sensors</li>
+  <li><input type="checkbox"> Power On Main Electronics Bottle & Verify Engineering GUI Data</li>
+  <li><input type="checkbox"> Connect to Stereocameras & Verify Camera/Strobe Trigger Rates</li>
+</ul>
+
+<br>
+
+<h4 id="sec-8wk-pack-supply-kit">Pack Supply Kit for WHOI Sundance Tank Calibration Test</h4>
+<p><i>[Insert packing list, required hand tools, spare O-rings, calibration targets, and test gear inventory here]</i></p>
+
+<h4 id="sec-8wk-install-chanos">Install Chanos Sensor onto Tow Sled (If Applicable)</h4>
+<p><i>[Insert mechanical mounting, bracket alignment, cable harness routing, and power/data integration steps for the Chanos sensor]</i></p>
+
+<h4 id="sec-8wk-staffing-call">Science Center Staffing Call</h4>
+<p><i>[Insert staffing call protocol, participant application deadlines, skill set requirements, and roster collection guidelines]</i></p>
+
+<br>
+
 <div align="center">
 
 <table>
