@@ -182,6 +182,9 @@
   <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#weak-link">Mounting the weak link</a></li>
   <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#fiber-optic-termination">Splice fiber optics</a></li>
   <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#pull-test">Do the pull test</a></li>
+  <li><input type="checkbox"> Load vehicle
+  <li><input type="checkbox"> Load equipment
+  <li><input type="checkbox"> Setup stations
   <li><input type="checkbox"> Provide the captain/bridge with the .GPX file of station locations so they can import it into their navigation software and check tracklines and make recommendations for any shifts in waypoints.</li>
   <li><input type="checkbox"> Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)</li>
 </ul>
@@ -883,6 +886,252 @@
   • <b>Max Operational Wind (HabCam Deployment Limit):</b> Sustained winds &gt; 25 knots or seas &gt; 6 ft require halting vehicle towing operations and recovering the sled.<br>
   • <b>Weather Contingency Communication:</b> In the event of forecasted adverse weather, updates will be issued via email/SMS every 6 hours by the Chief Scientist.
 </blockquote>
+
+</div>
+
+<div align="left" style="text-align: left !important;">
+
+<h3 id="sec-staging" style="color: #2e7d32; text-align: left;">Staging Protocols: Deck Assembly & Navigation Setup</h3>
+
+<ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
+  <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#weak-link">Mounting the weak link</a></li>
+  <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#fiber-optic-termination">Splice fiber optics</a></li>
+  <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#pull-test">Do the pull test</a></li>
+  <li><input type="checkbox"> Load vehicle</li>
+  <li><input type="checkbox"> Load equipment</li>
+  <li><input type="checkbox"> Setup stations</li>
+  <li><input type="checkbox"> Provide the captain/bridge with the .GPX file of station locations so they can import it into their navigation software and check tracklines and make recommendations for any shifts in waypoints.</li>
+  <li><input type="checkbox"> Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)</li>
+</ul>
+
+<br>
+
+<h4 id="sec-staging-weak-link">Mounting the Weak Link</h4>
+<p><i>Refer to <a href="02-hardware-and-schematics.md#weak-link">02 Hardware & Schematics (Section 6: Mechanical Weak Link Assembly)</a> for detailed instructions.</i></p>
+
+<h4 id="sec-staging-fiber-splicing">Splice Fiber Optics</h4>
+<p><i>Refer to <a href="02-hardware-and-schematics.md#fiber-optic-termination">02 Hardware & Schematics (Section 7: Fiber Optic Termination)</a> for detailed instructions.</i></p>
+
+<h4 id="sec-staging-pull-test">Do the Pull Test</h4>
+<p><i>Refer to <a href="02-hardware-and-schematics.md#pull-test">02 Hardware & Schematics (Section 9: Fiber Optics Pull Test Protocol)</a> for detailed instructions.</i></p>
+
+<h4 id="sec-staging-load-vehicle">Load Vehicle</h4>
+<p><i>[Insert details for vehicle deck loading, crane hoisting protocols, tie-down locations, and secure deck placement here]</i></p>
+
+<h4 id="sec-staging-load-gear">Load Equipment</h4>
+<p><i>[Insert details for loading auxiliary crates, spare parts, toolboxes, calibration targets, and laboratory hardware here]</i></p>
+
+<h4 id="sec-staging-setup-stations">Setup Stations</h4>
+<p><i>[Insert detailed station setup instructions here]</i></p>
+
+<p>HabCam operations aboard the R/V <i>Henry B. Bigelow</i> are distributed across four main laboratory spaces: the Acoustic Lab (Primary Control Center), Dry Lab, Chemistry Lab, and Cutting Room.</p>
+
+<div align="center">
+  <img width="800" src="PASTE_BIGELOW_LAYOUT_MAP_HERE.jpg" alt="R/V Henry B. Bigelow Lab Layout Map" />
+  <p><i>Figure 1: R/V Henry B. Bigelow Acoustic Lab & Dry Lab Layout Map</i></p>
+</div>
+
+<br>
+
+<h5 id="sec-station-acoustic-lab">1. Acoustic Lab Command Center Overview</h5>
+<p>The Acoustic Lab serves as the primary HabCam flight and monitoring hub. It houses 4 distinct stations operated by NOAA Fisheries personnel and Ship Survey Technicians:</p>
+
+<ul style="text-align: left;">
+  <li><b>Watch Chief Station:</b> Located in the rear row with a 2-monitor setup directly behind the flight team.</li>
+  <li><b>Co-Pilot Station:</b> Located in the front row (left) with a dedicated 4-monitor array.</li>
+  <li><b>Pilot Station:</b> Located in the front row (right) with a 4-monitor array, vehicle joystick, and winch controller.</li>
+  <li><b>Survey Technician Station:</b> Located adjacent to the flight team to monitor shipboard multibeam, EK-80, and vessel navigation.</li>
+</ul>
+
+<div align="center">
+  <img width="1012" height="616" alt="Acoustic Lab" src="https://github.com/user-attachments/assets/44782226-f3e3-40e1-92d1-ecf85a5b51b2" />
+  <p><i>Acoustic Lab Wall of Monitors & Operator Workstations Overview</i></p>
+</div>
+
+<br>
+
+<h5 id="sec-station-watch-chief">2. Watch Chief Station</h5>
+<p>Operated on 12-hour rotating shifts (2 Watch Chiefs per cruise) to maintain continuous leadership, maintenance oversight, and quality control.</p>
+
+<ul style="text-align: left;">
+  <li><b>Hardware Setup:</b> 2-monitor workstation positioned behind the Pilot/Co-Pilot.</li>
+  <li><b>Primary Responsibilities:</b> Watch roster assignment, training new scientists on flight operations, reviewing image quality, and beginning preliminary image annotations.</li>
+</ul>
+
+<div align="center">
+  <img width="748" height="560" alt="Watch Chief Station" src="https://github.com/user-attachments/assets/3838154c-1232-4db9-8562-11d5500e8230" />
+  <p><i>Watch Chief Workstation (Positioned Behind Pilot/Co-Pilot)</i></p>
+</div>
+
+<br>
+
+<h5 id="sec-station-copilot">3. Co-Pilot Station</h5>
+<p>Positions the Co-Pilot to the left of the Pilot to continuously monitor imaging telemetry, software health, and incoming seabed features.</p>
+
+<div align="center">
+  <img width="624" height="468" alt="Pilot-Copilot Station" src="https://github.com/user-attachments/assets/5416a5f1-3344-4d50-87c1-57e6d76d70de" />
+  <p><i>Co-Pilot Workstation Array</i></p>
+</div>
+
+<br>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr bgcolor="#f2f2f2">
+      <th width="20%">Monitor #</th>
+      <th width="30%">Application / Display</th>
+      <th width="50%">Operational Function & Image Placement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Monitor 1</b></td>
+      <td><b>EK-80 Scientific Echo Sounder</b></td>
+      <td>
+        Mirrored feed from Survey Techs displaying water column echograms, seafloor depth, and early warnings for incoming sand waves.
+        <br><br>
+        <div align="center">
+        <img width="791" height="493" alt="EK80" src="https://github.com/user-attachments/assets/c8446f53-c1c9-4f32-beef-7187cb7b4ef4" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Monitor 2</b></td>
+      <td><b>Engineering GUI & Event Logger</b></td>
+      <td>
+        Live raw sensor feeds (AHRS, CTD, Oxygen, Fluorometer), GPS coordinates, fathometer depth, active file logging status, and event tagging.
+        <br><br>
+        <div align="center">
+         <img width="779" height="583" alt="Engineering" src="https://github.com/user-attachments/assets/188c9b0a-f43e-4813-98d0-6843f1e072cc" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Monitor 3</b></td>
+      <td><b>Coastal Explorer Navigation</b></td>
+      <td>
+        Mirrored navigation software displaying planned tracklines, waypoints, vessel speed, and potential subsea hazards/wrecks.
+        <br><br>
+        <div align="center">
+        <img width="776" height="468" alt="Coastal Explorer" src="https://github.com/user-attachments/assets/48d68f7b-5652-4b44-8576-4c04daa0250c" />
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Monitor 4</b></td>
+      <td><b>Image Viewer (`dsvimview`)</b></td>
+      <td>
+        Live stereo camera image waterfall; allows toggling port/starboard feeds, adjusting display rates, and checking camera trigger health.
+        <br><br>
+        <div align="center">
+         <img width="776" height="582" alt="Image Viewer" src="https://github.com/user-attachments/assets/82b1563c-dd64-4e62-a724-7f7fb7ff1288" />
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h5 id="sec-station-pilot">4. Pilot Station</h5>
+<p>Positions the Pilot to the right of the Co-Pilot with direct access to the vehicle control joystick and hydraulic winch controls.</p>
+
+<div align="center">
+  <img width="624" height="468" alt="Pilot-Copilot Station" src="https://github.com/user-attachments/assets/edc685b3-6484-43a0-90a5-6c472f8e4a71" />
+  <p><i>Pilot Workstation Overview & Controls</i></p>
+</div>
+
+<br>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr bgcolor="#f2f2f2">
+      <th width="20%">Monitor #</th>
+      <th width="30%">Application / Display</th>
+      <th width="50%">Operational Function & Image Placement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Monitor 5</b></td>
+      <td><b>Live Winch & Deck Video (`VxOpsCenter`)</b></td>
+      <td>
+        CCTV camera feeds monitoring the oceanographic winch drum, wire spooling, and aft deck operations.
+        <br><br>
+        <div align="center">
+        <img width="776" height="400" alt="Live Winch Video" src="https://github.com/user-attachments/assets/1a9e97b7-d555-4a0d-b82c-fcb099fd84d6" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Monitor 6</b></td>
+      <td><b>Bottom Tracking (`dsvimview` / Dixon Screen)</b></td>
+      <td>
+        Real-time vehicle altitude, computed bottom profile, fish depth, and altimeter filtering for flight adjustments.
+        <br><br>
+        <div align="center">
+        <img width="776" height="487" alt="Bottom Tracking" src="https://github.com/user-attachments/assets/cc31d27d-6b90-40d6-af40-e8c97fcbaaa6" />
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Monitor 7</b></td>
+      <td><b>BlueView Forward Sonar</b></td>
+      <td>
+        Acoustic sector sweep displaying subsea obstacles, boulders, and terrain relief ahead of the vehicle.
+        <br><br>
+        <div align="center">
+         <img width="771" height="452" alt="Blueview" src="https://github.com/user-attachments/assets/faf1560b-5f96-4e49-b317-561f286bdb45" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Monitor 8</b></td>
+      <td><b>Pentagon Winch Control Display</b></td>
+      <td>
+        MacGregor / Rapp Marine interface displaying cable tension (tons), line speed (m/min), and paid-out cable length (m).
+        <br><br>
+        <div align="center">
+        <img width="624" height="468" alt="Winch Control" src="https://github.com/user-attachments/assets/cb6f39f2-0f83-4e67-96f6-cfb30e784d47" />
+          </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h5 id="sec-station-auxiliary-labs">5. Annotation & Auxiliary Laboratory Stations</h5>
+<p>Image processing, secondary scientific analysis, and physical sample handling are distributed across three auxiliary spaces:</p>
+
+<ul style="text-align: left;">
+  <li><b>Dry Lab:</b> Contains Annotation Station 1, Annotation Station 2, the Backup Annotation Station, and the primary timeserver rack.
+    <br><br>
+    <div align="center">
+     <img width="1059" height="640" alt="Dry Lab" src="https://github.com/user-attachments/assets/1fa09e51-5fe0-4470-9aab-3e00c0ffe41d" />
+    </div>
+  </li>
+  <li><b>Chemistry Lab:</b> Contains Annotation Station 3, Annotation Station 4, chemistry fume hood, and science freezers.
+    <br><br>
+    <div align="center">
+     <img width="1009" height="616" alt="Chem Lab" src="https://github.com/user-attachments/assets/86111237-c3b2-441c-9b60-a564766beb3d" />
+    </div>
+  </li>
+  <li><b>Cutting Room:</b> Dedicated HabCam workspace (Cutting Table 1) for physical biological sampling, sorting belt operations, and sample freezer access.
+    <br><br>
+    <div align="center">
+     <img width="958" height="582" alt="Cutting Room" src="https://github.com/user-attachments/assets/f1750dc6-8862-40da-a30f-c614ff6d811c" />
+     </div>
+  </li>
+</ul>
+
+</div>
+
+<h4 id="sec-staging-gpx-file">Bridge .GPX File & Station Transects</h4>
+<p><i>[Insert details on assigning survey transects, saving/exporting the .GPX file, delivering tracklines to the captain/bridge, and protocols for modifying waypoints based on captain's feedback here]</i></p>
+
+<h4 id="sec-staging-chanos">Chanos Sensor (pH, DIC, Total Alkalinity)</h4>
+<p><i>[Insert details for Chanos sensor mounting, reagent preparation, fluidic connections, and calibration protocols here]</i></p>
 
 </div>
 
