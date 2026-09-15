@@ -2548,275 +2548,338 @@
 <br>
 
 <a name="fiber-termination"></a>
-<h2>2. Fiber Optic Termination Procedure</h2>
+<h2>Fiber Optic Termination Procedure</h2>
 
-<p>On NOAA Ship <i>Henry B. Bigelow</i>, the subsea fiber optic winch cable is cut annually prior to survey deployment, requiring a full mechanical and optical re-termination.</p>
+<p><b>Purpose:</b> Underwater fiber optic cables provide the necessary durability, high data capacity, and hydrostatic pressure resistance for HabCam oceanographic surveys. On NOAA Ship <i>Henry B. Bigelow</i>, the winch tow cable is cut annually, requiring a full mechanical and optical re-termination prior to every survey deployment.</p>
 
-<h3>Part 1: Cable Stripping & Clevis Insertion</h3>
+<br>
+
+<h3>Part 1: Inserting the Fiber Optic Cable into the Clevis</h3>
 <ol>
-  <li>Cut approximately 10 m (33 ft) off the ship's fiber optic cable using a grinder and cutting wheel to discard stressed wire previously wrapped around the hanging block. Attach a hose clamp immediately past the 33 ft mark to prevent armor unravelling.</li>
-  <li>Pay out wire into the starboard CTD lab onto a clean worktable.</li>
-  <li>Measure 24 ft from the open end and install a second hose clamp.</li>
-  <li>At the 24 ft mark, score the outermost layer of armor shielding wire using a Dremel tool (the cable contains 3 distinct shielding layers).</li>
-  <li>Peel back outer shield wires from the open end to the score mark until they snap off. Repeat for the remaining two inner shielding layers until the black rubber jacketing is exposed.</li>
-  <li>Measure 12 inches up from the 24 ft mark (25 ft from the open end) and mark with a Sharpie.</li>
-  <li>Remove hose clamps, insert the wire through the narrow end of the sandblasted clevis, and pull through until the 12-inch mark is visible inside the wider clevis well. Refasten a hose clamp at the 12-inch mark.</li>
+  <li>Mark and cut approximately 10 m (33 ft) off the ship's fiber optic cable using a grinder and cutting wheel to discard wire exposed to stress around the hanging block. Install a hose clamp immediately past the 33 ft mark to prevent armor unravelling.</li>
+  <li>Pay out wire into the starboard side CTD lab onto a worktable.</li>
+  <li>Measure and mark 24 ft from the open end, then install another hose clamp.</li>
+  <li>At the 24 ft mark, score the outermost shield wire using a Dremel tool (note: there are 3 distinct layers of armor shielding).</li>
+  <li>Peel back the outer shield wire from the open end to the score mark until it breaks off.</li>
+  <li>Repeat step 5 for the remaining two shield layers until the black plastic jacket is exposed.</li>
+  <li>From the 24 ft mark, measure 12 inches up the wire (25 ft from open end) and mark with a Sharpie.</li>
+  <li>Remove hose clamps, feed wire through the narrow end of the sandblasted clevis, and pull through until the 12-inch mark is visible inside the wider end.</li>
+  <li>Refasten the hose clamp strictly at the 12-inch mark.</li>
 </ol>
 
 <br>
 
-<h3>Part 2: Creating the Wire Broom & Seating</h3>
+<h3>Part 2: Creating the Armor Wire Broom</h3>
+
 <div align="center">
-  <p><i>Steel Armor Wire Broom Formed and Seated inside Clevis Well.</i></p>
+  [DROP CLEVIS WIRE BROOM PHOTO HERE]
+  <p><i>Figure 1.1: Steel Armor Wire Broom Formed and Seated inside Clevis Well.</i></p>
 </div>
 
-<br>
-
 <ol>
-  <li>Peel back all 3 layers of shield wire to the hose clamp and bend each strand 90&deg; outward to form an evenly spaced "broom".</li>
-  <li>Move the hose clamp to the cable section immediately behind the narrow clevis entry to prevent armor bird-caging.</li>
-  <li>Install two deck screw eyes 6 ft apart on the back deck. Secure the clevis to one screw eye using a 1-inch load pin, 2 ft strap, and 5/8-inch shackle.</li>
-  <li>Attach a Yale Grip rope line down the cable past the clevis using half-hitches. Connect a come-along winch between the rope shackle and the second deck screw eye in a straight line.</li>
-  <li>Operate the come-along winch to pull the cable broom 4 to 6 inches into the clevis well. Tighten a hose clamp against the base of the clevis once seated.</li>
+  <li>Starting at the 24 ft mark, peel back all strands across all 3 armor layers up to the hose clamp (12 inches up the wire).</li>
+  <li>Bend each wire 90&deg; against the hose clamp, spacing wires evenly around the cable to form a "broom". The black rubber cable core should now be exposed up to this mark.</li>
+  <li>Remove the hose clamp at the 25 ft mark and relocate it immediately past the smaller opening of the clevis to prevent armor bird-caging up the cable.</li>
+  <li>Transport the clevis out to the back deck.</li>
+  <li>Install two deck screw eyes 6 feet apart on the deck.</li>
+  <li>Insert a 1-inch diameter pin through the clevis opening, ensuring one end of a 2 ft strap is fed through the pin.</li>
+  <li>Attach the other end of the strap to one deck screw eye using a 5/8-inch shackle.</li>
+  <li>Attach a Yale Grip rope line to the cable past the clevis using several half hitches.</li>
+  <li>Install a 5/8-inch shackle on the rope end pointing away from the open end. This attaches to the ship's manual come-along winch to pull the broom into the clevis well.</li>
+  <li>Secure the come-along winch, hook into the rope shackle, and align the come-along, rope, and cable in a straight line.</li>
+  <li>Attach the shackle to the second deck screw eye.</li>
+  <li>Operate the come-along winch to pull the wire broom 4 to 6 inches down into the clevis well to prevent termination slippage under tension.</li>
+  <li>Once fully seated, move and tighten a hose clamp against the base of the clevis (narrow opening end).</li>
 </ol>
 
 <br>
 
 <h3>Part 3: Socketfast Epoxy Potting</h3>
+
+<div align="center">
+  [DROP EPOXY POURING PHOTO HERE]
+  <p><i>Figure 2.1: Potting Clevis Well with Socketfast Resin & Tygon Protective Tubing.</i></p>
+</div>
+
 <ol>
-  <li>Hang the termination vertically with the clevis broom facing upwards.</li>
-  <li>Slide 15 ft of Tygon tubing over the central black cable into the epoxy well to protect inner conductors from trimmed armor ends. Bend broom ends outward at 45&deg; away from the tubing.</li>
-  <li>Build a 2 to 3-inch reservoir around the clevis opening using splicing tape followed by electrical tape.</li>
-  <li>Mix Socketfast resin and catalyst thoroughly with a wooden stick for at least 2 minutes until warm.</li>
-  <li>Pour epoxy into the clevis well up to the tape reservoir. Lightly tap the clevis body with a hammer during pouring to release trapped air bubbles.</li>
-  <li>Bend any remaining wire ends away from Tygon tubing before curing.</li>
-  <li><b>Curing Options:</b> Allow to set at room temperature for 24 hours minimum, or uniformly heat the clevis at 180–200&deg;F using two heat guns for 30 minutes. Trim broom strands flush once cured.</li>
-  <li>Apply a boot using 6 rolls of 2-inch self-vulcanizing tape (tapered toward clevis) covered with 2–3 layers of electrical tape (~2.5 ft total length). Wrap 18-inch zip ties along 15–20 ft of trailing cable for fairing.</li>
+  <li>Hang the termination vertically by the clevis bolt holes with the broom facing upwards.</li>
+  <li>Slide 15 ft of Tygon tubing over the central black cable into the epoxy well to protect inner rubber conductors from trimmed wire ends.</li>
+  <li>Bend broom wire ends outward at a 45&deg; angle away from the Tygon tubing to ensure the load pin pathway remains clear.</li>
+  <li>Construct a 2 to 3-inch high reservoir around the clevis opening using splicing tape followed by electrical tape. Place cardboard underneath to catch spills.</li>
+  <li>Put on gloves, pour catalyst into Socketfast resin, and mix thoroughly with a wooden stick for at least 2 minutes until the container feels warm.</li>
+  <li>Carefully pour epoxy into the clevis well up to the top of the tape reservoir, using a zip tie to guide flow and pop bubbles. Lightly tap the clevis body with a hammer to bring bubbles to the surface.</li>
+  <li>Bend back any remaining broom strand ends away from the Tygon tubing while epoxy is wet.</li>
+  <li>Let epoxy stand for 1 to 2 hours minimum before trimming broom strands flush with hardened epoxy.</li>
+  <li><b>Curing Time:</b> Allow to cure at room temperature for 24 hours before water deployment, or uniformly heat the clevis at 180–200&deg;F using two heat guns for 30 minutes for accelerated full cure.</li>
+  <li>Perform an 8,000 lbs pull test with the ship's winch and towing block prior to bridle mounting.</li>
 </ol>
 
 <br>
 
-<h3>Part 4: J-Box Entry & Power Wiring</h3>
+<h3>Part 4: Rubber Boot Application</h3>
+<ol>
+  <li>Wrap 6 rolls of 2-inch self-vulcanizing tape tightly over the termination, pulling firmly to ensure proper self-adhesion.</li>
+  <li>Cover with 2 to 3 layers of 2-inch electrical tape.</li>
+  <li>Taper the boot so the area closest to the clevis is thickest (~2.5 ft total length from clevis grooves).</li>
+</ol>
+
+<br>
+
+<h3>Part 5: Cable Fairing</h3>
+<ol>
+  <li>Use wide 18-inch zip ties starting from the end of the rubber boot.</li>
+  <li>Attach zip ties along 15 to 20 feet of cable until 8 to 10 bags of 100 zip ties are consumed (fairing wrap secured with electrical tape may be substituted).</li>
+</ol>
+
+<br>
+
+<h3>Part 6: Preparing Power and Fiber Optic Conductors</h3>
+
+<div align="center">
+  [DROP JBOX OPEN INTERIOR PHOTO HERE]
+  <p><i>Figure 3.1: J-Box Internal Routing and Power Terminal Block Configuration.</i></p>
+</div>
+
+<ol>
+  <li>From the open cable end, measure 2 feet down and mark. Carefully score the outer black rubber lengthwise with a razor knife, split with pliers, and cut off at the 2 ft mark.</li>
+  <li>Separate exposed internal conductors: 3 power wires (2 brown ground/neutral, 1 green hot), 3 optical fibers (1 gray primary, 1 red backup, 1 black backup), flexible rubber spacer material, and a thin white-gray spacer strand.</li>
+  <li>Remove and discard flexible rubber spacer material and thin white-gray spacer strand.</li>
+  <li>Snip ~1 inch off the ends of fiber and power wires to remove damaged wire ends.</li>
+</ol>
+
+<br>
+
+<h3>Part 7: Guiding Conductors into the Oil-Filled J-Box</h3>
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
-        [DROP JBOX CONNECTOR ENTRY PHOTO HERE]
+        [DROP JBOX GASKET AND CAP PHOTO HERE]
         <br>
-        <b>J-Box Connector Gasket & Cap Assembly</b>
+        <b>Threading Cap, Collar & Rubber Gasket Assembly</b>
       </td>
       <td align="center">
-        [DROP JBOX POWER TERMINALS PHOTO HERE]
+        [DROP JBOX INTERNAL CLAMP PHOTO HERE]
         <br>
-        <b>12-10 AWG Ring Terminals on Power Block</b>
+        <b>Internal Hose Clamp Anti-Slippage Anchor</b>
       </td>
     </tr>
   </table>
 </div>
 
-<br>
-
 <ol>
-  <li>Score and remove 2 ft of outer black rubber jacketing to expose 3 power conductors (2 brown ground, 1 green hot) and 3 optical fiber lines (1 gray main, 1 red, 1 black). Snip off damaged wire tips.</li>
-  <li>Pass wires through the J-Box side connector cap, metal ring collar, and rubber gasket (flat side facing wire tip).</li>
-  <li>Push wire into the J-Box until 0.5 inches of black jacket is visible inside, securing a hose clamp against the inner wall to prevent slippage. Tighten the outer cap with a pipe wrench.</li>
-  <li>Strip power wire ends and crimp 12-10 AWG yellow ring terminals onto the green and brown conductors.</li>
-  <li>Fasten the green hot wire to the center terminal of the power block, and attach the two brown ground wires to the adjacent terminals.</li>
+  <li>Unscrew the threaded cap from the empty third connector on the J-Box side, removing the metal ring collar and rubber gasket.</li>
+  <li>Guide power and fiber wires through the threaded cap (threads facing open end), metal ring collar, and rubber gasket (flattest side facing open wire end). <i>Do not miss this step!</i></li>
+  <li>Pass wires into the J-Box until ~0.5 inches of black rubber jacket is visible inside. Secure a hose clamp around the black rubber flush against the inner wall to prevent cable slippage.</li>
+  <li>Push in rubber gasket using a padded screwdriver, seat metal collar, and tighten threaded cap with a pipe wrench until snug.</li>
 </ol>
 
 <br>
 
-<h3>Part 5: 3M Hot Melt ST Fiber Optic Connectors</h3>
-
-<p>ST connectors are applied to gray (primary data), red, and black optical fibers using a 3M Hot Melt kit.</p>
-
-<ol>
-  <li>Slide yellow ST boots onto fiber lines. Use the 3M hotplate scale to mark strip lengths.</li>
-  <li>Fan out metal strength strands, bend backward along the jacket, and trim to 1/4 inch length.</li>
-  <li>Using a cleaned 3-hole stripper, strip inner buffer layers in short, straight strokes, wiping the glass with isopropyl alcohol and low-lint wipes after each pass.</li>
-  <li>Preheat the 3M oven for 6 minutes. Place an ST connector into an oven holder and heat for ~60 to 90 seconds until internal blue epoxy liquefies.</li>
-  <li>Immediately insert the stripped fiber straight into the hot ST ferrule until strength strands seat into the connector. Allow to cool for 3 minutes.</li>
-  <li>Snap the yellow boot over the rear connector housing and extract from the holder.</li>
-  <li>Lightly score the protruding glass tip perpendicular to the ferrule using a sapphire scribe, then gently cleave off the excess glass strand.</li>
-  <li>Perform air polishing on 9-micron gray film (15–20 figure-8 rotations) until flush with epoxy.</li>
-  <li>Perform wet pad polishing on green film using a puck until blue epoxy is completely removed, followed by final fine polishing on white film.</li>
-  <li>Inspect ferrule face under 200x viewing scope. Verify zero glass chips, cracks, or deep scratches across the central core.</li>
-</ol>
-
-<br>
-
-<div align="center">
-  [DROP FIBER SCOPE INSPECTION DIAGRAM HERE]
-  <p><i>Figure 2.2: Optical Scope Inspection: Clean Core (Pass) vs. Chipped / Scratched Ferrules (Fail).</i></p>
-</div>
-
-<br>
-
-<h3>Part 6: J-Box Bladder Sealing, Oil Fill & Vehicle Mounting</h3>
+<h3>Part 8: Power Wire Terminal Connections</h3>
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
-        [DROP JBOX BLADDER ASSEMBLY PHOTO HERE]
+        [DROP CRIMPING RING TERMINALS PHOTO HERE]
         <br>
-        <b>Urethane Bladder & Retaining Plate</b>
+        <b>Crimping 12-10 AWG Yellow Ring Terminals</b>
       </td>
       <td align="center">
-        [DROP JBOX OIL FILL PHOTO HERE]
+        [DROP POWER TERMINALS MOUNTED PHOTO HERE]
         <br>
-        <b>Compensating Oil Vacuum Fill Setup</b>
+        <b>Green & Brown Conductors Wired to J-Box Terminal Strip</b>
       </td>
     </tr>
   </table>
 </div>
 
+<ol>
+  <li>Strip less than 1/2 inch of insulation off the green power wire and two brown ground wires.</li>
+  <li>Slide 12-10 AWG yellow ring terminals over exposed copper conductors and crimp firmly using a wire crimping tool. Tug each terminal to verify mechanical security.</li>
+  <li>Connect the green power wire (hot) to the center terminal screw on the J-Box power block across from its middle red counterpart, looping wire smoothly without sharp 90&deg; bends.</li>
+  <li>Attach the two brown ground wires to the terminal screws on either side of the green wire.</li>
+</ol>
+
 <br>
 
+<h3>Part 9: Safety, Cleanliness & Oven Setup</h3>
 <ol>
-  <li>Connect the primary gray ST fiber to the J-Box internal output coupler. Neatly coil backup red/black fibers inside the housing and secure with zip ties.</li>
-  <li>Place the yellow urethane bladder (indented side down) over the J-Box face, align the metal retaining plate, and insert 5mm Allen screws with lock/flat washers.</li>
+  <li>Wear safety glasses <b>at all times</b> when handling cleaved glass fiber shards.</li>
+  <li>Clean work surface and wipe down all tools with isopropyl alcohol and low-lint wipes before stripping buffers or polishing.</li>
+  <li>Set up and pre-heat the 3M Hot Melt oven for at least 6 minutes prior to use.</li>
+</ol>
+
+<br>
+
+<h3>Part 10: Stripping Fiber Jacketing & Buffer Layers</h3>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        [DROP 3M HOTPLATE GUIDE PHOTO HERE]
+        <br>
+        <b>Measuring Cut Lengths on 3M Hotplate Guide</b>
+      </td>
+      <td align="center">
+        [DROP FANNING STRENGTH STRANDS PHOTO HERE]
+        <br>
+        <b>Fanning & Bending Metal Strength Strands</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>Open a 3M Hot Melt Singlemode ST Yellow Boot packet and discard the thin plastic tube. Slide yellow boot narrow-end first onto the gray fiber wire.</li>
+  <li>Line up gray wire against the 3M hotplate ST scale guide and mark the strip length where the "V" ends.</li>
+  <li>Gently fan out metal jacketing strands evenly without bending the central buffered glass. Bend metal strands backward flat against the gray wire jacket and trim to 1/4 inch length.</li>
+  <li>Clean a 3-hole fiber stripper with alcohol. Using the second hole, gently strip the first buffer layer in short, straight strokes parallel to the fiber, wiping the tool clean after every pass.</li>
+  <li>Using the smallest hole, gently strip the final thin buffer layer until even with the thicker buffer. Wipe bare glass with an alcohol-soaked low-lint wipe.</li>
+</ol>
+
+<br>
+
+<h3>Part 11: Heating, Fiber Insertion & Curing</h3>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        [DROP ST CONNECTOR IN OVEN PHOTO HERE]
+        <br>
+        <b>Liquefying Blue Epoxy inside ST Holder</b>
+      </td>
+      <td align="center">
+        [DROP INSERTING FIBER PHOTO HERE]
+        <br>
+        <b>Guiding Fiber into Hot ST Connector Ferrule</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>Place ST connector ferrule-side down into an ST oven holder. Place holder into an oven port and start a stopwatch.</li>
+  <li>Observe blue epoxy liquefy and rise up the connector hole. At ~1 min 30 sec (epoxy a few 1/16th inch from top without beading over), remove holder and place on hotplate.</li>
+  <li><b>IMMEDIATELY</b> guide fiber straight down into the center of the ST connector until metal strength strands click into place (working window: 10–15 seconds before epoxy cools).</li>
+  <li>Allow connector and epoxy to cool undisturbed for 3 minutes.</li>
+  <li>Slide yellow boot down over the connector port until it snaps into place, then pull straight up to extract ST connector from holder.</li>
+  <li>Shine a visual fault locator laser into the dry lab fiber end. If light emerges from the ST ferrule tip, proceed; if no light appears, snip connector and repeat.</li>
+</ol>
+
+<br>
+
+<h3>Part 12: Cleaving, Air Polishing & Scope Inspection</h3>
+
+<div align="center">
+  [DROP FIBER SCRIBE DIAGRAM HERE]
+  <p><i>Figure 4.1: Scribing Fiber Perpendicularly One Fiber Diameter from Ferrule.</i></p>
+</div>
+
+<ol>
+  <li>Hold connector upright, position sapphire scribe perpendicular to fiber, and lightly score fiber ~1/16 inch above ferrule tip. Gently pull glass tip off and discard in sharps container.</li>
+  <li><b>Air Polish:</b> Perform 15–20 figure-8 motions on a 9-micron gray sheet until the glass nub is flush with the blue epoxy bead.</li>
+  <li><b>Green Film Polish:</b> Clean black polishing pad with alcohol, apply water drops, lay green sheet shiny-side down, and insert ferrule into polishing puck. Perform figure-8 motions until blue epoxy turns light blue/white ferrule tip.</li>
+  <li>Clean ferrule tip with alcohol and inspect under 200x scope (Button I for surface dirt/chips; Button II for core lighting).</li>
+</ol>
+
+<br>
+
+<div align="center">
+  [DROP FIBER SCOPE COMPARISON DIAGRAM HERE]
+  <p><i>Figure 4.2: Scope Inspection Reference: Chipped/Scratched/Dirty Ferrules (Fail) vs. Clean Core (Pass).</i></p>
+</div>
+
+<br>
+
+<ol start="5">
+  <li><b>White Film Polish:</b> Lay white fine-polishing sheet on wet pad, place ferrule in puck, and perform 2–3 light figure-8 rotations for final finish. Verify core clarity under scope and re-test with laser.</li>
+  <li>Repeat Parts 10–12 for backup black and red optical fibers.</li>
+</ol>
+
+<br>
+
+<h3>Part 13: Final J-Box Fiber Connections</h3>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        [DROP COUPLING MAIN FIBER PHOTO HERE]
+        <br>
+        <b>Coupling Main Gray Fiber to J-Box ST Adapter</b>
+      </td>
+      <td align="center">
+        [DROP COILED FIBERS IN JBOX PHOTO HERE]
+        <br>
+        <b>Neatly Coiled Backup Fibers Zip-Tied inside J-Box</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>Connect the main primary data fiber (gray wire) to the ST metal coupler on the J-Box red output cable harness.</li>
+  <li>Neatly loop backup red and black fibers inside the J-Box housing and secure loosely with thin zip ties.</li>
+</ol>
+
+<br>
+
+<h3>Part 14: Securing the Urethane Bladder</h3>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        [DROP BLADDER ALIGNMENT PHOTO HERE]
+        <br>
+        <b>Aligning Yellow Bladder Indentation Face Down</b>
+      </td>
+      <td align="center">
+        [DROP SCREW WASHER ASSEMBLY PHOTO HERE]
+        <br>
+        <b>5mm Allen Screws with Lock and Flat Washers</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>Place the yellow urethane bladder with its deep indentation side facing down against the J-Box face.</li>
+  <li>Position the metal retaining plate over the bladder (side with washer ring marks facing up).</li>
+  <li>Insert 5mm Allen screws fitted with a lock washer first followed by a flat washer.</li>
   <li>Tighten screws in a cross-star pattern until snug without over-extruding the bladder edges.</li>
-  <li>Connect oil pump tubing to one white quick-disconnect valve and an air purge bleed tube to the second valve. Pump compensating oil vertically until all internal air bubbles are purged.</li>
-  <li>Mount the oil-filled J-Box upside down on the port-aft side of HabCam, routing cables along the inside of the towing bridle. Plug output fibers into the Telemetry Bottle ports.</li>
 </ol>
 
 <br>
-<hr>
-<br>
 
-<a name="fiber-pull-test"></a>
-<h2>3. Fiber Optics Winch Pull Test Procedure</h2>
-
-<p>A proof load pull test verifies that the newly potted clevis termination, winch line, and A-frame structure meet safe working load (SWL) capacity prior to sea operations[cite: 5, 8].</p>
+<h3>Part 15: Filling J-Box with Compensating Oil</h3>
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        [DROP WATER BAG RIGGING PHOTO HERE]
-        <br>
-        <b>Proof Load Water Bag Rigging Sequence</b>
-      </td>
-      <td align="center">
-        [DROP LOAD SENSOR READOUT PHOTO HERE]
-        <br>
-        <b>Digital Load Cell Display (10,000 lbs)</b>
-      </td>
-    </tr>
-  </table>
+  [DROP OIL FILLING SETUP PHOTO HERE]
+  <p><i>Figure 5.1: Compensating Oil Vacuum Pumping & Air Purge System Setup.</i></p>
 </div>
-
-<br>
-
-<h3>Rigging Sequence & Load Test Steps</h3>
-
-<p><b>Rigging Stack Order:</b> Clevis &rarr; Swivel Shackle &rarr; Shackle &rarr; Load Sensor &rarr; Water Bag.</p>
 
 <ol>
-  <li>Coordinate with ship crew and Bosun to position the Coast Guard proof-test water bag on the aft deck[cite: 5]. Ensure HabCam J-Box and telemetry cables are secured out of the way.</li>
-  <li>Verify that a hose clamp is cinched tightly against the top of the clevis to act as a position slippage indicator.</li>
-  <li>Rig the load cell and water bag to the winch clevis in the specified order.</li>
-  <li>Fill the water bag slowly while monitoring real-time tension on the digital load sensor display.</li>
-  <li>Signal the Bosun to throttle back fill pumps at <b>9,000 lbs</b> tension, closing valves fully when tension hits <b>10,000 lbs</b> (110–125% operational rating).</li>
-  <li><b>Hold 10,000 lbs proof load static for 1 minute</b> to evaluate hydraulic brake holding capacity.</li>
-  <li>Drain the water bag and lower it onto the deck.</li>
-  <li><b>Slippage Verification:</b> Inspect the hose clamp position at the base of the clevis[cite: 5]. If the clevis slipped along the cable under load, the termination failed and must be cut and remade[cite: 5]. If zero slippage occurred, reconnect J-Box lines and perform final optical link tests.</li>
+  <li>Connect oil jug supply tubing to one white quick-disconnect valve on the J-Box.</li>
+  <li>Connect an open purge tube to the second white valve, running into a waste bucket.</li>
+  <li>Pump compensating oil into the J-Box while pressing the pressure release valve. Tilt J-Box vertically so purge valves face upward to evacuate all internal air bubbles.</li>
+  <li>Visually inspect for leaks and confirm zero air bubbles remain inside the housing.</li>
 </ol>
 
 <br>
-<hr>
-<br>
 
-<a name="fiber-diagrams"></a>
-<h2>4. NOAA Ship Henry B. Bigelow Fiber Optic Schematics</h2>
-
-<p>End-to-end optical and power interconnect schematics linking the topside Acoustics Room, winch slip ring, subsea J-Box, and HabCam Telemetry Bottle.</p>
-
-<h3>Acoustics Room Topside Rack Schematic</h3>
-<div align="center">
-  <!-- Schematic Sheet 1 -->
-  [DROP BIGELOW ACOUSTICS ROOM SCHEMATIC HERE]
-  <p><i>Figure 4.1: Topside Acoustics Room Fiber Optic Transceivers & Step-Up Transformer Junction (Sheet 1/3).</i></p>
-</div>
-
-<br>
-
-<h3>Ship Slip Ring Junction Box Schematic</h3>
-<div align="center">
-  <!-- Schematic Sheet 2 -->
-  [DROP BIGELOW SLIP RING JBOX SCHEMATIC HERE]
-  <p><i>Figure 4.2: Winch Drum Slip Ring Fiber & Power Pass-Through Wiring (Sheet 2/3).</i></p>
-</div>
-
-<br>
-
-<h3>HabCam Oil-Filled J-Box Interconnect Schematic</h3>
-<div align="center">
-  <!-- Schematic Sheet 3 -->
-  [DROP HABCAM V4 JUNCTION BOX SCHEMATIC HERE]
-  <p><i>Figure 4.3: Subsea Oil-Filled J-Box to Telemetry Bottle Interconnect (Sheet 3/3).</i></p>
-</div>
-
-<br>
-
-<h3>System Optical & Electrical Line Allocation</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th align="left">Signal Line</th>
-      <th align="left">Winch Cable Wire Color</th>
-      <th align="left">Slip Ring Pass-Through</th>
-      <th align="left">J-Box Termination</th>
-      <th align="left">HabCam Bottle Target</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Primary Fiber (Data 1)</b></td>
-      <td>Gray / Bare SM Fiber</td>
-      <td>Slip Ring Fiber #1</td>
-      <td>Coupled ST Connector</td>
-      <td>OptiLink J2 (Fiber 1)</td>
-    </tr>
-    <tr>
-      <td><b>Secondary Fiber (Data 2)</b></td>
-      <td>Red SM Fiber</td>
-      <td>Slip Ring Fiber #2</td>
-      <td>Internal Coiled Spare</td>
-      <td>Spare Optical Channel</td>
-    </tr>
-    <tr>
-      <td><b>Auxiliary Fiber (Data 3)</b></td>
-      <td>Black SM Fiber</td>
-      <td>Slip Ring Fiber #3</td>
-      <td>Internal Coiled Spare</td>
-      <td>Spare Optical Channel</td>
-    </tr>
-    <tr>
-      <td><b>AC High Voltage Power</b></td>
-      <td>Green Conductor</td>
-      <td>Green Power Wire</td>
-      <td>Center Terminal Block</td>
-      <td>J1 AC Input (120/240V)</td>
-    </tr>
-    <tr>
-      <td><b>AC Power Return / Ground</b></td>
-      <td>Brown Conductors (x2)</td>
-      <td>Orange / Red Power Wires</td>
-      <td>Outer Terminal Blocks</td>
-      <td>J1 AC Neutral / Ground</td>
-    </tr>
-  </tbody>
-</table>
-
-<div align="center">
-
-<br>
-<hr>
-
+<h3>Part 16: Mounting J-Box to HabCam Chassis</h3>
+<ol>
+  <li>Route J-Box black cable along the <b>BACK</b> (inside) of the towing bridle to protect from subsea impact.</li>
+  <li>Guide cable inside port towing bridle, over crossbar, down inside of side car, positioning J-Box upside down on port-aft side of HabCam.</li>
+  <li>Secure cable with zip ties, coiling any excess wire into a large loop.</li>
+  <li>Connect red fiber optic cable to the Telemetry Bottle optical port and black power cable to the main power port.</li>
+</ol>
 <div align="center">
 
 <table>
