@@ -3208,6 +3208,7 @@
   <li>Plug in the red wire on the J-box to the fiber optic port on HabCam's telemetry bottle. The black wire will plug into the power port on the telemetry bottle.</li>
 </ol>
 
+<a name="pull-test"></a>
 <h2>Fiber Optics Pull Test</h2>
 
 <h3>Purpose</h3>
