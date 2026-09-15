@@ -179,9 +179,9 @@
 
 <h3 id="chk-staging" style="color: #2e7d32; text-align: left;">Staging</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
-  <li><input type="checkbox"> <a href="#weak-link-instructions">Mounting the weak link</a></li>
-  <li><input type="checkbox"> <a href="#fiber-optic-splicing">Splice fiber optics</a></li>
-  <li><input type="checkbox"> <a href="#pull-test-procedure">Do the pull test</a></li>
+  <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#weak-link">Mounting the weak link</a></li>
+  <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#fiber-optic-termination">Splice fiber optics</a></li>
+  <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#pull-test">Do the pull test</a></li>
   <li><input type="checkbox"> Provide the captain/bridge with the .GPX file of station locations so they can import it into their navigation software and check tracklines and make recommendations for any shifts in waypoints.</li>
   <li><input type="checkbox"> Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)</li>
 </ul>
