@@ -17,7 +17,55 @@
 </table>
 
 </div>
-</table>
+
+</div>
+
+<br>
+
+<div style="border: 1px solid #cccccc; background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 25px;">
+
+<h3 style="margin-top:0;">Table of Contents</h3>
+
+<ul>
+  <li><a href="#component-reference"><b>1. Component Reference Table</b></a></li>
+  <li><a href="#frame-schematics"><b>2. Frame Schematics & Physical Envelope</b></a></li>
+  <li><a href="#cable-harness-specs"><b>3. Cable Harness Specifications</b></a></li>
+  <li><a href="#electrical-schematics"><b>4. Electrical Schematics & Network Architecture</b></a>
+    <ul>
+      <li><a href="#network-connectivity">1. Network Connectivity & Telemetry Architecture</a></li>
+      <li><a href="#ethernet-schematics">2. Ethernet Electrical Schematic & Switch Routing</a></li>
+      <li><a href="#bulkhead-specs">3. Bulkhead Connector Specifications & Pinouts</a></li>
+      <li><a href="#fiber-cabling">4. Electronics Bottle Internal Fiber Cabling</a></li>
+      <li><a href="#endcap-placements">5. Bottle Endcap Connector Placements</a></li>
+      <li><a href="#serial-ports">6. Serial Instrumentation Port Arrays (INST 1–12)</a></li>
+      <li><a href="#ac-power-strobes">7. AC Power Distribution & Strobe Controls</a></li>
+      <li><a href="#subsystem-housings">8. Sensor Bottles, Strobe Units & Camera Housings</a></li>
+      <li><a href="#sensor-cables">9. CTD & Environmental Sensor Cable Harnesses</a></li>
+    </ul>
+  </li>
+  <li><a href="#sensor-assembly"><b>5. Vehicle Sensor Preparation & Assembly Protocols</b></a>
+    <ul>
+      <li><a href="#blueview-sonar">BlueView Forward Looking Sonar</a></li>
+      <li><a href="#ctd-39-dissolved-oxygen">CTD-39 Dissolved Oxygen Sensor</a></li>
+      <li><a href="#ctd-49-sound-speed">CTD-49 Sound Speed Sensor</a></li>
+      <li><a href="#eco-triplet-puck">Eco-Triplet Fluorometer Puck</a></li>
+      <li><a href="#electronics-bottle">Main Electronics Bottle Maintenance & Assembly</a></li>
+      <li><a href="#habitat-cameras">Allied Vision Mako Cameras</a></li>
+      <li><a href="#strobe-lights">Dragonfish Mini LED Strobe Lights</a></li>
+      <li><a href="#attitude-sensor">Microstrain AHRS Attitude Sensor</a></li>
+      <li><a href="#altimeter">Teledyne Benthos Sonar Altimeter</a></li>
+    </ul>
+  </li>
+  <li><a href="#weak-link"><b>6. Mechanical Weak Link Assembly</b></a></li>
+  <li><a href="#fiber-optic-termination"><b>7. Fiber Optic Termination (Clevis & Brooming)</b></a></li>
+  <li><a href="#fiber-power-terminals"><b>8. Fiber Optics Power Terminals & J-Box Integration</b></a>
+    <ul>
+      <li><a href="#st-connectors">3M Hot Melt ST Connectorization</a></li>
+      <li><a href="#buttoning-up-jbox">Buttoning Up & Oil Filling the J-Box</a></li>
+    </ul>
+  </li>
+  <li><a href="#pull-test"><b>9. Fiber Optics Pull Test Protocol</b></a></li>
+</ul>
 
 </div>
 
