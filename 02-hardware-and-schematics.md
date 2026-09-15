@@ -2547,341 +2547,703 @@
 <hr>
 <br>
 
-<a name="fiber-termination"></a>
-<h2>Fiber Optic Termination Procedure</h2>
+<h2>Fiber Optic Termination</h2>
 
-<p><b>Purpose:</b> Underwater fiber optic cables provide the necessary durability, high data capacity, and hydrostatic pressure resistance for HabCam oceanographic surveys. On NOAA Ship <i>Henry B. Bigelow</i>, the winch tow cable is cut annually, requiring a full mechanical and optical re-termination prior to every survey deployment.</p>
+<h3>Purpose</h3>
 
-<br>
+<p>Underwater fiber optic cables are used in environments where standard communication cables cannot provide the required durability, data capacity, or long-term reliability. The underwater sensors, subsea equipment, and HabCam need a cable that can handle water exposure, pulling force, bending, abrasion, pressure, and repeated deployment.</p>
 
-<h3>Part 1: Inserting the Fiber Optic Cable into the Clevis</h3>
+<p>On the Henry B. Bigelow specifically the fiber optic cable (Run through the winch cable) is cut yearly, so a new fiber optic termination is required every time before deployment for a new survey.</p>
+
+<h3>Hardware</h3>
+
+<h4>Part 1: Inserting the Fiber Optic into the Clevis</h4>
+
 <ol>
-  <li>Mark and cut approximately 10 m (33 ft) off the ship's fiber optic cable using a grinder and cutting wheel to discard wire exposed to stress around the hanging block. Install a hose clamp immediately past the 33 ft mark to prevent armor unravelling.</li>
-  <li>Pay out wire into the starboard side CTD lab onto a worktable.</li>
-  <li>Measure and mark 24 ft from the open end, then install another hose clamp.</li>
-  <li>At the 24 ft mark, score the outermost shield wire using a Dremel tool (note: there are 3 distinct layers of armor shielding).</li>
-  <li>Peel back the outer shield wire from the open end to the score mark until it breaks off.</li>
-  <li>Repeat step 5 for the remaining two shield layers until the black plastic jacket is exposed.</li>
-  <li>From the 24 ft mark, measure 12 inches up the wire (25 ft from open end) and mark with a Sharpie.</li>
-  <li>Remove hose clamps, feed wire through the narrow end of the sandblasted clevis, and pull through until the 12-inch mark is visible inside the wider end.</li>
-  <li>Refasten the hose clamp strictly at the 12-inch mark.</li>
+  <li>Mark and cut about 10m (33ft) off of the ship’s fiber optic cable with a grinder and cutting wheel; this process disposes of any wire that was exposed to additional stress by going up and around the hanging block. Prior to cutting, put a hose clamp just after the 33ft mark (down the wire) to ensure that the cable does not start to unwrap.</li>
+  <li>After cutting the wire, leave the hose clamp on the open end and pay out enough wire length to reach into the starboard side of the ship’s CTD lab and onto a table, where the fiber optic connectors will be applied.</li>
+  <li>Measure and mark 24ft from the open end. Install another hose clamp on this end.</li>
+  <li>Down at the 24 ft mark, take a dremel and score the outermost shield wire. (Note: There are 3 layers of shielding).</li>
+  <li>Starting from the open end, start peeling back the outer shield wire until you have reached the scored mark. Once you reach that mark, the shield wire should break off.</li>
+  <li>Repeat step 5 for the remaining shield wires until the black plastic shield is exposed.</li>
+  <li>Starting at the 24 ft mark, measure 12 inches up the wire and make a mark with a sharpie. (Note: This is 25 ft from open end of the cable).</li>
+  <li>Remove hose clamps and insert wire through the narrow end of sandblasted clevis and pull through until the 12 inch mark is visible on the wider end of the clevis.</li>
+  <li>Refasten hose clamp only at the 12 inch mark.</li>
 </ol>
 
 <br>
 
-<h3>Part 2: Creating the Armor Wire Broom</h3>
+<h4>Part 2: Creating the Broom</h4>
 
 <div align="center">
-  [DROP CLEVIS WIRE BROOM PHOTO HERE]
-  <p><i>Figure 1.1: Steel Armor Wire Broom Formed and Seated inside Clevis Well.</i></p>
+<img width="265" height="412" alt="Wire and Clevis" src="https://github.com/user-attachments/assets/9d3dd535-e7cc-4893-97c4-c803a8005698" />
+  <p><i>Steel Armor Wire Broom Formed and Seated inside Clevis Well</i></p>
 </div>
 
 <ol>
-  <li>Starting at the 24 ft mark, peel back all strands across all 3 armor layers up to the hose clamp (12 inches up the wire).</li>
-  <li>Bend each wire 90&deg; against the hose clamp, spacing wires evenly around the cable to form a "broom". The black rubber cable core should now be exposed up to this mark.</li>
-  <li>Remove the hose clamp at the 25 ft mark and relocate it immediately past the smaller opening of the clevis to prevent armor bird-caging up the cable.</li>
-  <li>Transport the clevis out to the back deck.</li>
-  <li>Install two deck screw eyes 6 feet apart on the deck.</li>
-  <li>Insert a 1-inch diameter pin through the clevis opening, ensuring one end of a 2 ft strap is fed through the pin.</li>
-  <li>Attach the other end of the strap to one deck screw eye using a 5/8-inch shackle.</li>
-  <li>Attach a Yale Grip rope line to the cable past the clevis using several half hitches.</li>
-  <li>Install a 5/8-inch shackle on the rope end pointing away from the open end. This attaches to the ship's manual come-along winch to pull the broom into the clevis well.</li>
-  <li>Secure the come-along winch, hook into the rope shackle, and align the come-along, rope, and cable in a straight line.</li>
-  <li>Attach the shackle to the second deck screw eye.</li>
-  <li>Operate the come-along winch to pull the wire broom 4 to 6 inches down into the clevis well to prevent termination slippage under tension.</li>
-  <li>Once fully seated, move and tighten a hose clamp against the base of the clevis (narrow opening end).</li>
+  <li>Starting at the 24 ft mark, start peeling the strands of shield wire (all three layers) until you reach the hose clamp (12 inches up the wire).</li>
+  <li>Bend each wire at a 90 degree angle against the hose clamp. Try to evenly space the wires around the cable. (All the wires will form a “broom”).</li>
+  <li>The black rubber part of the cable should now be visible up to this mark.</li>
+  <li>Remove the hose clamp at the 25ft mark and move it right after the smaller opening of the clevis. (This prevents the shield wires from unwinding/bird-caging up the cable).</li>
+  <li>Walk the clevis out to the back deck.</li>
+  <li>Install two screw eyes in the deck, 6 feet from each other.</li>
+  <li>Take a 2 ft strap. Then feed a 1in diameter pin through the two holes at the opening of the clevis. Make sure one end of the strap is fed through the pin.</li>
+  <li>Attach the other side of the strap to the screw eye on deck with a 5/8th shackle.</li>
+  <li>Attach a Yale Grip rope line down the cable just after the clevis using several half hitches.</li>
+  <li>Put a 5/8th shackle on the rope end that is going away from the open end of the cable. This shackle will attach to the ship’s manual come-along winch and pull the broom into the clevis’ well.</li>
+  <li>Secure the come-along winch and place the shackle that is on the half-hitched rope (holding the cable) into the come-along wench hook. Make sure the come along, rope, and cables are arranged in a straight line.</li>
+  <li>Attach the shackle to the other screw eye.</li>
+  <li>Use the come along to pull down the broom into the clevis well. Try to get about 4-6 inches of broom inside the well; it is important, as we do not want the termination slipping during deployment, even with epoxy.</li>
+  <li>Once the broom is fully seated in the clevis. Move and tighten the hoseclap to the cable, at the base of the clevis (end with small opening).</li>
+</ol>
+
+<h4>Part 3: Epoxy</h4>
+
+<ol>
+  <li>Hang the termination by the clevis bolt holes so that the broom is facing up.</li>
+  <li>Take 15ft of Tygon tubing and slide it over the black wire. Attach the tubing to the black rubber wire, and move it so that one end of the tubing is inserted down into the epoxy well. This tubing protects the black rubber wire from trimmed metal ends, which will occur later.</li>
+  <li>Try to bend the broom ends away from the Tygon tubing as much as possible, so that they will not poke into it. Note: bend the black cable at a 45 degree angle. You do not want to block the pathway of the load pin.</li>
+  <li>Using splicing tape, followed by electrical tape, create a reservoir around 2-3 in high around the openings of the clevis, where the broom becomes exposed.</li>
+  <li>At this time, place newspaper or cardboard underneath where the clevis is hanging to prevent any epoxy mixture from spilling onto the ship’s floors.</li>
+  <li>You will need gloves, Socketfast resin and its catalyst, a zip tie, and a long wooden mixing stick. Put on your gloves, take your catalyst and pour it into the Socketfast resin. Immediately take a wooden mixing stick and mix epoxy thoroughly for at least 2 minutes; The resin container should feel warm.</li>
+  <li>Then, carefully pour epoxy into the clevis well until the mixture comes up to the top of the duct tape reservoir. Use a funnel if there is one available. A zip tie can be used to guide the flow and pop bubbles as the epoxy is poured. Tip: take a hammer and lightly tap the clevis as the resin is being poured. This allows the bubbles to rise to the surface.</li>
+  <li>While the epoxy is wet, now is the time to bend back any remaining broom strand ends away from the Tygon tubing.</li>
+  <li>Let the epoxy stand for a minimum of 1-2 hour before trimming back the broom strands to be as flush as possible with the hardened epoxy. <i>*Important: If left to harden at room temperature, the epoxy should set for at least 24 hours until deploying into water. *If time is of the essence, you may uniformly heat the clevis at 180-200° F with two heat guns for about 30 minutes; it will be fully cured and ready for deployment.</i></li>
+  <li>Before attaching the clevis to the HabCam towing bridle, perform a pull test with the ship's winch and the towing block to ensure that the epoxy will hold under tension. Aim for a tension of 8000Ibs.</li>
 </ol>
 
 <br>
 
-<h3>Part 3: Socketfast Epoxy Potting</h3>
+<h4>Part 4: The Boot</h4>
+
+<ol>
+  <li>The boot uses 6 rolls of 2in self-vulcanizing tape and 2-3 layers (not rolls!) of 2in electrical tape.</li>
+  <li>Be sure when applying the tape that you pull tightly to ensure that the tape stretches and adheres to itself properly.</li>
+  <li>Taper self-vulcanizing tape so that the area closest to the clevis is thickest.</li>
+  <li>Entire boot length will be about 2.5ft or just under, if you measure from where the grooves in the clevis are.</li>
+</ol>
+
+<h4>Part 5: Fairing on Cable</h4>
 
 <div align="center">
-  [DROP EPOXY POURING PHOTO HERE]
-  <p><i>Figure 2.1: Potting Clevis Well with Socketfast Resin & Tygon Protective Tubing.</i></p>
+  <img width="577" height="432" alt="Fairing Cable On Deck" src="https://github.com/user-attachments/assets/75f5d219-02a1-4d7a-92dc-227e6c8e4b90" />
+  <p><i>Applying Zip Tie Fairing along Tow Cable on Deck</i></p>
 </div>
 
 <ol>
-  <li>Hang the termination vertically by the clevis bolt holes with the broom facing upwards.</li>
-  <li>Slide 15 ft of Tygon tubing over the central black cable into the epoxy well to protect inner rubber conductors from trimmed wire ends.</li>
-  <li>Bend broom wire ends outward at a 45&deg; angle away from the Tygon tubing to ensure the load pin pathway remains clear.</li>
-  <li>Construct a 2 to 3-inch high reservoir around the clevis opening using splicing tape followed by electrical tape. Place cardboard underneath to catch spills.</li>
-  <li>Put on gloves, pour catalyst into Socketfast resin, and mix thoroughly with a wooden stick for at least 2 minutes until the container feels warm.</li>
-  <li>Carefully pour epoxy into the clevis well up to the top of the tape reservoir, using a zip tie to guide flow and pop bubbles. Lightly tap the clevis body with a hammer to bring bubbles to the surface.</li>
-  <li>Bend back any remaining broom strand ends away from the Tygon tubing while epoxy is wet.</li>
-  <li>Let epoxy stand for 1 to 2 hours minimum before trimming broom strands flush with hardened epoxy.</li>
-  <li><b>Curing Time:</b> Allow to cure at room temperature for 24 hours before water deployment, or uniformly heat the clevis at 180–200&deg;F using two heat guns for 30 minutes for accelerated full cure.</li>
-  <li>Perform an 8,000 lbs pull test with the ship's winch and towing block prior to bridle mounting.</li>
+  <li>Use the wide, 18" zip ties.[cite: 4]</li>
+  <li>Starting from where the boot ends, apply zip ties along the wire for about 15-20 feet until 8-10 bags of 100 zip ties are consumed.[cite: 4]</li>
+  <li>Fairing wrap could be used as a substitute, if handy.[cite: 4] Just secure the wrap with electrical tape.[cite: 4]</li>
 </ol>
 
-<br>
+<h3>Fiber Optics Power Terminals</h3>
 
-<h3>Part 4: Rubber Boot Application</h3>
+<h4>Part 1: Posing Power and Fiber Optic Wires</h4>
+
 <ol>
-  <li>Wrap 6 rolls of 2-inch self-vulcanizing tape tightly over the termination, pulling firmly to ensure proper self-adhesion.</li>
-  <li>Cover with 2 to 3 layers of 2-inch electrical tape.</li>
-  <li>Taper the boot so the area closest to the clevis is thickest (~2.5 ft total length from clevis grooves).</li>
+  <li>From the open end of the fiber optic wire, measure 2 feet down, and make a mark. Then, VERY CAREFULLY, take a razor knife and score the black rubber down the length of the wire to that mark; you do not need to cut all the way through the rubber in order to remove it. Then, use a hefty pair of pliers to help peel back the stiff rubber before finally cutting it off at the 2-foot mark.
+    <br><i>Tip: Try squeezing the end of the wire with the pliers; it can help split the rubber and get you started.</i>
+  </li>
+  <li>After the 2 feet of black rubber has been removed, carefully separate the now-exposed wires. You should have 3 power wires (2 brown, 1 green), 3 fiber optic wires (1 red, 1 gray, 1 black), some flexible rubber spacing material, and a thin, white-gray spacer strand.</li>
+  <li>Remove the flexible rubber spacing material. You can also cut the very thin white-gray spacer strand.</li>
+  <li>Finally, snip about an inch off the fiber and power wires to get rid of any broken regions that might have occurred from cutting the wire when it had all three metal layers attached.</li>
 </ol>
 
 <br>
 
-<h3>Part 5: Cable Fairing</h3>
+<h4>Part 2: Inserting the Fiber Optic Wire into the J-Box</h4>
+
 <ol>
-  <li>Use wide 18-inch zip ties starting from the end of the rubber boot.</li>
-  <li>Attach zip ties along 15 to 20 feet of cable until 8 to 10 bags of 100 zip ties are consumed (fairing wrap secured with electrical tape may be substituted).</li>
+  <li>Take the J-box that you are going to use. Two metal connectors on the side of the J-Box should already be utilized and have wire coming out of them. However, a third connector should be empty. Unscrew the threaded cap of that connector, and remove the metal ring collar and rubber gasket.
+    <br><br>
+    <div align="center">
+    <img width="780" height="440" alt="J box Open" src="https://github.com/user-attachments/assets/6bf402c1-2d1e-4602-810a-7f7eb4a10bcd" />
+    <p><i>Figure 2.1: Open J-Box Interior showing Empty Connector Port and Terminal Block</i></p>
+    </div>
+  </li>
+  <li>Guide the power and fiber optic wires through the threaded cap; the threads of the cap should face the open end. Next, put on the metal ring collar, and then put on the rubber gasket so that the flattest part of the gasket is facing the open end of the wire. <b>*DO NOT MISS THIS STEP!</b></li>
+  <li>Guide the power and fiber optic wires through the open connector on the side of the J-Box until about half an inch of black rubber is visible inside the J-box. Secure a hose clamp around the black rubber so that it is almost flush against the J-box wall; this technique ensures that the wire will not slip out through the connector hole.
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+            <img width="780" height="430" alt="Wire through J Box Gasket" src="https://github.com/user-attachments/assets/7ba85171-61a9-46b4-be90-f9621a9a49f4" />
+            <br>
+            <b>Threading Cap, Collar & Rubber Gasket onto Wire</b>
+          </td>
+          <td align="center">
+            <img width="750" height="540" alt="Wire Secured via Hose Clamp" src="https://github.com/user-attachments/assets/167a8cba-641f-4396-b7ca-dbefbd1dd73e" />
+            <br>
+            <b>Internal Hose Clamp Secured Flush to Inner Wall</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+  <li>Secure the gasket, metal ring collar, and threaded cap to the J-box. You might have to push in the rubber gasket with a padded item (e.g. a screwdriver with a rag around the end). Tighten the cap with a pipe wrench so that it is snug, but be careful not to turn the connector, as well.
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+           <img width="760" height="553" alt="Outside Gasket" src="https://github.com/user-attachments/assets/ca22fdb2-9ff7-40cc-93fa-4ad2481d2a71" />
+            <br>
+            <b>Seating Rubber Gasket & Metal Collar into Connector</b>
+          </td>
+          <td align="center">
+          <img width="780" height="590" alt="Tightening Gasket" src="https://github.com/user-attachments/assets/dd89971c-2aa5-4ad6-8ff9-2539052325bc" />
+            <br>
+            <b>Tightening Threaded Cap with Pipe Wrench</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+</ol>
+
+<h4>Part 3: Connecting Ring Terminals to the Power Wires</h4>
+
+<ol>
+  <li>Find the 2 thick brown wires and 1 thick green wire. These are your power wires. The green wire is the one that actually sends the power, while the brown ones are neutral/ground. Start with your green wire.</li>
+  <li>Select a 12-10 AWG ring terminal end and a gauged wire stripper/crimping tool.
+    <br><br>
+    <div align="center">
+           <img width="725" height="223" alt="Ring Terminal and Crimper" src="https://github.com/user-attachments/assets/35e1c42f-873a-4caa-b1cb-a1c9d4fcdde8" />
+            <br>
+            <p><i>12-10 AWG Ring Terminal and Gauged Wire Stripper/Crimping Tool</i></p>
+    </div>
+    <br>
+    Then, take your green wire. Using the stripping/crimping tool, find the size 12 hole and place just the tip of the green wire in it. Strip off little bits of the green coating (less than ½"), which will reveal copper wire, until you can place the wide end of the terminal over the copper and only a small amount (1 or 2/16ths of an inch) pokes through the tapered end (where the ring is).
+  </li>
+  <li>Place the ring terminal over your green wire.</li>
+  <li>Then, using the crimping part of the tool, aim for the upper half of the terminal's yellow jacket and squeeze down very, very hard to crimp the terminal end to the exposed copper of the green wire. Tug on the terminal with your fingers to make sure it is secure.
+    <br><br>
+    <div align="center">
+      <img width="670" height="501" alt="Crimped Ring Terminal" src="https://github.com/user-attachments/assets/32982909-3da0-4d99-82e0-59e8e5483f35" />
+      <p><i>Crimped 12-10 AWG Yellow Ring Terminal</i></p>
+    </div>
+  </li>
+  <li>Repeat Steps 2-3 for the two brown wires. All power wires should now have a ring terminal at the end of them.</li>
 </ol>
 
 <br>
 
-<h3>Part 6: Preparing Power and Fiber Optic Conductors</h3>
+<h4>Part 4: Connecting the Power Wires to the J-Box</h4>
 
+<ol>
+  <li>Locate the green power wire. Then, look into your J-box at the black power terminal attached to the yellow plastic; it should have screws and three wires with red ring terminals attached to it. Across from the middle wire is where the green one will screw in. You will have to gently bend the green wire in a loop around the inside of the J-box to get it to fit and attach to the power terminal. Just be careful not to make any sharp angles (i.e. 90°) with the wire.
+    <br><br>
+    <div align="center">
+     <img width="654" height="490" alt="Wiring1" src="https://github.com/user-attachments/assets/c6ec133c-605b-4007-85ea-8ead22c8bd19" />
+     <p><i>Green Power Wire Connected to Center Terminal Screw</i></p>
+    </div>
+  </li>
+  <li>Finally, attach the brown wires to either side of the green one; it doesn’t matter which brown wire goes where, just that they are across from their red terminal counterparts.
+    <br><br>
+    <div align="center">
+      <img width="618" height="456" alt="Wiring2" src="https://github.com/user-attachments/assets/d3780aff-f7cf-48a9-b80e-de5f22f7a9a8" />
+      <p><i>Green and Brown Conductors Connected to J-Box Terminal Strip</i></p>
+    </div>
+  </li>
+</ol>
+
+<h3>Fiber Optic ST Connectors</h3>
+
+<h4>Part 1: Safety, Cleanliness, and Pre-Heating Your Oven</h4>
+
+<ol>
+  <li>You will be working with small shards of metal and glass. Wear safety glasses <b>AT ALL TIMES</b> when working with the fiber optic wire ends.</li>
+  <li>A majority of scratches, breaks, and mishaps come from improperly cleaned equipment—dirt is not your friend. Therefore, clean and wipe down the area you will be working in as best you can and give yourself plenty of space. Always wipe down all your tools with alcohol and a lint-free wipe before stripping fiber optic buffers or polishing. And finally, always clean the ST ferrule with alcohol and a low-lint wipe before looking into the viewing scope.</li>
+  <li>Take your 3M Hot Melt kit and find your oven. Set up, plug in, and turn on your oven within easy reach; it needs at least six minutes to uniformly heat up.</li>
+</ol>
+
+<br>
+
+<h4>Part 2: Exposing the Protective Jacketing</h4>
+
+<ol start="4">
+  <li>Find the gray, black, and red fiber optic wires. These wires need ST connectors attached to them in order to function properly. Start with your gray wire.</li>
+  <li>Open up a 3M Hot Melt Connector Singlemode ST Yellow Boot connector packet. Inside, you will find a metal connector with a cap, a yellow boot, and a thin tube of plastic. You may discard the plastic tube; it's for a different kind of fiber than the one that we will be using.
+    <br><br>
+    <div align="center">
+      <img width="780" height="285" alt="Connector Boot and Packet" src="https://github.com/user-attachments/assets/547e0749-b6b4-4503-8bf7-aad44b340efd" />
+      <p><i>3M ST Yellow Boot Packet & Disassembled Component Parts</i></p>
+    </div>
+  </li>
+  <li>*Place the yellow boot narrow-opening first onto the grey wire. <b>*if you forget this step, you can slice open the side of the boot and ease it onto the wire from the side.</b>
+    <br><br>
+    <div align="center">
+     <img width="780" height="418" alt="Connector Sleeve" src="https://github.com/user-attachments/assets/df0d2df6-0e60-443c-9992-d0c73afa25c2" />
+      <p><i>Yellow Boot Slid onto Gray Fiber Wire</i></p>
+    </div>
+  </li>
+  <li>Then, find your 3M oven's hotplate. On the plate, should be a to-scale guide for the lengths to cut your ST wire. Line up your gray wire with the hot plate picture and make a mark right where the lines that form a crude 'V' on the plate's ST picture end.
+    <br><br>
+    <div align="center">
+      <img width="780" height="548" alt="Connector Cut Back" src="https://github.com/user-attachments/assets/c5bce662-2192-47cb-a5b0-ee2987ba1c65" />
+      <p><i>Measuring Cut Lengths on 3M Hotplate Scale Guide</i></p>
+    </div>
+  </li>
+</ol>
+
+<br>
+
+<h4>Part 3: Trimming Metal Strands</h4>
+
+<ol>
+  <li>Gently and evenly fan out the metal jacketing so that no strands are overlapping. <b>BE CAREFUL</b>, as there is a buffered piece of glass in the middle of those metal jacketing strands. <b>DO NOT BEND the buffered glass.</b></li>
+  <li>Next, take the metal strands of the jacket and bend them so that they go down the gray wire. Try to get them so that they are as flat as possible at the bend point—a tiny pair of needle nose pliers may help.
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+            <img width="701" height="520" alt="Wires Splayed Out" src="https://github.com/user-attachments/assets/592745b1-9dfe-4811-aff9-28c6b1379719" />
+            <br>
+            <b>Fanning Out Metal Jacketing Strands</b>
+          </td>
+          <td align="center">
+            <img width="590" height="440" alt="Wires Folded Back" src="https://github.com/user-attachments/assets/66ea5059-6013-4b5b-9c9a-74181830c97f" />
+            <br>
+            <b>Bending Metal Strands Backward Flat</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+  <li>Ensure you are still wearing your safety glasses and trim the metal strands until they are about a 1/4th of an inch long. When you are done trimming, make sure that the metal strands are still as flush as possible to the gray wire.</li>
+</ol>
+
+<br>
+
+<h4>Part 4: Removing the 1st Buffer Layer from the Fiber</h4>
+
+<ol>
+  <li>Look at your hotplate ST picture. Notice the little rectangle between the crude "V"—that is how much of that buffer material you must remove from the fiber you've exposed. <b>Do not use a marker</b>, though. Instead, repeatedly reference the hotplate, if needed.</li>
+  <li>Take a 3-hole fiber optic stripper, some isopropyl alcohol, and a low-lint wipe. Clean your 3-hole stripper with the alcohol and low-lint wipe. Then, using the second of the three holes, <b>GENTLY</b> strip away the buffer in small, short pieces. <b>CLEAN</b> your tool every time. Try to keep your movements straight and directly parallel with the fiber so that you do not break it.</li>
+  <li>Keep removing the buffer (and cleaning your tool!) until you have reached the length indicated on the hotplate picture.</li>
+</ol>
+
+<br>
+
+<h4>Part 5: Removing the Final Buffer from the Fiber</h4>
+
+<ol>
+  <li>Your fiber should now have a very thin layer of buffer left after the one you just removed. Using the smallest hole in your 3-hole stripper, <b>GENTLY</b> strip away the final layer in small, short pieces and <b>CLEAN your tool every time.</b> Try to keep your movements straight and directly parallel with the fiber so that you do not break the fiber.</li>
+  <li>Keep removing the buffer (and cleaning your tool!) until you are even with the thicker buffer on your fiber.
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+            <img width="551" height="384" alt="Fiber Optic Stripper" src="https://github.com/user-attachments/assets/ec564a1d-8d91-473e-bef0-5e10f68e166c" />
+            <br>
+            <b>3-Hole Fiber Optic Stripper Tool</b>
+          </td>
+          <td align="center">
+            <img width="780" height="513" alt="Cleaned Fiber Optic" src="https://github.com/user-attachments/assets/2d8bad4a-7d1f-44a3-8fe8-a75a7399f876" />
+            <br>
+            <b>Bare Glass Fiber Strand After Stripping</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+  <li>Put some alcohol on a clean low-lint wipe, carefully position the wipe around your fiber, and gently give the fiber a few wipes to clear off any microscopic bits of buffer. <b>*Note: Missing this step could cause the fiber to break when inserting it into the ST connector.*</b></li>
+</ol>
+
+<h3>Fiber Optic ST Connectors</h3>
+
+<h4>Part 1: Safety, Cleanliness, and Pre-Heating Your Oven 1)</h4>
+
+<ol>
+  <li>You will be working with small shards of metal and glass. Wear safety glasses <b>AT ALL TIMES</b> when working with the fiber optic wire ends.</li>
+  <li>A majority of scratches, breaks, and mishaps come from improperly cleaned equipment dirt is not your friend. Therefore, clean and wipe down the area you will be working in as best you can and give yourself plenty of space. Always wipe down all your tools with alcohol and a lint-free wipe before stripping fiber optic buffers or polishing. And finally, always clean the ST ferrule with alcohol and a low-lint wipe before looking into the viewing scope.</li>
+  <li>Take your 3M Hot Melt kit and find your oven. Set up, plug in, and turn on your oven within easy reach; it needs at least six minutes to uniformly heat up.</li>
+</ol>
+
+<br>
+
+<h4>Part 2: Exposing the Protective Jacketing</h4>
+
+<ol start="4">
+  <li>Find the gray, black, and red fiber optic wires. These wires need ST connectors attached to them in order to function properly. Start with your gray wire.</li>
+  <li>Open up a 3M Hot Melt Connector Singlemode ST Yellow Boot connector packet. Inside, you will find a metal connector with a cap, a yellow boot, and a thin tube of plastic. You may discard the plastic tube; it's for a different kind of fiber than the one that we will be using.</li>
+  <li><b>*Place the yellow boot narrow-opening first onto the grey wire. *if you forget this step, you can slice open the side of the boot and ease it onto the wire from the side.</b></li>
+  <li>Then, find your 3M oven's hotplate. On the plate, should be a to-scale guide for the lengths to cut your ST wire. Line up your gray wire with the hot plate picture and make a mark right where the lines that form a crude 'V' on the plate's ST picture end.</li>
+</ol>
+
+<br>
+
+<h4>Part 3: Trimming Metal Strands</h4>
+
+<ol>
+  <li>Gently and evenly fan out the metal jacketing so that no strands are overlapping. <b>BE CAREFUL</b>, as there is a buffered piece of glass in the middle of those metal jacketing strands. <b>DO NOT BEND the buffered glass.</b></li>
+  <li>Next, take the metal strands of the jacket and bend them so that they go down the gray wire. Try to get them so that they are as flat as possible at the bend point- a tiny pair of needle nose pliers may help.</li>
+  <li>Ensure you are still wearing your safety glasses and trim the metal strands until they are about a 1/4th of an inch long. When you are done trimming, make sure that the metal strands are still as flush as possible to the gray wire.</li>
+</ol>
+
+<br>
+
+<h4>Part 4: Removing the 1st Buffer Layer from the Fiber</h4>
+
+<ol>
+  <li>Look at your hotplate ST picture. Notice the little rectangle between the crude "V"- that is how much of that buffer material you must remove from the fiber you've exposed. <b>Do not use a marker</b>, though. Instead, repeatedly reference the hotplate, if needed.</li>
+  <li>Take a 3-hole fiber optic stripper, some isopropyl alcohol, and a low-lint wipe. Clean your 3-hole stripper with the alcohol and low-lint wipe. Then, using the second of the three holes, <b>GENTLY</b> strip away the buffer in small, short pieces. <b>CLEAN</b> your tool every time. Try to keep your movements straight and directly parallel with the fiber so that you do not break it.</li>
+  <li>Keep removing the buffer (and cleaning your tool!) until you have reached the length indicated on the hotplate picture.</li>
+</ol>
+
+<br>
+
+<h4>Part 5: Removing the Final Buffer from the Fiber</h4>
+
+<ol>
+  <li>Your fiber should now have a very thin layer of buffer left after the one you just removed. Using the smallest hole in your 3-hole stripper, <b>GENTLY</b> strip away the final layer in small, short pieces and <b>CLEAN your tool every time.</b> Try to keep your movements straight and directly parallel with the fiber so that you do not break the fiber.</li>
+  <li>Keep removing the buffer (and cleaning your tool!) until you are even with the thicker buffer on your fiber.</li>
+  <li>Put some alcohol on a clean low-lint wipe, carefully position the wipe around your fiber, and gently give the fiber a few wipes to clear off any microscopic bits of buffer. <b>*Note: Missing this step could cause the fiber to break when inserting it into the ST connector.*</b></li>
+</ol>
+
+<br>
+
+<h4>Part 6: Preparing to heat the ST Connector</h4>
+
+<ol>
+  <li>Find the ST connector that you removed from the packaging. Then, in your 3M Hot Melt kit, find the ST holders for the oven. Remove the cap from the ST connector and place the ST connector ferrule-side (pointy side) down into the ST holder.</li>
+  <li>Your oven should already be hot. If you forgot to turn it on, do so now and wait about 6 minutes for it to uniformly heat up.</li>
+</ol>
+
+<br>
+
+<h4>Part 7: Inserting the Fiber into the ST Connector- NOTE: <u>READ THIS ENTIRE PART FIRST BEFORE PROCEEDING</u></h4>
+
+<ol>
+  <li>Ready a stopwatch, so you can keep track of the seconds. Also, place your hot plate in front of you, so that you have some place to put the hot ST oven holders.</li>
+  <li>Start your stopwatch and immediately place your ST oven holder with the connector inside in one of the oven holes.</li>
+  <li>Pick up your gray fiber optic wire and position it over your hot plate with the fiber pointing down. You should be lightly bending the gray wire, but not so much that you kink it.
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+           <img width="452" height="316" alt="ST Holder" src="https://github.com/user-attachments/assets/783c47e2-b912-43cf-b310-a37277857d1c" />
+            <br>
+            <b>Placing ST Connector Ferrule into ST Holder</b>
+          </td>
+          <td align="center">
+             <img width="412" height="246" alt="ST Epoxy" src="https://github.com/user-attachments/assets/338b6afa-446c-499d-a049-5d6a6e6589a0" />
+            <br>
+            <b>3M Hot Melt Oven & Hotplate Setup</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+  <li>Watch the hole in the actual ST connector very carefully. Inside is a blue epoxy that is melting. You should see the epoxy begin to liquefy and make its way up the hole in the ST connector. At about 60 seconds, most of the epoxy should be melted. However, look at the connector hole. When the epoxy is a few 1/16th of an inch to the top (about 1min 30 seconds), but has not yet beaded over, that is your cue to remove the ST oven holder, QUICKLY place it on your hot plate, and IMMEDIATELY guide your fiber down into the very middle of the hot ST connector until the trimmed metal strands around the wire disappear and click into the connector. You have about 10-15 seconds until the epoxy becomes too cool to work with.</li>
+  <li>Once your fiber is in place, let the connector and epoxy cool for about 3 minutes.</li>
+</ol>
+
+<p><b>Tips and Guidance:</b></p>
+<ul>
+  <li>Keep your fiber straight and your hands steady.</li>
+  <li>Don't ever pull the fiber completely out of the ST connector, once you begin inserting it.</li>
+  <li>Doing so may create air bubbles or multiple exit holes at the tip of the ST connector, all of which could create problems down the line. In the worst-case scenario, the fiber will have dried epoxy on it and be unable to fit through the other end of the ST connector.</li>
+  <li>When you are guiding the fiber end into the ST connector, you may see it bend slightly. If you meet resistance, STOP, SLIGHTLY pull up on the fiber to get it in a different position, and then keep going.</li>
+  <li>Any gusts of air through a window or doorway can cool the epoxy quicker and make it more difficult to work with. Try to eliminate or reduce any sources of wind, if you can.</li>
+  <li>You may also try inserting the fiber while the ST connector is still in the oven. While risky, it has successfully been done. However, once you've inserted the fiber, immediately remove the holder from the oven so you do not melt the fiber.</li>
+</ul>
+
+<br>
+
+<h4>Part 8: Remove the ST Connector from the Oven Holder</h4>
+
+<ol>
+  <li><b>BE CAREFUL, as you can easily break the fiber on this part.</b></li>
+  <li>Slide down the yellow boot on your gray wire until it is over the connector hole that you pushed the fiber through. Gently press the boot until it snaps around the hole. You may have to steady the oven holder to be successful.</li>
+  <li>Then, keeping your hands steady, slowly pull straight up on the yellow boot to remove the ST connector with your fiber in it from the oven holder.</li>
+  <li>If you are lucky, you should see a significant portion of the fiber covered in blue epoxy sticking out the tip of your ST connector. If the fiber is exceptionally short or non-existent, it most likely broke inside the ST connector (sorry).</li>
+  <li><b>NOTE: DO NOT LOOK DIRECTLY AT A LASER!</b> Use a laser and put it on the fiber end in the dry lab to see if you get light on the tip of the fiber you just put a connector on. If you do not see light, your fiber is broken; in that case, snip off the connector and repeat Parts 2-8. If you see light, continue.</li>
+</ol>
+
+<br>
+
+<h4>Part 9: Scoring and Removing the Fiber</h4>
+
+<ol>
+  <li>In your fiber optic kit, find the scribe, which looks like a pen with a small, sloped cutting edge. Hold your upright and point towards the ceiling. Then, position your scribe and its edge perpendicular to the fiber.
+    <br><br>
+    <div align="center">
+      <img width="425" height="414" alt="Scoring the Fiber" src="https://github.com/user-attachments/assets/a5de636a-8171-45a9-a71e-29571a702a85" />
+      <p><i>Scribing Fiber Perpendicularly One Fiber Diameter from Ferrule Tip</i></p>
+    </div>
+  </li>
+  <li>Carefully and lightly drag the edge of the scribe above the tip of the connector. You are aiming to make a slight cut or score about 1/16th of an inch up on fiber-you are NOT looking to completely cut it off, as breaking the fiber with the force of the scribe could lead to the glass shattering further down the ST connector.</li>
+  <li>Once you score the fiber, position your fingers near the base of the connector and then move them up towards the fiber tip. Try to gently grasp the fiber as you make your way along. If the fiber does not easily come with you, try scoring the fiber again in the same spot and then repeating the process until all but the 1/16th inch fiber comes off.</li>
+  <li>Discard the fiber tip into the sharps container in your fiber kit. <i>Tip: If you do break your fiber with the scribe, it is still worth proceeding, to the next two steps, as the fiber might still be salvageable.</i></li>
+</ol>
+
+<br>
+
+<h4>Part 10: Air Polishing the Fiber</h4>
+
+<ol>
+  <li>In your fiber optic kit, find the round gray polishing sheets (9 micron grade)- one side should be shiny while the other side has the polishing paper. Take your fiber and use the polishing side of the gray sheet to make 15-20 figure-8 rotations. You are looking to polish down the fiber nub until it is basically flush with the bead of blue epoxy coming out of the fiber connector. Keep air polishing and visually checking your fiber until the glass nub is flush with the epoxy bead.</li>
+</ol>
+
+<br>
+
+<h4>Part 11: Pad Polishing with Green Sheets</h4>
+
+<ol>
+  <li>Find the round, black polishing pad; a low-lint wipe; and some isopropyl alcohol. Put several drops of alcohol on the polishing pad and clean the pad with the wipe until any traces of dust or debris are gone.</li>
+  <li>Put several drops of water on the pad, place the shiny side of the green polishing sheet down onto the pad, and then use a low-lint wipe on the polishing side to push that water around underneath and remove any air bubbles between the sheet and the pad.</li>
+  <li>Take a polishing puck from the black pocket in the fiber optic tool holder and clean the puck with alcohol, too.</li>
+  <li>Place the puck flat-side down onto your green polishing sheet and then ease your ferrule into the hole at the top of the puck. With a <b>slight pressure</b>, hold onto both the connector and the polishing puck. Make figure-8 rotations until the blue adhesive is just barely removed-you will see the epoxy turn from blue to light blue as it is removed until you are left with just the white ferrule at the tip of the ST connector. Be careful not to polish too much- once the epoxy is removed, you are essentially polishing the tip of the ST connector, which can be easily scratched.</li>
+  <li>After you have successfully removed the epoxy, clean the tip of your ferrule with some alcohol and a low-lint wipe. Then, take your fiber optic viewing scope and carefully fit your ferrule tip into the bottom of the scope. Press the I button to see the top of your fiber optic ferrule (best for checking dirt, scratches, and surface chips) and the II button to see it lit from below (best option for checking damage to the core and the face of the fiber).</li>
+  <li>Using the II button for viewing the scope, you should see the following: The dark gray circle represents your fiber and the small, light gray circle in the very middle of the image is your core. In your scope, everything should be the faintest hint of blue (from the epoxy). The core is the most important part of this operation. If there are any chips in the ferrule (which show up as black areas in the dark gray) or scratches and gouges that go through your core, there may be significant light loss and the ST connector is potentially useless. Small scratches may be remedied by polishing the ST connector with the green lapping film a few more times.
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+          <img width="908" height="361" alt="Polishing the Fiber" src="https://github.com/user-attachments/assets/409e6ab5-c1eb-4e76-a0fd-cff7fbd8d6f8" />
+            <br>
+            <b>Failed Scope Views: Chipped Core, Epoxy Rings & Scratches</b>
+          </td>
+          <td align="center">
+            <img width="471" height="340" alt="Dirty View" src="https://github.com/user-attachments/assets/1476c15e-8bc9-4024-a2b5-a2f4d4533fed" />
+            <br>
+            <b>Dirty Ferrule View (Clean with Alcohol Wipe)</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    If they do not go away, then the scratches are deep within the ST connector and cannot be fixed. Chips can sometimes occur from improper scoring and cleaving with the scribe- if you broke the fiber while scoring it, then be sure to check for chips when looking at the ST connector under the scope.
+    <br><br>
+    The connector on the left has a large chip on the right side and small chips all around the fiber; it is also heavily scratched and has some pitting. The connector in the middle shows contamination from some liquid and a large chip along the bottom, but the rings around the fiber show the epoxy was not completely polished off. The connector on the right shows scratching and chipping also, including one very large scratch across the fiber and ferrule. All of these connectors are unusable. While you may be able to fix the scratches or remove the epoxy rings with more polishing, the chips will create too much light loss for the connector to work efficiently. If you see large chips, cut off the connector from your fiber wire and begin Part 1-11 again for the fiber optic connector.
+    <br><br>
+    This connector is simply dirty, possibly with oil from a fingertip. Cleaning it alcohol and a low-lint wipe should fix the problem.
+  </li>
+</ol>
+
+<br>
+
+<h4>Part 12: Pad Polishing with White Sheets</h4>
+
+<ol>
+  <li>If your connector appears mostly smooth and fairly free of scratches, debris, chips, etc., then you can proceed to the final polish.</li>
+  <li>Discard your used green sheet and put several drops of water on the pad. Place the shiny side of a white polishing sheet down onto the pad, and then use a low-lint wipe on the polishing side to push that water around underneath and remove any air bubbles between the sheet and the pad.</li>
+  <li>Take your polishing puck and clean it with alcohol again. Place the puck <b>flat-side down</b> onto your white polishing sheet and then ease your ferrule into the hole at the top of the puck. With a slight pressure, hold onto both the connector and the polishing puck. Make two to three figure-8 rotations. You are basically just fine-polishing the ferrule to ensure that the surface is as smooth as possible; not a lot of effort is needed here.</li>
+  <li>Look at the fiber in your viewing scope. You should have as much of a close-to-perfect connector as possible, at this point.</li>
+  <br><br>
+    <div align="center">
+      <img width="345" height="287" alt="Clean Fiber" src="https://github.com/user-attachments/assets/741690bd-0077-46bb-af76-020a343803a3" />
+      <p><i>Ideal/Clean Fiber Ferrule Core View under Viewing Scope</i></p>
+    </div>
+  </li>
+  <li><b>NOTE: <u>DO NOT LOOK DIRECTLY AT THE LASER!</u></b> Use a laser and put it on the fiber end in the Dry Lab to see if you get light on the tip of the fiber.</li>
+</ol>
+
+<br>
+
+<h4>Part 13: Terminating the Black and Red Fiber Wires</h4>
+
+<ol>
+  <li>Repeat Parts 2-12 for the black and red wires. Of note, however, is that HabCam technically only needs one back up fiber, in case anything goes wrong with the main data acquisition one (gray). Therefore, do not stress too much if you're having issues getting all three connectors working. Reasonable efforts should be made, though, to ensure that we are terminating all the fibers ends; it is simply good practice and allows for more flexibility if fiber issues arise.</li>
+</ol>
+
+<h4>Part 14: Connecting Main Fiber to J-box Cable</h4>
+
+<ol>
+  <li>After all your fibers are terminated, you must connect the main fiber that sends information from Habcam down the cable- this is (usually) your gray wire. Look at your J-box. Connected to the red cable, which comes out the side of it, should be several black wires with white boots and ST connectors on the end.
+    <br><br>
+    3 out of the 4 connectors should have yellow pieces of plastic tubing around the ends. The last connector will have a metal coupler on the end; this coupler is where your gray wire will attach. Make sure you loop the gray wire around so that it rests comfortably in the J-box, once connected, and will not be kinked.
+    <br><br>
+    <div align="center">
+      <img width="472" height="365" alt="J Box on Work Bench" src="https://github.com/user-attachments/assets/4834da12-ddbd-475e-9575-a53778837307" />
+      <p><i>J-Box Layout and Cable Entry Positioning on Worktable</i></p>
+    </div>
+    <br>
 <div align="center">
-  [DROP JBOX OPEN INTERIOR PHOTO HERE]
-  <p><i>Figure 3.1: J-Box Internal Routing and Power Terminal Block Configuration.</i></p>
+ <img width="780" height="303" alt="Connecting Main Fiber in J Box" src="https://github.com/user-attachments/assets/7c58f4a8-3b29-4522-9254-a8f1198cb95e" />
+  <p><i>Coupling Primary Gray ST Fiber to Metal Adapter Assembly (Left: Aligning Connector; Right: Mated in Position)</i></p>
 </div>
+  </li>
+  <li>Finally, carefully loop the red and black fibers around in the J-box, so they rest neatly amongst the rest of the wires. Use small, thin zip ties to loosely secure all the wires in place.
+    <br><br>
+    <div align="center">
+    <img width="671" height="414" alt="Coiled Fiber" src="https://github.com/user-attachments/assets/b2b73024-c5e1-47a5-8326-c6395c59ede6" />
+      <p><i>Red and Black Backup Fibers Coiled and Zip-Tied inside J-Box</i></p>
+    </div>
+  </li>
+</ol>
+
+<br>
+<hr>
+<br>
+
+<h3>Buttoning Up the J-box</h3>
+
+<h4>Part 1: Securing the Bladder</h4>
 
 <ol>
-  <li>From the open cable end, measure 2 feet down and mark. Carefully score the outer black rubber lengthwise with a razor knife, split with pliers, and cut off at the 2 ft mark.</li>
-  <li>Separate exposed internal conductors: 3 power wires (2 brown ground/neutral, 1 green hot), 3 optical fibers (1 gray primary, 1 red backup, 1 black backup), flexible rubber spacer material, and a thin white-gray spacer strand.</li>
-  <li>Remove and discard flexible rubber spacer material and thin white-gray spacer strand.</li>
-  <li>Snip ~1 inch off the ends of fiber and power wires to remove damaged wire ends.</li>
+  <li>The bladder is a yellow piece of urethane that is flexible, covers all the J-box wiring, and (hopefully) prevents seawater intrusion. Find the bladder and look at the surface. One side will have a relatively deep indentation of where it rested against the face of the J-box- this is the side that must be placed down (against the face).
+    <br><br>
+    Try to line up the holes on the bladder with the holes on the J-box; they will not be exact, however, as the bladder stretches once the screws are inserted.
+  </li>
+  <li>Next, there is a metal plate with screw holes that goes over the bladder. The side with the most obvious rings around the holes (from metal washers) is the side that should face up.</li>
+  <li>Next, take the J-box screws, a lock washer, and a flat washer. The lock washer should go on the screw first and then the flat washer.</li>
+  <li>Place the screws through the metal plate holes and bladder. You might have to slightly change the direction you are inserting the screws in order to get the bladder to stretch properly.
+    <br><br>
+    <div align="center">
+      <table>
+        <tr>
+          <td align="center">
+            <img width="577" height="421" alt="Sealing J Box 1" src="https://github.com/user-attachments/assets/5fd940f1-cd82-458e-bcee-041503a5e439" />
+            <br>
+            <b>1. Aligning Yellow Bladder Indentation Face Down</b>
+          </td>
+          <td align="center">
+           <img width="647" height="366" alt="Sealing J Box 2" src="https://github.com/user-attachments/assets/d29f90ce-5dfc-4173-8c5d-4a78a3cb5324" />
+            <br>
+            <b>2. Metal Retaining Plate Alignment</b>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <img width="437" height="331" alt="J Box Bolt" src="https://github.com/user-attachments/assets/a4913ba1-5176-4070-aeef-3ae0b590b694" />
+            <br>
+            <b>3. 5mm Allen Screw with Lock & Flat Washers</b>
+          </td>
+          <td align="center">
+           <img width="587" height="409" alt="Sealing J Box 3" src="https://github.com/user-attachments/assets/0daa1063-de92-4aac-9c4f-4433890c33be" />
+            <br>
+            <b>4. Threading 5mm Allen Screws into Perimeter</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </li>
+  <li>Once all screws are in the J-box, take a 5mm Allen key and tighten the screws only to the point that they do not turn with light pressure. Tighten the screws as you would tire lug nuts- once you tighten a screw, go to the opposite side and tighten its counterpoint until you make your way around the J-box.
+    <br><br>
+    All the screws should be secured in such a manner that they no longer turn with slight pressure <b>AND</b> the bladder is not dramatically sticking out from beneath the metal plate. Therefore, do not crank down on the screws! If the bladder bleeds out too much, it can compromise the water-tight integrity.
+  </li>
 </ol>
 
 <br>
 
-<h3>Part 7: Guiding Conductors into the Oil-Filled J-Box</h3>
+<h4>Part 2: Filling the J-box with Oil</h4>
+
+<ol>
+  <li>On your J-box should be two white valves. Take your jug full of oil and insert the valve attachment (on the clear tubing) into one of the white valves- press the metal tab on the side of the J-box valve to get the attachment to fit correctly.</li>
+  <li>Take a clear tube with an open end and a valve attachment. Insert the attachment into the second white valve and then have someone hold the open end over a bucket or reservoir.</li>
+  <li>Then, using the oil-filled jug, pump oil into the J-box. There is a release valve on the tube coming from the jug that you must press to get the oil to start flowing- be careful not to press it for too long or the middle of the bladder will start ballooning out from the air pressure and could burst or damage the integrity of the urethane.</li>
+  <li>To completely fill the J-box with oil and prevent any air bubbles from remaining, you might have to tilt the J-box vertically so that the white valves are facing up and the valve that has the open tube (where the air is purged) is at the highest point.</li>
+  <li>Once you are done filling the J-box, do a visual inspection. There should be no oil leaks anywhere around the screws and there should be no (or very, very small) air bubbles inside the J-box.
+    <br><br>
+    <div align="center">
+    <img width="437" height="331" alt="J Box Bolt" src="https://github.com/user-attachments/assets/38641f6e-fc2f-46e1-a659-aa37854b9dae" />
+      <p><i>Compensating Oil Vacuum Pump & Purge Reservoir Setup</i></p>
+    </div>
+  </li>
+</ol>
+
+<br>
+
+<h4>Part 3: Securing the J-box to HabCam</h4>
+
+<ol>
+  <li>Carry the oil-filled J-box and clevis out to HabCam. The J-box and black wiring must first be fed along the <b>BACK</b> of the towing bridle (Stand at the front of HabCam and imagine the bridle is vertical- the wire should not be visible from the towing direction).</li>
+  <li>Next, guide it <b>INSIDE</b> the towing bridle (port side), <b>OVER</b> the towing bridle crossbar (port side), down the <b>INSIDE</b> of a side car, and through a small opening so that it ends up upside down on the port-aft side of the HabCam; the red and black fiber/power wires coming out of the J-box should be facing aft, so that they are closest to where they connect to the telemetry bottle. Basically, once you’re done attaching the J-box, no part of the stripped black cable should be exposed in such a way that it would easily be crunched, kinked, snagged, etc. from anything that could make contact with the HabCam underwater- when in doubt, keep the wire to the inside of the vehicle and away from the tow direction.</li>
+  <li>Secure the black wire to the vehicle with zip ties. You may also have extra black wiring. If so, create a large loop with the black wire and secure it to HabCam with zip ties, so that it is not flapping around.</li>
+  <li>Plug in the red wire on the J-box to the fiber optic port on HabCam's telemetry bottle. The black wire will plug into the power port on the telemetry bottle.</li>
+</ol>
+
+<h2>Fiber Optics Pull Test</h2>
+
+<h3>Purpose</h3>
+
+<p>A pull test (or proof load test) using a water bag on a hydraulic winch line is performed to safely verify that the winch and its mounting structure can handle their maximum rated weight capacity. This test uses weights or simulated loads to prove that the mechanical, hydraulic, and brake systems work perfectly in real working conditions and that your winch is safe to use for anchoring, towing, and mooring operation.</p>
+
+<p><b>1. Load Testing:</b><br>
+<b>Purpose:</b> To ensure that the winch is capable of pulling or holding loads according to its nominal capacity without structural failure. The winch is tested using actual loads of up to 110–125% of its design capacity.</p>
+
+<p><b>2. Brake Test:</b><br>
+<b>Purpose:</b> To ensure that the main and emergency brake systems can safely hold loads, even under extreme conditions. The brake test is performed by suddenly stopping the winch while pulling a specific load. Technicians will evaluate whether the brakes can hold the load without slipping or dropping.</p>
+
+<p><b>3. Functional Test:</b><br>
+<b>Purpose:</b> To evaluate the overall operational performance of the winch in real conditions. The functional test is performed after the load and brake tests to ensure that all components work together and that your winch is ready for safe and efficient use at sea.</p>
+
+<br>
+
+<h3>Preparation</h3>
+
+<p>After the termination is complete (and tested) and the epoxy inside the clevis has cured you can proceed to the pull test. Attach the clevis to the water bag in the order shown in the image below. Note the hose clamp at the top, up against the clevis (Don't forget to install this).</p>
+
+<p><i>You will need to coordinate with the Bigelow ahead of time to borrow the water bag from the U.S. Coast Guard and help from the Chief Bosun to perform the test.</i></p>
+
+<br>
 
 <div align="center">
   <table>
     <tr>
-      <td align="center">
-        [DROP JBOX GASKET AND CAP PHOTO HERE]
-        <br>
-        <b>Threading Cap, Collar & Rubber Gasket Assembly</b>
+      <td valign="top" style="padding-right: 20px;">
+        <p><b>Order of Operation:</b></p>
+        <div style="border: 1px solid #000; padding: 12px; width: 160px; line-height: 1.6;">
+          Clevis &rarr;<br>
+          Swivel Shackle &rarr;<br>
+          Shackle &rarr;<br>
+          Load Sensor &rarr;<br>
+          Water Bag
+        </div>
       </td>
-      <td align="center">
-        [DROP JBOX INTERNAL CLAMP PHOTO HERE]
+      <td align="center" valign="top">
+        <img width="403" height="325" alt="Hanging Connection" src="https://github.com/user-attachments/assets/60e38f22-a018-4d84-adaf-d3b4caa9063d" />
         <br>
-        <b>Internal Hose Clamp Anti-Slippage Anchor</b>
+        <p><i>Rigging Linkage: Clevis, Swivel Shackle, Shackle, Load Sensor, & Water Bag</i></p>
       </td>
     </tr>
   </table>
 </div>
 
-<ol>
-  <li>Unscrew the threaded cap from the empty third connector on the J-Box side, removing the metal ring collar and rubber gasket.</li>
-  <li>Guide power and fiber wires through the threaded cap (threads facing open end), metal ring collar, and rubber gasket (flattest side facing open wire end). <i>Do not miss this step!</i></li>
-  <li>Pass wires into the J-Box until ~0.5 inches of black rubber jacket is visible inside. Secure a hose clamp around the black rubber flush against the inner wall to prevent cable slippage.</li>
-  <li>Push in rubber gasket using a padded screwdriver, seat metal collar, and tighten threaded cap with a pipe wrench until snug.</li>
-</ol>
-
 <br>
 
-<h3>Part 8: Power Wire Terminal Connections</h3>
+<h3>Test Execution & Verification</h3>
+
+<p><i>HabCam J-Box and cables positioned safely out of the way for testing.</i></p>
+
+<div align="center">
+  <img width="489" height="367" alt="Bag" src="https://github.com/user-attachments/assets/cf879147-8fd8-47d0-b739-e960c1d922e3" />
+  <p><i>Water Bag Suspended over Deck during Pump Filling</i></p>
+</div>
+<p>With the water bag in position, the Chief Bosun will coordinate with the engineers to turn on the pumps and begin filling the bag.</p>
+<p>Monitor the tension on the load sensor and let the bosun know when you get to 9,000lbs so they can slowly close the pumps with the intention to fully close the pumps at 10,000lbs tension.</p>
+<p>Next hold the tension at 10,000lbs for approximately 1 minute.</p>
+
+<br>
 
 <div align="center">
   <table>
     <tr>
-      <td align="center">
-        [DROP CRIMPING RING TERMINALS PHOTO HERE]
+      <td align="center" valign="top">
+       <img width="480" height="550" alt="Weight" src="https://github.com/user-attachments/assets/2e893083-c56f-4322-842a-9c36a50162f4" />
         <br>
-        <b>Crimping 12-10 AWG Yellow Ring Terminals</b>
+        <p><i>Load Sensor Readout Displaying 10,000 lbs Test Tension</i></p>
       </td>
-      <td align="center">
-        [DROP POWER TERMINALS MOUNTED PHOTO HERE]
-        <br>
-        <b>Green & Brown Conductors Wired to J-Box Terminal Strip</b>
+      <td valign="top" style="padding-left: 20px;">
+        <p>Once complete, the water bag can be emptied and brought back on the deck.</p>
+        <p>Inspect the hose ring that was cinched above the clevis and verify that the clevis has <b>not <u>slipped</u></b> under tension.</p>
+        <p>If the location has changed and the clevis slipped then adjustments must be made, and the test must be run again.</p>
+        <p>If its location hasn't changed, attach the J-box cables and retest the fiber optics with the HabCam vehicle.</p>
+        <p>If everything is working you are good to go.</p>
       </td>
     </tr>
   </table>
 </div>
 
-<ol>
-  <li>Strip less than 1/2 inch of insulation off the green power wire and two brown ground wires.</li>
-  <li>Slide 12-10 AWG yellow ring terminals over exposed copper conductors and crimp firmly using a wire crimping tool. Tug each terminal to verify mechanical security.</li>
-  <li>Connect the green power wire (hot) to the center terminal screw on the J-Box power block across from its middle red counterpart, looping wire smoothly without sharp 90&deg; bends.</li>
-  <li>Attach the two brown ground wires to the terminal screws on either side of the green wire.</li>
-</ol>
-
-<br>
-
-<h3>Part 9: Safety, Cleanliness & Oven Setup</h3>
-<ol>
-  <li>Wear safety glasses <b>at all times</b> when handling cleaved glass fiber shards.</li>
-  <li>Clean work surface and wipe down all tools with isopropyl alcohol and low-lint wipes before stripping buffers or polishing.</li>
-  <li>Set up and pre-heat the 3M Hot Melt oven for at least 6 minutes prior to use.</li>
-</ol>
-
-<br>
-
-<h3>Part 10: Stripping Fiber Jacketing & Buffer Layers</h3>
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        [DROP 3M HOTPLATE GUIDE PHOTO HERE]
-        <br>
-        <b>Measuring Cut Lengths on 3M Hotplate Guide</b>
-      </td>
-      <td align="center">
-        [DROP FANNING STRENGTH STRANDS PHOTO HERE]
-        <br>
-        <b>Fanning & Bending Metal Strength Strands</b>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<ol>
-  <li>Open a 3M Hot Melt Singlemode ST Yellow Boot packet and discard the thin plastic tube. Slide yellow boot narrow-end first onto the gray fiber wire.</li>
-  <li>Line up gray wire against the 3M hotplate ST scale guide and mark the strip length where the "V" ends.</li>
-  <li>Gently fan out metal jacketing strands evenly without bending the central buffered glass. Bend metal strands backward flat against the gray wire jacket and trim to 1/4 inch length.</li>
-  <li>Clean a 3-hole fiber stripper with alcohol. Using the second hole, gently strip the first buffer layer in short, straight strokes parallel to the fiber, wiping the tool clean after every pass.</li>
-  <li>Using the smallest hole, gently strip the final thin buffer layer until even with the thicker buffer. Wipe bare glass with an alcohol-soaked low-lint wipe.</li>
-</ol>
-
-<br>
-
-<h3>Part 11: Heating, Fiber Insertion & Curing</h3>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        [DROP ST CONNECTOR IN OVEN PHOTO HERE]
-        <br>
-        <b>Liquefying Blue Epoxy inside ST Holder</b>
-      </td>
-      <td align="center">
-        [DROP INSERTING FIBER PHOTO HERE]
-        <br>
-        <b>Guiding Fiber into Hot ST Connector Ferrule</b>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<ol>
-  <li>Place ST connector ferrule-side down into an ST oven holder. Place holder into an oven port and start a stopwatch.</li>
-  <li>Observe blue epoxy liquefy and rise up the connector hole. At ~1 min 30 sec (epoxy a few 1/16th inch from top without beading over), remove holder and place on hotplate.</li>
-  <li><b>IMMEDIATELY</b> guide fiber straight down into the center of the ST connector until metal strength strands click into place (working window: 10–15 seconds before epoxy cools).</li>
-  <li>Allow connector and epoxy to cool undisturbed for 3 minutes.</li>
-  <li>Slide yellow boot down over the connector port until it snaps into place, then pull straight up to extract ST connector from holder.</li>
-  <li>Shine a visual fault locator laser into the dry lab fiber end. If light emerges from the ST ferrule tip, proceed; if no light appears, snip connector and repeat.</li>
-</ol>
-
-<br>
-
-<h3>Part 12: Cleaving, Air Polishing & Scope Inspection</h3>
-
-<div align="center">
-  [DROP FIBER SCRIBE DIAGRAM HERE]
-  <p><i>Figure 4.1: Scribing Fiber Perpendicularly One Fiber Diameter from Ferrule.</i></p>
-</div>
-
-<ol>
-  <li>Hold connector upright, position sapphire scribe perpendicular to fiber, and lightly score fiber ~1/16 inch above ferrule tip. Gently pull glass tip off and discard in sharps container.</li>
-  <li><b>Air Polish:</b> Perform 15–20 figure-8 motions on a 9-micron gray sheet until the glass nub is flush with the blue epoxy bead.</li>
-  <li><b>Green Film Polish:</b> Clean black polishing pad with alcohol, apply water drops, lay green sheet shiny-side down, and insert ferrule into polishing puck. Perform figure-8 motions until blue epoxy turns light blue/white ferrule tip.</li>
-  <li>Clean ferrule tip with alcohol and inspect under 200x scope (Button I for surface dirt/chips; Button II for core lighting).</li>
-</ol>
-
-<br>
-
-<div align="center">
-  [DROP FIBER SCOPE COMPARISON DIAGRAM HERE]
-  <p><i>Figure 4.2: Scope Inspection Reference: Chipped/Scratched/Dirty Ferrules (Fail) vs. Clean Core (Pass).</i></p>
-</div>
-
-<br>
-
-<ol start="5">
-  <li><b>White Film Polish:</b> Lay white fine-polishing sheet on wet pad, place ferrule in puck, and perform 2–3 light figure-8 rotations for final finish. Verify core clarity under scope and re-test with laser.</li>
-  <li>Repeat Parts 10–12 for backup black and red optical fibers.</li>
-</ol>
-
-<br>
-
-<h3>Part 13: Final J-Box Fiber Connections</h3>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        [DROP COUPLING MAIN FIBER PHOTO HERE]
-        <br>
-        <b>Coupling Main Gray Fiber to J-Box ST Adapter</b>
-      </td>
-      <td align="center">
-        [DROP COILED FIBERS IN JBOX PHOTO HERE]
-        <br>
-        <b>Neatly Coiled Backup Fibers Zip-Tied inside J-Box</b>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<ol>
-  <li>Connect the main primary data fiber (gray wire) to the ST metal coupler on the J-Box red output cable harness.</li>
-  <li>Neatly loop backup red and black fibers inside the J-Box housing and secure loosely with thin zip ties.</li>
-</ol>
-
-<br>
-
-<h3>Part 14: Securing the Urethane Bladder</h3>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        [DROP BLADDER ALIGNMENT PHOTO HERE]
-        <br>
-        <b>Aligning Yellow Bladder Indentation Face Down</b>
-      </td>
-      <td align="center">
-        [DROP SCREW WASHER ASSEMBLY PHOTO HERE]
-        <br>
-        <b>5mm Allen Screws with Lock and Flat Washers</b>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<ol>
-  <li>Place the yellow urethane bladder with its deep indentation side facing down against the J-Box face.</li>
-  <li>Position the metal retaining plate over the bladder (side with washer ring marks facing up).</li>
-  <li>Insert 5mm Allen screws fitted with a lock washer first followed by a flat washer.</li>
-  <li>Tighten screws in a cross-star pattern until snug without over-extruding the bladder edges.</li>
-</ol>
-
-<br>
-
-<h3>Part 15: Filling J-Box with Compensating Oil</h3>
-
-<div align="center">
-  [DROP OIL FILLING SETUP PHOTO HERE]
-  <p><i>Figure 5.1: Compensating Oil Vacuum Pumping & Air Purge System Setup.</i></p>
-</div>
-
-<ol>
-  <li>Connect oil jug supply tubing to one white quick-disconnect valve on the J-Box.</li>
-  <li>Connect an open purge tube to the second white valve, running into a waste bucket.</li>
-  <li>Pump compensating oil into the J-Box while pressing the pressure release valve. Tilt J-Box vertically so purge valves face upward to evacuate all internal air bubbles.</li>
-  <li>Visually inspect for leaks and confirm zero air bubbles remain inside the housing.</li>
-</ol>
-
-<br>
-
-<h3>Part 16: Mounting J-Box to HabCam Chassis</h3>
-<ol>
-  <li>Route J-Box black cable along the <b>BACK</b> (inside) of the towing bridle to protect from subsea impact.</li>
-  <li>Guide cable inside port towing bridle, over crossbar, down inside of side car, positioning J-Box upside down on port-aft side of HabCam.</li>
-  <li>Secure cable with zip ties, coiling any excess wire into a large loop.</li>
-  <li>Connect red fiber optic cable to the Telemetry Bottle optical port and black power cable to the main power port.</li>
-</ol>
-<div align="center">
-
 <table>
   <tr>
     <td><a href="README.md">Home</a></td>
