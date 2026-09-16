@@ -15,3 +15,18 @@ figcaption,
 div.quarto-figure > figure > figcaption {
   text-align: center !important;
 }
+
+/* Center figure captions, paragraph captions, and italic text inside centered blocks */
+figcaption, 
+.figure-caption, 
+div.quarto-figure figcaption,
+div[align="center"] p,
+div[align="center"] em,
+div[align="center"] i,
+div[style*="center"] p,
+div[style*="center"] em {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
