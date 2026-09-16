@@ -1,6 +1,6 @@
-# Annual Operational Calendar (Mid-May Survey Schedule)
+# Annual Operational Calendar
 
-Overview of the 12-month lifecycle starting 6 months out from a Mid-May cruise departure[cite: 7]:
+Overview of the 12-month lifecycle starting 6 months out from a Mid-May cruise departure
 
 <table width="100%" border="1" cellpadding="12" cellspacing="0" style="border-collapse: collapse; border: 1px solid #cccccc; text-align: left;">
   <tr>
