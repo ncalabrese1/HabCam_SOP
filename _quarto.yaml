@@ -102,3 +102,4 @@ format:
     fig-align: center
     lightbox: true
     css: styles.css
+    include-in-header: header.html
