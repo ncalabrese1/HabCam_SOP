@@ -1,0 +1,650 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HabCam Operational SOP",
+    "section": "",
+    "text": "1 Home\nWelcome to the HabCam Operational Standard Operating Procedure (SOP) Manual.\n[Insert homepage overview, welcome message, quick navigation links, and mission overview here]",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
+    ]
+  },
+  {
+    "objectID": "00-the-program.html",
+    "href": "00-the-program.html",
+    "title": "2  The Program",
+    "section": "",
+    "text": "[Insert program history, overarching objectives, research partners, and organizational structure here]",
+    "crumbs": [
+      "Program Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Program</span>"
+    ]
+  },
+  {
+    "objectID": "00-team-members.html",
+    "href": "00-team-members.html",
+    "title": "3  Team Members",
+    "section": "",
+    "text": "[Insert scientific staff directory, contact information, roles, and lab affiliations here]",
+    "crumbs": [
+      "Program Information",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Team Members</span>"
+    ]
+  },
+  {
+    "objectID": "00-onboarding.html",
+    "href": "00-onboarding.html",
+    "title": "4  Onboarding",
+    "section": "",
+    "text": "[Insert new team member onboarding checklists, required training modules, and facility access steps here]",
+    "crumbs": [
+      "Program Information",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Onboarding</span>"
+    ]
+  },
+  {
+    "objectID": "00-publications.html",
+    "href": "00-publications.html",
+    "title": "5  Publications",
+    "section": "",
+    "text": "[Insert scientific publications, technical memos, cruise reports, and citation repository here]",
+    "crumbs": [
+      "Program Information",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Publications</span>"
+    ]
+  },
+  {
+    "objectID": "00-media.html",
+    "href": "00-media.html",
+    "title": "6  Media",
+    "section": "",
+    "text": "[Insert photo galleries, video clips, outreach materials, and press release links here]",
+    "crumbs": [
+      "Program Information",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Media</span>"
+    ]
+  },
+  {
+    "objectID": "00-interns.html",
+    "href": "00-interns.html",
+    "title": "7  Interns",
+    "section": "",
+    "text": "[Insert internship opportunities, student projects, application guidelines, and alumni records here]",
+    "crumbs": [
+      "Program Information",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Interns</span>"
+    ]
+  },
+  {
+    "objectID": "01-survey-overview.html",
+    "href": "01-survey-overview.html",
+    "title": "8  Survey Overview",
+    "section": "",
+    "text": "8.1 Summary of Purpose\nThe Atlantic sea scallop is one of the most valuable fisheries in the United States (U.S.). The National Marine Fisheries Service (NMFS) is required to assess the status of sea scallop populations and set catch limits for sea scallops in Atlantic U.S. waters, typically implementing annual or biennial specifications through the New England Fishery Management Council (NEFMC). Monitoring the population status of sea scallops is a top priority for the Population & Ecosystems Monitoring & Analysis Division (PEMAD) at the Northeast Fisheries Science Center (NEFSC).\nThe HABitat CAMera system (HABCAM) is a non-invasive, underwater imaging vehicle towed from the stern of research vessels approximately 2 meters above the seafloor, capturing high-resolution, overlapping stereo images. The camera array is additionally equipped with a compass, CTD, sonar and sensors that survey the seafloor, which can be used for estimates of species abundance, habitat characterization, and biodiversity—giving a holistic view of benthic taxa. This vehicle has been used extensively for surveying the sea scallop resource on Georges Bank and the Mid-Atlantic Bight, as well as collecting data on finfish and habitat.",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Survey Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-survey-overview.html#summary-of-purpose",
+    "href": "01-survey-overview.html#summary-of-purpose",
+    "title": "8  Survey Overview",
+    "section": "",
+    "text": "High-resolution stereo imagery capturing sea scallops on the seafloor.",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Survey Overview</span>"
+    ]
+  },
+  {
+    "objectID": "01-why-we-survey.html",
+    "href": "01-why-we-survey.html",
+    "title": "9  Why We Survey",
+    "section": "",
+    "text": "Atlantic sea scallops are one of the largest commercial fisheries in the United States. In 2023, the value of the fishery was $359.5 million.\nThe Magnuson–Stevens Act fosters the long-term biological and economic sustainability of marine fisheries, including the scallop fishery. Under this act, we help: * Prevent overfishing * Rebuild overfished stocks * Increase long-term economic and social benefits derived from fishing * Ensure a safe and sustainable supply of seafood * Protect habitat that fishery species need to spawn, breed, feed, and grow to maturity\nFisheries-independent data from the HabCam Survey is used in the sea scallop stock assessment to infer how the stock size and composition has changed over time. Since sea scallops live on the sea floor, the HabCam’s towed camera system is an ideal method for understanding the abundance and distribution of this species.\nThe survey began as a collaboration between the Northeast Fisheries Science Center and the Woods Hole Oceanographic Institution in 2004 through a Cooperative Institute of the North Atlantic Region agreement. The survey was transitioned to the Northeast Fisheries Science Center in 2012 as part of the Ecosystems Surveys enterprise. The survey typically runs between April and June sampling the Mid-Atlantic Bight and Georges Bank over two legs, each spanning 9 to 10 days.\nFor many years, the HabCam Survey and the Scallop Dredge Survey were integrated over three survey legs aboard the R/V Hugh Sharp homeported in Lewes, Delaware. With the transition of the Scallop Dredge Survey to an industry vessel in 2023, the HabCam Survey is now completed on the NOAA Ship Henry B. Bigelow.\n\n\n\nThe HabCam vehicle prepared on deck before deployment.\n\n\nThe primary equipment of the HabCam Survey is the HabCam vehicle. The vehicle houses a suite of sensors and electronics mounted on a frame towed behind the ship via a fiber optic cable. HabCam sensors include stereo cameras and strobes for seabed imaging, and sensors for measuring: * Conductivity * Temperature * Pressure * Oxygen concentration * Turbidity * Chlorophyll * Fluorescent dissolved organic matter (fDOM)\nHabCam also uses a side-scan sonar to visualize the seabed and a forward-looking sonar for object avoidance. We tow the vehicle between 5 to 7 knots and it flies approximately 2 meters above the seabed. A pilot manually pays cable in and out to ensure clear visibility of the seafloor and achieve the desired height above the seabed. Scientists annotate images and, using the estimated field of view, derive sea scallop standardized abundances and size compositions.",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Why We Survey</span>"
+    ]
+  },
+  {
+    "objectID": "01-data-use.html",
+    "href": "01-data-use.html",
+    "title": "10  Data Use & Scientific Documents",
+    "section": "",
+    "text": "10.1 Data Use\nThe data is used to develop indices of abundance and size composition of Atlantic sea scallop for the stock assessments. Additional fisheries and ecosystem data collected from the images is also processed for use in future stock and ecosystem assessment needs.\nA number of other surveys collect data on scallop distribution, abundance, and size supported by the Center’s Scallop Dredge survey and the Research Set Aside Program (including dredge, video drop camera, and an additional HabCam survey). The intent of these multiple surveys is to increase the accuracy and precision of the sea scallop assessment through thorough fisheries-independent surveys.",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Use & Scientific Documents</span>"
+    ]
+  },
+  {
+    "objectID": "01-data-use.html#access-our-data-scientific-documents",
+    "href": "01-data-use.html#access-our-data-scientific-documents",
+    "title": "10  Data Use & Scientific Documents",
+    "section": "10.2 Access Our Data & Scientific Documents",
+    "text": "10.2 Access Our Data & Scientific Documents\nOur HabCam survey data are available by request. To request data, please contact Cam Fairclough or Conor McManus.\n\nBenthic habitat influences sea scallop distributions and swimming behavior based on underwater imagery and machine learning[cite: 9]\nCombining imperfect automated annotations of underwater images with human annotations to obtain precise and unbiased population estimates[cite: 9]\nModeling the spatiotemporal effects of ocean acidification and warming on Atlantic sea scallop growth to guide adaptive fisheries management[cite: 9]",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Use & Scientific Documents</span>"
+    ]
+  },
+  {
+    "objectID": "01-sea-scallop.html",
+    "href": "01-sea-scallop.html",
+    "title": "11  About the Species: The Atlantic Sea Scallop",
+    "section": "",
+    "text": "11.1 Overview & Population Status\nThe primary Atlantic sea scallop fishery operates along the Atlantic coast from the Mid-Atlantic to the US/Canada border using predominantly paired or single scallop dredges and trawl gear[cite: 9]. Most vessels land scallops as shucked meats (the adductor muscle), though some land whole scallops[cite: 9]. Implementing regulations are found at 50 CFR part 648 subpart D[cite: 9].\nAccording to the 2020 stock assessment, Atlantic sea scallop is not overfished and not subject to overfishing[cite: 9].",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>About the Species: The Atlantic Sea Scallop</span>"
+    ]
+  },
+  {
+    "objectID": "01-sea-scallop.html#appearance-biology",
+    "href": "01-sea-scallop.html#appearance-biology",
+    "title": "11  About the Species: The Atlantic Sea Scallop",
+    "section": "11.2 Appearance & Biology",
+    "text": "11.2 Appearance & Biology\n\nAppearance: Scallops are bivalves held together by an adductor muscle[cite: 9]. Shells are saucer-shaped with smooth, scalloped edges[cite: 9]. The upper shell is reddish-pink/brown and the lower shell is white or cream (5–10% are albinos)[cite: 9].\nLifespan: Can live up to 20 years, growing rapidly during their first few years up to ~6 inches[cite: 9].\nReproduction: Reproduce by age 2, producing hundreds of millions of eggs per year during late summer/early fall or spring spawning[cite: 9]. Larvae remain in the water column for 4–6 weeks before settling[cite: 9].\nLocomotion: Propel themselves through the water by snapping top and bottom shells open and shut to escape predators like sea stars[cite: 9].\n\n\n\n\nLarge Atlantic sea scallop specimen.",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>About the Species: The Atlantic Sea Scallop</span>"
+    ]
+  },
+  {
+    "objectID": "01-sea-scallop.html#habitat-range-management",
+    "href": "01-sea-scallop.html#habitat-range-management",
+    "title": "11  About the Species: The Atlantic Sea Scallop",
+    "section": "11.3 Habitat, Range & Management",
+    "text": "11.3 Habitat, Range & Management\nAtlantic sea scallops are found in the Northwest Atlantic Ocean from Newfoundland to Cape Hatteras, NC[cite: 9]. Adult scallops live in dense “beds” on sandy or gravelly ocean floors at depths of 100 to 300 feet on Georges Bank and the Mid-Atlantic[cite: 9].\n\n\nMap of US and Canadian scallop resource aggregations and commercial fishing activity.\n\n\nNOAA Fisheries and the New England Fishery Management Council manage the fishery under the Atlantic Sea Scallop Fishery Management Plan via Total Allowable Catch (TAC), crew limits, rotational closures, Vessel Monitoring Systems (VMS), and Individual Fishing Quotas (IFQs)[cite: 9].",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>About the Species: The Atlantic Sea Scallop</span>"
+    ]
+  },
+  {
+    "objectID": "01-sea-scallop.html#harvest-gear-impacts",
+    "href": "01-sea-scallop.html#harvest-gear-impacts",
+    "title": "11  About the Species: The Atlantic Sea Scallop",
+    "section": "11.4 Harvest & Gear Impacts",
+    "text": "11.4 Harvest & Gear Impacts\nIn 2023, commercial landings totaled 27.4 million pounds of meats valued at $360 million[cite: 9]. Fishermen primarily use turtle deflector-style dredges equipped with 4-inch rings to increase efficiency and allow undersized scallops to escape[cite: 9].\n\n\nHarvested sea scallops being sorted on deck.",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>About the Species: The Atlantic Sea Scallop</span>"
+    ]
+  },
+  {
+    "objectID": "01-sea-scallop.html#scientific-classification",
+    "href": "01-sea-scallop.html#scientific-classification",
+    "title": "11  About the Species: The Atlantic Sea Scallop",
+    "section": "11.5 Scientific Classification",
+    "text": "11.5 Scientific Classification\n\n\n\nTaxonomy Level\nClassification\n\n\n\n\nKingdom\nAnimalia\n\n\nPhylum\nMollusca\n\n\nClass\nBivalvia\n\n\nOrder\nPectinida\n\n\nFamily\nPectinidae\n\n\nGenus\nPlacopecten\n\n\nSpecies\nmagellanicus\n\n\n\n\n\n\nAnatomy of the Atlantic Sea Scallop.",
+    "crumbs": [
+      "Overview & Species",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>About the Species: The Atlantic Sea Scallop</span>"
+    ]
+  },
+  {
+    "objectID": "02-hardware-components.html",
+    "href": "02-hardware-components.html",
+    "title": "12  Component Reference Table",
+    "section": "",
+    "text": "Attachment\nLabel\nDescription\n\n\n\n\nFrame\nA\nDurable, protective and stable platform designed to carry imaging and sampling equipment close to the seafloor.\n\n\nTail\nB\nSupports the rudder, the elevator (vehicle lift) and the side scan sonar.\n\n\nBlue View\nC\nAn advanced multibeam imaging or scanning sonar system. It functions like an underwater acoustic camera, using high-frequency sound waves rather than light to generate real-time video-like imagery and 3D point clouds in zero-visibility conditions.\n\n\nCTD\nD\nIt is the primary instrument package used to measure the essential physical properties of seawater such as Conductivity, Temperature, and depth.\n\n\nEcoTriplet\nE\nA multi-parameter optical sensor used to measure light scattering and fluorescence in natural waters.\n\n\nMain Electronics Bottle\nF\nA heavy-duty, waterproof cylinder that protects an underwater vehicle’s delicate computers, navigation systems, and sensors from the crushing pressure of the ocean.\n\n\nExpansion Bottle\nG\nA reservoir that maintains the internal pressure of a fluid-filled system slightly above the surrounding sea pressure. It allows internal oils to expand and contract as temperatures change, while preventing seawater from leaking into sensitive electronics or motors.\n\n\nSideScan Sonar\nH\nAn acoustic imaging system mounted on an underwater vehicle. It emits fan-shaped sound waves to the left and right, mapping the seafloor to create highly detailed, photo-like 2D images of the seabed, shipwrecks, and debris.\n\n\nCable Tubes\nI\nHold the cables going to the sensors, reducing cable drag/chaffing.\n\n\nCameras\nJ\nDownward facing stereo cameras which capture images of the seafloor, synchronized with the strobes.\n\n\n4 - Strobes\nK\nHigh-intensity, flashing lights used to aid in vehicle recovery, mark worksites, and provide synchronized illumination for high-resolution imaging.\n\n\nAltimeter\nL\nAn acoustic instrument that measures the exact vertical distance between the vehicle and the seabed. It sends down sound waves and times how long the pulse takes to bounce back from the ocean floor.\n\n\nAttitude Sensor\nM\nMeasures its 3D orientation in the water, specifically tracking its pitch (nose up or down), roll (side-to-side tilt), and yaw/heading (compass direction).\n\n\nPinger\nN\nA device that emits repeatable acoustic sound pulses. They are used for tracking a vehicle’s position, guiding it to specific subsea targets, or enabling emergency recovery if the vehicle is lost.\n\n\nDoors\nO\nTo keep the vehicle straight while towing, two doors are attached to HABCAM (act as a rudder).\n\n\nLead Weights\nP\nThey allow the craft to achieve neutral buoyancy, fine-tune its center of gravity, and offset buoyant forces.\n\n\nWeak Link\nQ\nAn engineered mechanical failure point. It is designed to break intentionally when subjected to a predetermined threshold of force (e.g., getting snagged on rocks or debris) to prevent catastrophic damage to the rest of the vehicle or its tether.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Component Reference Table</span>"
+    ]
+  },
+  {
+    "objectID": "02-frame-schematics.html",
+    "href": "02-frame-schematics.html",
+    "title": "13  Frame Schematics & Physical Envelope",
+    "section": "",
+    "text": "13.0.1 Structural Core & Design Principles",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Frame Schematics & Physical Envelope</span>"
+    ]
+  },
+  {
+    "objectID": "02-frame-schematics.html#habcam-frame-schematics",
+    "href": "02-frame-schematics.html#habcam-frame-schematics",
+    "title": "13  Frame Schematics & Physical Envelope",
+    "section": "13.1 HabCam Frame Schematics",
+    "text": "13.1 HabCam Frame Schematics\n\n13.1.1 1. System Overview\nThis slide contains the structural schematics and technical drawings for the frame of the Habitat Mapping Camera System (HabCam)[cite: 8]. The HabCam is an advanced, continuously towed underwater imaging vehicle utilized for high-resolution benthic habitat and marine population surveys[cite: 8]. The frame serves as the foundational chassis, providing structural integrity and spatial orientation for a multi-million-dollar suite of oceanographic sensors[cite: 8].\n\n\n13.1.2 2. Core Design\nBecause the HabCam operates just meters above the seafloor in challenging marine environments, its frame is engineered to meet strict operational tolerances[cite: 8]. The core design prioritizes three major factors[cite: 8]: * Hydrodynamic Stability: The geometry of the frame is designed to minimize drag and roll, ensuring a smooth, predictable flight path while being towed via the ship’s winch[cite: 8]. * Durability and Impact Resistance: Constructed from marine grade, corrosion resistant alloys, the frame features a robust roll-cage architecture[cite: 8]. This protects sensitive internal housings from catastrophic damage in the event of an accidental seafloor strike or boulder impact[cite: 8]. * Modularity and Accessibility: The frame must allow for rapid on deck maintenance[cite: 8]. The open architecture design ensures that technical teams (such as the HabCam Lead) can easily access fiber optic terminations, adjust wiring if necessary, and calibrate sensors between deployments[cite: 8].\n\n\n13.1.3 3. Payload Integration\nThese schematics detail the mounting points, brackets, and load-bearing structures required to securely integrate the vehicle’s primary payload[cite: 8]. When reviewing the drawings, note the specific integration zones for[cite: 8]: * Primary and secondary high-resolution camera housings[cite: 8]. * Illumination strobes and associated power manifolds[cite: 8]. * Forward-looking obstacle avoidance sonar and altimeters[cite: 8]. * The primary tow-point assembly and fiber optic telemetry housing[cite: 8].\n\n\n13.1.4 4. Navigating The Schematics\nThe slide begins with complete, fully assembled isometric views, followed by detailed top, side, and front elevations[cite: 8]. Subsequent sections break down individual sub-assemblies (e.g., the tow-arm mechanism, sensor brackets) and conclude with a comprehensive Bill of Materials (BOM) specifying required alloys, fasteners, and torque tolerances[cite: 8].\n\n\n13.1.5 5. Materials\nTo maintain structural integrity during tow operations and cushion mechanical impact, the HabCam chassis and mounting components use the following specifications[cite: 8]: * Primary Structural Frame: 304 Stainless Steel tubular/pipe construction, selected for its high tensile strength, impact toughness, and weldability in structural roll-cage configurations[cite: 8]. * Corrosion Mitigation: Exposed 304 stainless steel components are equipped with sacrificial zinc/aluminum anodes or marine-grade anti-corrosion coatings to protect against pitting and galvanic action in prolonged saltwater immersion[cite: 8]. * Fasteners and Brackets: Passivated 316 / 304 Stainless Steel hardware with anti-seize provisions to prevent galling during on-deck servicing, or storage[cite: 8]. * Pressure Housings: Hard-anodized aluminum or specialized pressure-rated housings for sensitive cameras, strobes, and oceanographic sensors[cite: 8].\n\n\n\n\n13.1.6 Frame Body Schematics\n\n\nFrame Body 1\n\n\n\n\nFrame Body 2\n\n\n\n\nFrame Body 3\n\n\n\n\nFrame Body 4\n\n\n\n\n\n\n13.1.7 Tail Schematics\n\n\nTail 1\n\n\n\n\nTail 2",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Frame Schematics & Physical Envelope</span>"
+    ]
+  },
+  {
+    "objectID": "02-harness-schematics.html",
+    "href": "02-harness-schematics.html",
+    "title": "14  Cable Harness Specifications & Wiring Schematics",
+    "section": "",
+    "text": "14.0.1 1. System Overview\nThis slide set contains the electrical schematics, pinout diagrams, cable harness routing plans, and interconnect specifications for the Habitat Mapping Camera System (HabCam)[cite: 8].\nAs a continuously towed underwater imaging vehicle operating near the seabed, the HabCam relies on oceanographic sensors, imaging systems, and acoustic tools[cite: 8]. The cable harnesses described herein provide the link between the centralized vehicle telemetry housing, power distribution manifolds, and individual payload sensors[cite: 8].",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cable Harness Specifications & Wiring Schematics</span>"
+    ]
+  },
+  {
+    "objectID": "02-harness-schematics.html#individual-cable-specifications-wiring-diagrams",
+    "href": "02-harness-schematics.html#individual-cable-specifications-wiring-diagrams",
+    "title": "14  Cable Harness Specifications & Wiring Schematics",
+    "section": "14.1 Individual Cable Specifications & Wiring Diagrams",
+    "text": "14.1 Individual Cable Specifications & Wiring Diagrams\n\n14.1.1 Chanos Cable\n\n\n\n\nSchematic Reference: HabCamV4 - Chanos Cable[cite: 8]\nPrimary Function: Connects the Chanos in-situ biogeochemical analyzer to the HabCamV4 system for ocean chemistry data collection and sensor power[cite: 8].\nKey Specifications: * Connector Configuration: 13-pin circular connector on the vehicle hub end (P1) to a 13-pin circular connector on the Chanos sensor end (P2)[cite: 8]. * Power Conductors: Dual +12 VDC power rails using 18 AWG conductors (#18 WHT and #18 RED) paired with dual 18 AWG ground returns (#18 BLK and #18 GRN)[cite: 8]. * Data & Signal Lines: 24 AWG color-coded twisted pairs for differential communications and control lines[cite: 8]. * Cable Shielding: Pin 2 on both ends is dedicated to the cable screen/shield grounding[cite: 8].\n\n\n14.1.2 Camera Power Ethernet Cable\n\n\n\n\nSchematic Reference: HabCamV4 Wiring - Camera Power Ethernet Cable[cite: 8]\nPrimary Function: Delivers primary system power, strobe synchronization signals, and high-speed Ethernet data between the central telemetry hub and the main camera system[cite: 8].\nKey Specifications: * Connector Configuration: 13-pin circular connector on the hub end (P1) to a 13-pin rectangular connector on the camera housing end (P2)[cite: 8]. * Power & Strobe Conductors: Heavy-gauge 18 AWG conductors dedicated to camera power delivery and strobe pulse timing (#18 RED/BLK for power, #18 WHT/GRN for strobe)[cite: 8]. * Ethernet Data Lines: 8 color-coded 24 AWG conductors forming four twisted pairs for high-speed Ethernet telemetry[cite: 8].\n\n\n14.1.3 A-Sphere Cable Wiring\n\n\n\n\nSchematic Reference: Cable Wiring - A-Sphere[cite: 8]\nPrimary Function: Connects the A-Sphere instrument to the HabCam system to supply system power (+24V DC) and handle RS232 serial data communication[cite: 8].\n\n\n14.1.4 Microstrain Cable\n\n\n\n\nSchematic Reference: Cable Wiring - Microstrain 3DM-GX3-25 AHRS[cite: 8]\nPrimary Function: Connects the Microstrain 3DM-GX3-25 AHRS bottle to the HabCam telemetry bottle for real-time orientation tracking via an internal Moxa serial server[cite: 8].\n\n\n14.1.5 BlueView Cable\n\n\n\n\nSchematic Reference: HabCamV4 - BlueView Cable[cite: 8]\nPrimary Function: Connects the BlueView Mk2 multibeam acoustic imaging sonar to the HabCam central telemetry hub for forward obstacle avoidance[cite: 8].\n\n\n14.1.6 Sonar Altimeter Cable\n\n\n\n\nSchematic Reference: Cable Wiring - Benthos PSA916 Sonar Altimeter[cite: 8]\nPrimary Function: Connects the Teledyne Benthos PSA-916 Sonar Altimeter directly to the electronics bottle to deliver height-above-seabed measurements[cite: 8].\n\n\n14.1.7 Eco-Triplet Cable\n\n\n\n\nSchematic Reference: Cable Wiring - HabCamV4 Eco-Triplet[cite: 8]\nPrimary Function: Connects the Sea-Bird / WET Labs ECO Triplet fluorometer bulkhead directly to the HabCam electronics bottle[cite: 8].",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cable Harness Specifications & Wiring Schematics</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html",
+    "href": "02-electrical-architecture.html",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "",
+    "text": "15.1 1. HabCam Network Connectivity & Telemetry Architecture\nThe HabCam network architecture details the end-to-end data conversion and multiplexing pipeline[cite: 8]. High-resolution subsea imaging, acoustic sonar, and serial instrument telemetry convert from copper electrical signals into Coarse Wavelength Division Multiplexing (CWDM) optical signals for long-distance transmission across the primary tow cable umbilical[cite: 8].",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#habcam-network-connectivity-telemetry-architecture",
+    "href": "02-electrical-architecture.html#habcam-network-connectivity-telemetry-architecture",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "",
+    "text": "Figure 1.1: HabCam Subsea Network Connectivity & CWDM Conversion Schematic.\n\n\n\n\n15.1.1 CWDM Wavelength Allocation & Subsystem Routing\n\n\n\n\n\n\n\n\n\n\nSubsystem / Device\nData Output Type\nWavelength Allocation (Tx / Rx)\nIntermediate Conversion\nPrimary Optical Link\n\n\n\n\nAllied Vision Mako G-234C (Cam 1)\nCopper Gigabit Ethernet\nTx 1470 nm / Rx 1490 nm\nSFP Media Converter\nCWDM Multiplexer → OptiLink J2\n\n\nAllied Vision Mako G-234C (Cam 2)\nCopper Gigabit Ethernet\nTx 1510 nm / Rx 1530 nm\nSFP Media Converter\nCWDM Multiplexer → OptiLink J2\n\n\nSonar / Data Switch Bus\nRS-232 / Copper Ethernet\nTx 1590 nm / Rx 1610 nm\nMoxa Server → SFP Converter\nCWDM Multiplexer → OptiLink J2",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#ethernet-electrical-schematic-internal-switch-routing",
+    "href": "02-electrical-architecture.html#ethernet-electrical-schematic-internal-switch-routing",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.2 2. Ethernet Electrical Schematic & Internal Switch Routing",
+    "text": "15.2 2. Ethernet Electrical Schematic & Internal Switch Routing\nRouting across dual Ethernet switches inside the Electronics Bottle handles internal data switching, diagnostic test ports, and subsea 13-pin connector breakouts (Data1Net and Data2Net)[cite: 8].\n\n\n\nFigure 2.1: Dual Switch Ethernet Architecture & Subsea Pinout Breakout.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#bulkhead-connector-specifications-pinout-reference",
+    "href": "02-electrical-architecture.html#bulkhead-connector-specifications-pinout-reference",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.3 3. Bulkhead Connector Specifications & Pinout Reference",
+    "text": "15.3 3. Bulkhead Connector Specifications & Pinout Reference\nMaster technical specifications for all SubConn bulkhead connectors installed on the Electronics Bottle endcaps[cite: 8].\n\n\n\nFigure 3.1: SubConn Bulkhead Face Views and Hardware Specifications.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#electronics-bottle-internal-fiber-cabling",
+    "href": "02-electrical-architecture.html#electronics-bottle-internal-fiber-cabling",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.4 4. Electronics Bottle Internal Fiber Cabling",
+    "text": "15.4 4. Electronics Bottle Internal Fiber Cabling\nDetails internal optical media conversion, CWDM wavelength multiplexing, and fiber pass-through routing inside the Electronics Bottle to bridge copper Ethernet devices to the SubConn OptiLink subsea bulkhead[cite: 8].\n\n\n\nFigure 4.1: Internal Optical Media Conversion & CWDM Routing.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#bottle-endcap-connector-placements-designation-maps",
+    "href": "02-electrical-architecture.html#bottle-endcap-connector-placements-designation-maps",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.5 5. Bottle Endcap Connector Placements & Designation Maps",
+    "text": "15.5 5. Bottle Endcap Connector Placements & Designation Maps\nExternal bulkhead connector placements, designations, part numbers, and gender specifications for both the Electronics Bottle and Expansion Bottle[cite: 8].\n\n\n\nFigure 5.1: Electronics Bottle Front and Back Endcap Bulkhead Layouts.\n\n\n\n\n\n\nFigure 5.2: Expansion Bottle Endcap Bulkhead Layout.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#serial-instrumentation-port-arrays-inst-112",
+    "href": "02-electrical-architecture.html#serial-instrumentation-port-arrays-inst-112",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.6 6. Serial Instrumentation Port Arrays (INST 1–12)",
+    "text": "15.6 6. Serial Instrumentation Port Arrays (INST 1–12)\nInternal power distribution buses, Moxa N-Port serial server interfaces, and pin routings for auxiliary instrumentation ports INST 1 through INST 12 (J11–J22) inside the Electronics Bottle[cite: 8].\n\n\n\nFigure 6.1: Electrical Schematic for Serial Ports 1 through 6 (J11–J16).\n\n\n\n\n\n\nFigure 6.2: Electrical Schematic for Serial Ports 7 through 12 (J17–J22).",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#ac-power-distribution-mvs-5000-strobe-controls",
+    "href": "02-electrical-architecture.html#ac-power-distribution-mvs-5000-strobe-controls",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.7 7. AC Power Distribution & MVS 5000 Strobe Controls",
+    "text": "15.7 7. AC Power Distribution & MVS 5000 Strobe Controls\nGoverns high-voltage AC input distribution, internal DC power generation (5V, 12V, 24V, 48V), system cooling fans, camera power control, and flash pulse triggers for four MVS 5000 strobe units[cite: 8].\n\n\n\nFigure 7.1: AC Power Distribution, Rectifiers, and Strobe Control Schematic.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#sensor-bottles-strobe-units-camera-housings",
+    "href": "02-electrical-architecture.html#sensor-bottles-strobe-units-camera-housings",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.8 8. Sensor Bottles, Strobe Units & Camera Housings",
+    "text": "15.8 8. Sensor Bottles, Strobe Units & Camera Housings\n\n15.8.1 8.1 Strobe Bottle Internal Schematic\n\n\n\nFigure 8.1: WHOI Strobe Bottle Internal Electrical Schematic.\n\n\n\n\n\n15.8.2 8.2 Attitude Bottle Internal Schematic\n\n\n\nFigure 8.2: WHOI Attitude Bottle (Microstrain 3DM-GX3-25 IMU) Schematic.\n\n\n\n\n\n15.8.3 8.3 Camera Synchronization Bus Circuit Analysis\n\n\n\nFigure 8.3: Optically Isolated Shared Camera / Strobe Synchronization Bus.\n\n\n\n\n\n15.8.4 8.4 Allied Vision Mako G-234C Camera Housing Wiring\n\n\n\nFigure 8.4: Allied Vision Mako G-234C Camera Housing Electrical Wiring Diagram.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-electrical-architecture.html#ctd-environmental-sensor-cable-harnesses",
+    "href": "02-electrical-architecture.html#ctd-environmental-sensor-cable-harnesses",
+    "title": "15  HabCam Electrical Schematics & Network Architecture",
+    "section": "15.9 9. CTD & Environmental Sensor Cable Harnesses",
+    "text": "15.9 9. CTD & Environmental Sensor Cable Harnesses\n\n15.9.1 9.1 Sea-Bird SBE 37 / SBE 49 CTD Cable Assembly\n\n\n\nFigure 9.1: Sea-Bird SBE 37/49 CTD Sensor Cable Schematic.\n\n\n\n\n\n15.9.2 9.2 ECO-Triplet Fluorometer Cable Assembly\n\n\n\nFigure 9.2: Sea-Bird / WET Labs ECO-Triplet Cable Schematic.",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>HabCam Electrical Schematics & Network Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "02-sensors-assembly.html",
+    "href": "02-sensors-assembly.html",
+    "title": "16  Vehicle Sensor Preparation & Assembly Protocols",
+    "section": "",
+    "text": "16.1 Master Subsystem & Mounting Summary",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Vehicle Sensor Preparation & Assembly Protocols</span>"
+    ]
+  },
+  {
+    "objectID": "02-sensors-assembly.html#master-subsystem-mounting-summary",
+    "href": "02-sensors-assembly.html#master-subsystem-mounting-summary",
+    "title": "16  Vehicle Sensor Preparation & Assembly Protocols",
+    "section": "",
+    "text": "Subsystem\nMounting Location\nRequired Hardware & Fasteners\nRequired Tools\n\n\n\n\nElectronics Bottle (1x)\nAft Vehicle Frame\n• (4x) Black Aluminum Brackets• (4x) Barrier Rubber Pieces (Pliobond 35 glued)• (8x) 9/16”-12 (3 ½”) Partial Thread Bolts• (8x) 9/16”-12 (2 ¼”) Partial Thread Bolts• (4x) 32” 11mm Fully Threaded Rods• (6x) Plastic Washers, (10x) Steel Washers• (8x) Steel Lock Nuts, (8x) Hex Nuts\n• 9/16” Socket & Wrench• 7/16” Wrench• 14mm Wrench\n\n\nBlueView Sonar (1x)\nForward Vehicle Frame\n• (4x) Steel Brackets• (4x) Barrier Rubber Pieces• (6x) 9/16”-12 (3 ½”) Steel Partial Thread Bolts• (4x) 9/16”-12 (2 ¼”) Steel Partial Thread Bolts• (20x) 3/16” Steel Washers• (10x) Steel Lock Nuts, (10x) Hex Nuts\n• 9/16” Socket & Wrench• 14mm Wrench• Aqua Shield Grease\n\n\nCTD 39 Oxygen (1x)\nStarboard Forward Rail\n• (2x) UHMW Brackets, (2x) Plastic Brackets• (4x) Barrier Rubber Pieces• (4x) 7/16”-14 (4 ¾”) Steel Partial Thread Bolts• (2x) 7/16”-14 (1”) Steel Full Thread Bolts• (3x) 3/16” (1”) Socket Head Screws• (10x) Steel Washers, (6x) Lock Nuts, (2x) Hex Nuts\n• 7/16” Socket & Wrench• 11mm Wrench• Hex Key Set (1/4”–1/16”)\n\n\nCTD 49 Sound Speed (1x)\nPort Forward Rail\n• (6x) Plastic Brackets (Sensor, Center, Frame)• (8x) Barrier Rubber Pieces• (8x) 9/16”-12 (2 ¾”) Steel Partial Thread Bolts• (16x) Steel Washers• (8x) Steel Lock Nuts, (8x) Hex Nuts\n• 9/16” Socket & Wrench• 14mm Wrench\n\n\nEco-Triplet Puck (1x)\nCenter Forward Expansion Rail\n• (2x) Steel Brackets (Top & Bottom)• (2x) Barrier Rubber Pieces• (2x) 9/16”-12 (2 ½”) Steel Partial Thread Bolts• (2x) 9/16”-12 (2”) Steel Partial Thread Bolts• (6x) Steel Washers, (4x) Lock Nuts, (2x) Hex Nuts\n• 9/16” Socket & Wrench• 14mm Wrench\n\n\nHabitat Cameras (2x)\nCenter Frame Plate\n• (1x) Steel Mounting Plate (16 in x 16 in)• (6x) Metal Brackets• (4x) M7-1.0 x 45mm Threaded Bolts• (4x) 1/4”-20 (2”) Socket Head Screws• (8x) 1/4”-20 (1”) Socket Head Screws• (6x) Steel Washers, (6x) Steel Lock Nuts\n• Hex Key Set (1/4”–1/16”)• M7 / 3/16” Allen Keys\n\n\nStrobe Lights (4x)\nForward, Aft, Port, Starboard\n• (8x) Steel Brackets• (8x) Barrier Rubber Pieces• (8x) 9/16”-12 (3 ½”) Steel Partial Thread Bolts• (8x) 7/16”-14 (1 ¾”) Steel Partial Thread Bolts• (32x) Plastic Washers, (32x) Steel Washers• (16x) Steel Lock Nuts, (16x) Hex Nuts\n• 9/16” Socket & Wrench• 7/16” Socket & Wrench• 14mm / 11mm Wrenches\n\n\nAttitude Sensor (1x)\nInternal Housing Chassis\n• Housing Mounting Brackets & Isolation Collars• Stainless Steel Attachment Fasteners\n• Standard Wrench & Socket Set\n\n\nSonar Altimeter (1x)\nCenter Camera Plate\n• (2x) Plastic Brackets• (4x) Barrier Rubber Pieces• (4x) 9/16”-12 (6 ½”) Steel Partial Thread Bolts• (8x) Steel Washers• (4x) Steel Lock Nuts, (4x) Hex Nuts\n• 9/16” Socket & Wrench• 14mm Wrench",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Vehicle Sensor Preparation & Assembly Protocols</span>"
+    ]
+  },
+  {
+    "objectID": "02-sensors-assembly.html#detailed-subsystem-preparation-assembly-instructions",
+    "href": "02-sensors-assembly.html#detailed-subsystem-preparation-assembly-instructions",
+    "title": "16  Vehicle Sensor Preparation & Assembly Protocols",
+    "section": "16.2 Detailed Subsystem Preparation & Assembly Instructions",
+    "text": "16.2 Detailed Subsystem Preparation & Assembly Instructions\n\n16.2.1 BlueView Forward Looking Sonar (1x)\n\n\n\nPreparation & Mounting Steps: 1. Prior to attaching BlueView to the front of the vehicle, ensure the bracket has rubber gaskets glued to them[cite: 8]. 2. Attach BlueView to the bracket, with the Impulse connector facing towards the back of the vehicle[cite: 8]. 3. Thread four stainless steel screws through the bracket[cite: 8]. 4. Apply Aqua Shield over all threads prior to adding washers and nuts[cite: 8]. 5. Add stainless steel washers, lock washers, and nuts, then tighten securely with 9/16” ratcheting wrenches[cite: 8].\n\n\n\n16.2.2 Main Electronics Bottle - WHOI Engineered (1x)\n\n\n\nMaintenance & Assembly Highlights: 1. Ensure vehicle power is completely off before removing[cite: 8]. 2. Disconnect all external bulkhead cables[cite: 8]. 3. Remove main bottle top clamps using a 9/16” ratcheting wrench and carefully transfer bottle onto its dedicated bench cradle[cite: 8]. 4. Remove the 4 outer threaded rods using a 7/16” wrench and pop the vacuum purge plug with a 3/16” hex key to release internal vacuum[cite: 8]. 5. Inspect internal fuses, replace desiccant packs (4 large packs), inspect and re-grease endcap O-rings with Molykote 55, and re-pull 16 inHg vacuum for 24 hours to verify stability[cite: 8].",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Vehicle Sensor Preparation & Assembly Protocols</span>"
+    ]
+  },
+  {
+    "objectID": "02-weak-link.html",
+    "href": "02-weak-link.html",
+    "title": "17  Mechanical Weak Link Assembly",
+    "section": "",
+    "text": "The mechanical weak link protects the primary tow cable and ship winch from catastrophic over-tension during seafloor snags[cite: 8]. It is installed between the towing bridle and the mechanical cable clevis[cite: 6, 8].\n\n\n\n\n[DROP WEAK LINK EXPLODED VIEW PHOTO HERE]  Weak Link Housing & Shear Pin Alignment\n\n\n[DROP WEAK LINK ASSEMBLED PHOTO HERE]  Assembled Weak Link Attached to Tow Bridle\n\n\n\n\n\n\n17.0.1 Assembly Procedure\n\nAlign the large holes on the outer housing with the large holes on the padeye inner housing (bridle), positioning set screws facing upwards[cite: 8]. Each side of the bridle and outer shell features one large hole and one small hole[cite: 8].\nSlightly lift the bridle to slip the outer shell over the inner housing[cite: 8].\nRotate components until all matching holes align perfectly[cite: 8].\nInsert the shear pin, wiggling the bridle and outer shell until the pin slides fully into position[cite: 8].\nEnsure the shear pin is centered inside the body and sits completely flush on both sides[cite: 8].\nUsing a 3mm hex bit, tighten the set screws to 7.8 Nm to lock the pin flush[cite: 8]. (Note: Set torque on torque wrench prior to tightening)[cite: 8].\nAttach the mechanical clevis to the weak link using the primary termination bolts[cite: 8]. Ensure the set screws remain secured and protected by a hose clamp[cite: 8].",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Mechanical Weak Link Assembly</span>"
+    ]
+  },
+  {
+    "objectID": "02-fiber-termination.html",
+    "href": "02-fiber-termination.html",
+    "title": "18  Fiber Optic Termination (Clevis & Brooming)",
+    "section": "",
+    "text": "18.0.1 Purpose\nUnderwater fiber optic cables are used in environments where standard communication cables cannot provide the required durability, data capacity, or long-term reliability[cite: 8]. On the Henry B. Bigelow, the fiber optic cable run through the winch wire is cut annually, requiring a new fiber optic termination prior to survey deployment[cite: 8].\n\n\n\n18.0.2 Termination Workflow\n\n18.0.2.1 Part 1: Inserting the Fiber Optic into the Clevis\n\nMark and cut ~10m (33ft) off the ship’s fiber optic cable using a grinder and cutting wheel to discard stressed wire[cite: 8]. Place a hose clamp past the 33ft mark[cite: 8].\nMeasure and mark 24ft from the open end, placing another hose clamp[cite: 8].\nScore outer shield wires with a Dremel, peel back armor wires to the score mark, and expose black inner jacketing[cite: 8].\nInsert wire through the narrow end of the sandblasted clevis[cite: 8].\n\n\n\n18.0.2.2 Part 2: Creating the Steel Broom\n\n\n\nSteel Armor Wire Broom Formed and Seated inside Clevis Well\n\n\n\nFan armor wires out at 90° angles around the hose clamp to form a “broom”[cite: 8].\nWalk clevis out to the aft deck, rig a come-along winch to deck padeyes, and draw 4–6 inches of the broom firmly into the clevis socket well[cite: 8].\n\n\n\n18.0.2.3 Part 3: Epoxy Pouring\n\nWrap electrical/splicing tape around clevis top to build a 2–3 inch reservoir[cite: 8].\nMix Socketfast resin and catalyst thoroughly for 2 minutes[cite: 8].\nPour mixture into clevis well, tapping sides to release air bubbles[cite: 8]. Allow 24 hours room-temperature cure (or 30 mins at 180–200°F with heat guns)[cite: 8].\n\n\n\n\n\n18.0.3 J-Box Integration & ST Connectorization\n\n18.0.3.1 Part 4: The Boot & Fairing\n\nWrap 6 rolls of 2-inch self-vulcanizing tape to form a 2.5ft tapered boot from the clevis base[cite: 8].\nApply 18-inch heavy zip ties along the tow cable for 15–20 feet as fairing to eliminate cable vibration[cite: 8].\n\n\n\n18.0.3.2 Part 5: J-Box Wiring & Oil Fill\n\nRoute power and fiber wires into J-box port, clamp internally with a hose clamp, and attach 12-10 AWG ring terminals to power wires[cite: 8].\nSplice and polish singlemode fiber strands using 3M Hot Melt ST connectors (15-20 figure-8 passes on 9-micron gray sheet followed by green/white lapping films)[cite: 8]. Inspect under 200x scope for core chips or scratches[cite: 8].\nSeal yellow urethane bladder, torque 5mm Allen screws evenly, and fill J-box completely with compensating oil using a vacuum pump[cite: 8].",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Fiber Optic Termination (Clevis & Brooming)</span>"
+    ]
+  },
+  {
+    "objectID": "02-fiber-pull-test.html",
+    "href": "02-fiber-pull-test.html",
+    "title": "19  Fiber Optics Pull Test Protocol",
+    "section": "",
+    "text": "19.0.1 Purpose\nA pull test (proof load test) using a water bag on a hydraulic winch line is performed to safely verify that the winch, termination clevis, and mounting structure can handle their maximum rated weight capacity without slippage or epoxy failure[cite: 8].\n\n\n\n19.0.2 Rigging & Order of Operation\n\n\n\n\n\nOrder of Linkage:\n\n\n      Clevis &rarr;&lt;br&gt;\n      Swivel Shackle &rarr;&lt;br&gt;\n      Shackle &rarr;&lt;br&gt;\n      Load Sensor &rarr;&lt;br&gt;\n      Water Bag\n    &lt;/div&gt;\n  &lt;/td&gt;\n  &lt;td align=\"center\" valign=\"top\"&gt;\n    &lt;img width=\"403\" height=\"325\" alt=\"Hanging Connection\" src=\"https://github.com/user-attachments/assets/60e38f22-a018-4d84-adaf-d3b4caa9063d\" /&gt;\n    &lt;br&gt;\n    &lt;p&gt;&lt;i&gt;Rigging Linkage: Clevis, Swivel Shackle, Shackle, Load Sensor, & Water Bag&lt;/i&gt;&lt;/p&gt;\n  &lt;/td&gt;\n&lt;/tr&gt;\n\n\n\n\n19.0.3 Test Execution & Verification\n\nCoordinate with ship’s Chief Bosun to suspend the Coast Guard water bag over deck[cite: 8].\nEngage pumps and fill water bag, monitoring the digital load cell readout[cite: 8].\nSlow pumps at 9,000 lbs tension and stop pumps at 10,000 lbs target tension[cite: 8].\nHold 10,000 lbs proof load for 1 full minute[cite: 8].\n\n\n\n\nLoad Sensor Readout Displaying 10,000 lbs Test Tension\n\n\n\nDrain water bag and inspect reference hose clamp above clevis[cite: 8]. Verify zero clevis slippage occurred along the cable jacket[cite: 8].\nRe-connect J-box telemetry and test optical continuity to HabCam control stations[cite: 8].",
+    "crumbs": [
+      "Hardware & Schematics",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Fiber Optics Pull Test Protocol</span>"
+    ]
+  },
+  {
+    "objectID": "03-software-overview.html",
+    "href": "03-software-overview.html",
+    "title": "20  Software & Data Overview",
+    "section": "",
+    "text": "[Insert high-level summary of the HabCam software suite, logging pipelines, and data architectures here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Software & Data Overview</span>"
+    ]
+  },
+  {
+    "objectID": "03-data-acquisition.html",
+    "href": "03-data-acquisition.html",
+    "title": "21  Data Acquisition",
+    "section": "",
+    "text": "[Insert live image capture protocols, sensor logging routines, and acquisition software instructions here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "03-server-framework.html",
+    "href": "03-server-framework.html",
+    "title": "22  Server Framework",
+    "section": "",
+    "text": "[Insert server rack specifications, network architecture, Apache web server configs, and storage mounts here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Server Framework</span>"
+    ]
+  },
+  {
+    "objectID": "03-annotating.html",
+    "href": "03-annotating.html",
+    "title": "23  Annotating",
+    "section": "",
+    "text": "[Insert annotation guide, software installation steps, species ID references, and QA/QC procedures here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Annotating</span>"
+    ]
+  },
+  {
+    "objectID": "03-database.html",
+    "href": "03-database.html",
+    "title": "24  Database",
+    "section": "",
+    "text": "[Insert PostgreSQL database schemas, table structures, metadata fields, and connection scripts here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Database</span>"
+    ]
+  },
+  {
+    "objectID": "03-data-pulls.html",
+    "href": "03-data-pulls.html",
+    "title": "25  Data Pulls",
+    "section": "",
+    "text": "[Insert query templates, data extraction protocols, export formats, and access permissions here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Data Pulls</span>"
+    ]
+  },
+  {
+    "objectID": "03-optical-data.html",
+    "href": "03-optical-data.html",
+    "title": "26  Optical Data Management",
+    "section": "",
+    "text": "[Insert raw image storage rules, directory tree templates, compression workflows, and archiving steps here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Optical Data Management</span>"
+    ]
+  },
+  {
+    "objectID": "03-data-analysis.html",
+    "href": "03-data-analysis.html",
+    "title": "27  Data Analysis",
+    "section": "",
+    "text": "[Insert analytical R scripts, population modeling pipelines, swept-area calculations, and stock report workflows here]",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Data Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "04-annual-timeline.html",
+    "href": "04-annual-timeline.html",
+    "title": "28  Annual Operational Calendar (Mid-May Survey Schedule)",
+    "section": "",
+    "text": "Overview of the 12-month lifecycle starting 6 months out from a Mid-May cruise departure[cite: 7]:\n\n\n\n\nNOVEMBER\n\n\n~6 Months Out\n\n\n\nCalibrations & ProcurementConfirm ship time; send CTDs/puck to WA for RMA calibration; order long-lead supplies; ship damaged gear for repair.\n\n\n\n\nDECEMBER\n\n\n~5 Months Out\n\n\n\nInventory & OrderingTrack repair shipments, audit spare parts inventory, and finalize pre-cruise ordering lists.\n\n\n\n\nJANUARY\n\n\n~15 Weeks Out\n\n\n\nIT & Security AuditCheck in with ITD to ensure software security patching is applied to all field machines prior to surveys.\n\n\n\n\nFEBRUARY\n\n\n~12 Weeks Out\n\n\n\nSoftware & WorkstationsSetup 2026 software directories/GUIs, install R packages, verify IP addresses, and load laptops.\n\n\n\n\n\n\nMARCH\n\n\n~10 to 8 Weeks Out\n\n\n\nDB & Bench AssemblyClevis burnout; create Postgres DB; assemble vehicle; check fuses/O-rings; pull 16 inHg vacuum on main bottle.\n\n\n\n\nAPRIL\n\n\n~6 to 4 Weeks Out\n\n\n\nTank Tests & StaffingWHOI tank calibration test; replace pinger batteries; send selection emails; build watch bills & assign berthing.\n\n\n\n\nMAY\n\n\nSurvey Month\n\n\n\nStaging & DepartureMount weak link; hand off .GPX file to bridge; hold pre-cruise meeting; execute active field survey operations.\n\n\n\n\nJUNE\n\n\nPost-Survey\n\n\n\nData Offload & BreakdownOffload primary raw image/sensor data, wash down vehicle, log maintenance, and store vehicle in Net Loft.\n\n\n\n\n\n\nJULY\n\n\nData Processing\n\n\n\nData VerificationVerify complete offload of prior survey image databases and clear/reformat server backup drives.\n\n\n\n\nAUGUST\n\n\nMaintenance\n\n\n\nHardware RefurbishmentInspect frame integrity, service mechanical connectors, and log spare parts consumption.\n\n\n\n\nSEPTEMBER\n\n\nPlanning Phase\n\n\n\nShip Time AllocationConfirm upcoming year survey dates with NOAA marine operations and review past cruise performance logs.\n\n\n\n\nOCTOBER\n\n\nPre-Season Prep\n\n\n\nRMA PreparationPrepare Return to Manufacturer Authorization (RMA) paperwork for upcoming November calibration shipments.",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Annual Operational Calendar (Mid-May Survey Schedule)</span>"
+    ]
+  },
+  {
+    "objectID": "04-pre-cruise.html",
+    "href": "04-pre-cruise.html",
+    "title": "29  Pre-Cruise Operational Checklist & Procedures",
+    "section": "",
+    "text": "29.1 1. Pre-Cruise Checklist",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pre-Cruise Operational Checklist & Procedures</span>"
+    ]
+  },
+  {
+    "objectID": "04-pre-cruise.html#pre-cruise-checklist",
+    "href": "04-pre-cruise.html#pre-cruise-checklist",
+    "title": "29  Pre-Cruise Operational Checklist & Procedures",
+    "section": "",
+    "text": "29.1.1 6 Months Out (~November)\n\nConfirm ship time and set cruise date[cite: 7]\nSend Seabird 37, Seabird 49 CTDs and Wetlabs ECO-Triplet puck for RMA calibrations[cite: 7]\nBegin long-lead supply ordering[cite: 7]\nShip damaged gear for repair[cite: 7]\n\n\n\n29.1.2 15 Weeks Out\n\nAudit IT machine software security patches[cite: 7]\n\n\n\n29.1.3 12 Weeks Out\n\nConfigure 2026 server directories and GUIs[cite: 7]\nRetrieve POPDY flash drive & install R packages on annotation machines[cite: 7]\nVerify static IP addresses on annotation stations[cite: 7]\nInstall Coastal Explorer & sonar software on field laptops[cite: 7]\n\n\n\n29.1.4 8 Weeks Out\n\nPrepare vehicle for WHOI Sundance Tank calibration test[cite: 7]\nPack tank test toolkits[cite: 7]\nIssue science center staffing call[cite: 7]\n\n\n\n29.1.5 6 Weeks Out\n\nExecute WHOI Seawater Tank calibration test[cite: 7]\nReplace pinger batteries (Benthos UAT 376)[cite: 7]\n\n\n\n29.1.6 5 Weeks Out\n\nSend “You are scheduled” email packet (expectations, medical clearance, dietary forms, packing list)[cite: 7]\nConstruct watch bills & assign stateroom berthing[cite: 7]\n\n\n\n29.1.7 1 Week Out\n\nIssue logistics email (departure times, meeting points, parking permits, weather limits)[cite: 7]",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pre-Cruise Operational Checklist & Procedures</span>"
+    ]
+  },
+  {
+    "objectID": "04-pre-cruise.html#staging-protocols-station-layouts",
+    "href": "04-pre-cruise.html#staging-protocols-station-layouts",
+    "title": "29  Pre-Cruise Operational Checklist & Procedures",
+    "section": "29.2 2. Staging Protocols & Station Layouts",
+    "text": "29.2 2. Staging Protocols & Station Layouts\n\n\nAcoustic Lab & Control Station Setup\n\n\nHabCam operations aboard the R/V Henry B. Bigelow are distributed across four main laboratory spaces: the Acoustic Lab (Primary Control Center), Dry Lab, Chemistry Lab, and Cutting Room[cite: 7].\n\n\n\n\nAcoustic Lab Wall of Monitors & Operator Workstations Overview\n\n\n\n\n\n\n\nStation\n\n\nMonitors / Hardware\n\n\nPrimary Operational Function\n\n\n\n\n\n\nWatch Chief Station\n\n\nDual-Monitor Workstation\n\n\nCommand shift oversight, training new annotators, reviewing image quality, and logging preliminary annotations[cite: 7].\n\n\n\n\nCo-Pilot Station\n\n\n4-Monitor Display Array\n\n\nMonitors EK-80 echograms, engineering sensor GUI, Coastal Explorer navigation, and live stereo image waterfall (dsvimview)[cite: 7].\n\n\n\n\nPilot Station\n\n\n4-Monitor Display + Winch Joystick\n\n\nFlies vehicle via hydraulic winch joystick; monitors live winch CCTV video, bottom profile tracking, BlueView sonar, and Pentagon winch tension[cite: 7].",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Pre-Cruise Operational Checklist & Procedures</span>"
+    ]
+  },
+  {
+    "objectID": "04-field-team-roles.html",
+    "href": "04-field-team-roles.html",
+    "title": "30  Field Team Roles & Expectations",
+    "section": "",
+    "text": "30.1 1. Shift Structure & Overview\nCruise Manning Structure & Shift Operations: The HabCam scientific party typically consists of 9 to 10 personnel operating on 24-hour continuous sea trials divided into two 12-hour watch rotations (e.g., 11:30 AM to 11:30 PM and 11:30 PM to 11:30 AM)[cite: 7]. Each shift is managed by a Watch Chief and includes a rotating team of Pilots, Co-Pilots, and Annotators who cycle stations every 30 to 60 minutes to prevent screen fatigue[cite: 7]. The Chief Scientist maintains active oversight across both watches (6 AM to 6 PM baseline plus as-needed response)[cite: 7].",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Field Team Roles & Expectations</span>"
+    ]
+  },
+  {
+    "objectID": "04-field-team-roles.html#summary-roles-matrix",
+    "href": "04-field-team-roles.html#summary-roles-matrix",
+    "title": "30  Field Team Roles & Expectations",
+    "section": "30.2 2. Summary Roles Matrix",
+    "text": "30.2 2. Summary Roles Matrix\n\n\n\n\n\n\n\n\nRole\nManning / Shift\nPrimary High-Level Responsibilities\n\n\n\n\nChief Scientist\n1 Person (Floating / Day)\nPrimary liaison between scientific party, vessel crew, and shore support; leads survey trackline design, staffing, daily safety briefings, and on-the-spot decision making[cite: 7].\n\n\nHabCam Lead\n1 Person (Technical Lead)\nTechnical authority for hardware, fiberoptic terminations, server configuration, GPS time syncing, navigation integration, light maps, and data redundancy[cite: 7].\n\n\nWatch Chief\n2 People (1 per 12-hr shift)\nDirect shift supervisor; manages station role rotations, controls core flight software startup/shutdown, trains new scientists, and conducts shift QA/QC[cite: 7].\n\n\nPilot\nRotating (30–60 min blocks)\nActively flies vehicle via hydraulic winch joystick; maintains target altitude above seafloor using live camera feeds, flight GUI, and forward-looking sonar[cite: 7].\n\n\nCo-Pilot\nRotating (30–60 min blocks)\nSecond pair of eyes for Pilot; monitors dual camera feeds, telemetry, and sonar for sand waves/boulders; optimizes camera/sonar settings; mitigates software glitches[cite: 7].\n\n\nAnnotator\nRotating (30–60 min blocks)\nFrontline image processor; logs primary targets (scallops/fish) and secondary substrate/habitat data from incoming 10-minute image batches[cite: 7].\n\n\nQA/QC Lead\n1 Person / PopDyn\nHosts pre-cruise training, maintains identification guides, instructs scientists on protocols, and audits/certifies ~30 baseline images per annotator[cite: 7].\n\n\nPopulation Dynamics\n1–2 People\nQuantitative scientist; collaborates on trackline design, executes camera calibrations, verifies altimeter confidence, and synthesizes population data[cite: 7].",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Field Team Roles & Expectations</span>"
+    ]
+  },
+  {
+    "objectID": "04-field-team-roles.html#detailed-role-specifications",
+    "href": "04-field-team-roles.html#detailed-role-specifications",
+    "title": "30  Field Team Roles & Expectations",
+    "section": "30.3 3. Detailed Role Specifications",
+    "text": "30.3 3. Detailed Role Specifications\n\n30.3.1 Chief Scientist\nAs the Chief Scientist, you act as the primary liaison between the scientific party, the vessel’s crew, and shore-based support[cite: 7]. You must be prepared to make decisive, on-the-spot decisions at any time of day or night to ensure the success and safety of the mission[cite: 7].\n\n\n30.3.2 HabCam Lead\nAs the HabCam Lead, you are the primary technical authority responsible for the deployment, operation, and data integrity of the imaging system[cite: 7]. You manage both the physical hardware of the vehicle and the IT infrastructure required to process its data[cite: 7].\n\n\n30.3.3 Watch Chief\nAs a Watch Chief, you are the direct shift supervisor responsible for managing the personnel, operations, and data collection during your assigned rotation[cite: 7]. You ensure that scientific objectives are executed safely while maintaining data logging standards[cite: 7].\n\n\n30.3.4 Pilot\nYou are directly responsible for the safe, precise, and active underwater navigation of the HabCam vehicle[cite: 7]. You operate in short, 30- to 60-minute focused intervals to maintain sharp reflexes[cite: 7].\n\n\n30.3.5 Co-Pilot\nActs as the technical support partner and second pair of eyes for the Pilot to ensure flight safety, sonar obstacle analysis, and sensor telemetry health[cite: 7].",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Field Team Roles & Expectations</span>"
+    ]
+  },
+  {
+    "objectID": "04-habcam-prep.html",
+    "href": "04-habcam-prep.html",
+    "title": "31  HabCam Pre-Deployment Procedures",
+    "section": "",
+    "text": "Complete the following procedural checklist prior to deploying the HabCam vehicle into the water[cite: 7]:\n\n\n Vehicle Checklist: Complete the Pre-Deployment Vehicle Checklist[cite: 7]. [Fill out details for pre-deployment vehicle checklist procedures here]\n\n\n Power Inverter Activation: Power up the vehicle via the power inverter located at the Watch Chief Station[cite: 7].\n\n\n Flip the Right switch first, then flip the Left switch[cite: 7].\n\n\n\n\n Image Viewer Configuration: Open two image viewers, minimize one, and drag it over to the Pilot Station display[cite: 7]:\n\n\n Adjust frame rate to 6.00 Hz[cite: 7].\n\n\n Set gain to [Fill out details for gain setting][cite: 7].\n\n\n\n\n Stereo Acquisition Launch: Click stereo acquisition to start real-time image processing[cite: 7].\n\n\n Verify that a small black terminal window opens on the Co-Pilot’s left monitor displaying the live data feed[cite: 7].\n\n\n Troubleshooting: If the image viewer freezes, verify runVimCam status or click Stereo Acquisition to relaunch[cite: 7].\n\n\n\n\n\n\n[Fill out details for additional pre-deployment checks, sensor verifications, and deck communications here]",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>HabCam Pre-Deployment Procedures</span>"
+    ]
+  },
+  {
+    "objectID": "04-after-cruise.html",
+    "href": "04-after-cruise.html",
+    "title": "32  After-Cruise Checklist",
+    "section": "",
+    "text": "Day of Destaging\n\n\n\nData Backup\n\n\n\n Verify with the HabCam lead that HabCam survey data is backed up[cite: 7]\n\n\n Ensure the ship data is copied onto a USB drive and given to Chief Scientist[cite: 7]\n\n\n Copy to FSCS_RAWDATA, following completion of the cruise[cite: 7].\n\n\n\n\n If CTDs were performed, the crew will provide the CTD Logs for Oceanography[cite: 7].\n\n\n Make sure all special requests samples are taken off the ship at the completion of the cruise[cite: 7].\n\n\n\n\n[Insert details on data offload verification, server network paths, external drive formatting protocols, and photos of backup storage setups here]\n\n\n\nHabCam Vehicle Teardown\n\n\n\n Cut tow cable one foot before termination (prior to black boot)[cite: 7]\n\n\n Drain junction box[cite: 7]\n\n\n Rinse down HabCam with freshwater[cite: 7]\n\n\n Detach tail piece while HabCam is still on the vessel[cite: 7].\n\n\n Detach clevis [Transport to Reidar’s Manufacturing in New Bedford to break down socket lock][cite: 7]\n\n\n Disconnect and take the power converter[cite: 7].\n\n\n\n\n[Insert details on freshwater washdown procedures, junction box oil draining, clevis transport logistics to Reidar’s, and photos of vehicle disassembly here]\n\n\n\nWorkstations Breakdown\n\n\n\n Break down monitors and put in tote bags[cite: 7]\n\n\n Put cables in designated boxes[cite: 7]\n\n\n\n\n Break down the server[cite: 7].\n\n\n Place computers into designated Pelican cases[cite: 7].\n\n\n Disconnect GPS puck from flying bridge[cite: 7].\n\n\n Place ethernet cables into Ethernet tote[cite: 7].\n\n\n\n\n[Insert details on server rack dismounting, cable packing inventories, flying bridge access procedures, and photos of packed Pelican cases/totes here]",
+    "crumbs": [
+      "Staging & Surveys",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>After-Cruise Checklist</span>"
+    ]
+  },
+  {
+    "objectID": "06-maintenance-overview.html",
+    "href": "06-maintenance-overview.html",
+    "title": "33  Maintenance",
+    "section": "",
+    "text": "[Insert general maintenance philosophies, post-cruise refurbishment overviews, and safety practices here]",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Maintenance</span>"
+    ]
+  },
+  {
+    "objectID": "06-inventory.html",
+    "href": "06-inventory.html",
+    "title": "34  Inventory",
+    "section": "",
+    "text": "[Insert spare parts inventory tracking, serial number logs, tool inventories, and storage bin locations here]",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Inventory</span>"
+    ]
+  },
+  {
+    "objectID": "06-maintenance-schedule.html",
+    "href": "06-maintenance-schedule.html",
+    "title": "35  Maintenance Schedule",
+    "section": "",
+    "text": "[Insert annual hardware inspection schedules, sensor re-certification timelines, and service logs here]",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Maintenance Schedule</span>"
+    ]
+  },
+  {
+    "objectID": "06-troubleshooting.html",
+    "href": "06-troubleshooting.html",
+    "title": "36  Troubleshooting",
+    "section": "",
+    "text": "[Insert common hardware/software failure modes, diagnostic decision trees, and emergency field repair procedures here]",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Troubleshooting</span>"
+    ]
+  }
+]
