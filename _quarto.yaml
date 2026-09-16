@@ -1,0 +1,99 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "HabCam Operational SOP"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.md
+        text: "Home"
+      - section: "Program Information"
+        contents:
+          - href: 00-the-program.md
+            text: "The Program"
+          - href: 00-team-members.md
+            text: "Team Members"
+          - href: 00-onboarding.md
+            text: "Onboarding"
+          - href: 00-publications.md
+            text: "Publications"
+          - href: 00-media.md
+            text: "Media"
+          - href: 00-interns.md
+            text: "Interns"
+      - section: "Overview & Species"
+        contents:
+          - href: 01-survey-overview.md
+            text: "Survey Overview"
+          - href: 01-why-we-survey.md
+            text: "Why We Survey"
+          - href: 01-data-use.md
+            text: "Data Use"
+          - href: 01-sea-scallop.md
+            text: "The Atlantic Sea Scallop"
+      - section: "Hardware & Schematics"
+        contents:
+          - href: 02-hardware-components.md
+            text: "Component Reference"
+          - href: 02-frame-schematics.md
+            text: "Frame Schematics"
+          - href: 02-harness-schematics.md
+            text: "Harness Schematics"
+          - href: 02-electrical-architecture.md
+            text: "Electrical & Network"
+          - href: 02-sensors-assembly.md
+            text: "Sensors & Assembly"
+          - href: 02-weak-link.md
+            text: "Weak Link Assembly"
+          - href: 02-fiber-termination.md
+            text: "Fiber Optic Termination"
+          - href: 02-fiber-pull-test.md
+            text: "Fiber Optic Pull Test"
+      - section: "Software & Data"
+        contents:
+          - href: 03-software-overview.md
+            text: "Software & Data Overview"
+          - href: 03-data-acquisition.md
+            text: "Data Acquisition"
+          - href: 03-server-framework.md
+            text: "Server Framework"
+          - href: 03-annotating.md
+            text: "Annotating"
+          - href: 03-database.md
+            text: "Database"
+          - href: 03-data-pulls.md
+            text: "Data Pulls"
+          - href: 03-optical-data.md
+            text: "Optical Data Management"
+          - href: 03-data-analysis.md
+            text: "Data Analysis"
+      - section: "Staging & Surveys"
+        contents:
+          - href: 04-annual-timeline.md
+            text: "Annual Operational Calendar"
+          - href: 04-pre-cruise.md
+            text: "Pre-Cruise Checklist & Procedures"
+          - href: 04-field-team-roles.md
+            text: "Field Team Roles & Expectations"
+          - href: 04-habcam-prep.md
+            text: "HabCam Pre-Deployment"
+          - href: 04-after-cruise.md
+            text: "After-Cruise Checklist"
+      - section: "Maintenance & Inventory"
+        contents:
+          - href: 06-maintenance-overview.md
+            text: "Maintenance"
+          - href: 06-inventory.md
+            text: "Inventory"
+          - href: 06-maintenance-schedule.md
+            text: "Maintenance Schedule"
+          - href: 06-troubleshooting.md
+            text: "Troubleshooting"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
