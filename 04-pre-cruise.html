@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pre-Cruise Operational Checklist &amp; Procedures – HabCam SOP</title>
+<title>Pre-Cruise – HabCam SOP</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -129,6 +129,35 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -427,8 +456,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#pre-cruise-checklist" id="toc-pre-cruise-checklist" class="nav-link active" data-scroll-target="#pre-cruise-checklist">1. Pre-Cruise Checklist</a></li>
-  <li><a href="#staging-protocols-station-layouts" id="toc-staging-protocols-station-layouts" class="nav-link" data-scroll-target="#staging-protocols-station-layouts">2. Staging Protocols &amp; Station Layouts</a></li>
+  <li><a href="#pre-cruise-operational-checklist" id="toc-pre-cruise-operational-checklist" class="nav-link active" data-scroll-target="#pre-cruise-operational-checklist">2. Pre-Cruise Operational Checklist</a></li>
+  <li><a href="#staging-detail-sections" id="toc-staging-detail-sections" class="nav-link" data-scroll-target="#staging-detail-sections">3. Detailed Staging &amp; Survey Procedures</a></li>
   </ul>
 </nav>
     </div>
@@ -437,7 +466,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-annual-timeline.html">Staging &amp; Surveys</a></li><li class="breadcrumb-item"><a href="./04-pre-cruise.html"><span class="chapter-title">Pre-Cruise</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Pre-Cruise Operational Checklist &amp; Procedures</span></h1>
+<h1 class="title"><span class="chapter-title">Pre-Cruise</span></h1>
 </div>
 
 
@@ -454,73 +483,935 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="pre-cruise-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="pre-cruise-checklist">1. Pre-Cruise Checklist</h2>
-<section id="months-out-november" class="level3">
-<h3 class="anchored" data-anchor-id="months-out-november">6 Months Out (~November)</h3>
+<section id="pre-cruise-operational-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="pre-cruise-operational-checklist">2. Pre-Cruise Operational Checklist</h2>
+<section id="sec-6-months" class="level3">
+<h3 class="anchored" data-anchor-id="sec-6-months">6 Months Out (~November)</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Confirm ship time and set cruise date[cite: 7]</label></li>
-<li><label><input type="checkbox">Send Seabird 37, Seabird 49 CTDs and Wetlabs ECO-Triplet puck for RMA calibrations[cite: 7]</label></li>
-<li><label><input type="checkbox">Begin long-lead supply ordering[cite: 7]</label></li>
-<li><label><input type="checkbox">Ship damaged gear for repair[cite: 7]</label></li>
+<li><label><input type="checkbox">Confirm ship time and set cruise date</label></li>
+<li><label><input type="checkbox">Send Seabird 37, Seabird 49 CTDs and Wetlabs ecotriplet puck to Washington for Calibrations [Return to Manufacturer Authorization (RMA) form]</label></li>
+<li><label><input type="checkbox">Begin ordering equipment and supplies needed before upcoming cruise [itemized ordering guide here]</label></li>
+<li><label><input type="checkbox">Send out any equipment that was damaged from last survey</label></li>
 </ul>
+<p><br></p>
 </section>
-<section id="weeks-out" class="level3">
-<h3 class="anchored" data-anchor-id="weeks-out">15 Weeks Out</h3>
+<section id="sec-15-weeks" class="level3">
+<h3 class="anchored" data-anchor-id="sec-15-weeks">15 Weeks Out</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Audit IT machine software security patches[cite: 7]</label></li>
+<li><label><input type="checkbox">If ITD hasn’t reached out to have computer software security added to machines prior to surveys (i.e.&nbsp;patched), check-in</label></li>
 </ul>
+<p><br></p>
 </section>
-<section id="weeks-out-1" class="level3">
-<h3 class="anchored" data-anchor-id="weeks-out-1">12 Weeks Out</h3>
+<section id="sec-12-weeks" class="level3">
+<h3 class="anchored" data-anchor-id="sec-12-weeks">12 Weeks Out</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Configure 2026 server directories and GUIs[cite: 7]</label></li>
-<li><label><input type="checkbox">Retrieve POPDY flash drive &amp; install R packages on annotation machines[cite: 7]</label></li>
-<li><label><input type="checkbox">Verify static IP addresses on annotation stations[cite: 7]</label></li>
-<li><label><input type="checkbox">Install Coastal Explorer &amp; sonar software on field laptops[cite: 7]</label></li>
+<li><label><input type="checkbox">Set up all servers with 2026 software directories and GUIs</label></li>
+<li><label><input type="checkbox">Collect flashdrive from POPDY and Install R packages on annotation machines</label></li>
+<li><label><input type="checkbox">Verify that IP address can be changed on annotation machines</label></li>
+<li><label><input type="checkbox">Ensure sonar software and coastal explorer are installed on 2 field laptops</label></li>
 </ul>
+<p><br></p>
 </section>
-<section id="weeks-out-2" class="level3">
-<h3 class="anchored" data-anchor-id="weeks-out-2">8 Weeks Out</h3>
+<section id="sec-10-weeks" class="level3">
+<h3 class="anchored" data-anchor-id="sec-10-weeks">10 Weeks Out</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Prepare vehicle for WHOI Sundance Tank calibration test[cite: 7]</label></li>
-<li><label><input type="checkbox">Pack tank test toolkits[cite: 7]</label></li>
-<li><label><input type="checkbox">Issue science center staffing call[cite: 7]</label></li>
+<li><label><input type="checkbox">Hand-off Clevis to Shellfish group to have the epoxy burned out at Reidar’s in New Bedford</label></li>
+<li><label><input type="checkbox">Ensure Seabird 37, Seabird 49 and Wetlabs ecotriplet puck have returned from Washington</label></li>
+<li><label><input type="checkbox">Ensure any damaged equipment sent for repairs has been returned</label></li>
+<li><label><input type="checkbox">Create a new HABCAM database on Postgres servers</label></li>
+<li><label><input type="checkbox">Confirm previous years data has been offloaded</label></li>
+<li><label><input type="checkbox">Clear server drives</label></li>
+<li><label><input type="checkbox">Reformat back-up drives</label></li>
 </ul>
+<p><br></p>
 </section>
-<section id="weeks-out-3" class="level3">
-<h3 class="anchored" data-anchor-id="weeks-out-3">6 Weeks Out</h3>
+<section id="sec-8-weeks" class="level3">
+<h3 class="anchored" data-anchor-id="sec-8-weeks">8 Weeks Out</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Execute WHOI Seawater Tank calibration test[cite: 7]</label></li>
-<li><label><input type="checkbox">Replace pinger batteries (Benthos UAT 376)[cite: 7]</label></li>
+<li><label><input type="checkbox">Prepare HABCAM for WHOI Sundance Tank Calibration Test</label></li>
+<li><label><input type="checkbox">Pack supply kit for WHOI sundance tank calibration test</label></li>
+<li><label><input type="checkbox">If applicable, install chanos onto tow sled</label></li>
+<li><label><input type="checkbox">Science center staffing call</label></li>
 </ul>
+<p><br></p>
 </section>
-<section id="weeks-out-4" class="level3">
-<h3 class="anchored" data-anchor-id="weeks-out-4">5 Weeks Out</h3>
+<section id="sec-6-weeks" class="level3">
+<h3 class="anchored" data-anchor-id="sec-6-weeks">6 Weeks Out</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Send “You are scheduled” email packet (expectations, medical clearance, dietary forms, packing list)[cite: 7]</label></li>
-<li><label><input type="checkbox">Construct watch bills &amp; assign stateroom berthing[cite: 7]</label></li>
+<li><label><input type="checkbox">Take vehicles to WHOI sea water tank test to calibrate equipment (<a href="https://example.com">Camera calibrations for dummies</a>)</label></li>
+<li><label><input type="checkbox">Repair or Resolve any issues that came up during the WHOI tank test</label></li>
+<li><label><input type="checkbox">Store Vehicle at netloft until staging</label></li>
+<li><label><input type="checkbox">Replace batteries in Pinger (Benthos UAT 376 acoustic transponder)</label></li>
 </ul>
+<p><br></p>
 </section>
-<section id="week-out" class="level3">
-<h3 class="anchored" data-anchor-id="week-out">1 Week Out</h3>
+<section id="sec-5-weeks" class="level3">
+<h3 class="anchored" data-anchor-id="sec-5-weeks">5 Weeks Out</h3>
 <ul class="task-list">
-<li><label><input type="checkbox">Issue logistics email (departure times, meeting points, parking permits, weather limits)[cite: 7]</label></li>
+<li><label><input type="checkbox">Send “You are scheduled Email” notifying staff they have been selected for the survey. Include:</label>
+<ul class="task-list">
+<li><label><input type="checkbox">Survey expectations</label></li>
+<li><label><input type="checkbox">Medical clearance forms</label></li>
+<li><label><input type="checkbox">Dietary restrictions</label></li>
+<li><label><input type="checkbox">Packing list (i.e.&nbsp;foul weather gear)</label></li>
+<li><label><input type="checkbox">Preparing for sea packet</label></li>
+</ul></li>
+<li><label><input type="checkbox">Notify watch chiefs that they will be sailing in leadership positions</label></li>
+<li><label><input type="checkbox">Create balanced watches with cruise personnel list</label></li>
+<li><label><input type="checkbox">Assign berthing</label></li>
+</ul>
+<p><br></p>
+</section>
+<section id="sec-1-week" class="level3">
+<h3 class="anchored" data-anchor-id="sec-1-week">1 Week Out</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Email the scientific party a few days prior to departure letting them know about departure times, meeting points, parking, and weather contingencies.</label></li>
+</ul>
+<p><br></p>
+</section>
+<section id="sec-staging" class="level3">
+<h3 class="anchored" data-anchor-id="sec-staging">Staging</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><a href="02-hardware-and-schematics.md#weak-link">Mounting the weak link</a></label></li>
+<li><label><input type="checkbox"><a href="02-hardware-and-schematics.md#fiber-optic-termination">Splice fiber optics</a></label></li>
+<li><label><input type="checkbox"><a href="02-hardware-and-schematics.md#pull-test">Do the pull test</a></label></li>
+<li><label><input type="checkbox">Load vehicle</label></li>
+<li><label><input type="checkbox">Load equipment</label></li>
+<li><label><input type="checkbox">Setup stations</label></li>
+<li><label><input type="checkbox">Provide the captain/bridge with the .GPX file of station locations so they can import it into their navigation software and check tracklines and make recommendations for any shifts in waypoints.</label></li>
+<li><label><input type="checkbox">Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)</label></li>
+</ul>
+<p><br></p>
+</section>
+<section id="sec-day-of-departure" class="level3">
+<h3 class="anchored" data-anchor-id="sec-day-of-departure">Day of Departure</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">If leaving from WH store vehicle keys in the locker by the Survey refrigerator. Parking forms must be filled out and placed on the car dashboard.</label></li>
+<li><label><input type="checkbox">When heading to Newport, RI, keep the ship informed about the science party’s arrival time.</label></li>
+<li><label><input type="checkbox">Ensure all members of scientific party are aboard</label></li>
+<li><label><input type="checkbox">Muster to bridge 30 min prior to departure time</label></li>
+<li><label><input type="checkbox">Inspect underwater cables for damage and/or voltage leaks.</label></li>
+<li><label><input type="checkbox">Host an on-board, pre-cruise meeting with scientific staff</label></li>
+<li><label><input type="checkbox">Track federal employee time</label></li>
 </ul>
 <br>
 <hr>
 <p><br></p>
 </section>
 </section>
-<section id="staging-protocols-station-layouts" class="level2">
-<h2 class="anchored" data-anchor-id="staging-protocols-station-layouts">2. Staging Protocols &amp; Station Layouts</h2>
-<div data-align="left" style="text-align: left !important;">
-<h3 id="sec-staging-setup-stations" class="anchored">
-Acoustic Lab &amp; Control Station Setup
-</h3>
+<section id="staging-detail-sections" class="level2">
+<h2 class="anchored" data-anchor-id="staging-detail-sections">3. Detailed Staging &amp; Survey Procedures</h2>
+<section id="sec-6-months-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-6-months-detail">6 Months Out (~November): Calibrations &amp; Long-Lead Procurement</h3>
+<ul>
+<li>Confirm ship time and set cruise date</li>
+<li>Send Seabird 37, Seabird 49 CTDs, and Wetlabs ECO-Triplet puck to Washington for calibrations [Return to Manufacturer Authorization (RMA) form]</li>
+<li>Begin ordering equipment and supplies needed before upcoming cruise [itemized ordering guide here]</li>
+<li>Send out any equipment that was damaged from last survey</li>
+</ul>
+<p><br></p>
+<section id="sec-6mo-ship-time" class="level4">
+<h4 class="anchored" data-anchor-id="sec-6mo-ship-time">Confirm Ship Time &amp; Cruise Date</h4>
+<p><em>[Insert details on contacting NOAA Marine Operations, confirming vessel availability, and setting firm survey departure/return windows]</em></p>
+</section>
+<section id="sec-6mo-ctd-calibration" class="level4">
+<h4 class="anchored" data-anchor-id="sec-6mo-ctd-calibration">CTD &amp; ECO-Triplet Calibration Shipments (RMA)</h4>
+<p><em>[Insert RMA submission instructions, packaging requirements, Sea-Bird/WET Labs shipping addresses, and tracking protocols]</em></p>
+</section>
+<section id="sec-6mo-procurement" class="level4">
+<h4 class="anchored" data-anchor-id="sec-6mo-procurement">Equipment &amp; Supply Procurement</h4>
+<p><em>[Insert itemized ordering guide, long-lead component lists, vendor contacts, and requisition procedures]</em></p>
+<p><strong>Quick Task:</strong> * Send out any equipment that was damaged from last survey.</p>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+<section id="sec-15-weeks-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-15-weeks-detail">15 Weeks Out: IT &amp; Software Security Audit</h3>
+<ul>
+<li>Check in with ITD regarding computer security patching if they haven’t reached out</li>
+</ul>
+<p><br></p>
+<p><strong>Quick Task:</strong> * If ITD hasn’t reached out to have computer software security added to machines prior to surveys (i.e., patched), check-in.</p>
+<section id="sec-15wk-patched" class="level4">
+<h4 class="anchored" data-anchor-id="sec-15wk-patched">Patched</h4>
+<p><em>[Insert details explaining OS patch requirements, security software updates, firewall rules, and offline field machine clearance steps]</em></p>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+<section id="sec-12-weeks-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-12-weeks-detail">12 Weeks Out: Server, GUI &amp; Workstation Setup</h3>
+<ul>
+<li>Set up all servers with software directories and GUIs</li>
+<li>Collect flashdrive from POPDY and Install R packages on annotation machines</li>
+<li>Verify that IP address can be changed on annotation machines</li>
+<li>Ensure sonar software and Coastal Explorer are installed on 2 field laptops</li>
+</ul>
+<p><br></p>
+<section id="sec-12wk-server-setup" class="level4">
+<h4 class="anchored" data-anchor-id="sec-12wk-server-setup">Server Directory &amp; GUI Setup</h4>
+<p><em>[Insert server folder structure templates, database pathing, GUI executable placements, and directory permission settings]</em></p>
+</section>
+<section id="sec-12wk-r-packages" class="level4">
+<h4 class="anchored" data-anchor-id="sec-12wk-r-packages">POPDY Flash Drive &amp; R Package Installation</h4>
+<p><em>[Insert steps for retrieving the POPDY flash drive, offline R package repository paths, dependency installations, and workstation scripts]</em></p>
+</section>
+<section id="sec-12wk-ip-config" class="level4">
+<h4 class="anchored" data-anchor-id="sec-12wk-ip-config">Annotation Machine IP Configuration</h4>
+<p><em>[Insert network adapter settings, static IP assignment procedures, subnets, and verification commands for annotation machines]</em></p>
+</section>
+<section id="sec-12wk-field-laptops" class="level4">
+<h4 class="anchored" data-anchor-id="sec-12wk-field-laptops">Field Laptop Sonar &amp; Navigation Software</h4>
+<p><em>[Insert software installation steps for Coastal Explorer, BlueView sonar drivers, license key verifications, and laptop field profiles]</em></p>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+<section id="sec-8-weeks-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-8-weeks-detail">8 Weeks Out: Vehicle Bench Assembly &amp; Pre-Calibration Prep</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Prepare HABCAM for WHOI Sundance Tank Calibration Test</label></li>
+<li><label><input type="checkbox">Pack supply kit for WHOI sundance tank calibration test</label></li>
+<li><label><input type="checkbox">If applicable, install chanos onto tow sled</label></li>
+<li><label><input type="checkbox">Science center staffing call</label></li>
+</ul>
+<p><br></p>
+<section id="sec-8wk-sundance-prep" class="level4">
+<h4 class="anchored" data-anchor-id="sec-8wk-sundance-prep">Prepare HabCam for WHOI Sundance Tank Calibration Test</h4>
+<p><em>[Insert overview and general preparation steps for the WHOI Sundance Tank calibration deployment]</em></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Attach/Install CTDs, ecotriplet puck, and Blueview forward looking sonar</label></li>
+<li><label><input type="checkbox">Open main electronics bottle, check fuses, inspect O-rings, replace desiccant and pull a vacuum</label></li>
+<li><label><input type="checkbox">After 24 hours, confirm PSI has remained stable: Pressure holds at 16 inHg. If leak or change in pressure is detected, likely to reinspect O-rings.</label></li>
+<li><label><input type="checkbox">Pull the camera plate and inspect O-rings in both housings. Refocus camera lenses if necessary.</label></li>
+<li><label><input type="checkbox">Attach altimeter and attitude sensors onto camera plate. Re-attach camera plate to HABCAM.</label></li>
+<li><label><input type="checkbox">Inspect underwater cables for damage and/or voltage leaks</label></li>
+<li><label><input type="checkbox">Regrease Connector Faces &amp; Plug Into Sensors</label></li>
+<li><label><input type="checkbox">Power On Main Electronics Bottle &amp; Verify Engineering GUI Data</label></li>
+<li><label><input type="checkbox">Connect to Stereocameras &amp; Verify Camera/Strobe Trigger Rates</label></li>
+</ul>
+<p><br></p>
+</section>
+<section id="sec-8wk-pack-supply-kit" class="level4">
+<h4 class="anchored" data-anchor-id="sec-8wk-pack-supply-kit">Pack Supply Kit for WHOI Sundance Tank Calibration Test</h4>
+<p><em>[Insert packing list, required hand tools, spare O-rings, calibration targets, and test gear inventory here]</em></p>
+</section>
+<section id="sec-8wk-install-chanos" class="level4">
+<h4 class="anchored" data-anchor-id="sec-8wk-install-chanos">Install Chanos Sensor onto Tow Sled (If Applicable)</h4>
+<p><em>[Insert mechanical mounting, bracket alignment, cable harness routing, and power/data integration steps for the Chanos sensor]</em></p>
+</section>
+<section id="sec-8wk-staffing-call" class="level4">
+<h4 class="anchored" data-anchor-id="sec-8wk-staffing-call">Science Center Staffing Call</h4>
+<p><em>[Insert staffing call protocol, participant application deadlines, skill set requirements, and roster collection guidelines]</em></p>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+<section id="sec-6-weeks-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-6-weeks-detail">6 Weeks Out: WHOI Seawater Tank Calibration Test &amp; Logistics</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Take vehicles to WHOI sea water tank test to calibrate equipment (<a href="https://example.com">Camera calibrations for dummies</a>)</label></li>
+<li><label><input type="checkbox">Repair or Resolve any issues that came up during the WHOI tank test</label></li>
+<li><label><input type="checkbox">Store Vehicle at netloft until staging</label></li>
+<li><label><input type="checkbox">Pinger: Benthos UAT 376 acoustic transponder - replace batteries</label></li>
+</ul>
+<p><br></p>
+<section id="sec-6wk-calibration" class="level4">
+<h4 class="anchored" data-anchor-id="sec-6wk-calibration">Calibration</h4>
+<div data-align="center">
+<p><img width="510" height="680" alt="Calibration for Dummies" src="https://github.com/user-attachments/assets/8d6a9da0-36e2-4693-946e-39ed412aff16"></p>
+</div>
+<p><br></p>
+<section id="sec-6wk-reserving-tank" class="level5">
+<h5 class="anchored" data-anchor-id="sec-6wk-reserving-tank">Reserving the Tank</h5>
+<p><em>[Insert reservation procedures, point of contact at WHOI, scheduling lead times, and facility access requirements here]</em></p>
+</section>
+<section id="sec-6wk-transporting-vehicle" class="level5">
+<h5 class="anchored" data-anchor-id="sec-6wk-transporting-vehicle">Transporting the Vehicle</h5>
+<p><em>[Insert vehicle transport logistics, truck/trailer loading steps, strapping protocols, and staging at the Sundance Tank here]</em></p>
+</section>
+<section id="sec-6wk-setting-up-calibration" class="level5">
+<h5 class="anchored" data-anchor-id="sec-6wk-setting-up-calibration">Setting Up Calibration</h5>
+<p><em>[Insert tank placement, water fills, sensor submersion setup, power hookups, and initial system checks here]</em></p>
+</section>
+<section id="sec-6wk-collecting-data" class="level5">
+<h5 class="anchored" data-anchor-id="sec-6wk-collecting-data">Collecting Calibration Data</h5>
+<p><strong>1. Checkerboard Target Data Collection:</strong> * <strong>Common Area Positioning:</strong> Ensure the entire checkerboard is placed in the overlap zone (common area) between the left and right cameras’ fields of view so it appears fully on both cameras.</p>
+<div data-align="center">
+<img width="515" height="123" alt="Checkerboard Common Area View" src="https://github.com/user-attachments/assets/be5faafa-43ce-45de-9d7a-ed6db7d5ab3e">
 <p>
-HabCam operations aboard the R/V <i>Henry B. Bigelow</i> are distributed across four main laboratory spaces: the Acoustic Lab (Primary Control Center), Dry Lab, Chemistry Lab, and Cutting Room[cite: 7].
+<i>Checkerboard Positioned Within the Overlapping Common Viewing Area</i>
 </p>
+</div>
+<p><br></p>
+<ul>
+<li><strong>Grid Coverage:</strong> Divide the common viewing area into 9 equal regions and take photos in all 9 regions to ensure full spatial coverage.</li>
+</ul>
+<div data-align="center">
+<img width="233" height="101" alt="Region Grid Overlay" src="https://github.com/user-attachments/assets/575fc675-9594-4792-a14a-02add361cc14">
+<p>
+<i>9-Region Division Grid Across Common Field of View</i>
+</p>
+</div>
+<p><br></p>
+<ul>
+<li><strong>Glare &amp; Tilting:</strong> Avoid direct strobe glare on the board (glare images will be rejected by estimation software). Tilting the board slightly is preferred over lying flat to minimize glare.</li>
+<li><strong>Altitude &amp; Angle Sampling:</strong> Capture images across 2–3 different vehicle altitudes and multiple angles (both flat and tilted).</li>
+</ul>
+<div data-align="center">
+<img width="550" height="287" alt="Checkerboard Calibration Array" src="https://github.com/user-attachments/assets/7ae5f0fd-043b-4d2d-9f56-e07ab8b1a017">
+<p>
+<i>Figure 1: Acceptable Checkerboard Sample Images Across Angles and Altitudes from the 2015 Calibration (Best)</i>
+</p>
+</div>
+<p><br></p>
+<p><strong>2. Scallop Target Data Collection:</strong> * <strong>Placement:</strong> Lay the scallop target board flat on the bottom of the dunk tank for accurate altimeter reference. Lower and raise the vehicle using the overhead crane.</p>
+<div data-align="center">
+<img width="1600" height="1200" alt="Scallop Shell Target Board" src="https://github.com/user-attachments/assets/6ff6101d-0e0a-4711-bbf8-8d25fda95d35">
+<p>
+<i>Physical Scallop Calibration Target Board with Known Shell Heights</i>
+</p>
+</div>
+<p><br></p>
+<ul>
+<li><strong>Field-of-View Distribution:</strong> Divide the full field of view into 9 regions. Capture images with the target in 5 regions of the left field of view and 2 regions at the far right of the right field of view (or 5 right / 2 far left).</li>
+</ul>
+<div data-align="center">
+<table class="table table-striped">
+<tbody><tr>
+<td align="center">
+<img width="233" height="101" alt="Left FOV Grid" src="https://github.com/user-attachments/assets/13132c48-2efb-4184-9298-c485f5ebe986"> <br> <b>5 Regions Left FOV / 2 Regions Far Right</b>
+</td>
+<td align="center">
+<img width="233" height="101" alt="Right FOV Grid" src="https://github.com/user-attachments/assets/6ae5f703-9018-4119-a6b8-e8fc527d0c8b"> <br> <b>5 Regions Right FOV / 2 Regions Far Left</b>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><br></p>
+<ul>
+<li><strong>Varied Sampling:</strong> Take photos at 2–3 distinct altitudes and varying tilt angles.</li>
+</ul>
+<p><br></p>
+<p><strong>3. Altitude Logging:</strong> * Ensure the Engineering GUI is actively running and logging live altimeter depth/altitude data during all test passes.</p>
+<br>
+<hr>
+<p><br></p>
+</section>
+<section id="sec-6wk-evaluation-criteria" class="level5">
+<h5 class="anchored" data-anchor-id="sec-6wk-evaluation-criteria">Evaluation Criteria &amp; Processing Iterations</h5>
+<p><strong>Criteria for a Successful Calibration:</strong> 1. <strong>Visual Integrity:</strong> Processed images must be undistorted with minimal black edge bands (black border pixels must represent &lt; 5% of total image pixels).</p>
+<div data-align="center">
+<table class="table table-striped">
+<tbody><tr>
+<td align="center">
+<img width="1600" height="602" alt="Bad Calibration Distortion" src="https://github.com/user-attachments/assets/fa5a1da3-b19b-4dd2-8907-3786d6307a3d"> <br> <b>Bad Calibration: Heavy Distortion &amp; Black Edge Bands (&gt;10%)</b>
+</td>
+<td align="center">
+<img width="1600" height="602" alt="Good Calibration" src="https://github.com/user-attachments/assets/d9b9e008-9969-4f9d-a85c-2d93b0c0b91d"> <br> <b>Good Calibration: Minimal Edge Distortion (&lt;5% Black Pixels)</b>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><br></p>
+<ol start="2" type="1">
+<li><strong>Stereo Coverage Rate:</strong> Successful stereo altitude estimates must be generated for &gt; 95% of total captured images.</li>
+<li><strong>Measurement Accuracy:</strong> Estimated scallop shell lengths (calculated via stereo altitude) must fall within ±3% of true physical measurements.</li>
+</ol>
+<p><br></p>
+<p><strong>Step-by-Step Parameter Estimation Workflow:</strong> 1. Estimate initial calibration parameters from selected checkerboard images. 2. Process all scallop target images using the candidate calibration parameters. 3. Inspect processed output images visually for optical distortion. 4. Calculate the percentage of black edge pixels (&lt; 5% threshold). 5. Determine the percentage of total images receiving valid stereo altitude estimates. 6. Annotate the scallop target board images in numbered sequence (1 through 9).</p>
+<div data-align="center">
+<img width="230" height="173" alt="Numbered Scallop Annotation Sequence" src="https://github.com/user-attachments/assets/0e527551-f924-4c83-af72-cea6627f152f">
+<p>
+<i>Required Numbered Sequence (1–9) for Scallop Target Board Annotations</i>
+</p>
+</div>
+<p><br></p>
+<ol start="7" type="1">
+<li>Calculate average percentage bias in estimated scallop shell height compared to ground truth.</li>
+<li>Iterate image selection and parameter fitting until all three success criteria are satisfied.</li>
+</ol>
+<p><br></p>
+</section>
+</section>
+<section id="sec-6wk-2018-experiment" class="level4">
+<h4 class="anchored" data-anchor-id="sec-6wk-2018-experiment">The 2018 Calibration Experiment (Chang and Godlewski)</h4>
+<section id="rationale" class="level5">
+<h5 class="anchored" data-anchor-id="rationale">Rationale</h5>
+<p>The paired tows of NEFSC Habcam, NEFSC dredge, and VIMS dredge were conducted at the same time at 19 overlapping stations in Elephant Trunk (ET) in 2018 (Figure 1). These pair tows were designed to study the dredge filling issue at high density area and the difference between 10 minutes and 15 minutes tows.</p>
+<div data-align="center">
+<img width="720" height="720" alt="Figure 1" src="https://github.com/user-attachments/assets/e3c8d71e-e2c8-4b13-9fdb-df2834329beb">
+<p>
+<i>Figure 1. The paired tow locations for NEFSC Habcam, NEFSC dredge, and VIMS dredge survey, along with the locations for the entire VIMS dredge and WHOI Habcam survey in ET (the right gray polygon is ET-Open and the left gray polygon is ET-Flex) in 2018.</i>
+</p>
+</div>
+<p><br></p>
+<p>However, a problem for the NEFSC Habcam data emerged when analyzing the paired tow data - the mean scallop shell height collected by NEFSC Habcam estimated using the altimeter altitudes (122mm in ET-Open and 119mm in ET-Flex) was 13-16% higher than the mean scallop shell height collected by the NEFSC dredge (108mm in ET-Open and 103mm in ET-Flex; Figure 2). The shell height distributions from the NEFSC dredge and Habcam survey should be nearly identical since they were surveying overlapping locations and there is only one dominant cohort in ET.</p>
+<p>The WHOI Habcam data have a similar problem compared to the VIMS dredge data, the mean shell height estimated using stereo altitudes was 6-8% higher (Figure 2). Even though the two surveys were not completely overlapped (Figure 1), a 6-8% difference in mean shell height is not expected in ET. If the altitudes from the Habcam data are accurate, the comparison of dredge and Habcam data in areas with only a single cohort are expected to be similar to Figure 3.</p>
+<div data-align="center">
+<img width="1100" height="500" alt="Figure 2" src="https://github.com/user-attachments/assets/8e419861-dcc7-4df9-be6a-c5304e8d205a">
+<p>
+<i>Figure 2. Shell height frequencies, the number of shells measured, and mean shell height from multiple surveys in ET in 2018.</i>
+</p>
+</div>
+<p><br></p>
+<div data-align="center">
+<img width="650" height="500" alt="Figure 3" src="https://github.com/user-attachments/assets/bd735580-b3ff-4514-901a-7652335bf9ca">
+<p>
+<i>Figure 3. Shell height frequencies, the number of shells measured, and mean shell height from VIMS dredge and CFF Habcam survey (altimeter altitude) in the Nantucket Light Ship South Deep area in 2018.</i>
+</p>
+</div>
+<p><br></p>
+<p>Because the NEFSC Habcam altimeter was not collecting accurate altitudes, the usefulness of stereo altitudes was explored. However, of 119,645 NEFSC Habcam images annotated in 2018, only 3,627 images have stereo altitudes. The estimated stereo altitudes are either close to the altimeter altitudes or centered at 0.93 meters, which means that the stereo altitudes were estimated poorly and also biased (Figure 4).</p>
+<div data-align="center">
+<img width="720" height="720" alt="Figure 4" src="https://github.com/user-attachments/assets/3a7b2ddb-1e10-4395-9f0e-0bc37f945a23">
+<p>
+<i>Figure 4. Comparison of altimeter and stereo altitudes for NEFSC Habcam data (annotated images) in 2018. Red line is a one to one line.</i>
+</p>
+</div>
+<p><br></p>
+<p>The comparison between Habcam and dredge survey shell heights were further examined from 2011 to 2018 for all areas surveyed to see if this is a single year problem or it persists over years. The list of the type of altitudes (and field of view calculations) used to estimate scallop shell heights for the Habcam data for each year is below (Burton Shank personal comm.):</p>
+<ul>
+<li>2019 stereo altitudes only.</li>
+<li>2018 sonar altitudes only.</li>
+<li>2017 sonar altitudes only; 386 stereo altitudes in database.</li>
+<li>2016 stereo altitudes for 36,844 images of 97,266 images; sonar for the rest.</li>
+<li>2015 sonar altitudes only; no direct FOV calculation, had to use altitude-based second-order polygon model; should fix this in the future.</li>
+<li>2014 sonar altitudes only. Direct FOV calculation for all except 723 images with FOV filled in with polygon model.</li>
+<li>2011 to 2013 working on this.</li>
+</ul>
+<p>The problem of altitudes for the NEFSC Habcam started in 2017. There are no accurate altitudes recorded or estimated for 2017 and 2018 NEFSC Habcam data. The problem is still not resolved to this date. This forced us to use stereo altitudes for the 2019 data. However, even though the bias of shell heights calculated using stereo altitudes are less than 5% in 2019, it is still not as good as the altimeter altitudes if the altimeter is working properly (Figure 3) because the stereo altitudes are estimates and estimates have errors.</p>
+</section>
+<section id="goals" class="level5">
+<h5 class="anchored" data-anchor-id="goals">Goals</h5>
+<ol type="1">
+<li>Find a method to examine the accuracy of the stereo altitudes estimated from the calibration - at least one set of altitude needs to be accurate, if not both.</li>
+<li>Identify a method to correct the 2017 and 2018 NEFSC Habcam data.</li>
+</ol>
+</section>
+<section id="experiment-design" class="level5">
+<h5 class="anchored" data-anchor-id="experiment-design">Experiment Design</h5>
+<ol type="1">
+<li>Three targets were made to explore the accuracy of the stereo altitudes, one with scallop shells and two with plastic disks to represent smaller scallops shell heights.</li>
+</ol>
+<div data-align="center">
+<table class="table table-striped">
+<tbody><tr>
+<td align="center">
+<img width="1600" height="1200" alt="Figure 5C" src="https://github.com/user-attachments/assets/4525fa0b-a3e5-4324-9ab4-eb160206cf2f">
+</td>
+<td align="center">
+<img width="1047" height="785" alt="Figure 5B" src="https://github.com/user-attachments/assets/54942b51-a05a-4d7c-8bdc-2ab3d2c47d9d">
+</td>
+<td align="center">
+<img width="1600" height="1200" alt="Figure 5A" src="https://github.com/user-attachments/assets/e05d22be-cb6c-4f58-b544-7d554e4acdd5">
+</td>
+</tr>
+</tbody></table>
+</div>
+<ol start="2" type="1">
+<li>Images of the 3 targets were taken during the 2018 post-cruise calibration at 2 different altitudes and 5 different locations of the left field of view.</li>
+</ol>
+<div data-align="center">
+<p><img width="233" height="101" alt="Target Position Grid" src="https://github.com/user-attachments/assets/26c85e44-d7ec-47fb-bc74-706a8e07c6a6"></p>
+</div>
+<ol start="3" type="1">
+<li>For each target, 2 images at each location and altitude were processed and annotated, resulting in a total of 64 images analyzed.</li>
+<li>The 64 selected target images were processed using the calibration estimated using the checkerboard images taken during the experiment (2018 post-cruise calibration, 20181102), as well as calibrations from the past:
+<ul>
+<li>2018 post-cruise calibration (20181102)</li>
+<li>2018 pre-cruise calibration (20180507)</li>
+<li>2018 during-cruise calibration (20180527)</li>
+<li>2017 pre-cruise calibration (20170501)</li>
+<li>2015 post-cruise calibration (20150801)</li>
+<li>2015 pre-cruise calibration (20150501)</li>
+</ul></li>
+<li>Each of the 64 target images was processed 6 times (using the above 6 calibrations). All of these processed images were annotated by two annotators.</li>
+<li>The scallop shell heights (or disk sizes) estimated using the stereo altitudes were compared to their true sizes and percent biases were calculated using the following equation:</li>
+</ol>
+<p><span class="math display">\[\% \text{Bias} = \frac{\text{Estimated Size} - \text{True Size}}{\text{True Size}} \times 100\%\]</span></p>
+<ol start="7" type="1">
+<li>The percent biases were compared by calibrations, annotators, scallop or disk sizes, 3 targets, 2 altitudes, and 5 locations in the field of view.</li>
+<li>Once the best calibration is identified, biased measurements from other calibrations were reestimated using the stereo altitudes from the best calibration to check if biased measurements can simply be corrected by reprocessing.</li>
+<li>To test the sensitivity of checkerboard images, 200 calibrations were estimated from randomly selected checkerboard images iteratively 200 times.</li>
+</ol>
+</section>
+<section id="results" class="level5">
+<h5 class="anchored" data-anchor-id="results">Results</h5>
+<ol type="1">
+<li>Below is the summary table of the number of images that have stereo altitude estimated:</li>
+</ol>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>
+Calibration
+</th>
+<th>
+# of images with stereo estimates
+</th>
+<th>
+Percent with stereo estimates
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+2018 post-cruise (20181102)
+</td>
+<td>
+64
+</td>
+<td>
+100%
+</td>
+</tr>
+<tr>
+<td>
+2018 pre-cruise (20180507)
+</td>
+<td>
+14
+</td>
+<td>
+22%
+</td>
+</tr>
+<tr>
+<td>
+2018 during-cruise (20180527)
+</td>
+<td>
+41
+</td>
+<td>
+64%
+</td>
+</tr>
+<tr>
+<td>
+2017 pre-cruise (20170501)
+</td>
+<td>
+25
+</td>
+<td>
+39%
+</td>
+</tr>
+<tr>
+<td>
+2015 post-cruise (20150801)
+</td>
+<td>
+61
+</td>
+<td>
+95%
+</td>
+</tr>
+<tr>
+<td>
+2015 pre-cruise (20150501)
+</td>
+<td>
+53
+</td>
+<td>
+83%
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<ol start="2" type="1">
+<li>There are significant differences in percent biases by calibration. Mean bias ranged from +14% (2018 pre-cruise) down to -2% (2015 post-cruise; Figure 5).</li>
+</ol>
+<div data-align="center">
+<img width="1000" height="1000" alt="Figure 5" src="https://github.com/user-attachments/assets/94e75c09-3d27-43c4-ba10-4cac9b95bd83">
+<p>
+<i>Figure 5. Density plot of percent biases from all measurements (gray bars) and measurements by calibrations. Dash lines are the mean percent bias by calibrations.</i>
+</p>
+</div>
+<p><br></p>
+<ol start="3" type="1">
+<li>The best calibration is the 2015 post-cruise calibration (20150801) - it estimated 95% of stereo altitudes with a mean bias of -2%. Reprocessing reduced mean percent biases to within ±3% (Figure 6).</li>
+</ol>
+<div data-align="center">
+<img width="1000" height="1000" alt="Figure 6" src="https://github.com/user-attachments/assets/30ad477b-209e-4541-9418-9b14dcb48920">
+<p>
+<i>Figure 6. Density plot of percent biases reestimated using stereo altitudes from the 2015 post-cruise calibration (20150801).</i>
+</p>
+</div>
+<p><br></p>
+<ol start="4" type="1">
+<li>Target locations in the field of view caused slight differences in bias (e.g., top-right corner was slightly more biased; Figure 7).</li>
+</ol>
+<div data-align="center">
+<img width="1000" height="1000" alt="Figure 7" src="https://github.com/user-attachments/assets/69338334-145b-4cb8-bd2d-cbac618352c3">
+<p>
+<i>Figure 7. Density plot of percent biases by target locations in FOV and altitudes (1.92m and 2.41m).</i>
+</p>
+</div>
+<p><br></p>
+<ol start="5" type="1">
+<li>The 200 calibrations estimated from randomly selected checkerboard images show significant variance in performance, ranging between ±20% bias (Figure 8).</li>
+</ol>
+<div data-align="center">
+<img width="1310" height="763" alt="Figure 8" src="https://github.com/user-attachments/assets/77861a0f-dc4e-4b4f-a55c-6464493f3477">
+<p>
+<i>Figure 8. Density plot of percent biases across 200 random checkerboard calibration iterations.</i>
+</p>
+</div>
+<p><br></p>
+</section>
+<section id="conclusions" class="level5">
+<h5 class="anchored" data-anchor-id="conclusions">Conclusions</h5>
+<ol type="1">
+<li>Calibration performance varies dramatically; thorough validation is required before official deployment.</li>
+<li>The 2015 post-cruise calibration (20150801) is the best performing calibration tested.</li>
+<li>Calibration accuracy is sensitive to the specific checkerboard images chosen rather than minor camera hardware changes over time.</li>
+<li>Biased measurements from bad calibrations can be corrected by reprocessing images with a validated calibration model without needing full re-annotation.</li>
+</ol>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+</section>
+<section id="sec-5-weeks-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-5-weeks-detail">5 Weeks Out: Staff Notifications, Watch Bills &amp; Berthing Assignments</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Send “You are scheduled Email” notifying staff they have been selected for the survey. Include:</label>
+<ul class="task-list">
+<li><label><input type="checkbox">Survey expectations</label></li>
+<li><label><input type="checkbox">Medical clearance forms</label></li>
+<li><label><input type="checkbox">Dietary restrictions</label></li>
+<li><label><input type="checkbox">Packing list (i.e.&nbsp;foul weather gear)</label></li>
+<li><label><input type="checkbox">Preparing for sea packet</label></li>
+</ul></li>
+<li><label><input type="checkbox">Notify watch chiefs that they will be sailing in leadership positions</label></li>
+<li><label><input type="checkbox">Create balanced watches with cruise personnel list</label></li>
+<li><label><input type="checkbox">Assign berthing</label></li>
+</ul>
+<p><br></p>
+<section id="sec-5wk-scheduled-email" class="level4">
+<h4 class="anchored" data-anchor-id="sec-5wk-scheduled-email">Send “You Are Scheduled” Email &amp; Participant Packet</h4>
+<p>Send formal notification emails to all selected scientific personnel. Attach the complete participant packet containing required forms and guidelines.</p>
+<section id="sec-5wk-survey-expectations" class="level5">
+<h5 class="anchored" data-anchor-id="sec-5wk-survey-expectations">1. Survey Expectations</h5>
+<p><em>[Insert survey expectations overview: 12-hour watch shifts, zero tolerance policies, data logging protocols, deck safety, and operational conduct]</em></p>
+<blockquote class="blockquote">
+<p><strong>Example Survey Expectations Summary:</strong> * Scientific staff stand 12-hour daily watch rotations (6-on / 6-off or 12-on / 12-off). * Active participation in gear deployment, image annotation quality control, and deck operations is required. * Strict adherence to NOAA safety guidelines, including mandatory hard hats and safety vests during deck work.</p>
+</blockquote>
+<p><br></p>
+</section>
+<section id="sec-5wk-medical-clearance" class="level5">
+<h5 class="anchored" data-anchor-id="sec-5wk-medical-clearance">2. Medical Clearance Forms</h5>
+<p><em>[Insert instructions for completing NOAA Health Services Form NHS 56-29, submission deadlines, and regional medical officer contact info]</em></p>
+<p><strong>Medical Clearance Form Checklist:</strong> * NOAA Form 56-29 (Report of Physical Examination) * Tuberculosis (TB) Screening / PPD Test Verification * Current prescription medication disclosures</p>
+<p><br></p>
+</section>
+<section id="sec-5wk-dietary-restrictions" class="level5">
+<h5 class="anchored" data-anchor-id="sec-5wk-dietary-restrictions">3. Dietary Restrictions Form</h5>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>
+Participant Name
+</th>
+<th>
+Dietary Requirement (Vegetarian, Vegan, Gluten-Free, etc.)
+</th>
+<th>
+Severe Food Allergies (Nuts, Shellfish, Dairy, etc.)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<i>[Participant Name]</i>
+</td>
+<td>
+<i>[List Dietary Restrictions]</i>
+</td>
+<td>
+<i>[List Medical Allergies / Anaphylaxis Risk]</i>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</section>
+<section id="sec-5wk-packing-list" class="level5">
+<h5 class="anchored" data-anchor-id="sec-5wk-packing-list">4. Packing List (Foul Weather Gear)</h5>
+<p><strong>Essential Packing List:</strong> * <strong>Personal Protective Equipment (PPE):</strong> Steel-toe boots (ANSI rated), commercial foul weather gear (bibs and jacket). * <strong>Work Attire:</strong> Layered thermal clothing, non-slip deck shoes, work gloves, wool socks. * <strong>Personal Items:</strong> Government-issued ID/passport, personal prescription medications (1.5x cruise duration supply), toiletries, bed linen/towel.</p>
+<p><br></p>
+</section>
+<section id="sec-5wk-preparing-for-sea" class="level5">
+<h5 class="anchored" data-anchor-id="sec-5wk-preparing-for-sea">5. Full “Preparing for Sea” Packet</h5>
+<p><em>[Insert full text/download link for the official NOAA / HabCam “Preparing for Sea” orientation packet]</em></p>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+<section id="sec-5wk-watch-bills" class="level4">
+<h4 class="anchored" data-anchor-id="sec-5wk-watch-bills">Create Balanced Watch Bills</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>
+Watch Team
+</th>
+<th>
+Shift Hours
+</th>
+<th>
+Watch Chief
+</th>
+<th>
+Lead Annotator
+</th>
+<th>
+Watch Standers
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Watch A (Day)</b>
+</td>
+<td>
+0000–0600 / 1200–1800
+</td>
+<td>
+<i>[Name]</i>
+</td>
+<td>
+<i>[Name]</i>
+</td>
+<td>
+<i>[Name], [Name], [Name]</i>
+</td>
+</tr>
+<tr>
+<td>
+<b>Watch B (Night)</b>
+</td>
+<td>
+0600–1200 / 1800–2400
+</td>
+<td>
+<i>[Name]</i>
+</td>
+<td>
+<i>[Name]</i>
+</td>
+<td>
+<i>[Name], [Name], [Name]</i>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+<p><br></p>
+</section>
+<section id="sec-5wk-berthing-assignments" class="level4">
+<h4 class="anchored" data-anchor-id="sec-5wk-berthing-assignments">Assign Berthing</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>
+Stateroom #
+</th>
+<th>
+Deck / Location
+</th>
+<th>
+Berth Type
+</th>
+<th>
+Assigned Watch
+</th>
+<th>
+Occupants
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Room 101</b>
+</td>
+<td>
+Main Deck / Port
+</td>
+<td>
+Double Bunk
+</td>
+<td>
+Watch A (Day)
+</td>
+<td>
+<ol type="1">
+<li><i>[Name]</i><br>2. <i>[Name]</i>
+</li></ol></td>
+</tr>
+<tr>
+<td>
+<b>Room 102</b>
+</td>
+<td>
+Main Deck / Port
+</td>
+<td>
+Double Bunk
+</td>
+<td>
+Watch B (Night)
+</td>
+<td>
+<ol type="1">
+<li><i>[Name]</i><br>2. <i>[Name]</i>
+</li></ol></td>
+</tr>
+<tr>
+<td>
+<b>Room 103</b>
+</td>
+<td>
+01 Deck / Starboard
+</td>
+<td>
+Double Bunk
+</td>
+<td>
+Watch A (Day)
+</td>
+<td>
+<ol type="1">
+<li><i>[Name]</i><br>2. <i>[Name]</i>
+</li></ol></td>
+</tr>
+<tr>
+<td>
+<b>Room 104</b>
+</td>
+<td>
+01 Deck / Starboard
+</td>
+<td>
+Double Bunk
+</td>
+<td>
+Watch B (Night)
+</td>
+<td>
+<ol type="1">
+<li><i>[Name]</i><br>2. <i>[Name]</i>
+</li></ol></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+<p><br></p>
+<p><strong>Quick Task:</strong> - [ ] Notify watch chiefs that they will be sailing in leadership positions.</p>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+<section id="sec-1-week-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-1-week-detail">1 Week Out: Logistics &amp; Pre-Departure Briefings</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Email the scientific party a few days prior to departure regarding departure times, meeting points, parking, and bad weather contingencies.</label></li>
+</ul>
+<p><br></p>
+<section id="sec-1wk-pre-departure-email" class="level4">
+<h4 class="anchored" data-anchor-id="sec-1wk-pre-departure-email">Pre-Departure Logistics Email</h4>
+<section id="sec-1wk-departure-meeting-points" class="level5">
+<h5 class="anchored" data-anchor-id="sec-1wk-departure-meeting-points">1. Departure Times &amp; Meeting Points</h5>
+<blockquote class="blockquote">
+<p><strong>Example Meeting &amp; Arrival Details:</strong> * <strong>Vessel Location:</strong> Pier 2, NOAA Marine Operations Dock / WHOI Facility, Woods Hole, MA. * <strong>Mandatory Boarding Time:</strong> 0700 EDT on Departure Day (Vessel departs promptly at 0900 EDT). * <strong>Pre-Sailing Assembly Point:</strong> Main pier loading bay adjacent to the survey gear staging area.</p>
+</blockquote>
+<p><br></p>
+</section>
+<section id="sec-1wk-parking-procedures" class="level5">
+<h5 class="anchored" data-anchor-id="sec-1wk-parking-procedures">2. Parking Procedures</h5>
+<blockquote class="blockquote">
+<p><strong>Example Parking Instructions:</strong> * All long-term vehicles must be parked in designated Scientist Lot C. * Complete the NOAA/WHOI temporary parking slip and place it face-up on the driver’s side dashboard. * Leave spare vehicle keys in the designated key locker near the Survey Refrigerator prior to boarding.</p>
+</blockquote>
+<p><br></p>
+</section>
+<section id="sec-1wk-weather-protocols" class="level5">
+<h5 class="anchored" data-anchor-id="sec-1wk-weather-protocols">3. Weather Protocols &amp; Operational Limits</h5>
+<blockquote class="blockquote">
+<p><strong>Example Operational Weather Thresholds:</strong> * <strong>Max Sailing Wind (Transit Limit):</strong> Sustained winds &gt; 35 knots or seas &gt; 10 ft trigger a departure delay assessment with the Captain. * <strong>Max Operational Wind (HabCam Deployment Limit):</strong> Sustained winds &gt; 25 knots or seas &gt; 6 ft require halting vehicle towing operations and recovering the sled. * <strong>Weather Contingency Communication:</strong> In the event of forecasted adverse weather, updates will be issued via email/SMS every 6 hours by the Chief Scientist.</p>
+</blockquote>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+</section>
+<section id="sec-staging-detail" class="level3">
+<h3 class="anchored">Staging Protocols: Deck Assembly &amp; Navigation Setup</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><a href="02-hardware-and-schematics.md#weak-link">Mounting the weak link</a></label></li>
+<li><label><input type="checkbox"><a href="02-hardware-and-schematics.md#fiber-optic-termination">Splice fiber optics</a></label></li>
+<li><label><input type="checkbox"><a href="02-hardware-and-schematics.md#pull-test">Do the pull test</a></label></li>
+<li><label><input type="checkbox">Load vehicle</label></li>
+<li><label><input type="checkbox">Load equipment</label></li>
+<li><label><input type="checkbox">Setup stations</label></li>
+<li><label><input type="checkbox">Provide the captain/bridge with the .GPX file of station locations so they can import it into their navigation software and check tracklines and make recommendations for any shifts in waypoints.</label></li>
+<li><label><input type="checkbox">Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)</label></li>
+</ul>
+<p><br></p>
+<section id="sec-staging-weak-link" class="level4">
+<h4 class="anchored" data-anchor-id="sec-staging-weak-link">Mounting the Weak Link</h4>
+<p>Refer to <a href="02-hardware-and-schematics.md#weak-link">02 Hardware &amp; Schematics (Section 6: Mechanical Weak Link Assembly)</a> for detailed instructions.</p>
+</section>
+<section id="sec-staging-fiber-splicing" class="level4">
+<h4 class="anchored" data-anchor-id="sec-staging-fiber-splicing">Splice Fiber Optics</h4>
+<p>Refer to <a href="02-hardware-and-schematics.md#fiber-optic-termination">02 Hardware &amp; Schematics (Section 7: Fiber Optic Termination)</a> for detailed instructions.</p>
+</section>
+<section id="sec-staging-pull-test" class="level4">
+<h4 class="anchored" data-anchor-id="sec-staging-pull-test">Do the Pull Test</h4>
+<p>Refer to <a href="02-hardware-and-schematics.md#pull-test">02 Hardware &amp; Schematics (Section 9: Fiber Optics Pull Test Protocol)</a> for detailed instructions.</p>
+</section>
+<section id="sec-staging-load-vehicle" class="level4">
+<h4 class="anchored" data-anchor-id="sec-staging-load-vehicle">Load Vehicle</h4>
+<p><em>[Insert details for vehicle deck loading, crane hoisting protocols, tie-down locations, and secure deck placement here]</em></p>
+</section>
+<section id="sec-staging-load-gear" class="level4">
+<h4 class="anchored" data-anchor-id="sec-staging-load-gear">Load Equipment</h4>
+<p><em>[Insert details for loading auxiliary crates, spare parts, toolboxes, calibration targets, and laboratory hardware here]</em></p>
+</section>
+<section id="sec-staging-setup-stations" class="level4">
+<h4 class="anchored">Setup Stations</h4>
+<p>HabCam operations aboard the R/V <em>Henry B. Bigelow</em> are distributed across four main laboratory spaces: the Acoustic Lab (Primary Control Center), Dry Lab, Chemistry Lab, and Cutting Room.</p>
+<section id="sec-station-acoustic-lab" class="level5">
+<h5 class="anchored" data-anchor-id="sec-station-acoustic-lab">1. Acoustic Lab Command Center Overview</h5>
+<p>The Acoustic Lab serves as the primary HabCam flight and monitoring hub. It houses 4 distinct stations operated by NOAA Fisheries personnel and Ship Survey Technicians:</p>
+<ul>
+<li><strong>Watch Chief Station:</strong> Located in the rear row with a 2-monitor setup directly behind the flight team.</li>
+<li><strong>Co-Pilot Station:</strong> Located in the front row (left) with a dedicated 4-monitor array.</li>
+<li><strong>Pilot Station:</strong> Located in the front row (right) with a 4-monitor array, vehicle joystick, and winch controller.</li>
+<li><strong>Survey Technician Station:</strong> Located adjacent to the flight team to monitor shipboard multibeam, EK-80, and vessel navigation.</li>
+</ul>
 <div data-align="center">
 <img width="1012" height="616" alt="Acoustic Lab" src="https://github.com/user-attachments/assets/44782226-f3e3-40e1-92d1-ecf85a5b51b2">
 <p>
@@ -528,62 +1419,375 @@ HabCam operations aboard the R/V <i>Henry B. Bigelow</i> are distributed across 
 </p>
 </div>
 <p><br></p>
-<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+</section>
+<section id="sec-station-watch-chief" class="level5">
+<h5 class="anchored" data-anchor-id="sec-station-watch-chief">2. Watch Chief Station</h5>
+<p>Operated on 12-hour rotating shifts (2 Watch Chiefs per cruise) to maintain continuous leadership, maintenance oversight, and quality control.</p>
+<ul>
+<li><strong>Hardware Setup:</strong> 2-monitor workstation positioned behind the Pilot/Co-Pilot.</li>
+<li><strong>Primary Responsibilities:</strong> Watch roster assignment, training new scientists on flight operations, reviewing image quality, and beginning preliminary image annotations.</li>
+</ul>
+<div data-align="center">
+<img width="748" height="560" alt="Watch Chief Station" src="https://github.com/user-attachments/assets/3838154c-1232-4db9-8562-11d5500e8230">
+<p>
+<i>Watch Chief Workstation (Positioned Behind Pilot/Co-Pilot)</i>
+</p>
+</div>
+<p><br></p>
+</section>
+<section id="sec-station-copilot" class="level5">
+<h5 class="anchored">3. Co-Pilot Station</h5>
+<p>Positions the Co-Pilot to the left of the Pilot to continuously monitor imaging telemetry, software health, and incoming seabed features.</p>
+<div data-align="center">
+<img width="624" height="468" alt="Pilot-Copilot Station" src="https://github.com/user-attachments/assets/5416a5f1-3344-4d50-87c1-57e6d76d70de">
+<p>
+<i>Co-Pilot Workstation Array</i>
+</p>
+</div>
+<p><br></p>
+<table class="table table-striped">
 <thead>
-<tr bgcolor="#f2f2f2">
+<tr>
 <th width="20%">
-Station
+Monitor #
 </th>
 <th width="30%">
-Monitors / Hardware
+Application / Display
 </th>
 <th width="50%">
-Primary Operational Function
+Operational Function &amp; Image Placement
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<b>Watch Chief Station</b>
+<b>Monitor 1</b>
 </td>
 <td>
-Dual-Monitor Workstation
+<b>EK-80 Scientific Echo Sounder</b>
 </td>
 <td>
-Command shift oversight, training new annotators, reviewing image quality, and logging preliminary annotations[cite: 7].
+Mirrored feed from Survey Techs displaying water column echograms, seafloor depth, and early warnings for incoming sand waves. <br><br>
+<div data-align="center">
+<pre><code>      &lt;img width="791" height="493" alt="EK80" src="https://github.com/user-attachments/assets/c8446f53-c1c9-4f32-beef-7187cb7b4ef4" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;Monitor 2&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;Engineering GUI &amp; Event Logger&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;
+    Live raw sensor feeds (AHRS, CTD, Oxygen, Fluorometer), GPS coordinates, fathometer depth, active file logging status, and event tagging.
+    &lt;br&gt;&lt;br&gt;
+    &lt;div align="center"&gt;
+      &lt;img width="779" height="583" alt="Engineering" src="https://github.com/user-attachments/assets/188c9b0a-f43e-4813-98d0-6843f1e072cc" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;Monitor 3&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;Coastal Explorer Navigation&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;
+    Mirrored navigation software displaying planned tracklines, waypoints, vessel speed, and potential subsea hazards/wrecks.
+    &lt;br&gt;&lt;br&gt;
+    &lt;div align="center"&gt;
+      &lt;img width="776" height="468" alt="Coastal Explorer" src="https://github.com/user-attachments/assets/48d68f7b-5652-4b44-8576-4c04daa0250c" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;Monitor 4&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;Image Viewer (`dsvimview`)&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;
+    Live stereo camera image waterfall; allows toggling port/starboard feeds, adjusting display rates, and checking camera trigger health.
+    &lt;br&gt;&lt;br&gt;
+    &lt;div align="center"&gt;
+      &lt;img width="776" height="582" alt="Image Viewer" src="https://github.com/user-attachments/assets/82b1563c-dd64-4e62-a724-7f7fb7ff1288" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+</div></td></tr></tbody>
+</table>
+<p><br></p>
+<section id="sec-station-pilot" class="level5">
+<h5 class="anchored">4. Pilot Station</h5>
+<p>Positions the Pilot to the right of the Co-Pilot with direct access to the vehicle control joystick and hydraulic winch controls.</p>
+<div data-align="center">
+<img width="624" height="468" alt="Pilot-Copilot Station" src="https://github.com/user-attachments/assets/edc685b3-6484-43a0-90a5-6c472f8e4a71">
+<p>
+<i>Pilot Workstation Overview &amp; Controls</i>
+</p>
+</div>
+<p><br></p>
+<table class="table table-striped">
+<thead>
+<tr>
+<th width="20%">
+Monitor #
+</th>
+<th width="30%">
+Application / Display
+</th>
+<th width="50%">
+Operational Function &amp; Image Placement
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Monitor 5</b>
+</td>
+<td>
+<b>Live Winch &amp; Deck Video (<code>VxOpsCenter</code>)</b>
+</td>
+<td>
+CCTV camera feeds monitoring the oceanographic winch drum, wire spooling, and aft deck operations. <br><br>
+<div data-align="center">
+<pre><code>      &lt;img width="776" height="400" alt="Live Winch Video" src="https://github.com/user-attachments/assets/1a9e97b7-d555-4a0d-b82c-fcb099fd84d6" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;Monitor 6&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;Bottom Tracking (`dsvimview` / Dixon Screen)&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;
+    Real-time vehicle altitude, computed bottom profile, fish depth, and altimeter filtering for flight adjustments.
+    &lt;br&gt;&lt;br&gt;
+    &lt;div align="center"&gt;
+      &lt;img width="776" height="487" alt="Bottom Tracking" src="https://github.com/user-attachments/assets/cc31d27d-6b90-40d6-af40-e8c97fcbaaa6" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;Monitor 7&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;BlueView Forward Sonar&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;
+    Acoustic sector sweep displaying subsea obstacles, boulders, and terrain relief ahead of the vehicle.
+    &lt;br&gt;&lt;br&gt;
+    &lt;div align="center"&gt;
+      &lt;img width="771" height="452" alt="Blueview" src="https://github.com/user-attachments/assets/faf1560b-5f96-4e49-b317-561f286bdb45" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;Monitor 8&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;Pentagon Winch Control Display&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;
+    MacGregor / Rapp Marine interface displaying cable tension (tons), line speed (m/min), and paid-out cable length (m).
+    &lt;br&gt;&lt;br&gt;
+    &lt;div align="center"&gt;
+      &lt;img width="624" height="468" alt="Winch Control" src="https://github.com/user-attachments/assets/cb6f39f2-0f83-4e67-96f6-cfb30e784d47" /&gt;
+    &lt;/div&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+</div></td></tr></tbody>
+</table>
+<p><br></p>
+<section id="sec-station-auxiliary-labs" class="level5">
+<h5 class="anchored" data-anchor-id="sec-station-auxiliary-labs">5. Annotation &amp; Auxiliary Laboratory Stations</h5>
+<p>Image processing, secondary scientific analysis, and physical sample handling are distributed across three auxiliary spaces:</p>
+<ul>
+<li><strong>Dry Lab:</strong> Contains Annotation Station 1, Annotation Station 2, the Backup Annotation Station, and the primary timeserver rack.</li>
+</ul>
+<div data-align="center">
+<p><img width="1059" height="640" alt="Dry Lab" src="https://github.com/user-attachments/assets/1fa09e51-5fe0-4470-9aab-3e00c0ffe41d"></p>
+</div>
+<p><br></p>
+<ul>
+<li><strong>Chemistry Lab:</strong> Contains Annotation Station 3, Annotation Station 4, chemistry fume hood, and science freezers.</li>
+</ul>
+<div data-align="center">
+<p><img width="1009" height="616" alt="Chem Lab" src="https://github.com/user-attachments/assets/86111237-c3b2-441c-9b60-a564766beb3d"></p>
+</div>
+<p><br></p>
+<ul>
+<li><strong>Cutting Room:</strong> Dedicated HabCam workspace (Cutting Table 1) for physical biological sampling, sorting belt operations, and sample freezer access.</li>
+</ul>
+<div data-align="center">
+<p><img width="958" height="582" alt="Cutting Room" src="https://github.com/user-attachments/assets/f1750dc6-8862-40da-a30f-c614ff6d811c"></p>
+</div>
+<p><br></p>
+</section>
+<section id="sec-staging-gpx-file" class="level4">
+<h4 class="anchored" data-anchor-id="sec-staging-gpx-file">Bridge .GPX File &amp; Station Transects</h4>
+<p><em>[Insert details on assigning survey transects, saving/exporting the .GPX file, delivering tracklines to the captain/bridge, and protocols for modifying waypoints based on captain’s feedback here]</em></p>
+</section>
+<section id="sec-staging-chanos" class="level4">
+<h4 class="anchored" data-anchor-id="sec-staging-chanos">Chanos Sensor (pH, DIC, Total Alkalinity)</h4>
+<p><em>[Insert details for Chanos sensor mounting, reagent preparation, fluidic connections, and calibration protocols here]</em></p>
+<br>
+<hr>
+<p><br></p>
+</section>
+<section id="sec-day-of-departure-detail" class="level3">
+<h3 class="anchored" data-anchor-id="sec-day-of-departure-detail">Day of Departure Protocols</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">If leaving from WH store vehicle keys in the locker by the Survey refrigerator. Parking forms must be filled out and placed on the car dashboard.</label></li>
+<li><label><input type="checkbox">When heading to Newport, RI, keep the ship informed about the science party’s arrival time.</label></li>
+<li><label><input type="checkbox">Ensure all members of scientific party are aboard</label></li>
+<li><label><input type="checkbox">Muster to bridge 30 min prior to departure time</label></li>
+<li><label><input type="checkbox">Inspect underwater cables for damage and/or voltage leaks.</label></li>
+<li><label><input type="checkbox">Host an on-board, pre-cruise meeting with scientific staff</label></li>
+<li><label><input type="checkbox">Track federal employee time</label></li>
+</ul>
+<p><br></p>
+<section id="sec-dayof-precruise-meeting" class="level4">
+<h4 class="anchored" data-anchor-id="sec-dayof-precruise-meeting">Host On-Board Pre-Cruise Meeting</h4>
+<p>Host the mandatory pre-cruise orientation meeting with all scientific staff prior to departure to establish shift leadership, review safety expectations, and outline initial survey logistics.</p>
+<ul>
+<li>Perform Introductions; Thank everyone for participating</li>
+<li><strong>Identify Watch Chief for first shift; they must be listened to concerning FSCS procedures</strong></li>
+<li>Announce area of operation, general cruise direction, and ETA to first station, and sequence of events at station</li>
+<li>Emphasize importance of ‘Safety First’ (i.e.&nbsp;hard hats and safety vests)</li>
+<li>Go over protocols for injuries</li>
+<li>Relieve other watch 10 mins early</li>
+<li>Remind Scientific Staff to notify Watch Chief and Chef of any food allergies</li>
+<li>Ensure watch times on day of departure/arrival are divided equally for pay purposes</li>
+</ul>
+<section id="sec-dayof-sequence-of-events" class="level5">
+<h5 class="anchored" data-anchor-id="sec-dayof-sequence-of-events">Sequence of Events at Station</h5>
+<p><em>[Insert detailed sequence of events at station here, including vehicle deployment steps, logging initiation, recovery protocols, and watch handover procedures]</em></p>
+</section>
+<section id="sec-dayof-safety-protocols" class="level5">
+<h5 class="anchored" data-anchor-id="sec-dayof-safety-protocols">Safety Protocols</h5>
+<p><em>[Insert detailed safety protocols here, including mandatory personal protective equipment (PPE) requirements such as hard hats, safety vests, steel-toe boots, and deck safety rules]</em></p>
+</section>
+<section id="sec-dayof-injury-protocols" class="level5">
+<h5 class="anchored" data-anchor-id="sec-dayof-injury-protocols">Injury Protocols</h5>
+<p><em>[Insert detailed injury protocols here, including immediate medical response steps, notifying the Chief Scientist and Vessel Medical Officer, and completing official incident documentation]</em></p>
+<p><br></p>
+</section>
+</section>
+<section id="sec-dayof-track-federal-time" class="level4">
+<h4 class="anchored" data-anchor-id="sec-dayof-track-federal-time">Track Federal Employee Time</h4>
+<p><em>[Insert detailed instructions on how to track federal employee time here, including daily timekeeping accounting, agency codes, sea pay/overtime rules, and pay period submission protocols]</em></p>
+<br>
+<hr>
+<p><br></p>
+</section>
+</section>
+<section id="field-team-roles-table" class="level2">
+<h2 class="anchored" data-anchor-id="field-team-roles-table">4. Field Team Roles Table</h2>
+<p><strong>Cruise Manning Structure &amp; Shift Operations:</strong> The HabCam scientific party typically consists of 9 to 10 personnel operating on 24-hour continuous sea trials divided into two 12-hour watch rotations (e.g., 11:30 AM to 11:30 PM and 11:30 PM to 11:30 AM). Each shift is managed by a Watch Chief and includes a rotating team of Pilots, Co-Pilots, and Annotators who cycle stations every 30 to 60 minutes to prevent screen fatigue. The Chief Scientist maintains active oversight across both watches (6 AM to 6 PM baseline plus as-needed response).</p>
+<table class="table table-striped">
+<thead>
+<tr>
+<th width="20%">
+Role
+</th>
+<th width="15%">
+Manning / Shift
+</th>
+<th width="65%">
+Primary High-Level Responsibilities
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Chief Scientist</b>
+</td>
+<td>
+1 Person (Floating / Day)
+</td>
+<td>
+Primary liaison between scientific party, vessel crew, and shore support; leads survey trackline design, staffing, daily safety briefings, and on-the-spot decision making.
 </td>
 </tr>
 <tr>
 <td>
-<b>Co-Pilot Station</b>
+<b>HabCam Lead</b>
 </td>
 <td>
-4-Monitor Display Array
+1 Person (Technical Lead)
 </td>
 <td>
-Monitors EK-80 echograms, engineering sensor GUI, Coastal Explorer navigation, and live stereo image waterfall (<code>dsvimview</code>)[cite: 7].
+Technical authority for hardware, fiberoptic terminations, server configuration, GPS time syncing, navigation integration, light maps, and data redundancy.
 </td>
 </tr>
 <tr>
 <td>
-<b>Pilot Station</b>
+<b>Watch Chief</b>
 </td>
 <td>
-4-Monitor Display + Winch Joystick
+2 People (1 per 12-hr shift)
 </td>
 <td>
-Flies vehicle via hydraulic winch joystick; monitors live winch CCTV video, bottom profile tracking, BlueView sonar, and Pentagon winch tension[cite: 7].
+Direct shift supervisor; manages station role rotations, controls core flight software startup/shutdown, trains new scientists, and conducts shift QA/QC.
+</td>
+</tr>
+<tr>
+<td>
+<b>Pilot</b>
+</td>
+<td>
+Rotating (30–60 min blocks)
+</td>
+<td>
+Actively flies vehicle via hydraulic winch joystick; maintains target altitude above seafloor using live camera feeds, flight GUI, and forward-looking sonar.
+</td>
+</tr>
+<tr>
+<td>
+<b>Co-Pilot</b>
+</td>
+<td>
+Rotating (30–60 min blocks)
+</td>
+<td>
+Second pair of eyes for Pilot; monitors dual camera feeds, telemetry, and sonar for sand waves/boulders; optimizes camera/sonar settings; mitigates software glitches.
+</td>
+</tr>
+<tr>
+<td>
+<b>Annotator</b>
+</td>
+<td>
+Rotating (30–60 min blocks)
+</td>
+<td>
+Frontline image processor; logs primary targets (scallops/fish) and secondary substrate/habitat data from incoming 10-minute image batches.
+</td>
+</tr>
+<tr>
+<td>
+<b>QA/QC Lead</b>
+</td>
+<td>
+1 Person / PopDyn
+</td>
+<td>
+Hosts pre-cruise training, maintains identification guides, instructs scientists on protocols, and audits/certifies ~30 baseline images per annotator.
+</td>
+</tr>
+<tr>
+<td>
+<b>Population Dynamics</b>
+</td>
+<td>
+1–2 People
+</td>
+<td>
+Quantitative scientist; collaborates on trackline design, executes camera calibrations, verifies altimeter confidence, and synthesizes population data.
 </td>
 </tr>
 </tbody>
 </table>
-</div>
 
 
 </section>
+</section></section></section></section></section></main></div>
 
-</main> <!-- /main -->
+
+
+
+
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -996,7 +2200,7 @@ Flies vehicle via hydraulic winch joystick; monitors live winch CCTV video, bott
       </a>
   </div>
 </nav>
-</div> <!-- /content -->
+ <!-- /content -->
 
 
 
