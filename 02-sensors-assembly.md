@@ -164,7 +164,7 @@ toc-depth: 3
 
 <a name="ctd-39-dissolved-oxygen"></a>
 
-### CTD-39 Dissolved Oxygen Sensor (Optional) (1x)
+### CTD-39 Dissolved Oxygen Sensor (1x)
 
 <div align="center">
   <img width="530" height="708" alt="CTD-39" src="https://github.com/user-attachments/assets/2b06c7c3-7110-4aab-bc1d-03d5f765ab2b" />
