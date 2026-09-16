@@ -30,3 +30,20 @@ div[style*="center"] em {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/* Constrain images and figures so they never overflow into the TOC sidebar */
+img, 
+figure, 
+.quarto-figure, 
+div[align="center"] img,
+div[style*="center"] img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure tables shrink to stay within the content column */
+table, 
+.table {
+  max-width: 100% !important;
+}
