@@ -49,6 +49,8 @@ To ensure system reliability during sea trials and survey operations, technician
 
 
 ## Individual Cable Specs
+
+<h3 id="chanos-cable">Chanos Cable</h3>
 <div align="center">
  <img width="1265" height="892" alt="Camera_Power" src="https://github.com/user-attachments/assets/1adccfc7-2298-4c57-984e-4bfab114408a" />
 </div>
