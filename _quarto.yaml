@@ -100,4 +100,5 @@ format:
     toc-depth: 2
     number-sections: false
     fig-align: center
+    lightbox: true
     css: styles.css
