@@ -116,7 +116,9 @@
 
 <h2 id="pre-cruise-checklist">2. Pre-Cruise Operational Checklist</h2>
 
-<h3 id="chk-6-months" style="color: #2e7d32; text-align: left;">6 Months out: ~ November</h3>
+<h3 id="chk-6-months" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-6-months" style="color: #2e7d32; text-decoration: underline;">6 Months out: ~ November</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Confirm ship time and set cruise date</li>
   <li><input type="checkbox"> Send Seabird 37, Seabird 49 CTDs and Wetlabs ecotriplet puck to Washington for Calibrations [Return to Manufacturer Authorization (RMA) form]</li>
@@ -124,12 +126,16 @@
   <li><input type="checkbox"> Send out any equipment that was damaged from last survey</li>
 </ul>
 
-<h3 id="chk-15-weeks" style="color: #2e7d32; text-align: left;">15 Weeks out:</h3>
+<h3 id="chk-15-weeks" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-15-weeks" style="color: #2e7d32; text-decoration: underline;">15 Weeks out:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> If ITD hasn't reached out to have computer software security added to machines prior to surveys (i.e. patched), check-in</li>
 </ul>
 
-<h3 id="chk-12-weeks" style="color: #2e7d32; text-align: left;">12 Weeks out:</h3>
+<h3 id="chk-12-weeks" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-12-weeks" style="color: #2e7d32; text-decoration: underline;">12 Weeks out:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Set up all servers with 2026 software directories and GUIs</li>
   <li><input type="checkbox"> Collect flashdrive from POPDY and Install R packages on annotation machines</li>
@@ -137,7 +143,9 @@
   <li><input type="checkbox"> Ensure sonar software and coastal explorer are installed on 2 field laptops</li>
 </ul>
 
-<h3 id="chk-10-weeks" style="color: #2e7d32; text-align: left;">10 Weeks out:</h3>
+<h3 id="chk-10-weeks" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-10-weeks" style="color: #2e7d32; text-decoration: underline;">10 Weeks out:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Hand-off Clevis to Shellfish group to have the epoxy burned out at Reidar's in New Bedford</li>
   <li><input type="checkbox"> Ensure Seabird 37, Seabird 49 and Wetlabs ecotriplet puck have returned from Washington</li>
@@ -148,7 +156,9 @@
   <li><input type="checkbox"> Reformat back-up drives</li>
 </ul>
 
-<h3 id="chk-8-weeks" style="color: #2e7d32; text-align: left;">8 Weeks out:</h3>
+<h3 id="chk-8-weeks" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-8-weeks" style="color: #2e7d32; text-decoration: underline;">8 Weeks out:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Prepare HABCAM for WHOI Sundance Tank Calibration Test</li>
   <li><input type="checkbox"> Pack supply kit for WHOI sundance tank calibration test</li>
@@ -156,15 +166,19 @@
   <li><input type="checkbox"> Science center staffing call</li>
 </ul>
 
-<h3 id="chk-6-weeks" style="color: #2e7d32; text-align: left;">6 Weeks out:</h3>
+<h3 id="chk-6-weeks" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-6-weeks" style="color: #2e7d32; text-decoration: underline;">6 Weeks out:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Take vehicles to WHOI sea water tank test to calibrate equipment (<a href="https://example.com" target="_blank">Camera calibrations for dummies</a>)</li>
   <li><input type="checkbox"> Repair or Resolve any issues that came up during the WHOI tank test</li>
   <li><input type="checkbox"> Store Vehicle at netloft until staging</li>
-  <li><input type="checkbox"> Replace batteries in Pinger (Benthos UAT 376 acoustic transponder) </li>
+  <li><input type="checkbox"> Replace batteries in Pinger (Benthos UAT 376 acoustic transponder)</li>
 </ul>
 
-<h3 id="chk-5-weeks" style="color: #2e7d32; text-align: left;">5 Weeks out:</h3>
+<h3 id="chk-5-weeks" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-5-weeks" style="color: #2e7d32; text-decoration: underline;">5 Weeks out:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Send “You are scheduled Email” notifying staff they have been selected for the survey. Include:</li>
   <li><input type="checkbox"> Notify watch chiefs that they will be sailing in leadership positions</li>
@@ -172,24 +186,30 @@
   <li><input type="checkbox"> Assign berthing</li>
 </ul>
 
-<h3 id="chk-1-week" style="color: #2e7d32; text-align: left;">1 Week out:</h3>
+<h3 id="chk-1-week" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-1-week" style="color: #2e7d32; text-decoration: underline;">1 Week out:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> Email the scientific party a few days prior to departure letting them know about...</li>
 </ul>
 
-<h3 id="chk-staging" style="color: #2e7d32; text-align: left;">Staging</h3>
+<h3 id="chk-staging" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-staging" style="color: #2e7d32; text-decoration: underline;">Staging</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#weak-link">Mounting the weak link</a></li>
   <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#fiber-optic-termination">Splice fiber optics</a></li>
   <li><input type="checkbox"> <a href="02-hardware-and-schematics.md#pull-test">Do the pull test</a></li>
-  <li><input type="checkbox"> Load vehicle
-  <li><input type="checkbox"> Load equipment
-  <li><input type="checkbox"> Setup stations
+  <li><input type="checkbox"> Load vehicle</li>
+  <li><input type="checkbox"> Load equipment</li>
+  <li><input type="checkbox"> Setup stations</li>
   <li><input type="checkbox"> Provide the captain/bridge with the .GPX file of station locations so they can import it into their navigation software and check tracklines and make recommendations for any shifts in waypoints.</li>
   <li><input type="checkbox"> Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)</li>
 </ul>
 
-<h3 id="chk-departure" style="color: #2e7d32; text-align: left;">Day of Departure:</h3>
+<h3 id="chk-departure" style="color: #2e7d32; text-align: left;">
+  <a href="#sec-day-of-departure" style="color: #2e7d32; text-decoration: underline;">Day of Departure:</a>
+</h3>
 <ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
   <li><input type="checkbox"> If leaving from WH store vehicle keys in the locker by the Survey refrigerator. Parking forms must be filled out and placed on the car dashboard.</li>
   <li><input type="checkbox"> When heading to Newport, RI, keep the ship informed about the science party’s arrival time.</li>
@@ -197,14 +217,6 @@
   <li><input type="checkbox"> Muster to bridge 30 min prior to departure time</li>
   <li><input type="checkbox"> Inspect underwater cables for damage and/or voltage leaks.</li>
   <li><input type="checkbox"> Host an on-board, pre-cruise meeting with scientific staff</li>
-  <li><input type="checkbox"> Perform Introductions; Thank everyone for participating</li>
-  <li><input type="checkbox"> <span style="background-color: #ffff00; padding: 2px 4px;"><b>Identify Watch Chief for first shift; they must be listened to concerning FSCS procedures</b></span></li>
-  <li><input type="checkbox"> Announce area of operation, general cruise direction, and ETA to first station, and sequence of events at station</li>
-  <li><input type="checkbox"> Emphasize importance of ‘Safety First’ (i.e. hard hats and safety vests)</li>
-  <li><input type="checkbox"> Go over protocols for injuries</li>
-  <li><input type="checkbox"> Relieve other watch 10 mins early</li>
-  <li><input type="checkbox"> Remind Scientific Staff to notify Watch Chief and Chef of any food allergies</li>
-  <li><input type="checkbox"> Ensure watch times on day of departure/arrival are divided equally for pay purposes</li>
   <li><input type="checkbox"> Track federal employee time</li>
 </ul>
 
@@ -1132,6 +1144,53 @@
 
 <h4 id="sec-staging-chanos">Chanos Sensor (pH, DIC, Total Alkalinity)</h4>
 <p><i>[Insert details for Chanos sensor mounting, reagent preparation, fluidic connections, and calibration protocols here]</i></p>
+
+</div>
+
+<div align="left" style="text-align: left !important;">
+
+<h3 id="sec-day-of-departure" style="color: #2e7d32; text-align: left;">Day of Departure Protocols</h3>
+
+<ul style="list-style-type: none; padding-left: 0; margin-left: 0; text-align: left;">
+  <li><input type="checkbox"> If leaving from WH store vehicle keys in the locker by the Survey refrigerator. Parking forms must be filled out and placed on the car dashboard.</li>
+  <li><input type="checkbox"> When heading to Newport, RI, keep the ship informed about the science party’s arrival time.</li>
+  <li><input type="checkbox"> Ensure all members of scientific party are aboard</li>
+  <li><input type="checkbox"> Muster to bridge 30 min prior to departure time</li>
+  <li><input type="checkbox"> Inspect underwater cables for damage and/or voltage leaks.</li>
+  <li><input type="checkbox"> Host an on-board, pre-cruise meeting with scientific staff</li>
+  <li><input type="checkbox"> Track federal employee time</li>
+</ul>
+
+<br>
+
+<h4 id="sec-dayof-precruise-meeting">Host On-Board Pre-Cruise Meeting</h4>
+
+<p style="margin-bottom: 4px;">Host the mandatory pre-cruise orientation meeting with all scientific staff prior to departure to establish shift leadership, review safety expectations, and outline initial survey logistics.</p>
+
+<ul style="margin-top: 2px; margin-left: 25px; padding-left: 0; text-align: left;">
+  <li>Perform Introductions; Thank everyone for participating</li>
+  <li><span style="background-color: #ffff00; color: #000000; padding: 2px 4px;"><b>Identify Watch Chief for first shift; they must be listened to concerning FSCS procedures</b></span></li>
+  <li>Announce area of operation, general cruise direction, and ETA to first station, and sequence of events at station</li>
+  <li>Emphasize importance of ‘Safety First’ (i.e. hard hats and safety vests)</li>
+  <li>Go over protocols for injuries</li>
+  <li>Relieve other watch 10 mins early</li>
+  <li>Remind Scientific Staff to notify Watch Chief and Chef of any food allergies</li>
+  <li>Ensure watch times on day of departure/arrival are divided equally for pay purposes</li>
+</ul>
+
+<h5 id="sec-dayof-sequence-of-events">Sequence of Events at Station</h5>
+<p><i>[Insert detailed sequence of events at station here, including vehicle deployment steps, logging initiation, recovery protocols, and watch handover procedures]</i></p>
+
+<h5 id="sec-dayof-safety-protocols">Safety Protocols</h5>
+<p><i>[Insert detailed safety protocols here, including mandatory personal protective equipment (PPE) requirements such as hard hats, safety vests, steel-toe boots, and deck safety rules]</i></p>
+
+<h5 id="sec-dayof-injury-protocols">Injury Protocols</h5>
+<p><i>[Insert detailed injury protocols here, including immediate medical response steps, notifying the Chief Scientist and Vessel Medical Officer, and completing official incident documentation]</i></p>
+
+<br>
+
+<h4 id="sec-dayof-track-federal-time">Track Federal Employee Time</h4>
+<p><i>[Insert detailed instructions on how to track federal employee time here, including daily timekeeping accounting, agency codes, sea pay/overtime rules, and pay period submission protocols]</i></p>
 
 </div>
 
