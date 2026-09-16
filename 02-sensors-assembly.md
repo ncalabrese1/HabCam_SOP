@@ -1,3 +1,7 @@
+---
+toc-depth: 3
+---
+
 # Vehicle Sensor Preparation & Assembly Protocols
 
 <div align="center">
@@ -9,7 +13,7 @@
 
 <br>
 
-## Master Subsystem & Mounting Summary
+## Mounting Summary
 
 | Subsystem | Mounting Location | Required Hardware & Fasteners | Required Tools |
 | :--- | :--- | :--- | :--- |
@@ -30,6 +34,7 @@
 ## Preparation & Assembly Instructions
 
 <a name="blueview-sonar"></a>
+
 ### BlueView Forward Looking Sonar (1x)
 
 <div align="center">
@@ -158,6 +163,7 @@
 <br>
 
 <a name="ctd-39-dissolved-oxygen"></a>
+
 ### CTD-39 Dissolved Oxygen Sensor (Optional) (1x)
 
 <div align="center">
@@ -262,6 +268,7 @@
 <br>
 
 <a name="ctd-49-sound-speed"></a>
+
 ### CTD-49 Sound Speed Sensor (1x)
 
 <div align="center">
@@ -355,6 +362,7 @@
 <br>
 
 <a name="eco-triplet-puck"></a>
+
 ### Eco-Triplet Puck - Fluorometer (1x)
 
 <div align="center">
@@ -488,6 +496,7 @@
 <br>
 
 <a name="electronics-bottle"></a>
+
 ### Main Electronics Bottle - WHOI Engineered (1x)
 
 <div align="center">
@@ -604,6 +613,7 @@
 <br>
 
 <a name="habitat-cameras"></a>
+
 ### Allied Vision Mako G-234 - Cameras (2x)
 
 <div align="center">
@@ -696,6 +706,7 @@
 <br>
 
 <a name="strobe-lights"></a>
+
 ### Arctic Rays (INKFISH) Dragonfish - Mini LED Strobe Lights (4x)
 
 <div align="center">
@@ -793,6 +804,7 @@
 <br>
 
 <a name="attitude-sensor"></a>
+
 ### Microstrain AHRS Sensor (3DM-GX5-25-HRS) - Attitude Sensor (1x)
 
 <div align="center">
@@ -877,6 +889,7 @@
 <br>
 
 <a name="altimeter"></a>
+
 ### Teledyne Benthos PSA 916 - Sonar Altimeter (1x)
 
 <div align="center">
