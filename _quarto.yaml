@@ -3,6 +3,8 @@ project:
 
 book:
   title: "HabCam Operational SOP"
+  logo: 
+  number-sections: false # Disables 1, 2, 3... from sidebar and page headers
   sidebar:
     style: "docked"
     search: true
@@ -11,51 +13,86 @@ book:
     - index.md
     - part: "Program Information"
       chapters:
-        - 00-the-program.md
-        - 00-team-members.md
-        - 00-onboarding.md
-        - 00-publications.md
-        - 00-media.md
-        - 00-interns.md
+        - href: 00-the-program.md
+          text: "The Program"
+        - href: 00-team-members.md
+          text: "Team Members"
+        - href: 00-onboarding.md
+          text: "Onboarding"
+        - href: 00-interns.md
+          text: "Interns"
+        - href: 00-publications.md
+          text: "Publications"
+        - href: 00-media.md
+          text: "Media"
     - part: "Overview & Species"
       chapters:
-        - 01-survey-overview.md
-        - 01-why-we-survey.md
-        - 01-data-use.md
-        - 01-sea-scallop.md
+        - href: 01-survey-overview.md
+          text: "Survey Overview"
+        - href: 01-why-we-survey.md
+          text: "Why We Survey"
+        - href: 01-data-use.md
+          text: "Data Use"
+        - href: 01-sea-scallop.md
+          text: "Atlantic Sea Scallop"
     - part: "Hardware & Schematics"
       chapters:
-        - 02-hardware-components.md
-        - 02-frame-schematics.md
-        - 02-harness-schematics.md
-        - 02-electrical-architecture.md
-        - 02-sensors-assembly.md
-        - 02-weak-link.md
-        - 02-fiber-termination.md
-        - 02-fiber-pull-test.md
+        - href: 02-hardware-components.md
+          text: "Component Reference"
+        - href: 02-frame-schematics.md
+          text: "Frame Schematics"
+        - href: 02-harness-schematics.md
+          text: "Cable Harness Specs"
+        - href: 02-electrical-architecture.md
+          text: "Electrical & Network"
+        - href: 02-sensors-assembly.md
+          text: "Sensor Assembly"
+        - href: 02-weak-link.md
+          text: "Weak Link Assembly"
+        - href: 02-fiber-termination.md
+          text: "Fiber Termination"
+        - href: 02-fiber-pull-test.md
+          text: "Fiber Pull Test"
     - part: "Software & Data"
       chapters:
-        - 03-software-overview.md
-        - 03-data-acquisition.md
-        - 03-server-framework.md
-        - 03-annotating.md
-        - 03-database.md
-        - 03-data-pulls.md
-        - 03-optical-data.md
-        - 03-data-analysis.md
+        - href: 03-software-overview.md
+          text: "Software Overview"
+        - href: 03-data-acquisition.md
+          text: "Data Acquisition"
+        - href: 03-server-framework.md
+          text: "Server Framework"
+        - href: 03-annotating.md
+          text: "Annotating"
+        - href: 03-database.md
+          text: "Database"
+        - href: 03-data-pulls.md
+          text: "Data Pulls"
+        - href: 03-optical-data.md
+          text: "Optical Data"
+        - href: 03-data-analysis.md
+          text: "Data Analysis"
     - part: "Staging & Surveys"
       chapters:
-        - 04-annual-timeline.md
-        - 04-pre-cruise.md
-        - 04-field-team-roles.md
-        - 04-habcam-prep.md
-        - 04-after-cruise.md
+        - href: 04-annual-timeline.md
+          text: "Annual Timeline"
+        - href: 04-pre-cruise.md
+          text: "Pre-Cruise"
+        - href: 04-field-team-roles.md
+          text: "Field Team"
+        - href: 04-habcam-prep.md
+          text: "Pre-Deployment"
+        - href: 04-after-cruise.md
+          text: "After-Cruise"
     - part: "Maintenance & Inventory"
       chapters:
-        - 06-maintenance-overview.md
-        - 06-inventory.md
-        - 06-maintenance-schedule.md
-        - 06-troubleshooting.md
+        - href: 06-maintenance-overview.md
+          text: "Maintenance Overview"
+        - href: 06-inventory.md
+          text: "Inventory"
+        - href: 06-maintenance-schedule.md
+          text: "Maintenance Schedule"
+        - href: 06-troubleshooting.md
+          text: "Troubleshooting"
 
 format:
   html:
