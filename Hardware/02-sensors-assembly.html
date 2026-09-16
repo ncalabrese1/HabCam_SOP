@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Vehicle Sensor Preparation &amp; Assembly Protocols – HabCam SOP</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Hardware/02-weak-link.html" rel="next">
+<link href="../Hardware/02-electrical-architecture.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-dabb4177d918b2a71d8bf8ab8beb4a59.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+  /* Show zoom cursor on content images */
+  main img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  main img:hover {
+    opacity: 0.9;
+  }
+
+  /* Full-screen dark overlay */
+  .lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+  }
+  .lightbox-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.8);
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.createElement("div");
+    modal.className = "lightbox-modal";
+    const modalImg = document.createElement("img");
+    modal.appendChild(modalImg);
+    document.body.appendChild(modal);
+
+    document.querySelectorAll("main img").forEach(img => {
+      img.addEventListener("click", () => {
+        modalImg.src = img.src;
+        modal.style.display = "flex";
+      });
+    });
+
+    modal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  });
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Hardware/02-hardware-components.html">Hardware &amp; Schematics</a></li><li class="breadcrumb-item"><a href="../Hardware/02-sensors-assembly.html"><span class="chapter-title">Sensor Assembly</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../Round Logo.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../Round Logo.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">HabCam SOP</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Program Information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Program/00-the-program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Program</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Program/00-team-members.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Team Members</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Program/00-onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Onboarding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Program/00-interns.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Program/00-publications.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Publications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Program/00-media.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Media</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Overview &amp; Species</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Overview/01-survey-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Survey Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Overview/01-why-we-survey.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Why We Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Overview/01-data-use.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Use</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Overview/01-sea-scallop.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atlantic Sea Scallop</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Hardware &amp; Schematics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-hardware-components.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Component Reference</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-frame-schematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Frame Schematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-harness-schematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cable Harness Specs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-electrical-architecture.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Electrical &amp; Network</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-sensors-assembly.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sensor Assembly</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-weak-link.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Weak Link Assembly</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-fiber-termination.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fiber Termination</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Hardware/02-fiber-pull-test.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fiber Pull Test</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Software &amp; Data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-software-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-data-acquisition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Acquisition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-server-framework.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Server Framework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-annotating.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annotating</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-database.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Database</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-data-pulls.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Pulls</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-optical-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Optical Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Software and Data/03-data-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Analysis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Staging &amp; Surveys</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Staging and Surveys/04-annual-timeline.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annual Timeline</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Staging and Surveys/04-pre-cruise.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pre-Cruise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Staging and Surveys/04-field-team-roles.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Field Team</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Staging and Surveys/04-habcam-prep.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pre-Deployment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Staging and Surveys/04-after-cruise.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">After-Cruise</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Maintenance &amp; Inventory</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Maitenance/06-maintenance-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maintenance Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Maitenance/06-inventory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Inventory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Maitenance/06-maintenance-schedule.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maintenance Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Maitenance/06-troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#mounting-summary" id="toc-mounting-summary" class="nav-link active" data-scroll-target="#mounting-summary">Mounting Summary</a></li>
+  <li><a href="#preparation-assembly-instructions" id="toc-preparation-assembly-instructions" class="nav-link" data-scroll-target="#preparation-assembly-instructions">Preparation &amp; Assembly Instructions</a>
+  <ul class="collapse">
+  <li><a href="#blueview-forward-looking-sonar-1x" id="toc-blueview-forward-looking-sonar-1x" class="nav-link" data-scroll-target="#blueview-forward-looking-sonar-1x">BlueView Forward Looking Sonar (1x)</a></li>
+  <li><a href="#ctd-39-dissolved-oxygen-sensor-1x" id="toc-ctd-39-dissolved-oxygen-sensor-1x" class="nav-link" data-scroll-target="#ctd-39-dissolved-oxygen-sensor-1x">CTD-39 Dissolved Oxygen Sensor (1x)</a></li>
+  <li><a href="#ctd-49-sound-speed-sensor-1x" id="toc-ctd-49-sound-speed-sensor-1x" class="nav-link" data-scroll-target="#ctd-49-sound-speed-sensor-1x">CTD-49 Sound Speed Sensor (1x)</a></li>
+  <li><a href="#eco-triplet-puck---fluorometer-1x" id="toc-eco-triplet-puck---fluorometer-1x" class="nav-link" data-scroll-target="#eco-triplet-puck---fluorometer-1x">Eco-Triplet Puck - Fluorometer (1x)</a></li>
+  <li><a href="#main-electronics-bottle---whoi-engineered-1x" id="toc-main-electronics-bottle---whoi-engineered-1x" class="nav-link" data-scroll-target="#main-electronics-bottle---whoi-engineered-1x">Main Electronics Bottle - WHOI Engineered (1x)</a></li>
+  <li><a href="#allied-vision-mako-g-234---cameras-2x" id="toc-allied-vision-mako-g-234---cameras-2x" class="nav-link" data-scroll-target="#allied-vision-mako-g-234---cameras-2x">Allied Vision Mako G-234 - Cameras (2x)</a></li>
+  <li><a href="#arctic-rays-inkfish-dragonfish---mini-led-strobe-lights-4x" id="toc-arctic-rays-inkfish-dragonfish---mini-led-strobe-lights-4x" class="nav-link" data-scroll-target="#arctic-rays-inkfish-dragonfish---mini-led-strobe-lights-4x">Arctic Rays (INKFISH) Dragonfish - Mini LED Strobe Lights (4x)</a></li>
+  <li><a href="#microstrain-ahrs-sensor-3dm-gx5-25-hrs---attitude-sensor-1x" id="toc-microstrain-ahrs-sensor-3dm-gx5-25-hrs---attitude-sensor-1x" class="nav-link" data-scroll-target="#microstrain-ahrs-sensor-3dm-gx5-25-hrs---attitude-sensor-1x">Microstrain AHRS Sensor (3DM-GX5-25-HRS) - Attitude Sensor (1x)</a></li>
+  <li><a href="#teledyne-benthos-psa-916---sonar-altimeter-1x" id="toc-teledyne-benthos-psa-916---sonar-altimeter-1x" class="nav-link" data-scroll-target="#teledyne-benthos-psa-916---sonar-altimeter-1x">Teledyne Benthos PSA 916 - Sonar Altimeter (1x)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Hardware/02-hardware-components.html">Hardware &amp; Schematics</a></li><li class="breadcrumb-item"><a href="../Hardware/02-sensors-assembly.html"><span class="chapter-title">Sensor Assembly</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Vehicle Sensor Preparation &amp; Assembly Protocols</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div data-align="center">
+<img width="369" height="491" alt="Habcam in Tank" src="https://github.com/user-attachments/assets/bfd3aa9e-db54-4ff7-903f-41e80b910eb6">
+<p>
+<i>HabCam Vehicle Submerged in Sundance Tank for Camera Calibration</i>
+</p>
+</div>
+<p><br></p>
+<section id="mounting-summary" class="level2">
+<h2 class="anchored" data-anchor-id="mounting-summary">Mounting Summary</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Subsystem</th>
+<th style="text-align: left;">Mounting Location</th>
+<th style="text-align: left;">Required Hardware &amp; Fasteners</th>
+<th style="text-align: left;">Required Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Electronics Bottle</strong> <em>(1x)</em></td>
+<td style="text-align: left;">Aft Vehicle Frame</td>
+<td style="text-align: left;">• (4x) Black Aluminum Brackets<br>• (4x) Barrier Rubber Pieces (Pliobond 35 glued)<br>• (8x) 9/16”-12 (3 ½”) Partial Thread Bolts<br>• (8x) 9/16”-12 (2 ¼”) Partial Thread Bolts<br>• (4x) 32” 11mm Fully Threaded Rods<br>• (6x) Plastic Washers, (10x) Steel Washers<br>• (8x) Steel Lock Nuts, (8x) Hex Nuts</td>
+<td style="text-align: left;">• 9/16” Socket &amp; Wrench<br>• 7/16” Wrench<br>• 14mm Wrench</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>BlueView Sonar</strong> <em>(1x)</em></td>
+<td style="text-align: left;">Forward Vehicle Frame</td>
+<td style="text-align: left;">• (4x) Steel Brackets<br>• (4x) Barrier Rubber Pieces<br>• (6x) 9/16”-12 (3 ½”) Steel Partial Thread Bolts<br>• (4x) 9/16”-12 (2 ¼”) Steel Partial Thread Bolts<br>• (20x) 3/16” Steel Washers<br>• (10x) Steel Lock Nuts, (10x) Hex Nuts</td>
+<td style="text-align: left;">• 9/16” Socket &amp; Wrench<br>• 14mm Wrench<br>• Aqua Shield Grease</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>CTD 39 Oxygen</strong> <em>(1x)</em></td>
+<td style="text-align: left;">Starboard Forward Rail</td>
+<td style="text-align: left;">• (2x) UHMW Brackets, (2x) Plastic Brackets<br>• (4x) Barrier Rubber Pieces<br>• (4x) 7/16”-14 (4 ¾”) Steel Partial Thread Bolts<br>• (2x) 7/16”-14 (1”) Steel Full Thread Bolts<br>• (3x) 3/16” (1”) Socket Head Screws<br>• (10x) Steel Washers, (6x) Lock Nuts, (2x) Hex Nuts</td>
+<td style="text-align: left;">• 7/16” Socket &amp; Wrench<br>• 11mm Wrench<br>• Hex Key Set (1/4”–1/16”)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CTD 49 Sound Speed</strong> <em>(1x)</em></td>
+<td style="text-align: left;">Port Forward Rail</td>
+<td style="text-align: left;">• (6x) Plastic Brackets (Sensor, Center, Frame)<br>• (8x) Barrier Rubber Pieces<br>• (8x) 9/16”-12 (2 ¾”) Steel Partial Thread Bolts<br>• (16x) Steel Washers<br>• (8x) Steel Lock Nuts, (8x) Hex Nuts</td>
+<td style="text-align: left;">• 9/16” Socket &amp; Wrench<br>• 14mm Wrench</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Eco-Triplet Puck</strong> <em>(1x)</em></td>
+<td style="text-align: left;">Center Forward Expansion Rail</td>
+<td style="text-align: left;">• (2x) Steel Brackets (Top &amp; Bottom)<br>• (2x) Barrier Rubber Pieces<br>• (2x) 9/16”-12 (2 ½”) Steel Partial Thread Bolts<br>• (2x) 9/16”-12 (2”) Steel Partial Thread Bolts<br>• (6x) Steel Washers, (4x) Lock Nuts, (2x) Hex Nuts</td>
+<td style="text-align: left;">• 9/16” Socket &amp; Wrench<br>• 14mm Wrench</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Habitat Cameras</strong> <em>(2x)</em></td>
+<td style="text-align: left;">Center Frame Plate</td>
+<td style="text-align: left;">• (1x) Steel Mounting Plate (16 in x 16 in)<br>• (6x) Metal Brackets<br>• (4x) M7-1.0 x 45mm Threaded Bolts<br>• (4x) 1/4”-20 (2”) Socket Head Screws<br>• (8x) 1/4”-20 (1”) Socket Head Screws<br>• (6x) Steel Washers, (6x) Steel Lock Nuts</td>
+<td style="text-align: left;">• Hex Key Set (1/4”–1/16”)<br>• M7 / 3/16” Allen Keys</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Strobe Lights</strong> <em>(4x)</em></td>
+<td style="text-align: left;">Forward, Aft, Port, Starboard</td>
+<td style="text-align: left;">• (8x) Steel Brackets<br>• (8x) Barrier Rubber Pieces<br>• (8x) 9/16”-12 (3 ½”) Steel Partial Thread Bolts<br>• (8x) 7/16”-14 (1 ¾”) Steel Partial Thread Bolts<br>• (32x) Plastic Washers, (32x) Steel Washers<br>• (16x) Steel Lock Nuts, (16x) Hex Nuts</td>
+<td style="text-align: left;">• 9/16” Socket &amp; Wrench<br>• 7/16” Socket &amp; Wrench<br>• 14mm / 11mm Wrenches</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Attitude Sensor</strong> <em>(1x)</em></td>
+<td style="text-align: left;">Internal Housing Chassis</td>
+<td style="text-align: left;">• Housing Mounting Brackets &amp; Isolation Collars<br>• Stainless Steel Attachment Fasteners</td>
+<td style="text-align: left;">• Standard Wrench &amp; Socket Set</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sonar Altimeter</strong> <em>(1x)</em></td>
+<td style="text-align: left;">Center Camera Plate</td>
+<td style="text-align: left;">• (2x) Plastic Brackets<br>• (4x) Barrier Rubber Pieces<br>• (4x) 9/16”-12 (6 ½”) Steel Partial Thread Bolts<br>• (8x) Steel Washers<br>• (4x) Steel Lock Nuts, (4x) Hex Nuts</td>
+<td style="text-align: left;">• 9/16” Socket &amp; Wrench<br>• 14mm Wrench</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+<p><br></p>
+</section>
+<section id="preparation-assembly-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="preparation-assembly-instructions">Preparation &amp; Assembly Instructions</h2>
+<p><a name="blueview-sonar"></a></p>
+<section id="blueview-forward-looking-sonar-1x" class="level3">
+<h3 class="anchored" data-anchor-id="blueview-forward-looking-sonar-1x">BlueView Forward Looking Sonar (1x)</h3>
+<div data-align="center">
+<p><img width="530" height="705" alt="BlueView" src="https://github.com/user-attachments/assets/992d102a-c524-457e-b3f7-2bba977efd09"> <br><br> <img width="367" height="335" alt="BlueView" src="https://github.com/user-attachments/assets/2a63bea3-015d-4956-b9bb-948f54804023"></p>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(4x) Steel Brackets</li>
+<li>(4x) Barrier Rubber Pieces</li>
+<li>(6x) 9/16”-12 (3 ½”) Steel Partial Thread Hex Bolts</li>
+<li>(4x) 9/16”-12 (2 ¼”) Steel Partial Thread Hex Bolts</li>
+<li>(20x) 3/16” Steel Washers</li>
+<li>(10x) Steel Lock Nuts</li>
+<li>(10x) 9/16”-12 Steel Hex Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>9/16” Socket Wrench</li>
+<li>9/16” Combination Wrench</li>
+<li>14mm Combination Wrench (Optional)</li>
+<li>Aqua Shield Grease</li>
+</ul>
+<p><strong>System Overview:</strong> A forward-facing sonar (forward-looking sonar or forward imaging sonar) is designed to provide high-resolution imaging of the underwater environment in front of a vessel or vehicle. Unlike traditional sonar systems that measure depth directly below or capture data in a single direction, forward-facing sonar scans the area ahead to detect obstacles, submerged structures, and features during poor visibility, night operations, or turbid water surveys. Widely used in navigation, underwater inspections, search-and-rescue, and operations in complex marine environments.</p>
+<p><strong>Sonar Preparation &amp; Mounting Steps:</strong></p>
+<ol type="1">
+<li>Prior to attaching BlueView to the front of the vehicle, ensure the bracket has rubber gaskets glued to them (brackets should already be attached to the HabCam vehicle).</li>
+<li>Attach BlueView to the bracket, with the Impulse connector facing towards the back of the vehicle.</li>
+<li>Thread four stainless steel screws through the bracket.</li>
+<li>Prior to adding the stainless steel washer, lock washer, and nut, apply Aqua Shield over all of the threads (there should be 4 screws).</li>
+<li>Add the stainless steel washer, lock washer, and nut to all four screws (washer on inside, lock washer in middle, nut on outside).</li>
+<li>Use 9/16” ratcheting wrenches to tighten the nuts.</li>
+</ol>
+<p><br></p>
+<section id="teledyne-marine-blueview-m450-mk2-system-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="teledyne-marine-blueview-m450-mk2-system-specifications">Teledyne Marine BlueView M450 Mk2 System Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Operating Frequency</b>
+</td>
+<td>
+450 kHz
+</td>
+<td>
+<b>Supply Voltage</b>
+</td>
+<td>
+12–28 VDC
+</td>
+</tr>
+<tr>
+<td>
+<b>Field of View</b>
+</td>
+<td>
+130°
+</td>
+<td>
+<b>Max Power Consumption</b>
+</td>
+<td>
+24 W
+</td>
+</tr>
+<tr>
+<td>
+<b>Max Range</b>
+</td>
+<td>
+300 m (984 ft)
+</td>
+<td>
+<b>Connectivity</b>
+</td>
+<td>
+Ethernet
+</td>
+</tr>
+<tr>
+<td>
+<b>Optimum Range</b>
+</td>
+<td>
+2–150 m (6.5–197 ft)
+</td>
+<td>
+<b>Connector</b>
+</td>
+<td>
+Impulse MKS(W) Splash-mate (standard); Impulse MKS, Burton (optional)
+</td>
+</tr>
+<tr>
+<td>
+<b>Beam Width (Horizontal / Vertical)</b>
+</td>
+<td>
+1° / 10°
+</td>
+<td>
+<b>Range Resolution</b>
+</td>
+<td>
+50.8 mm (2.0 in)
+</td>
+</tr>
+<tr>
+<td>
+<b>Number of Beams (Maximum)</b>
+</td>
+<td>
+768 (0.18° beam spacing)
+</td>
+<td>
+<b>Update Rate</b>
+</td>
+<td>
+Up to 20 Hz
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</section>
+<section id="blueview-mechanical-options" class="level4">
+<h4 class="anchored" data-anchor-id="blueview-mechanical-options">BlueView Mechanical Options</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Version
+</th>
+<th align="left">
+Depth Rating
+</th>
+<th align="left">
+Dimensions (L × W)
+</th>
+<th align="left">
+Can Diameter
+</th>
+<th align="left">
+Weight (Air / Water)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>BlueView M450 S Mk2</b>
+</td>
+<td>
+1,000 m
+</td>
+<td>
+203.4 mm (8.0 in) × 195.6 mm (7.7 in)
+</td>
+<td>
+Ø101.6 mm (4.0 in)
+</td>
+<td>
+3.5 kg / 1.6 kg
+</td>
+</tr>
+<tr>
+<td>
+<b>BlueView M450 D6 Mk2</b>
+</td>
+<td>
+6,000 m
+</td>
+<td>
+253.7 mm (10.0 in) × 195.6 mm (7.7 in)
+</td>
+<td>
+Ø127.0 mm (5.0 in)
+</td>
+<td>
+8.5 kg / 5.5 kg
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+<p><br></p>
+<p><a name="ctd-39-dissolved-oxygen"></a></p>
+</section>
+</section>
+<section id="ctd-39-dissolved-oxygen-sensor-1x" class="level3">
+<h3 class="anchored" data-anchor-id="ctd-39-dissolved-oxygen-sensor-1x">CTD-39 Dissolved Oxygen Sensor (1x)</h3>
+<div data-align="center">
+<p><img width="530" height="708" alt="CTD-39" src="https://github.com/user-attachments/assets/2b06c7c3-7110-4aab-bc1d-03d5f765ab2b"> <br><br> <img width="255" height="418" alt="CTD-39" src="https://github.com/user-attachments/assets/001241a7-8ec2-4cf6-b888-7d988b748afb"></p>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(2x) UHMW Brackets</li>
+<li>(2x) Plastic Brackets</li>
+<li>(4x) Barrier Rubber Pieces</li>
+<li>(4x) 7/16”-14 (4 ¾”) Steel Partial Thread Hex Bolts</li>
+<li>(2x) 7/16”-14 (1”) Steel Full Thread Hex Bolts</li>
+<li>(3x) 3/16” (1”) Steel Socket Head Screws Full Thread</li>
+<li>(10x) Steel Washers</li>
+<li>(6x) Steel Lock Nuts</li>
+<li>(2x) 7/16”-14 Steel Hex Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>7/16” Socket Wrench</li>
+<li>7/16” Combination Wrench</li>
+<li>11mm Combination Wrench (Optional)</li>
+<li>Hex Key Set (1/4”–1/16”)</li>
+</ul>
+<p><strong>System Overview:</strong> The SBE 39plus is a high-accuracy, fast-sampling temperature (pressure optional) recorder with USB interface, internal batteries, and onboard memory. Designed for moorings or long-duration fixed-site deployments, as well as nets, towed vehicles, or ROVs. Memory capacity exceeds 9.5 million samples excluding pressure data, or 5.5 million samples including pressure. Sampling every 0.5 sec yields approximately 55 days of data without pressure or 32 days with pressure (battery endurance exceeds memory capacity).</p>
+<p><strong>CTD Preparation Steps:</strong></p>
+<ol type="1">
+<li>Prior to attaching Seabird 39 CTD to the Starboard forward vertical frame rail, ensure bracket has rubber gaskets glued to them (brackets should already be attached to HabCam vehicle).</li>
+<li>Attach Seabird 39 CTD to the bracket, with the bulkhead connector facing down by threading screw through bracket.</li>
+<li>Prior to adding stainless steel washer, lock washer, and nut, apply Aqua Shield over all of the threads (there should be 4 screws).</li>
+<li>Add the stainless steel washer, lock washer, and nut to all four screws (washer on inside, lock washer in middle, nut on outside).</li>
+<li>Use 7/16” ratcheting wrenches to tighten the nuts.</li>
+</ol>
+<p><br></p>
+<section id="sea-bird-scientific-sbe-39plus-system-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="sea-bird-scientific-sbe-39plus-system-specifications">Sea-Bird Scientific SBE 39plus System Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Communication Options</b>
+</td>
+<td>
+RS-232
+</td>
+<td>
+<b>Sampling Rate</b>
+</td>
+<td>
+Up to 2 Hz (2 samples/sec)
+</td>
+</tr>
+<tr>
+<td>
+<b>Depth Rating</b>
+</td>
+<td>
+600 m
+</td>
+<td>
+<b>Memory Capacity</b>
+</td>
+<td>
+9.5 million samples T; 5.5 million samples TD
+</td>
+</tr>
+<tr>
+<td>
+<b>Power Source</b>
+</td>
+<td>
+Internal, External
+</td>
+<td>
+<b>Power Consumption</b>
+</td>
+<td>
+Lithium battery pack (4 AA Saft LS 14500): &gt; 11,000,000 samples TD
+</td>
+</tr>
+<tr>
+<td>
+<b>Housing Material Options</b>
+</td>
+<td>
+Plastic, Titanium
+</td>
+<td>
+<b>Accuracy</b>
+</td>
+<td>
+Temperature: ±0.002 °C (-5 to +35 °C); ±0.01 °C (+35 to +45 °C)<br>Optional Pressure: ±0.1% of full scale range
+</td>
+</tr>
+<tr>
+<td>
+<b>Onboard Memory</b>
+</td>
+<td>
+Yes
+</td>
+<td>
+<b>Resolution</b>
+</td>
+<td>
+Temperature: 0.0001 °C<br>Optional Pressure: 0.002% of full scale range
+</td>
+</tr>
+<tr>
+<td>
+<b>Connector</b>
+</td>
+<td>
+MCBH
+</td>
+<td>
+<b>Software / Biofouling</b>
+</td>
+<td>
+Seasoft V2 | Biofouling Protection: No
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Documentation Links:</strong></p>
+<ul>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/SBE%2039plus/SBE%2039plus%20Datasheets.zip?hsLang=en">SBE 39plus DataSheet Zip</a></li>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/SBE%2039plus/Manuals/39plusrevB.pdf?hsLang=en">SBE 39plus Manual (Rev B)</a></li>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/SBE%2039plus/Methods-Procedures/SBE%2039%20Methods-Procedures.zip?hsLang=en">SBE 39 Methods and Procedures Zip</a></li>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/SBE%2039plus/Configurations/SBE%2039plus%20Configurations%20Overview.pdf?hsLang=en">SBE 39plus Configurations Overview</a></li>
+</ul>
+<br>
+<hr>
+<p><br></p>
+<p><a name="ctd-49-sound-speed"></a></p>
+</section>
+</section>
+<section id="ctd-49-sound-speed-sensor-1x" class="level3">
+<h3 class="anchored" data-anchor-id="ctd-49-sound-speed-sensor-1x">CTD-49 Sound Speed Sensor (1x)</h3>
+<div data-align="center">
+<p><img width="537" height="715" alt="CTD-49" src="https://github.com/user-attachments/assets/acfb146e-98b2-4127-ae30-f809362fa6a9"> <br><br> <img width="286" height="431" alt="CTD-49" src="https://github.com/user-attachments/assets/1e25bb83-d045-4f3b-a1d8-018db19d76be"></p>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(6x) Plastic Brackets</li>
+<li>(8x) Barrier Rubber Pieces</li>
+<li>(8x) 9/16”-12 (2 ¾”) Steel Partial Thread Hex Bolts</li>
+<li>(16x) Steel Washers</li>
+<li>(8x) Steel Lock Nuts</li>
+<li>(8x) 9/16”-12 Steel Hex Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>9/16” Socket Wrench</li>
+<li>9/16” Combination Wrench</li>
+<li>14mm Combination Wrench (Optional)</li>
+</ul>
+<p><strong>System Overview:</strong> The SBE 49 FastCAT is an integrated CTD sensor intended for use as a modular component in towed vehicles, ROVs, AUVs, or other autonomous platforms that supply DC power and acquire serial data. It is an easy-to-use, light, and compact instrument suited to small vehicle payloads. FastCAT must be externally powered, and its RS-232C data saved or telemetered by the vehicle. It does not support auxiliary sensors directly. FastCAT’s pump-controlled, TC-ducted flow feature minimizes salinity spiking, and its 16 Hz sampling provides very high spatial resolution of oceanographic structures and gradients. Measured data and derived variables of salinity and sound velocity are output in real-time in engineering units or raw HEX.</p>
+<p><strong>CTD Preparation Steps:</strong></p>
+<ol type="1">
+<li>Prior to attaching Seabird 49 CTD to Port forward vertical frame rail, ensure bracket has rubber gaskets glued to them (brackets should already be attached to HabCam vehicle).</li>
+<li>Attach Seabird 49 CTD to the bracket, with the pump facing down by threading screw through bracket.</li>
+<li>Prior to adding stainless steel washer, lock washer, and nut, apply Aqua Shield over all of the threads (there should be 4 screws).</li>
+<li>Add the stainless-steel washer, lock washer, and nut to all four screws (washer on inside, lock washer in middle, nut on outside).</li>
+<li>Use 9/16” ratcheting wrenches to tighten the nuts.</li>
+</ol>
+<p><br></p>
+<section id="sea-bird-scientific-sbe-49-fastcat-ctd-system-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="sea-bird-scientific-sbe-49-fastcat-ctd-system-specifications">Sea-Bird Scientific SBE 49 FastCAT CTD System Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Communication Options</b>
+</td>
+<td>
+RS-232C
+</td>
+<td>
+<b>Sampling Rate</b>
+</td>
+<td>
+16 Hz (16 samples/sec)
+</td>
+</tr>
+<tr>
+<td>
+<b>Depth Rating</b>
+</td>
+<td>
+350 m
+</td>
+<td>
+<b>Power Consumption</b>
+</td>
+<td>
+Input: 0.75 A @ 9–24 VDC<br>Turn-on transient: 750 mA<br>Sampling/transmitting (with pump): 350 mA @ 9V, 285 mA @ 12V, 180 mA @ 19V
+</td>
+</tr>
+<tr>
+<td>
+<b>Power Source</b>
+</td>
+<td>
+External
+</td>
+<td>
+<b>Accuracy</b>
+</td>
+<td>
+Conductivity: ±0.0003 S/m<br>Temperature: ±0.002 °C<br>Pressure: ±0.1% of full scale range
+</td>
+</tr>
+<tr>
+<td>
+<b>Housing Material Options</b>
+</td>
+<td>
+Plastic, Titanium
+</td>
+<td>
+<b>Resolution</b>
+</td>
+<td>
+Conductivity: 0.00005 S/m (0.4 ppm salinity)<br>Temperature: 0.0001 °C<br>Pressure: 0.002% of full scale range
+</td>
+</tr>
+<tr>
+<td>
+<b>Connector</b>
+</td>
+<td>
+MCBH
+</td>
+<td>
+<b>Software / Biofouling</b>
+</td>
+<td>
+Seasoft V2 | Biofouling Protection: Yes
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Documentation Links:</strong></p>
+<ul>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/SBE%2049/Datasheets/SBE%2049DS53May25.pdf?hsLang=en">SBE 49 DataSheet PDF</a></li>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/SBE%2049/Manuals/SBE%2049%20Manuals.zip?hsLang=en">SBE 49 Manuals Zip</a></li>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/SBE%2049/Methods-Procedures/SBE%2049%20Methods-Procedures.zip?hsLang=en">SBE 49 Methods and Procedures Zip</a></li>
+</ul>
+<br>
+<hr>
+<p><br></p>
+<p><a name="eco-triplet-puck"></a></p>
+</section>
+</section>
+<section id="eco-triplet-puck---fluorometer-1x" class="level3">
+<h3 class="anchored" data-anchor-id="eco-triplet-puck---fluorometer-1x">Eco-Triplet Puck - Fluorometer (1x)</h3>
+<div data-align="center">
+<p><img width="546" height="727" alt="Eco-Triplet" src="https://github.com/user-attachments/assets/55354b6d-fcf0-46a6-9249-841b3b7e2f9f"> <br><br> <img width="377" height="283" alt="Eco-Triplet" src="https://github.com/user-attachments/assets/99503384-5829-41c4-948e-aae78b8727f1"></p>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(2x) Steel Brackets</li>
+<li>(2x) Barrier Rubber Pieces</li>
+<li>(2x) 9/16”-12 (2 ½”) Steel Partial Thread Hex Bolts</li>
+<li>(2x) 9/16”-12 (2”) Steel Partial Thread Hex Bolts</li>
+<li>(6x) Steel Washers</li>
+<li>(4x) Steel Lock Nuts</li>
+<li>(2x) 9/16”-12 Steel Hex Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>9/16” Socket Wrench</li>
+<li>9/16” Combination Wrench</li>
+<li>14mm Combination Wrench (Optional)</li>
+</ul>
+<p><strong>System Overview:</strong> The next generation of optical monitoring with Sea-Bird Scientific’s cutting-edge ECO V2 Series. Offers dynamic range transitioning from deep blue ocean to coastal waters. Delivers 16-bit resolution and enhanced signal-to-noise ratios across up to four channels. Ideal for biological monitoring and dye trace studies. Robust potted optics block ensures long-term sensor stability. Optional anti-biofouling technology enables extended field measurements.</p>
+<p><strong>Fluorometer Preparation Steps:</strong></p>
+<ol type="1">
+<li>Prior to attaching Eco-Triplet Puck to Center Forward Horizontal expansion bottle rails, ensure the bracket has rubber gaskets glued to them (brackets should already be attached to HabCam vehicle).</li>
+<li>Attach Eco-Triplet to the bracket, with the bulkhead connector facing towards the center of HabCam and resting above the crossbar, by threading screw through bracket.</li>
+<li>Prior to adding the stainless-steel washer, lock washer and nut, apply Aqua Shield over all of the threads (there should be 2 screws).</li>
+<li>Add the stainless-steel washer, lock washer, and nut to both screws (washer on inside, lock washer in middle, nut on outside).</li>
+<li>Use 9/16” ratcheting wrenches to tighten the nuts.</li>
+</ol>
+<p><br></p>
+<section id="habcam-sensor-configuration-model-bbfl2-serial-number-627" class="level4">
+<h4 class="anchored" data-anchor-id="habcam-sensor-configuration-model-bbfl2-serial-number-627">HabCam Sensor Configuration (Model BBFL2, Serial Number: 627)</h4>
+<p><em>Configured via joint agreement between Population Dynamics Branch and Oceanography Branch.</em></p>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Channel
+</th>
+<th align="left">
+Measurement Parameter
+</th>
+<th align="left">
+Wavelength
+</th>
+<th align="left">
+Sensitivity
+</th>
+<th align="left">
+Typical Range
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Channel 1</b>
+</td>
+<td>
+Scattering (NTU)
+</td>
+<td>
+650 nm
+</td>
+<td>
+~0.003 m<sup>-1</sup>
+</td>
+<td>
+0–5 m<sup>-1</sup>
+</td>
+</tr>
+<tr>
+<td>
+<b>Channel 2</b>
+</td>
+<td>
+Chlorophyll (EX/EM)
+</td>
+<td>
+695 nm
+</td>
+<td>
+0.025 μg/l
+</td>
+<td>
+0–50 μg/l
+</td>
+</tr>
+<tr>
+<td>
+<b>Channel 3</b>
+</td>
+<td>
+fDOM
+</td>
+<td>
+460 nm
+</td>
+<td>
+0.28 ppb/count
+</td>
+<td>
+0–375 ppb
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</section>
+<section id="sea-bird-scientific-eco-v2-optical-sensor-system-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="sea-bird-scientific-eco-v2-optical-sensor-system-specifications">Sea-Bird Scientific ECO V2 Optical Sensor System Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Communication Options</b>
+</td>
+<td>
+RS-232, Analog
+</td>
+</tr>
+<tr>
+<td>
+<b>Depth Rating</b>
+</td>
+<td>
+600 m, 2,000 m, 6,000 m
+</td>
+</tr>
+<tr>
+<td>
+<b>Power Source</b>
+</td>
+<td>
+Internal, External
+</td>
+</tr>
+<tr>
+<td>
+<b>Housing Material Options</b>
+</td>
+<td>
+Aluminum, Titanium, ABS, Acetal, Copolymer
+</td>
+</tr>
+<tr>
+<td>
+<b>Connector</b>
+</td>
+<td>
+MCBH-6M
+</td>
+</tr>
+<tr>
+<td>
+<b>Sampling Rate</b>
+</td>
+<td>
+User-selectable to 8 Hz
+</td>
+</tr>
+<tr>
+<td>
+<b>Memory Capacity</b>
+</td>
+<td>
+1 Ch: 1,048,000 samples | 2 Ch: 762,000 | 3 Ch: 599,000 | 4 Ch: 493,000
+</td>
+</tr>
+<tr>
+<td>
+<b>Software / Biofouling</b>
+</td>
+<td>
+UCI | Biofouling Protection: Yes
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Documentation Links:</strong></p>
+<ul>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/ECO%20V2/Datasheets/ECO%20V2%20Single%20Channel.DS.53.Feb26%202.zip?hsLang=en">ECO V2 Single Channel DataSheet Zip</a></li>
+<li><a href="https://www.seabird.com/hubfs/Product%20Assets/ECO%20V2/Manuals/ECO%20V2%20Manuals.zip?hsLang=en">ECO V2 Manuals Zip</a></li>
+</ul>
+<br>
+<hr>
+<p><br></p>
+<p><a name="electronics-bottle"></a></p>
+</section>
+</section>
+<section id="main-electronics-bottle---whoi-engineered-1x" class="level3">
+<h3 class="anchored" data-anchor-id="main-electronics-bottle---whoi-engineered-1x">Main Electronics Bottle - WHOI Engineered (1x)</h3>
+<div data-align="center">
+<p><img width="530" height="705" alt="Bottle" src="https://github.com/user-attachments/assets/becf982a-6b5f-41b3-9888-0379a8ec98e3"> <br><br> <!-- Secondary Installed Photo Space --> [DROP ELECTRONICS BOTTLE MOUNTED / EXTRA PHOTO HERE]</p>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(4x) Black Aluminum Brackets</li>
+<li>(4x) Barrier Rubber Pieces</li>
+<li>(8x) 9/16”-12 (3 ½”) Steel Partial Thread Hex Bolts</li>
+<li>(8x) 9/16”-12 (2 ¼”) Steel Partial Thread Hex Bolts</li>
+<li>(4x) 32” 11mm Fully Threaded Rods</li>
+<li>(6x) Plastic Washers</li>
+<li>(10x) 3/16” Steel Washers</li>
+<li>(8x) Steel Lock Nuts</li>
+<li>(8x) 9/16”-12 Steel Hex Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>9/16” Socket Wrench</li>
+<li>9/16” Combination Wrench</li>
+<li>7/16” Socket Wrench</li>
+<li>14mm Combination Wrench (Optional)</li>
+<li>3/16” Hex Wrench</li>
+<li>Small Phillips Screwdriver</li>
+<li>Rubber Mallet</li>
+<li>Multimeter</li>
+<li>Molykote 55 Grease &amp; Dielectric Grease</li>
+<li>Pliobond 35 Rubber Adhesive</li>
+<li>Aqua Shield Grease</li>
+<li>Vacuum Pump Fixture</li>
+</ul>
+<p><strong>Main Electronics Bottle Removal, Disassembly, Maintenance &amp; Reassembly Procedure:</strong></p>
+<ol type="1">
+<li>Before removing the main electronics bottle from HabCam, ensure it is powered off.</li>
+<li>Disconnect all cables from bulkhead connectors on both sides of the main electronics bottle.</li>
+<li>Remove main bottle top clamps with 9/16” ratcheting wrench.</li>
+<li>Place the main bottle cradle on the table.</li>
+<li>Two people are needed to gently remove the main bottle from HabCam. One person climbs on top of the vehicle and gently slides the main bottle out of the back of the vehicle. The second person holds the weight in the back. Then both carry the bottle to the cradle.</li>
+</ol>
+<div data-align="center">
+<p><img width="294" height="386" alt="Bottle on Vehicle" src="https://github.com/user-attachments/assets/37a206ef-fe0c-4f86-9049-5bb45f1032bb"></p>
+</div>
+<ol start="6" type="1">
+<li>Check the condition of top and bottom clamps on HabCam. If replacement is needed due to wear/damage, remove brackets from HabCam using 9/16” ratcheting wrenches.</li>
+<li>If replacing the main electronics bottle clamp, ensure rubber is applied to the inside of the clamp before reattaching to HabCam. Rubber can be attached to clamps using Pliobond 35.</li>
+</ol>
+<div data-align="center">
+<p><img width="437" height="327" alt="Bottle on Stand" src="https://github.com/user-attachments/assets/c61f26e2-d5b0-4072-8585-55aafc8ec513"></p>
+</div>
+<ol start="8" type="1">
+<li>To open the main electronics bottle, remove threaded rods along the outside of the main bottle using 7/16” ratcheting wrenches (there should be 4 of them).</li>
+</ol>
+<div data-align="center">
+<p><img width="380" height="285" alt="Pressure Portjpg" src="https://github.com/user-attachments/assets/a7c11ff6-0d0d-4f92-89c1-5e08a0ffdd6d"></p>
+</div>
+<ol start="9" type="1">
+<li>Use a 3/16” hex wrench to pop-out the vacuum purge plug on the back of the main bottle. You should hear air escape upon loosening if it has not been opened since coming back from the field.</li>
+<li>Remove the end cap on the forward end cap (opposite side of the purge plug). There should be a label that says “open this end first”. This end is opened first as it is NOT connected to the electronics chassis.</li>
+</ol>
+<div data-align="center">
+<p><img width="210" height="345" alt="Bottle Stood Up" src="https://github.com/user-attachments/assets/0d90fe47-1f67-49d7-9f84-21594386fce9"> <img width="465" height="357" alt="Inside Removed" src="https://github.com/user-attachments/assets/f829341b-0336-4250-bdca-83b2eb8ef16a"></p>
+</div>
+<ol start="11" type="1">
+<li>Use a rubber mallet to lightly bang on the back end of the cap’s lip to loosen it.</li>
+<li>To remove the forward end cap, unplug ethernet cables, two mini amp-style and the 3 large amp-style connectors. Now take the cap completely out; when setting it down avoid bending the bulkheads as much as feasibly possible.</li>
+<li>Use a mallet on the opposite cap’s rim to loosen it from housing. Once loose, set on a soft pad on the floor upright with that cap facing upward, remove it with the electronic housing, and place it on the cradle.</li>
+</ol>
+<div data-align="center">
+<p><img width="340" height="255" alt="Prototype Board Removal 1" src="https://github.com/user-attachments/assets/27a6a393-9064-48cc-886a-dad14a4b6a94"> <img width="359" height="255" alt="Prototype Board Removal 2" src="https://github.com/user-attachments/assets/3e755bea-2450-4c32-85ac-5ac57245c2a7"></p>
+</div>
+<ol start="14" type="1">
+<li>On the underside of the main bottle, there is a removable prototype board, attached with screws. Using a small Phillips screwdriver, remove the screws from the standoffs. Take the plate off and replace the desiccant packs with fresh ones (4 large packs).</li>
+</ol>
+<div data-align="center">
+<p><img width="348" height="463" alt="Fuses" src="https://github.com/user-attachments/assets/5d447f9f-20b8-4905-891b-a75f1440743f"></p>
+</div>
+<ol start="15" type="1">
+<li>Check the suite of fuses to ensure they are properly connected with a multimeter. Set multimeter to continuity mode; you should hear a beep if connected properly.</li>
+<li>Turn on the vehicle by plugging in 3-pin power cable and fiber optic bulkhead (currently using Port 3). On the step-up transformer, turn on input, then output (in that order).</li>
+<li>Check that you can connect to both Moxas, both Guardasofts, and whatever sensors are plugged into the bottle (i.e.&nbsp;attitude sensor).</li>
+<li>If working, turn off main bottle by turning off output, then input on step-up transformer. Unplug 3-pin power cable and fiber optic bulkhead.</li>
+<li>Add a cap to the fiberoptic bulkhead on the main bottle to protect it from scratches.</li>
+<li>Check if desiccant needs replaced. Attach 4 packets to underside of prototype board using painter’s tape. Recommended replacement is once a year.</li>
+<li>Reattach prototype board to standoffs.</li>
+<li>Prior to reattaching housing, slip off O-rings on back end cap, wipe off excess grease, apply isopropyl alcohol to paper towel and quickly wipe down O-rings. Do not over apply alcohol as it eats through rubber.</li>
+<li>Gently check O-rings for nicks or cuts, and apply an even coat of Molykote 55.</li>
+<li>Apply an even coat of Molykote 55 to inside edge of housing that meets back end cap O-rings when assembled.</li>
+<li>To reassemble main electronics bottle, gently invert inside of main bottle and hover over housing, ensuring nothing is pinched as you close. Requires substantial pressure to snap closed.</li>
+<li>On front end cap, remove O-rings, wipe off excess grease, apply isopropyl alcohol to paper towel and quickly wipe down O-rings.</li>
+<li>Flip electronics bottle and apply even coat of Molykote 55 to inside edge of housing meeting front end cap O-rings.</li>
+<li>Before attaching front end cap, plug in ethernet cables, two mini amp-style and 3 large amp-style into respective ports.</li>
+<li>Hover end cap over housing, ensuring nothing is pinched as you close. Align handles and rod holes as close as possible; press firmly until snapped closed.</li>
+<li>Turn on vehicle by plugging in 3-pin power cable and fiber optic bulkhead (Port 3). On step-up transformer, turn on input, then output. Listen for beep (if purge plug is out). Verify link light and attitude output on Engineering GUI.</li>
+<li>If reporting well, power down by turning off output, then input on step-up transformer. Unplug 3-pin power cable and fiber optic bulkhead.</li>
+<li>Before pulling a vacuum, ensure rod holes are aligned.</li>
+<li>To pull a vacuum, attach vacuum plug to purge plug port. Attach hose to pump and turn pump on. Shut off valve at 16 inHg of mercury, then shut off pump.</li>
+<li>Wait 24 hours, and confirm that pressure is still held at 16 inHg.</li>
+<li>Check handle integrity, replace if necessary.</li>
+<li>To secure main electronics bottle clamps, thread a 2.5” partially threaded screw through plastic insert. Apply Aqua Shield over all threads prior to adding stainless washer, lock washer, and nut.</li>
+<li>Apply dielectric grease to female end of connector faces of camera cable and strobe. Listen for cracking sound as you align male and female connectors. Hand-tighten locking collars across all front/back connectors.</li>
+<li>Ensure all desired sensors work by turning on vehicle (3-pin power and fiber optic bulkhead Port 3; step-up transformer input then output).</li>
+</ol>
+<br>
+<hr>
+<p><br></p>
+<p><a name="habitat-cameras"></a></p>
+</section>
+<section id="allied-vision-mako-g-234---cameras-2x" class="level3">
+<h3 class="anchored" data-anchor-id="allied-vision-mako-g-234---cameras-2x">Allied Vision Mako G-234 - Cameras (2x)</h3>
+<div data-align="center">
+<img width="549" height="732" alt="Camera" src="https://github.com/user-attachments/assets/d41133ad-3292-487d-b2d3-f8a05d4d4eb6"> <br><br>
+<table class="table table-striped">
+<tbody><tr>
+<td align="center">
+<img width="268" height="357" alt="Cameras" src="https://github.com/user-attachments/assets/15046f46-832a-4a6c-8822-df73dc632499"> <br> <b>Camera Housings &amp; Frame Mount</b>
+</td>
+<td align="center">
+<img width="272" height="363" alt="Cameras2" src="https://github.com/user-attachments/assets/4891c4b5-c245-49cb-945a-9c27ddfc3d75"> <br> <b>Down-Looking Stereo Optical Ports</b>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(1x) Steel Mounting Plate (16 in × 16 in)</li>
+<li>(6x) Steel Brackets</li>
+<li>(4x) 1/4”-20 (2”) Steel Socket Head Screws Partial Thread</li>
+<li>(8x) 1/4”-20 (1”) Steel Socket Head Screws Full Thread</li>
+<li>(6x) Steel Washers</li>
+<li>(6x) Steel Lock Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>Hex Key Set (1/4”–1/16”)</li>
+</ul>
+<p><strong>System Overview:</strong> Mako G-234 is a 2.35 megapixel GigE machine vision camera incorporating a high quality Type 1/1.2 (13.4 mm diagonal) Sony IMX249 CMOS sensor. At full resolution, this camera runs 41.5 frames per second (10-bit sensor readout). Higher frame rates are possible with a smaller region of interest (ROI).</p>
+<p><br></p>
+<section id="allied-vision-mako-g-234-system-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="allied-vision-mako-g-234-system-specifications">Allied Vision Mako G-234 System Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Resolution</b>
+</td>
+<td>
+1,936 × 1,216 (2.40 MP)
+</td>
+<td>
+<b>Sensor Size</b>
+</td>
+<td>
+11.34 mm × 7.13 mm (13.4 mm, Type 1/1.2)
+</td>
+</tr>
+<tr>
+<td>
+<b>Framerate</b>
+</td>
+<td>
+41 fps
+</td>
+<td>
+<b>Pixel Size</b>
+</td>
+<td>
+5.86 μm × 5.86 μm
+</td>
+</tr>
+<tr>
+<td>
+<b>Digital Interface</b>
+</td>
+<td>
+IEEE 802.3 1000BASE-T, IEEE 802.3af (PoE)
+</td>
+<td>
+<b>Exposure Time</b>
+</td>
+<td>
+16 μs to 85 s
+</td>
+</tr>
+<tr>
+<td>
+<b>Sensor Type / Arch</b>
+</td>
+<td>
+Area Scan | CMOS
+</td>
+<td>
+<b>Image Buffer (RAM)</b>
+</td>
+<td>
+64 MByte
+</td>
+</tr>
+<tr>
+<td>
+<b>Sensor Model / Shutter</b>
+</td>
+<td>
+Sony IMX249 | Global Shutter (GS)
+</td>
+<td>
+<b>Power Supply</b>
+</td>
+<td>
+10.8 to 26.4 VDC AUX or 802.3at Type 1 PoE
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Documentation Link:</strong> <a href="https://www.alliedvision.com/pdf/datasheet/1080?locale=en_US">Allied Vision Mako G-234 DataSheet PDF</a></p>
+<br>
+<hr>
+<p><br></p>
+<p><a name="strobe-lights"></a></p>
+</section>
+</section>
+<section id="arctic-rays-inkfish-dragonfish---mini-led-strobe-lights-4x" class="level3">
+<h3 class="anchored" data-anchor-id="arctic-rays-inkfish-dragonfish---mini-led-strobe-lights-4x">Arctic Rays (INKFISH) Dragonfish - Mini LED Strobe Lights (4x)</h3>
+<div data-align="center">
+<img width="550" height="734" alt="Strobes" src="https://github.com/user-attachments/assets/4cb76693-0378-47cd-b581-d94f0644c457"> <br><br>
+<table class="table table-striped">
+<tbody><tr>
+<td align="center">
+<img width="248" height="331" alt="Strobes" src="https://github.com/user-attachments/assets/00d58e56-ecb2-4a5e-9865-89c963b7a129"> <br> <b>Rear Bracket Mount &amp; Cable Harness</b>
+</td>
+<td align="center">
+<img width="248" height="331" alt="Strobes2" src="https://github.com/user-attachments/assets/9b5cff3d-c6b1-4bf9-8485-b99f6a23bfc9"> <br> <b>Front LED Array &amp; Housing Assembly</b>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(8x) Steel Brackets</li>
+<li>(8x) Barrier Rubber Pieces</li>
+<li>(8x) 9/16”-12 (3 ½”) Steel Partial Thread Hex Bolts</li>
+<li>(8x) 7/16”-14 (1 ¾”) Steel Partial Thread Hex Bolts</li>
+<li>(32x) Plastic Washers</li>
+<li>(32x) Steel Washers</li>
+<li>(16x) Steel Lock Nuts</li>
+<li>(16x) 9/16”-12 Steel Hex Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>9/16” Socket Wrench</li>
+<li>9/16” Combination Wrench</li>
+<li>7/16” Socket Wrench</li>
+<li>7/16” Combination Wrench</li>
+<li>14mm Combination Wrench (Optional)</li>
+<li>11mm Combination Wrench (Optional)</li>
+</ul>
+<p><strong>System Overview:</strong> High-output, 30,000-lumen compact LED strobe light rated down to 6,000 meters for HOV/ROV/AUV digital still photography or wherever high-output compact strobes are required.</p>
+<p><strong>Patented Driver Technology Features:</strong></p>
+<ul>
+<li>Extremely compact package with integral driver electronics</li>
+<li>Wide-flood or focused-beam options</li>
+<li>Simple trigger-controlled pulse length</li>
+<li>Fast repetition rate</li>
+<li>Optional independent secondary quench line</li>
+<li>Customizable color temperature, pulse intensity, rep rate, and max pulse duration</li>
+</ul>
+<p><br></p>
+<section id="dragonfish-mini-technical-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="dragonfish-mini-technical-specifications">Dragonfish Mini Technical Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Category
+</th>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Optical</b>
+</td>
+<td>
+Operating Mode<br>Color Channels<br>Luminous Output<br>Color Temperature<br>CRI<br>Beam Angle (FWHM)
+</td>
+<td>
+Pulsed Strobe<br>One<br>30,000 Lm @ 5,700K<br>2700K, 3000K, 3500K, 4000K, 5700K standard, 6500K<br>70 min. Standard (optional 80 min, 90 min)<br>100° standard (65° optional)
+</td>
+</tr>
+<tr>
+<td>
+<b>Electrical</b>
+</td>
+<td>
+Voltage<br>Power<br>Max Input Current<br>Pulse Duration<br>Pulse Rep Rate
+</td>
+<td>
+9–35 VDC standard (other ranges optional)<br>16 W pulsed max<br>650 mA @ 24V during recharge<br>0.1–5 ms standard<br>2 Hz standard (10 Hz optional)
+</td>
+</tr>
+<tr>
+<td>
+<b>Interface</b>
+</td>
+<td>
+Connector<br>Control Signal
+</td>
+<td>
+SubConn MCBH4M<br>Logic Trigger, 5V TTL, active-low
+</td>
+</tr>
+<tr>
+<td>
+<b>Mechanical &amp; Env.</b>
+</td>
+<td>
+Weight<br>Materials<br>Depth Rating<br>Temperatures
+</td>
+<td>
+In Air: 350g | In Water: 175g<br>6061-T6 Aluminum Housing, Acrylic Window<br>300 m (984 ft)<br>-10 °C to 40 °C operating | -25 °C to 85 °C storage
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Documentation Link:</strong> <a href="https://www.arcticrays.com/hubfs/SpecSheets/SS_DragonFish-Mini-Strobe.pdf?hsLang=en">Dragonfish-Mini Strobe Spec Sheet PDF</a></p>
+<br>
+<hr>
+<p><br></p>
+<p><a name="attitude-sensor"></a></p>
+</section>
+</section>
+<section id="microstrain-ahrs-sensor-3dm-gx5-25-hrs---attitude-sensor-1x" class="level3">
+<h3 class="anchored" data-anchor-id="microstrain-ahrs-sensor-3dm-gx5-25-hrs---attitude-sensor-1x">Microstrain AHRS Sensor (3DM-GX5-25-HRS) - Attitude Sensor (1x)</h3>
+<div data-align="center">
+<p><!-- Secondary Installed Photo Space --> [DROP ATTITUDE SENSOR MOUNTED / EXTRA PHOTO HERE]</p>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>Housing Mounting Brackets &amp; Isolation Collars</li>
+<li>Stainless Steel Attachment Fasteners</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>Standard Wrench &amp; Socket Set</li>
+</ul>
+<p><strong>System Overview:</strong> Industrial-grade Attitude and Heading Reference System (AHRS). Relies on internal barometric pressure sensing alongside triaxial accelerometers, gyroscopes, and magnetometers processed through an onboard Auto-Adaptive Extended Kalman Filter (EKF) to achieve high-accuracy orientation estimates (pitch, roll, yaw).</p>
+<p><br></p>
+<section id="microstrain-3dm-gx5-25-hrs-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="microstrain-3dm-gx5-25-hrs-specifications">Microstrain 3DM-GX5-25-HRS Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Mounting Style</b>
+</td>
+<td>
+Chassis Mount
+</td>
+<td>
+<b>Supply Voltage Min / Max</b>
+</td>
+<td>
+4.25 V / 36 V
+</td>
+</tr>
+<tr>
+<td>
+<b>Sensor Type</b>
+</td>
+<td>
+9-axis IMU / AHRS
+</td>
+<td>
+<b>Sensing Axis</b>
+</td>
+<td>
+X, Y, Z
+</td>
+</tr>
+<tr>
+<td>
+<b>Interface Type</b>
+</td>
+<td>
+RS-232, USB
+</td>
+<td>
+<b>Part Aliases</b>
+</td>
+<td>
+6253-4220
+</td>
+</tr>
+<tr>
+<td>
+<b>Output Type</b>
+</td>
+<td>
+Digital
+</td>
+<td>
+<b>Product Type</b>
+</td>
+<td>
+IMUs - Inertial Measurement Units
+</td>
+</tr>
+<tr>
+<td>
+<b>Resolution</b>
+</td>
+<td>
+0.02 mg
+</td>
+<td>
+<b>Trade Name</b>
+</td>
+<td>
+MicroStrain
+</td>
+</tr>
+<tr>
+<td>
+<b>Operating Temp Range</b>
+</td>
+<td>
+-40 °C to +85 °C
+</td>
+<td>
+<b>Manufacturer</b>
+</td>
+<td>
+HBK / Hottinger Brüel &amp; Kjær
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Documentation Links:</strong></p>
+<ul>
+<li><a href="https://www.mouser.com/datasheet/3/3764/1/3dm-gx5-25_datasheet_8400-0093_rev_o.pdf">Microstrain 3DM-GX5-25 DataSheet PDF</a></li>
+<li><a href="https://www.mouser.com/catalog/additional/Parker_LORD_3DM_GX5_UK_Declaration_Conformity_Rev.pdf">UK Declaration of Conformity Certificate</a></li>
+<li><a href="https://www.microstrain.com/sites/default/files/applications/files/3dm-gx5-25_user_manual_8500-0012_rev_d.pdf">3DM-GX5-25 User Manual PDF</a></li>
+</ul>
+<br>
+<hr>
+<p><br></p>
+<p><a name="altimeter"></a></p>
+</section>
+</section>
+<section id="teledyne-benthos-psa-916---sonar-altimeter-1x" class="level3">
+<h3 class="anchored" data-anchor-id="teledyne-benthos-psa-916---sonar-altimeter-1x">Teledyne Benthos PSA 916 - Sonar Altimeter (1x)</h3>
+<div data-align="center">
+<p><img width="557" height="743" alt="Altimeter" src="https://github.com/user-attachments/assets/968aa9ce-5334-483f-b910-758af423c30d"> <br><br> <img width="289" height="385" alt="Altimeter" src="https://github.com/user-attachments/assets/535e2b61-3fd6-45ed-ab29-ec48b559df85"></p>
+</div>
+<p><br></p>
+<p><strong>Hardware Inventory:</strong></p>
+<ul>
+<li>(2x) Plastic Brackets</li>
+<li>(4x) Barrier Rubber Pieces</li>
+<li>(4x) 9/16”-12 (6 ½”) Steel Partial Thread Hex Bolts</li>
+<li>(8x) Steel Washers</li>
+<li>(4x) Steel Lock Nuts</li>
+<li>(4x) 9/16”-12 Steel Hex Nuts</li>
+</ul>
+<p><strong>Tools Needed:</strong></p>
+<ul>
+<li>9/16” Socket Wrench</li>
+<li>9/16” Combination Wrench</li>
+<li>14mm Combination Wrench (Optional)</li>
+</ul>
+<p><strong>System Overview:</strong> The Teledyne PSA-916 Programmable Sonar Altimeter is a lightweight altimeter designed for marine applications. Transmits a narrow-beam acoustic signal then measures round trip travel time for sound pulses reflecting off the seabed. Knowing the nominal speed of sound in water (1,500 m/s), travel time calculates precise distance to the ocean floor. Constructed from hard anodized, marine-grade aluminum housing and electronically isolated to eliminate signal interference with host sensors. The 200 kHz operating frequency achieves accurate measurements down to 6,000 meter depths. Applications include wave height measurement, obstacle avoidance, shallow water surveys, ice thickness, sediment transport, and scour studies.</p>
+<p><br></p>
+<section id="teledyne-benthos-psa-916-system-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="teledyne-benthos-psa-916-system-specifications">Teledyne Benthos PSA 916 System Specifications</h4>
+<table class="table table-striped">
+<thead>
+<tr>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+<th align="left">
+Parameter
+</th>
+<th align="left">
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Operating Frequency</b>
+</td>
+<td>
+200 kHz
+</td>
+<td>
+<b>Range Outputs</b>
+</td>
+<td>
+Analog: 0–5 VDC | Digital: RS-232
+</td>
+</tr>
+<tr>
+<td>
+<b>Beam Width</b>
+</td>
+<td>
+14° conical typical
+</td>
+<td>
+<b>Operating Depth</b>
+</td>
+<td>
+6,000 m
+</td>
+</tr>
+<tr>
+<td>
+<b>Pulse Length</b>
+</td>
+<td>
+250 μs standard
+</td>
+<td>
+<b>Power Required</b>
+</td>
+<td>
+7 to 24 VDC
+</td>
+</tr>
+<tr>
+<td>
+<b>Repetition Rates</b>
+</td>
+<td>
+5 pps or external
+</td>
+<td>
+<b>Power Consumption</b>
+</td>
+<td>
+60 mA @ 15 VDC
+</td>
+</tr>
+<tr>
+<td>
+<b>Range</b>
+</td>
+<td>
+100 m full scale
+</td>
+<td>
+<b>Size</b>
+</td>
+<td>
+2.25 in. diameter × 9.75 in. long
+</td>
+</tr>
+<tr>
+<td>
+<b>Resolution</b>
+</td>
+<td>
+RS-232: 1 cm | Analog: 2.5 cm
+</td>
+<td>
+<b>Weight</b>
+</td>
+<td>
+In Air: 0.63 kg (1.4 lbs) | In Water: 0.36 kg (0.8 lbs)
+</td>
+</tr>
+<tr>
+<td>
+<b>Required Topside Unit</b>
+</td>
+<td>
+UDB-9000 Universal Deck Box
+</td>
+<td>
+<b>Housing Material</b>
+</td>
+<td>
+Hard Anodized Marine-Grade Aluminum
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Documentation Links:</strong></p>
+<ul>
+<li><a href="https://coriolix.sikuliaq.alaska.edu/media/uploads/benthos_psa-916_manual.pdf">Teledyne Benthos PSA-916 Manual PDF</a></li>
+<li><a href="https://cdn.prod.website-files.com/64f5b41c95d2817bbfee10e3/6516ca9e3e360549609249fe_Teledyne%20PSA916%20Altimeter.pdf">Teledyne PSA 916 DataSheet PDF</a></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Hardware/02-electrical-architecture.html" class="pagination-link" aria-label="Electrical &amp; Network">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Electrical &amp; Network</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Hardware/02-weak-link.html" class="pagination-link" aria-label="Weak Link Assembly">
+        <span class="nav-page-text"><span class="chapter-title">Weak Link Assembly</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

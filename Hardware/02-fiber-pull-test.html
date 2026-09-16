@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HabCam SOP</title>
+<title>Fiber Optics Pull Test Protocol – HabCam SOP</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,24 +29,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Program/00-the-program.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dabb4177d918b2a71d8bf8ab8beb4a59.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Software and Data/03-software-overview.html" rel="next">
+<link href="../Hardware/02-fiber-termination.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-dabb4177d918b2a71d8bf8ab8beb4a59.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -129,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -141,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-title">Home</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Hardware/02-hardware-components.html">Hardware &amp; Schematics</a></li><li class="breadcrumb-item"><a href="../Hardware/02-fiber-pull-test.html"><span class="chapter-title">Fiber Pull Test</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,12 +156,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./Round Logo.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./Round Logo.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../Round Logo.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../Round Logo.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">HabCam SOP</a> 
+      <a href="../">HabCam SOP</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -172,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Home</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -186,32 +187,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Program/00-the-program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Program</span></a>
+  <a href="../Program/00-the-program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Program/00-team-members.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Team Members</span></a>
+  <a href="../Program/00-team-members.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Team Members</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Program/00-onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Onboarding</span></a>
+  <a href="../Program/00-onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Onboarding</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Program/00-interns.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interns</span></a>
+  <a href="../Program/00-interns.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interns</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Program/00-publications.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Publications</span></a>
+  <a href="../Program/00-publications.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Publications</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Program/00-media.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Media</span></a>
+  <a href="../Program/00-media.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Media</span></a>
   </div>
 </li>
       </ul>
@@ -227,73 +228,73 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Overview/01-survey-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Survey Overview</span></a>
+  <a href="../Overview/01-survey-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Survey Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Overview/01-why-we-survey.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Why We Survey</span></a>
+  <a href="../Overview/01-why-we-survey.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Why We Survey</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Overview/01-data-use.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Use</span></a>
+  <a href="../Overview/01-data-use.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Use</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Overview/01-sea-scallop.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atlantic Sea Scallop</span></a>
+  <a href="../Overview/01-sea-scallop.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atlantic Sea Scallop</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Hardware &amp; Schematics</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-hardware-components.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Component Reference</span></a>
+  <a href="../Hardware/02-hardware-components.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Component Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-frame-schematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Frame Schematics</span></a>
+  <a href="../Hardware/02-frame-schematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Frame Schematics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-harness-schematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cable Harness Specs</span></a>
+  <a href="../Hardware/02-harness-schematics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cable Harness Specs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-electrical-architecture.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Electrical &amp; Network</span></a>
+  <a href="../Hardware/02-electrical-architecture.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Electrical &amp; Network</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-sensors-assembly.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sensor Assembly</span></a>
+  <a href="../Hardware/02-sensors-assembly.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sensor Assembly</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-weak-link.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Weak Link Assembly</span></a>
+  <a href="../Hardware/02-weak-link.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Weak Link Assembly</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-fiber-termination.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fiber Termination</span></a>
+  <a href="../Hardware/02-fiber-termination.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fiber Termination</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hardware/02-fiber-pull-test.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fiber Pull Test</span></a>
+  <a href="../Hardware/02-fiber-pull-test.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Fiber Pull Test</span></a>
   </div>
 </li>
       </ul>
@@ -309,42 +310,42 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-software-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software Overview</span></a>
+  <a href="../Software and Data/03-software-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-data-acquisition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Acquisition</span></a>
+  <a href="../Software and Data/03-data-acquisition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Acquisition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-server-framework.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Server Framework</span></a>
+  <a href="../Software and Data/03-server-framework.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Server Framework</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-annotating.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annotating</span></a>
+  <a href="../Software and Data/03-annotating.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annotating</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-database.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Database</span></a>
+  <a href="../Software and Data/03-database.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Database</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-data-pulls.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Pulls</span></a>
+  <a href="../Software and Data/03-data-pulls.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Pulls</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-optical-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Optical Data</span></a>
+  <a href="../Software and Data/03-optical-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Optical Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Software and Data/03-data-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Analysis</span></a>
+  <a href="../Software and Data/03-data-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Analysis</span></a>
   </div>
 </li>
       </ul>
@@ -360,27 +361,27 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Staging and Surveys/04-annual-timeline.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annual Timeline</span></a>
+  <a href="../Staging and Surveys/04-annual-timeline.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annual Timeline</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Staging and Surveys/04-pre-cruise.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pre-Cruise</span></a>
+  <a href="../Staging and Surveys/04-pre-cruise.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pre-Cruise</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Staging and Surveys/04-field-team-roles.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Field Team</span></a>
+  <a href="../Staging and Surveys/04-field-team-roles.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Field Team</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Staging and Surveys/04-habcam-prep.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pre-Deployment</span></a>
+  <a href="../Staging and Surveys/04-habcam-prep.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pre-Deployment</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Staging and Surveys/04-after-cruise.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">After-Cruise</span></a>
+  <a href="../Staging and Surveys/04-after-cruise.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">After-Cruise</span></a>
   </div>
 </li>
       </ul>
@@ -396,22 +397,22 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Maitenance/06-maintenance-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maintenance Overview</span></a>
+  <a href="../Maitenance/06-maintenance-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maintenance Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Maitenance/06-inventory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Inventory</span></a>
+  <a href="../Maitenance/06-inventory.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Inventory</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Maitenance/06-maintenance-schedule.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maintenance Schedule</span></a>
+  <a href="../Maitenance/06-maintenance-schedule.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maintenance Schedule</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Maitenance/06-troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting</span></a>
+  <a href="../Maitenance/06-troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting</span></a>
   </div>
 </li>
       </ul>
@@ -426,16 +427,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">Home</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#test-execution-verification" id="toc-test-execution-verification" class="nav-link" data-scroll-target="#test-execution-verification">Test Execution &amp; Verification</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Hardware/02-hardware-components.html">Hardware &amp; Schematics</a></li><li class="breadcrumb-item"><a href="../Hardware/02-fiber-pull-test.html"><span class="chapter-title">Fiber Pull Test</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">HabCam SOP</h1>
+<h1 class="title"><span class="chapter-title">Fiber Optics Pull Test Protocol</span></h1>
 </div>
 
 
@@ -452,10 +455,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="home" class="level1">
-<h1>Home</h1>
-<p><em>Welcome to the HabCam Operational Standard Operating Procedure (SOP) Manual.</em></p>
-<p><em>[Insert homepage overview, welcome message, quick navigation links, and mission overview here]</em></p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>A pull test (or proof load test) using a water bag on a hydraulic winch line is performed to safely verify that the winch and its mounting structure can handle their maximum rated weight capacity. This test uses weights or simulated loads to prove that the mechanical, hydraulic, and brake systems work perfectly in real working conditions and that your winch is safe to use for anchoring, towing, and mooring operations.</p>
+<p><strong>1. Load Testing:</strong><br>
+<strong>Purpose:</strong> To ensure that the winch is capable of pulling or holding loads according to its nominal capacity without structural failure. The winch is tested using actual loads of up to 110–125% of its design capacity.</p>
+<p><strong>2. Brake Test:</strong><br>
+<strong>Purpose:</strong> To ensure that the main and emergency brake systems can safely hold loads, even under extreme conditions. The brake test is performed by suddenly stopping the winch while pulling a specific load. Technicians will evaluate whether the brakes can hold the load without slipping or dropping.</p>
+<p><strong>3. Functional Test:</strong><br>
+<strong>Purpose:</strong> To evaluate the overall operational performance of the winch in real conditions. The functional test is performed after the load and brake tests to ensure that all components work together and that your winch is ready for safe and efficient use at sea.</p>
+<br>
+<hr>
+<p><br></p>
+</section>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
+<p>After the termination is complete (and tested) and the epoxy inside the clevis has cured you can proceed to the pull test. Attach the clevis to the water bag in the order shown in the image below. Note the hose clamp at the top, up against the clevis (Don’t forget to install this).</p>
+<p><em>You will need to coordinate with the Bigelow ahead of time to borrow the water bag from the U.S. Coast Guard and help from the Chief Bosun to perform the test.</em></p>
+<p><br></p>
+<div data-align="center">
+<table class="table table-striped">
+<tbody><tr>
+<td valign="top" style="padding-right: 20px; text-align: left;">
+<b>Order of Operation:</b><br><br>
+<div style="border: 1px solid #ccc; padding: 12px; width: 160px; line-height: 1.6;">
+<p>Clevis →<br> Swivel Shackle →<br> Shackle →<br> Load Sensor →<br> Water Bag</p>
+</div>
+</td>
+<td align="center" valign="top">
+<img width="403" height="325" alt="Hanging Connection" src="https://github.com/user-attachments/assets/60e38f22-a018-4d84-adaf-d3b4caa9063d"> <br>
+<p>
+<i>Rigging Linkage: Clevis, Swivel Shackle, Shackle, Load Sensor, &amp; Water Bag</i>
+</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<br>
+<hr>
+<p><br></p>
+</section>
+<section id="test-execution-verification" class="level2">
+<h2 class="anchored" data-anchor-id="test-execution-verification">Test Execution &amp; Verification</h2>
+<p><em>HabCam J-Box and cables positioned safely out of the way for testing.</em></p>
+<div data-align="center">
+<img width="489" height="367" alt="Bag" src="https://github.com/user-attachments/assets/cf879147-8fd8-47d0-b739-e960c1d922e3">
+<p>
+<i>Water Bag Suspended over Deck during Pump Filling</i>
+</p>
+</div>
+<p><br></p>
+<p>With the water bag in position, the Chief Bosun will coordinate with the engineers to turn on the pumps and begin filling the bag.</p>
+<p>Monitor the tension on the load sensor and let the bosun know when you get to 9,000 lbs so they can slowly close the pumps with the intention to fully close the pumps at 10,000 lbs tension.</p>
+<p>Next hold the tension at 10,000 lbs for approximately 1 minute.</p>
+<p><br></p>
+<div data-align="center">
+<table class="table table-striped">
+<tbody><tr>
+<td align="center" valign="top">
+<img width="480" height="550" alt="Weight" src="https://github.com/user-attachments/assets/2e893083-c56f-4322-842a-9c36a50162f4"> <br>
+<p>
+<i>Load Sensor Readout Displaying 10,000 lbs Test Tension</i>
+</p>
+</td>
+<td valign="top" style="padding-left: 20px; text-align: left;">
+<p>
+Once complete, the water bag can be emptied and brought back on the deck.
+</p>
+<p>
+Inspect the hose ring that was cinched above the clevis and verify that the clevis has <b>not <u>slipped</u></b> under tension.
+</p>
+<p>
+If the location has changed and the clevis slipped then adjustments must be made, and the test must be run again.
+</p>
+<p>
+If its location hasn’t changed, attach the J-Box cables and retest the fiber optics with the HabCam vehicle.
+</p>
+<p>
+If everything is working you are good to go.
+</p>
+</td>
+</tr>
+</tbody></table>
+</div>
 
 
 </section>
@@ -863,10 +945,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../Hardware/02-fiber-termination.html" class="pagination-link" aria-label="Fiber Termination">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Fiber Termination</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Program/00-the-program.html" class="pagination-link" aria-label="The Program">
-        <span class="nav-page-text"><span class="chapter-title">The Program</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Software and Data/03-software-overview.html" class="pagination-link" aria-label="Software Overview">
+        <span class="nav-page-text"><span class="chapter-title">Software Overview</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
