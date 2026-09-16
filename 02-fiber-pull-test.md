@@ -26,25 +26,25 @@ After the termination is complete (and tested) and the epoxy inside the clevis h
 <br>
 
 <div align="center">
-  <table class="table table-striped">
-    <tr>
-      <td valign="top" style="padding-right: 20px; text-align: left;">
-        <b>Order of Operation:</b><br><br>
-        <div style="border: 1px solid #ccc; padding: 12px; width: 160px; line-height: 1.6;">
-          Clevis &rarr;<br>
-          Swivel Shackle &rarr;<br>
-          Shackle &rarr;<br>
-          Load Sensor &rarr;<br>
-          Water Bag
-        </div>
-      </td>
-      <td align="center" valign="top">
-        <img width="403" height="325" alt="Hanging Connection" src="https://github.com/user-attachments/assets/60e38f22-a018-4d84-adaf-d3b4caa9063d" />
-        <br>
-        <p><i>Rigging Linkage: Clevis, Swivel Shackle, Shackle, Load Sensor, & Water Bag</i></p>
-      </td>
-    </tr>
-  </table>
+<table class="table table-striped">
+<tr>
+<td valign="top" style="padding-right: 20px; text-align: left;">
+<b>Order of Operation:</b><br><br>
+<div style="border: 1px solid #ccc; padding: 12px; width: 160px; line-height: 1.6;">
+Clevis &rarr;<br>
+Swivel Shackle &rarr;<br>
+Shackle &rarr;<br>
+Load Sensor &rarr;<br>
+Water Bag
+</div>
+</td>
+<td align="center" valign="top">
+<img width="403" height="325" alt="Hanging Connection" src="https://github.com/user-attachments/assets/60e38f22-a018-4d84-adaf-d3b4caa9063d" />
+<br>
+<p><i>Rigging Linkage: Clevis, Swivel Shackle, Shackle, Load Sensor, & Water Bag</i></p>
+</td>
+</tr>
+</table>
 </div>
 
 <br>
