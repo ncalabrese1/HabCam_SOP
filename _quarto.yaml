@@ -97,6 +97,7 @@ format:
   html:
     theme: cosmo
     toc: true
+    toc-depth: 2
     number-sections: false
     fig-align: center
     css: styles.css
