@@ -1,4 +1,4 @@
-# About the Species: The Atlantic Sea Scallop
+# The Atlantic Sea Scallop
 
 <div align="center">
 
