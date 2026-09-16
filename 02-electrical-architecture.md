@@ -67,7 +67,7 @@
 
 <a name="network-connectivity"></a>
 
-## HabCam Network Connectivity & Telemetry Architecture
+## HabCam Network
 
 The HabCam network architecture details the end-to-end data conversion and multiplexing pipeline. High-resolution subsea imaging, acoustic sonar, and serial instrument telemetry convert from copper electrical signals into Coarse Wavelength Division Multiplexing (CWDM) optical signals for long-distance transmission across the primary tow cable umbilical.
 
@@ -121,7 +121,7 @@ The HabCam network architecture details the end-to-end data conversion and multi
 
 <a name="ethernet-schematics"></a>
 
-## Ethernet Electrical Schematic & Internal Switch Routing
+## Ethernet
 
 Routing across dual Ethernet switches inside the Electronics Bottle handles internal data switching, diagnostic test ports, and subsea 13-pin connector breakouts (Data1Net and Data2Net).
 
@@ -165,7 +165,7 @@ Routing across dual Ethernet switches inside the Electronics Bottle handles inte
 
 <a name="bulkhead-specs"></a>
 
-## Bulkhead Connector Specifications & Pinout Reference
+## Bulkhead Connectors
 
 Master technical specifications for all SubConn bulkhead connectors installed on the Electronics Bottle endcaps.
 
@@ -204,7 +204,7 @@ Master technical specifications for all SubConn bulkhead connectors installed on
 
 <a name="fiber-cabling"></a>
 
-## Electronics Bottle Internal Fiber Cabling
+## Internal Fiber Cabling
 
 Details internal optical media conversion, CWDM wavelength multiplexing, and fiber pass-through routing inside the Electronics Bottle to bridge copper Ethernet devices to the SubConn OptiLink subsea bulkhead.
 
@@ -270,7 +270,7 @@ Details internal optical media conversion, CWDM wavelength multiplexing, and fib
 
 <a name="endcap-placements"></a>
 
-## Bottle Endcap Connector Placements & Designation Maps
+## Bottle Endcap
 
 External bulkhead connector placements, designations, part numbers, and gender specifications for both the Electronics Bottle and Expansion Bottle.
 
@@ -434,7 +434,7 @@ External bulkhead connector placements, designations, part numbers, and gender s
 
 <a name="serial-ports"></a>
 
-## Serial Instrumentation Port Arrays (INST 1–12)
+## Serial Port Arrays
 
 Internal power distribution buses, Moxa N-Port serial server interfaces, and pin routings for auxiliary instrumentation ports INST 1 through INST 12 (J11–J22) inside the Electronics Bottle.
 
@@ -502,7 +502,7 @@ Internal power distribution buses, Moxa N-Port serial server interfaces, and pin
 
 <a name="ac-power-strobes"></a>
 
-## AC Power Distribution & MVS 5000 Strobe Controls
+## AC Power & Strobe
 
 Governs high-voltage AC input distribution, internal DC power generation (5V, 12V, 24V, 48V), system cooling fans, camera power control, and flash pulse triggers for four MVS 5000 strobe units.
 
@@ -576,7 +576,7 @@ Governs high-voltage AC input distribution, internal DC power generation (5V, 12
 
 <a name="subsystem-housings"></a>
 
-## Sensor Bottles, Strobe Units & Camera Housings
+## Sensor Bottles
 
 ### Strobe Bottle Internal Schematic
 
@@ -723,7 +723,7 @@ Details AC power conversion, thermal regulation, opto-isolated trigger pulse amp
 
 <a name="sensor-cables"></a>
 
-## CTD & Environmental Sensor Cable Harnesses
+## Environmental Sensors
 
 ### Sea-Bird SBE 37 / SBE 49 CTD Cable Assembly
 
