@@ -57,7 +57,7 @@
 <br>
 <hr>
 
-## 5. Field Team Roles Overview {#field-team-roles-overview}
+## Field Team Roles Overview {#field-team-roles-overview}
 
 ### Chief Scientist {#role-chief-scientist}
 
