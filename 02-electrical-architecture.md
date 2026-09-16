@@ -2,9 +2,9 @@
 
 <br>
 
-<h2>Master Table</h2>
+## Master Table
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Section</th>
@@ -66,9 +66,9 @@
 <br>
 
 <a name="network-connectivity"></a>
-<h2>HabCam Network Connectivity & Telemetry Architecture</h2>
+## HabCam Network Connectivity & Telemetry Architecture
 
-<p>The HabCam network architecture details the end-to-end data conversion and multiplexing pipeline. High-resolution subsea imaging, acoustic sonar, and serial instrument telemetry convert from copper electrical signals into Coarse Wavelength Division Multiplexing (CWDM) optical signals for long-distance transmission across the primary tow cable umbilical.</p>
+The HabCam network architecture details the end-to-end data conversion and multiplexing pipeline. High-resolution subsea imaging, acoustic sonar, and serial instrument telemetry convert from copper electrical signals into Coarse Wavelength Division Multiplexing (CWDM) optical signals for long-distance transmission across the primary tow cable umbilical.
 
 <div align="center">
 <img width="1268" height="823" alt="Network Connectivity" src="https://github.com/user-attachments/assets/b6d04387-a717-4559-a1af-26f3b52abf03" />
@@ -77,9 +77,9 @@
 
 <br>
 
-<h3>CWDM Wavelength Allocation & Subsystem Routing</h3>
+### CWDM Wavelength Allocation & Subsystem Routing
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Subsystem / Device</th>
@@ -119,9 +119,9 @@
 <br>
 
 <a name="ethernet-schematics"></a>
-<h2>Ethernet Electrical Schematic & Internal Switch Routing</h2>
+## Ethernet Electrical Schematic & Internal Switch Routing
 
-<p>Routing across dual Ethernet switches inside the Electronics Bottle handles internal data switching, diagnostic test ports, and subsea 13-pin connector breakouts (Data1Net and Data2Net).</p>
+Routing across dual Ethernet switches inside the Electronics Bottle handles internal data switching, diagnostic test ports, and subsea 13-pin connector breakouts (Data1Net and Data2Net).
 
 <div align="center">
 <img width="1276" height="841" alt="Ethernet Pinout" src="https://github.com/user-attachments/assets/511180be-6801-4f53-931a-c948b1439548" />
@@ -130,9 +130,9 @@
 
 <br>
 
-<h3>Switch Port Assignment Matrix</h3>
+### Switch Port Assignment Matrix
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Switch Unit</th>
@@ -162,9 +162,9 @@
 <br>
 
 <a name="bulkhead-specs"></a>
-<h2>Bulkhead Connector Specifications & Pinout Reference</h2>
+## Bulkhead Connector Specifications & Pinout Reference
 
-<p>Master technical specifications for all SubConn bulkhead connectors installed on the Electronics Bottle endcaps.</p>
+Master technical specifications for all SubConn bulkhead connectors installed on the Electronics Bottle endcaps.
 
 <div align="center">
 <img width="1270" height="829" alt="Bulkhead Pinouts" src="https://github.com/user-attachments/assets/6d8d0149-95b8-44a0-a048-a19b268fa883" />
@@ -173,53 +173,36 @@
 
 <br>
 
-<h3>Bulkhead Hardware & Pinout Specifications</h3>
+### Bulkhead Hardware & Pinout Specifications
 
-<ul>
-  <li><b>3-Pin AC Input Bulkhead (J1):</b>
-    <ul>
-      <li><b>Hardware Spec:</b> SubConn MCBH3M-SS | <b>Thread:</b> 7/16-20 UNF-2A | <b>O-Ring:</b> 2-014</li>
-      <li><b>Pinout:</b> Pin 1: Ground Return | Pin 2: AC (Hot) | Pin 3: AC (Neutral)</li>
-    </ul>
-  </li>
-  <li><b>4-Pin Strobe Bulkheads (J5–J8):</b>
-    <ul>
-      <li><b>Hardware Spec:</b> SubConn MCBH4M-SS | <b>Thread:</b> 7/16-20 UNF-2A | <b>O-Ring:</b> 2-014</li>
-      <li><b>Pinout:</b> Pin 1: Strobe Signal Return | Pin 2: Strobe Signal | Pin 3: AC (Hot) | Pin 4: AC (Neutral)</li>
-      <li><b>Power Rating:</b> MVS-5002 Strobe (12V @ 4.5A) & fan (12V @ 0.5A) via Astrodyne LPR75-12 (75W total).</li>
-    </ul>
-  </li>
-  <li><b>6-Pin Serial Bulkheads (J11–J22):</b>
-    <ul>
-      <li><b>Hardware Spec:</b> SubConn MCBH6M-SS | <b>Thread:</b> 7/16-20 UNF-2A | <b>O-Ring:</b> 2-014</li>
-      <li><b>Pinout:</b> Pin 1: Power Return | Pin 2: Power Output #1 | Pin 3: Power Output #2 | Pin 4: Instrument Rx (Tx by Moxa) | Pin 5: Instrument Tx (Rx by Moxa) | Pin 6: Comms Return</li>
-      <li><b>Power Limits (Per Port):</b> 100W @ 48V (2A), 75W @ 24V (3A), 35W @ 12V (3A), 15W @ 5V (3A).</li>
-      <li><b>Total Serial Bus Power Available:</b> 100W (48V), 90W (24V), 100W (12V), 70W (5V).</li>
-    </ul>
-  </li>
-  <li><b>13-Pin Ethernet / Camera Bulkheads (J3, J4, J9, J10):</b>
-    <ul>
-      <li><b>Hardware Spec:</b> SubConn DBH13M-SS | <b>Thread:</b> 1/2-20 UNF-2A | <b>O-Ring:</b> 2-015</li>
-      <li><b>Camera Pinout (J3, J4):</b> Pin 1: Camera Return | Pin 3: Strobe Signal | Pins 4–11: Ethernet Color Pairs | Pin 12: Camera Power | Pin 13: Strobe Return</li>
-      <li><b>Ethernet Pinout (J9, J10):</b> Pins 1–3: Power Conductors (#18 BLK, #18 ORN, #18 WHT) | Pins 4–11: Cat6 Ethernet Pairs | Pins 12–13: Main Power Rails (#18 RED, #18 GRN)</li>
-    </ul>
-  </li>
-  <li><b>SubConn OptiLink Fiber Bulkhead (J2):</b>
-    <ul>
-      <li><b>Hardware Spec:</b> SubConn OptiLink A-04-BCR | <b>Thread:</b> 7/8-14 | <b>O-Rings:</b> 2-019 & 2-022</li>
-      <li><b>Capacity:</b> 4 Single-Mode (SM) Optical Fiber channels.</li>
-    </ul>
-  </li>
-</ul>
+* **3-Pin AC Input Bulkhead (J1):**
+  * **Hardware Spec:** SubConn MCBH3M-SS | **Thread:** 7/16-20 UNF-2A | **O-Ring:** 2-014
+  * **Pinout:** Pin 1: Ground Return | Pin 2: AC (Hot) | Pin 3: AC (Neutral)
+* **4-Pin Strobe Bulkheads (J5–J8):**
+  * **Hardware Spec:** SubConn MCBH4M-SS | **Thread:** 7/16-20 UNF-2A | **O-Ring:** 2-014
+  * **Pinout:** Pin 1: Strobe Signal Return | Pin 2: Strobe Signal | Pin 3: AC (Hot) | Pin 4: AC (Neutral)
+  * **Power Rating:** MVS-5002 Strobe (12V @ 4.5A) & fan (12V @ 0.5A) via Astrodyne LPR75-12 (75W total).
+* **6-Pin Serial Bulkheads (J11–J22):**
+  * **Hardware Spec:** SubConn MCBH6M-SS | **Thread:** 7/16-20 UNF-2A | **O-Ring:** 2-014
+  * **Pinout:** Pin 1: Power Return | Pin 2: Power Output #1 | Pin 3: Power Output #2 | Pin 4: Instrument Rx (Tx by Moxa) | Pin 5: Instrument Tx (Rx by Moxa) | Pin 6: Comms Return
+  * **Power Limits (Per Port):** 100W @ 48V (2A), 75W @ 24V (3A), 35W @ 12V (3A), 15W @ 5V (3A).
+  * **Total Serial Bus Power Available:** 100W (48V), 90W (24V), 100W (12V), 70W (5V).
+* **13-Pin Ethernet / Camera Bulkheads (J3, J4, J9, J10):**
+  * **Hardware Spec:** SubConn DBH13M-SS | **Thread:** 1/2-20 UNF-2A | **O-Ring:** 2-015
+  * **Camera Pinout (J3, J4):** Pin 1: Camera Return | Pin 3: Strobe Signal | Pins 4–11: Ethernet Color Pairs | Pin 12: Camera Power | Pin 13: Strobe Return
+  * **Ethernet Pinout (J9, J10):** Pins 1–3: Power Conductors (#18 BLK, #18 ORN, #18 WHT) | Pins 4–11: Cat6 Ethernet Pairs | Pins 12–13: Main Power Rails (#18 RED, #18 GRN)
+* **SubConn OptiLink Fiber Bulkhead (J2):**
+  * **Hardware Spec:** SubConn OptiLink A-04-BCR | **Thread:** 7/8-14 | **O-Rings:** 2-019 & 2-022
+  * **Capacity:** 4 Single-Mode (SM) Optical Fiber channels.
 
 <br>
 <hr>
 <br>
 
 <a name="fiber-cabling"></a>
-<h2>Electronics Bottle Internal Fiber Cabling</h2>
+## Electronics Bottle Internal Fiber Cabling
 
-<p>Details internal optical media conversion, CWDM wavelength multiplexing, and fiber pass-through routing inside the Electronics Bottle to bridge copper Ethernet devices to the SubConn OptiLink subsea bulkhead.</p>
+Details internal optical media conversion, CWDM wavelength multiplexing, and fiber pass-through routing inside the Electronics Bottle to bridge copper Ethernet devices to the SubConn OptiLink subsea bulkhead.
 
 <div align="center">
 <img width="1280" height="880" alt="Bottle Fiber Cabling" src="https://github.com/user-attachments/assets/5123f9c5-6b91-48be-9f4a-656a459024e3" />
@@ -228,9 +211,9 @@
 
 <br>
 
-<h3>Fiber Channel Routing Map</h3>
+### Fiber Channel Routing Map
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Channel Source</th>
@@ -282,9 +265,9 @@
 <br>
 
 <a name="endcap-placements"></a>
-<h2>Bottle Endcap Connector Placements & Designation Maps</h2>
+## Bottle Endcap Connector Placements & Designation Maps
 
-<p>External bulkhead connector placements, designations, part numbers, and gender specifications for both the Electronics Bottle and Expansion Bottle.</p>
+External bulkhead connector placements, designations, part numbers, and gender specifications for both the Electronics Bottle and Expansion Bottle.
 
 <div align="center">
 <img width="1258" height="819" alt="Endcap Connector Placement" src="https://github.com/user-attachments/assets/100949ed-dd02-4bee-9d20-c77d0e01dbc9" />
@@ -293,9 +276,9 @@
 
 <br>
 
-<h3>Electronics Bottle Bulkhead Assignments</h3>
+### Electronics Bottle Bulkhead Assignments
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Port Designation</th>
@@ -375,9 +358,9 @@
 
 <br>
 
-<h3>Expansion Bottle Bulkhead Assignments</h3>
+### Expansion Bottle Bulkhead Assignments
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Port Designation</th>
@@ -445,9 +428,9 @@
 <br>
 
 <a name="serial-ports"></a>
-<h2>Serial Instrumentation Port Arrays (INST 1–12)</h2>
+## Serial Instrumentation Port Arrays (INST 1–12)
 
-<p>Internal power distribution buses, Moxa N-Port serial server interfaces, and pin routings for auxiliary instrumentation ports INST 1 through INST 12 (J11–J22) inside the Electronics Bottle.</p>
+Internal power distribution buses, Moxa N-Port serial server interfaces, and pin routings for auxiliary instrumentation ports INST 1 through INST 12 (J11–J22) inside the Electronics Bottle.
 
 <div align="center">
 <img width="1258" height="845" alt="Serial Ports 1-6" src="https://github.com/user-attachments/assets/bb949343-5088-4895-a99a-dc1299498ed3" />
@@ -463,9 +446,9 @@
 
 <br>
 
-<h3>Serial Port Wiring & Terminal Block Matrix</h3>
+### Serial Port Wiring & Terminal Block Matrix
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Instrument Port</th>
@@ -512,9 +495,9 @@
 <br>
 
 <a name="ac-power-strobes"></a>
-<h2>AC Power Distribution & MVS 5000 Strobe Controls</h2>
+## AC Power Distribution & MVS 5000 Strobe Controls
 
-<p>Governs high-voltage AC input distribution, internal DC power generation (5V, 12V, 24V, 48V), system cooling fans, camera power control, and flash pulse triggers for four MVS 5000 strobe units.</p>
+Governs high-voltage AC input distribution, internal DC power generation (5V, 12V, 24V, 48V), system cooling fans, camera power control, and flash pulse triggers for four MVS 5000 strobe units.
 
 <div align="center">
 <img width="1254" height="834" alt="AC Power" src="https://github.com/user-attachments/assets/c943e173-9c90-4b22-b80e-8f91a35f3040" />
@@ -523,27 +506,22 @@
 
 <br>
 
-<h3>Internal Rectifiers & Interface Allocation</h3>
+### Internal Rectifiers & Interface Allocation
 
-<ul>
-  <li><b>AC Main Input (J1):</b> High-voltage AC enters via SubConn MCBH3M-SS with a 4A slow-blow fuse (F1: Littelfuse 03540821ZXBL) guarding the main AC rails.</li>
-  <li><b>Internal DC Regulators:</b>
-    <ul>
-      <li><b>PS1 (Astrodyne RS150-48):</b> Generates +48V DC (Fused via F2 @ 1A Fast) &rarr; Terminal Strip T1.</li>
-      <li><b>PS2 (Astrodyne RS150-24):</b> Generates +24V DC (Fused via F3 @ 1A Fast) &rarr; Terminal Strip T2.</li>
-      <li><b>PS3 (Astrodyne RS150-12):</b> Generates +12V DC (Fused via F2-3 @ 8A Fast) &rarr; Terminal Strip T3.</li>
-      <li><b>PS4 (Astrodyne RS100-5):</b> Generates +5V DC (Fused via F4-5 @ 8A Fast) &rarr; Terminal Strip T4.</li>
-    </ul>
-  </li>
-  <li><b>System Cooling:</b> Dual Mechatronics GDA6025-12BB 12V cooling fans equipped with tachometer feedback lines.</li>
-  <li><b>Timing Unit (U1):</b> Sealevel CC320 timing interface on the Timing Net with optical trigger outputs (Out1–Out8) pulled up via 1.2k&Omega; resistors.</li>
-</ul>
+* **AC Main Input (J1):** High-voltage AC enters via SubConn MCBH3M-SS with a 4A slow-blow fuse (F1: Littelfuse 03540821ZXBL) guarding the main AC rails.
+* **Internal DC Regulators:**
+  * **PS1 (Astrodyne RS150-48):** Generates +48V DC (Fused via F2 @ 1A Fast) &rarr; Terminal Strip T1.
+  * **PS2 (Astrodyne RS150-24):** Generates +24V DC (Fused via F3 @ 1A Fast) &rarr; Terminal Strip T2.
+  * **PS3 (Astrodyne RS150-12):** Generates +12V DC (Fused via F2-3 @ 8A Fast) &rarr; Terminal Strip T3.
+  * **PS4 (Astrodyne RS100-5):** Generates +5V DC (Fused via F4-5 @ 8A Fast) &rarr; Terminal Strip T4.
+* **System Cooling:** Dual Mechatronics GDA6025-12BB 12V cooling fans equipped with tachometer feedback lines.
+* **Timing Unit (U1):** Sealevel CC320 timing interface on the Timing Net with optical trigger outputs (Out1–Out8) pulled up via 1.2k&Omega; resistors.
 
 <br>
 
-<h3>Strobe & Camera Bulkhead Connections</h3>
+### Strobe & Camera Bulkhead Connections
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Port Name</th>
@@ -590,9 +568,9 @@
 <br>
 
 <a name="subsystem-housings"></a>
-<h2>Sensor Bottles, Strobe Units & Camera Housings</h2>
+## Sensor Bottles, Strobe Units & Camera Housings
 
-<h3>Strobe Bottle Internal Schematic</h3>
+### Strobe Bottle Internal Schematic
 
 <div align="center">
 <img width="1234" height="838" alt="Strobe Bottle" src="https://github.com/user-attachments/assets/16c26846-5ed4-4318-ac23-aa0c5d430d06" />
@@ -601,16 +579,15 @@
 
 <br>
 
-<p>Details AC power conversion, thermal regulation, opto-isolated trigger pulse amplification, and driving circuit connections for the Perkin-Elmer MVS-5002 strobe unit:</p>
-<ul>
-  <li><b>Internal Power Converter (PS1):</b> Astrodyne LPR75-12 converting high-voltage AC into regulated +12V DC.</li>
-  <li><b>Trigger Conditioning:</b> Dual NPN transistors (Q1, Q2 2N3904) driving a Perkin-Elmer MVS-5002 optocoupler stage with a 150&Omega; current-limiting resistor. Nominal trigger: 5V @ 20mA (4.5V @ 18mA minimum).</li>
-  <li><b>Internal Cooling:</b> Sunon KDE1206PHV2 12V fan drawing air out through housing side vents.</li>
-</ul>
+Details AC power conversion, thermal regulation, opto-isolated trigger pulse amplification, and driving circuit connections for the Perkin-Elmer MVS-5002 strobe unit:
+
+* **Internal Power Converter (PS1):** Astrodyne LPR75-12 converting high-voltage AC into regulated +12V DC.
+* **Trigger Conditioning:** Dual NPN transistors (Q1, Q2 2N3904) driving a Perkin-Elmer MVS-5002 optocoupler stage with a 150&Omega; current-limiting resistor. Nominal trigger: 5V @ 20mA (4.5V @ 18mA minimum).
+* **Internal Cooling:** Sunon KDE1206PHV2 12V fan drawing air out through housing side vents.
 
 <br>
 
-<h3>Attitude Bottle Internal Schematic</h3>
+### Attitude Bottle Internal Schematic
 
 <div align="center">
 <img width="1226" height="827" alt="Attitude Bottle" src="https://github.com/user-attachments/assets/eac244c8-2b77-4025-a97c-7e7b2bc27c7c" />
@@ -619,7 +596,7 @@
 
 <br>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Bulkhead Pin (SubConn MCBH4M-SS J1)</th>
@@ -658,7 +635,7 @@
 
 <br>
 
-<h3>Camera Synchronization Bus Circuit Analysis</h3>
+### Camera Synchronization Bus Circuit Analysis
 
 <div align="center">
 <img width="1206" height="804" alt="Camera Trigger" src="https://github.com/user-attachments/assets/8be62985-f4e8-4581-846c-8b9f9c71552a" />
@@ -667,16 +644,14 @@
 
 <br>
 
-<ul>
-  <li><b>Bus Bias:</b> Single 2050&Omega; (0.5W) pull-up resistor to +24V DC in the Electronics Bottle.</li>
-  <li><b>Active Low State (Trigger Pulled Low):</b> Line near 0V; 11.7mA through pull-up resistor; 0mA through camera LEDs; 0.3mA through each strobe; total collector sinking current = 12.9mA.</li>
-  <li><b>Inactive High State (Floating High):</b> Line at 3.4V; 10.1mA through pull-up resistor; 5.3mA through each camera input LED (exceeds drive threshold).</li>
-  <li><b>Worst-Case Single Camera Load:</b> Single-camera / 4-strobe line rises to 5.0V, delivering 9.5mA to the camera LED.</li>
-</ul>
+* **Bus Bias:** Single 2050&Omega; (0.5W) pull-up resistor to +24V DC in the Electronics Bottle.
+* **Active Low State (Trigger Pulled Low):** Line near 0V; 11.7mA through pull-up resistor; 0mA through camera LEDs; 0.3mA through each strobe; total collector sinking current = 12.9mA.
+* **Inactive High State (Floating High):** Line at 3.4V; 10.1mA through pull-up resistor; 5.3mA through each camera input LED (exceeds drive threshold).
+* **Worst-Case Single Camera Load:** Single-camera / 4-strobe line rises to 5.0V, delivering 9.5mA to the camera LED.
 
 <br>
 
-<h3>Allied Vision Mako G-234C Camera Housing Wiring</h3>
+### Allied Vision Mako G-234C Camera Housing Wiring
 
 <div align="center">
 <img width="1195" height="883" alt="Camera Wiring" src="https://github.com/user-attachments/assets/1d0c551d-283e-417a-8295-8503d2ee9ade" />
@@ -685,7 +660,7 @@
 
 <br>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">Vehicle Bulkhead Port (SubConn DBH13MSS J1)</th>
@@ -739,18 +714,18 @@
 <br>
 
 <a name="sensor-cables"></a>
-<h2>CTD & Environmental Sensor Cable Harnesses</h2>
-<img width="1234" height="881" alt="CTD Wiring" src="https://github.com/user-attachments/assets/e79fb571-f2c0-4c4f-bfd4-d1134a0c35e7" />
-<h3>9.1 Sea-Bird SBE 37 / SBE 49 CTD Cable Assembly</h3>
+## CTD & Environmental Sensor Cable Harnesses
+
+### Sea-Bird SBE 37 / SBE 49 CTD Cable Assembly
 
 <div align="center">
-
+<img width="1234" height="881" alt="CTD Wiring" src="https://github.com/user-attachments/assets/e79fb571-f2c0-4c4f-bfd4-d1134a0c35e7" />
   <p><i>Sea-Bird SBE 37/49 CTD Sensor Cable Schematic.</i></p>
 </div>
 
 <br>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">SubConn MCIL4F Pin (SBE CTD Side)</th>
@@ -789,17 +764,16 @@
 
 <br>
 
-<h3>ECO-Triplet Fluorometer Cable Assembly</h3>
+### ECO-Triplet Fluorometer Cable Assembly
 
 <div align="center">
 <img width="1234" height="881" alt="Eco-Triplet Wiring" src="https://github.com/user-attachments/assets/b112bbf6-75a1-43c8-b4a5-00ff100705ca" />
-
   <p><i>Figure 9.2: Sea-Bird / WET Labs ECO-Triplet Cable Schematic.</i></p>
 </div>
 
 <br>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th align="left">SubConn MCIL6F Pin (ECO-Triplet Side)</th>
@@ -847,8 +821,3 @@
     </tr>
   </tbody>
 </table>
-
-<br>
-<hr>
-
-</div>
