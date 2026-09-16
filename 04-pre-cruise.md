@@ -6,19 +6,19 @@ toc-depth: 3
 
 ## Pre-Cruise Operational Checklist
 
-### 6 Months Out (~November) {#sec-6-months} {.unlisted}
+### 6 Months Out {.unlisted}
 
 - [ ] Confirm ship time and set cruise date
 - [ ] Send Seabird 37, Seabird 49 CTDs and Wetlabs ecotriplet puck to Washington for Calibrations [Return to Manufacturer Authorization (RMA) form]
 - [ ] Begin ordering equipment and supplies needed before upcoming cruise [itemized ordering guide here]
 - [ ] Send out any equipment that was damaged from last survey
 
-### 15 Weeks Out {#sec-15-weeks} {.unlisted}
+### 15 Weeks Out {.unlisted}
 
 - [ ] If ITD hasn't reached out to have computer software security added to machines prior to surveys (i.e. patched), check-in
 
 
-### 12 Weeks Out {#sec-12-weeks} {.unlisted}
+### 12 Weeks Out {.unlisted}
 
 - [ ] Set up all servers with 2026 software directories and GUIs
 - [ ] Collect flashdrive from POPDY and Install R packages on annotation machines
@@ -26,7 +26,7 @@ toc-depth: 3
 - [ ] Ensure sonar software and coastal explorer are installed on 2 field laptops
 
 
-### 10 Weeks Out {#sec-10-weeks} {.unlisted}
+### 10 Weeks Out {.unlisted}
 
 - [ ] Hand-off Clevis to Shellfish group to have the epoxy burned out at Reidar's in New Bedford
 - [ ] Ensure Seabird 37, Seabird 49 and Wetlabs ecotriplet puck have returned from Washington
@@ -37,7 +37,7 @@ toc-depth: 3
 - [ ] Reformat back-up drives
 
 
-### 8 Weeks Out {#sec-8-weeks} {.unlisted}
+### 8 Weeks Out {.unlisted}
 
 - [ ] Prepare HABCAM for WHOI Sundance Tank Calibration Test
 - [ ] Pack supply kit for WHOI sundance tank calibration test
@@ -45,7 +45,7 @@ toc-depth: 3
 - [ ] Science center staffing call
 
 
-### 6 Weeks Out {#sec-6-weeks} {.unlisted}
+### 6 Weeks Out {.unlisted}
 
 - [ ] Take vehicles to WHOI sea water tank test to calibrate equipment 
 - [ ] Repair or Resolve any issues that came up during the WHOI tank test
@@ -53,7 +53,7 @@ toc-depth: 3
 - [ ] Replace batteries in Pinger (Benthos UAT 376 acoustic transponder)
 
 
-### 5 Weeks Out {#sec-5-weeks} {.unlisted}
+### 5 Weeks Out {.unlisted}
 
 - [ ] Send “You are scheduled Email” notifying staff they have been selected for the survey. Include:
   - [ ] Survey expectations
@@ -66,12 +66,12 @@ toc-depth: 3
 - [ ] Assign berthing
 
 
-### 1 Week Out {#sec-1-week} {.unlisted}
+### 1 Week Out {.unlisted}
 
 - [ ] Email the scientific party a few days prior to departure letting them know about departure times, meeting points, parking, and weather contingencies.
 
 
-### Staging {#sec-staging} {.unlisted}
+### Staging {.unlisted}
 
 - [ ] [Mounting the weak link](02-hardware-and-schematics.md#weak-link)
 - [ ] [Splice fiber optics](02-hardware-and-schematics.md#fiber-optic-termination)
@@ -83,7 +83,7 @@ toc-depth: 3
 - [ ] Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)
 
 
-### Day of Departure {#sec-day-of-departure} {.unlisted}
+### Day of Departure {.unlisted}
 
 - [ ] If leaving from WH store vehicle keys in the locker by the Survey refrigerator. Parking forms must be filled out and placed on the car dashboard.
 - [ ] When heading to Newport, RI, keep the ship informed about the science party’s arrival time.
@@ -104,8 +104,6 @@ toc-depth: 3
 - [ ] Send Seabird 37, Seabird 49 CTDs, and Wetlabs ECO-Triplet puck to Washington for calibrations [Return to Manufacturer Authorization (RMA) form]
 - [ ] Begin ordering equipment and supplies needed before upcoming cruise [itemized ordering guide here]
 - [ ] Send out any equipment that was damaged from last survey
-
-<br>
 
 #### Confirm Ship Time & Cruise Date {#sec-6mo-ship-time}
 
@@ -138,16 +136,14 @@ toc-depth: 3
 
 <br>
 <hr>
-<br>
 
-### 12 Weeks Out: Server, GUI & Workstation Setup {#sec-12-weeks-detail}
+### 12 Weeks Out {#sec-12-weeks-detail}
 
 - [ ] Set up all servers with software directories and GUIs
 - [ ] Collect flashdrive from POPDY and Install R packages on annotation machines
 - [ ] Verify that IP address can be changed on annotation machines
 - [ ] Ensure sonar software and Coastal Explorer are installed on 2 field laptops
 
-<br>
 
 #### Server Directory & GUI Setup {#sec-12wk-server-setup}
 
@@ -175,10 +171,8 @@ toc-depth: 3
 - [ ] If applicable, install chanos onto tow sled
 - [ ] Science center staffing call
 
-<br>
 
 #### Prepare HabCam for WHOI Sundance Tank Calibration Test {#sec-8wk-sundance-prep}
-*[Insert overview and general preparation steps for the WHOI Sundance Tank calibration deployment]*
 
 - [ ] Attach/Install CTDs, ecotriplet puck, and Blueview forward looking sonar
 - [ ] Open main electronics bottle, check fuses, inspect O-rings, replace desiccant and pull a vacuum
@@ -190,7 +184,6 @@ toc-depth: 3
 - [ ] Power On Main Electronics Bottle & Verify Engineering GUI Data
 - [ ] Connect to Stereocameras & Verify Camera/Strobe Trigger Rates
 
-<br>
 
 #### Pack Supply Kit for WHOI Sundance Tank Calibration Test {#sec-8wk-pack-supply-kit}
 *[Insert packing list, required hand tools, spare O-rings, calibration targets, and test gear inventory here]*
@@ -352,6 +345,7 @@ toc-depth: 3
 8. Iterate image selection and parameter fitting until all three success criteria are satisfied.
 
 <br>
+<hr>
 
 ### The 2018 Calibration Experiment (Chang and Godlewski) {#sec-6wk-2018-experiment}
 
@@ -374,14 +368,12 @@ The WHOI Habcam data have a similar problem compared to the VIMS dredge data, th
   <p><i>Figure 2. Shell height frequencies, the number of shells measured, and mean shell height from multiple surveys in ET in 2018.</i></p>
 </div>
 
-<br>
 
 <div align="center">
   <img width="650" height="500" alt="Figure 3" src="https://github.com/user-attachments/assets/bd735580-b3ff-4514-901a-7652335bf9ca" />
   <p><i>Figure 3. Shell height frequencies, the number of shells measured, and mean shell height from VIMS dredge and CFF Habcam survey (altimeter altitude) in the Nantucket Light Ship South Deep area in 2018.</i></p>
 </div>
 
-<br>
 
 Because the NEFSC Habcam altimeter was not collecting accurate altitudes, the usefulness of stereo altitudes was explored. However, of 119,645 NEFSC Habcam images annotated in 2018, only 3,627 images have stereo altitudes. The estimated stereo altitudes are either close to the altimeter altitudes or centered at 0.93 meters, which means that the stereo altitudes were estimated poorly and also biased (Figure 4).
 
@@ -390,7 +382,6 @@ Because the NEFSC Habcam altimeter was not collecting accurate altitudes, the us
   <p><i>Figure 4. Comparison of altimeter and stereo altitudes for NEFSC Habcam data (annotated images) in 2018. Red line is a one to one line.</i></p>
 </div>
 
-<br>
 
 The comparison between Habcam and dredge survey shell heights were further examined from 2011 to 2018 for all areas surveyed to see if this is a single year problem or it persists over years. The list of the type of altitudes (and field of view calculations) used to estimate scallop shell heights for the Habcam data for each year is below (Burton Shank personal comm.):
 
@@ -679,7 +670,6 @@ Send formal notification emails to all selected scientific personnel. Attach the
 
 - [ ] Email the scientific party a few days prior to departure regarding departure times, meeting points, parking, and bad weather contingencies.
 
-<br>
 
 #### Pre-Departure Logistics Email {#sec-1wk-pre-departure-email}
 
@@ -703,8 +693,6 @@ Send formal notification emails to all selected scientific personnel. Attach the
 > * **Max Operational Wind (HabCam Deployment Limit):** Sustained winds &gt; 25 knots or seas &gt; 6 ft require halting vehicle towing operations and recovering the sled.
 > * **Weather Contingency Communication:** In the event of forecasted adverse weather, updates will be issued via email/SMS every 6 hours by the Chief Scientist.
 
-<br>
-
 
 ### Staging Protocols {#sec-staging-detail}
 
@@ -716,8 +704,6 @@ Send formal notification emails to all selected scientific personnel. Attach the
 - [ ] Setup stations
 - [ ] Provide the captain/bridge with the .GPX file of station locations so they can import it into their navigation software and check tracklines and make recommendations for any shifts in waypoints.
 - [ ] Chanos sensor dissolved inorganic carbon sensor (PH, DIC, total alkalinity)
-
-<br>
 
 #### Mounting the Weak Link {#sec-staging-weak-link}
 Refer to [02 Weak Link Assembly](02-weak-link.md) for detailed instructions.
@@ -950,7 +936,6 @@ Image processing, secondary scientific analysis, and physical sample handling ar
 - [ ] Host an on-board, pre-cruise meeting with scientific staff
 - [ ] Track federal employee time
 
-<br>
 
 #### Host On-Board Pre-Cruise Meeting {#sec-dayof-precruise-meeting}
 
