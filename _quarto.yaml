@@ -3,9 +3,9 @@ project:
 
 book:
   title: "HabCam SOP"
-  logo: "Round Logo.jpg"
   number-sections: false # Disables 1, 2, 3... from sidebar and page headers
   sidebar:
+    logo: "Round Logo.jpg"
     style: "docked"
     search: true
     collapse-level: 1
