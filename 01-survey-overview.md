@@ -2,9 +2,7 @@
 
 <div align="center">
 
-<img width="624" height="503" alt="Crew on Deck" src="https://github.com/user-attachments/assets/3a15d7f7-4501-4eaf-bc4f-ff76641e041d" />
-
-*HabCam Survey Crew on Deck*
+![HabCam Survey Crew on Deck](https://github.com/user-attachments/assets/3a15d7f7-4501-4eaf-bc4f-ff76641e041d){fig-align="center" width="624" height="503"}
 
 </div>
 
