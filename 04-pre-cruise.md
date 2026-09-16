@@ -507,7 +507,7 @@ $$\% \text{Bias} = \frac{\text{Estimated Size} - \text{True Size}}{\text{True Si
 <br>
 <hr>
 
-### 5 Weeks Out: Staff Notifications, Watch Bills & Berthing Assignments {#sec-5-weeks-detail}
+### 5 Weeks Out {#sec-5-weeks-detail}
 
 - [ ] Send “You are scheduled Email” notifying staff they have been selected for the survey. Include:
   - [ ] Survey expectations
@@ -666,7 +666,7 @@ Send formal notification emails to all selected scientific personnel. Attach the
 <br>
 <hr>
 
-### 1 Week Out: Logistics & Pre-Departure Briefings {#sec-1-week-detail}
+### 1 Week Out {#sec-1-week-detail}
 
 - [ ] Email the scientific party a few days prior to departure regarding departure times, meeting points, parking, and bad weather contingencies.
 
