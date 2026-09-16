@@ -1,8 +1,8 @@
-# After-Cruise Checklist {#after-cruise-checklist}
-
-## Day of Destaging {#sec-destaging-day}
+# After-Cruise Checklist
 
 <br>
+
+## Day of Destaging
 
 ### Data Backup {#sec-destage-data-backup}
 
@@ -11,8 +11,6 @@
   - [ ] Copy to `FSCS_RAWDATA`, following completion of the cruise.
 - [ ] If CTDs were performed, the crew will provide the CTD Logs for Oceanography.
 - [ ] Make sure all special requests samples are taken off the ship at the completion of the cruise, coordinate pick-up of samples from researchers (this may be done pre-cruise; check with Advanced Tech lead or previous leg’s CS).
-
-<br>
 
 *[Insert details on data offload verification, server network paths, external drive formatting protocols, and photos of backup storage setups here]*
 
@@ -26,8 +24,6 @@
 - [ ] Detach tail piece while HabCam is still on the vessel.
 - [ ] Detach clevis [Will need to be taken to Reidar’s Manufacturing in New Bedford to break down the socket lock]
 - [ ] Disconnect and take the power converter.
-
-<br>
 
 *[Insert details on freshwater washdown procedures, junction box oil draining, clevis transport logistics to Reidar's, and photos of vehicle disassembly here]*
 
@@ -43,7 +39,6 @@
 - [ ] Place ethernet cables into Ethernet tote.
 - [ ] Remove and consolidate plywood.
 
-<br>
 
 *[Insert details on server rack dismounting, cable packing inventories, flying bridge access procedures, and photos of packed Pelican cases/totes here]*
 
@@ -54,7 +49,6 @@
 - [ ] Place NMFS labeled gear back into mesh bags
 - [ ] Place PFD’s into a long black tote.
 
-<br>
 
 *[Insert details on gear laundering, safety inspection, drying guidelines, and photos of storage totes here]*
 
@@ -65,7 +59,5 @@
 - [ ] Ensure everyone (including volunteers and Teachers at-Sea) have proper travel arrangements following completion of cruise.
 - [ ] If needed, work with onshore support staff/branch chief to ensure a vehicle is available for a provision run in between cruise legs.
 - [ ] Divide vans for what is going to Woods Hole (keep WHOI and NMFS stuff separate) and what is going to Netloft
-
-<br>
 
 *[Insert details on shoreside transport routes, Woods Hole vs. Netloft unloading schedules, equipment segregation rules, and photos of van staging here]*
