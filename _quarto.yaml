@@ -3,8 +3,7 @@ project:
 
 book:
   title: "HabCam SOP"
-  number-sections: false # Disables 1, 2, 3... from sidebar and page headers
-  sidebar:
+   sidebar:
     logo: "Round Logo.jpg"
     style: "docked"
     search: true
@@ -98,3 +97,4 @@ format:
   html:
     theme: cosmo
     toc: true
+    number-sections: false # Disables 1, 2, 3... from sidebar and page headers
