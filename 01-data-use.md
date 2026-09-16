@@ -10,6 +10,6 @@ A number of other surveys collect data on scallop distribution, abundance, and s
 
 Our HabCam survey data are available by request. To request data, please contact **Cam Fairclough** or **Conor McManus**.
 
-* [Benthic habitat influences sea scallop distributions and swimming behavior based on underwater imagery and machine learning](https://www.sciencedirect.com/science/article/pii/S1574954125005862#bb0160)[cite: 9]
-* [Combining imperfect automated annotations of underwater images with human annotations to obtain precise and unbiased population estimates](https://www.sciencedirect.com/science/article/abs/pii/S2211122015300219)[cite: 9]
-* [Modeling the spatiotemporal effects of ocean acidification and warming on Atlantic sea scallop growth to guide adaptive fisheries management](https://www.sciencedirect.com/science/article/pii/S030438002500420X)[cite: 9]
+* [Benthic habitat influences sea scallop distributions and swimming behavior based on underwater imagery and machine learning](https://www.sciencedirect.com/science/article/pii/S1574954125005862#bb0160)
+* [Combining imperfect automated annotations of underwater images with human annotations to obtain precise and unbiased population estimates](https://www.sciencedirect.com/science/article/abs/pii/S2211122015300219)
+* [Modeling the spatiotemporal effects of ocean acidification and warming on Atlantic sea scallop growth to guide adaptive fisheries management](https://www.sciencedirect.com/science/article/pii/S030438002500420X)
