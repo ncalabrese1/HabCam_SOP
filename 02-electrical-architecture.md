@@ -1,7 +1,5 @@
 # HabCam Electrical Schematics & Network Architecture
 
-</div>
-
 <br>
 
 <h2>Master Table</h2>
