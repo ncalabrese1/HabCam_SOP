@@ -3,6 +3,10 @@ project:
 
 book:
   title: "HabCam Operational SOP"
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
   chapters:
     - index.md
     - part: "Program Information"
