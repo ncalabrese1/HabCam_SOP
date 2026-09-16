@@ -1,19 +1,17 @@
-/* Target only text and inline elements inside align="center" containers */
-div[align="center"] {
-  text-align: center !important;
-}
-
-/* Center tables only when explicitly placed inside an align="center" div */
-div[align="center"] table {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Center images and figures only when explicitly placed inside an align="center" div */
-div[align="center"] img,
-div[align="center"] figure,
-div[align="center"] .quarto-figure {
+/* Force all HTML images and Quarto figures to center horizontally */
+img, 
+figure, 
+.quarto-figure, 
+.quarto-figure-center,
+p > img {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+/* Center caption text beneath images */
+figcaption, 
+.figure-caption,
+div.quarto-figure > figure > figcaption {
+  text-align: center !important;
 }
