@@ -12,85 +12,85 @@ book:
     - index.md
     - part: "Program Information"
       chapters:
-        - href: 00-the-program.md
+        - href: Program/00-the-program.md
           text: "The Program"
-        - href: 00-team-members.md
+        - href: Program/00-team-members.md
           text: "Team Members"
-        - href: 00-onboarding.md
+        - href: Program/00-onboarding.md
           text: "Onboarding"
-        - href: 00-interns.md
+        - href: Program/00-interns.md
           text: "Interns"
-        - href: 00-publications.md
+        - href: Program/00-publications.md
           text: "Publications"
-        - href: 00-media.md
+        - href: Program/00-media.md
           text: "Media"
     - part: "Overview & Species"
       chapters:
-        - href: 01-survey-overview.md
+        - href: Overview/01-survey-overview.md
           text: "Survey Overview"
-        - href: 01-why-we-survey.md
+        - href: Overview/01-why-we-survey.md
           text: "Why We Survey"
-        - href: 01-data-use.md
+        - href: Overview/01-data-use.md
           text: "Data Use"
-        - href: 01-sea-scallop.md
+        - href: Overview/01-sea-scallop.md
           text: "Atlantic Sea Scallop"
     - part: "Hardware & Schematics"
       chapters:
-        - href: 02-hardware-components.md
+        - href: Hardware/02-hardware-components.md
           text: "Component Reference"
-        - href: 02-frame-schematics.md
+        - href: Hardware/02-frame-schematics.md
           text: "Frame Schematics"
-        - href: 02-harness-schematics.md
+        - href: Hardware/02-harness-schematics.md
           text: "Cable Harness Specs"
-        - href: 02-electrical-architecture.md
+        - href: Hardware/02-electrical-architecture.md
           text: "Electrical & Network"
-        - href: 02-sensors-assembly.md
+        - href: Hardware/02-sensors-assembly.md
           text: "Sensor Assembly"
-        - href: 02-weak-link.md
+        - href: Hardware/02-weak-link.md
           text: "Weak Link Assembly"
-        - href: 02-fiber-termination.md
+        - href: Hardware/02-fiber-termination.md
           text: "Fiber Termination"
-        - href: 02-fiber-pull-test.md
+        - href: Hardware/02-fiber-pull-test.md
           text: "Fiber Pull Test"
     - part: "Software & Data"
       chapters:
-        - href: 03-software-overview.md
+        - href: "Software and Data/03-software-overview.md"
           text: "Software Overview"
-        - href: 03-data-acquisition.md
+        - href: "Software and Data/03-data-acquisition.md"
           text: "Data Acquisition"
-        - href: 03-server-framework.md
+        - href: "Software and Data/03-server-framework.md"
           text: "Server Framework"
-        - href: 03-annotating.md
+        - href: "Software and Data/03-annotating.md"
           text: "Annotating"
-        - href: 03-database.md
+        - href: "Software and Data/03-database.md"
           text: "Database"
-        - href: 03-data-pulls.md
+        - href: "Software and Data/03-data-pulls.md"
           text: "Data Pulls"
-        - href: 03-optical-data.md
+        - href: "Software and Data/03-optical-data.md"
           text: "Optical Data"
-        - href: 03-data-analysis.md
+        - href: "Software and Data/03-data-analysis.md"
           text: "Data Analysis"
     - part: "Staging & Surveys"
       chapters:
-        - href: 04-annual-timeline.md
+        - href: "Staging and Surveys/04-annual-timeline.md"
           text: "Annual Timeline"
-        - href: 04-pre-cruise.md
+        - href: "Staging and Surveys/04-pre-cruise.md"
           text: "Pre-Cruise"
-        - href: 04-field-team-roles.md
+        - href: "Staging and Surveys/04-field-team-roles.md"
           text: "Field Team"
-        - href: 04-habcam-prep.md
+        - href: "Staging and Surveys/04-habcam-prep.md"
           text: "Pre-Deployment"
-        - href: 04-after-cruise.md
+        - href: "Staging and Surveys/04-after-cruise.md"
           text: "After-Cruise"
     - part: "Maintenance & Inventory"
       chapters:
-        - href: 06-maintenance-overview.md
+        - href: Maitenance/06-maintenance-overview.md
           text: "Maintenance Overview"
-        - href: 06-inventory.md
+        - href: Maitenance/06-inventory.md
           text: "Inventory"
-        - href: 06-maintenance-schedule.md
+        - href: Maitenance/06-maintenance-schedule.md
           text: "Maintenance Schedule"
-        - href: 06-troubleshooting.md
+        - href: Maitenance/06-troubleshooting.md
           text: "Troubleshooting"
 
 format:
