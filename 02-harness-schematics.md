@@ -5,14 +5,14 @@ This slide set contains the electrical schematics, pinout diagrams, cable harnes
 
 As a continuously towed underwater imaging vehicle operating near the seabed, the HabCam relies on oceanographic sensors, imaging systems, and acoustic tools. The cable harnesses described herein provide the link between the centralized vehicle telemetry housing, power distribution manifolds, and individual payload sensors.
 
-## Cable Harness Design Standards
+## Cable Harness Design
 All HabCam cable assemblies are engineered to withstand prolonged immersion in seawater under hydrostatic pressure, high tension, and continuous vibration. Design criteria include:
 * **Wet-Pluggable Connectors:** Utilize marine-grade wet-mate circular connectors (e.g., SubConn, Impulse, Glenair) rated for deep-water hydrostatic pressures.
 * **Mechanical Protection:** Cables feature heavy-duty polyurethane or neoprene outer jackets with embedded water-blocking compounds and Kevlar strain-relief strength members.
 * **Noise Mitigation:** High-speed data pairs and sensitive optical feedback lines utilize individual foil wrapping, tinned-copper braided shielding, and isolated analog/digital ground returns to eliminate EMI and crosstalk from power lines.
 * **Color-Coded Conductor Wiring:** Standardized color coding (following marine instrumentation standards) is maintained across all sub-assemblies to facilitate rapid deck repairs.
 
-## Maintenance, Deck Handling & Quality Assurance
+## Maintenance
 To ensure system reliability during sea trials and survey operations, technicians must adhere to the following servicing guidelines:
 
 **Connector Care & Lubrication:**
@@ -31,7 +31,7 @@ To ensure system reliability during sea trials and survey operations, technician
 <hr>
 <br>
 
-## Cable Harness Master Reference
+## Cable Harness Master
 
 | Schematic Reference | Connector Model (Vehicle &rarr; Device Side) | Pin Count | Primary Protocol / Signal | Operating Voltage |
 | :--- | :--- | :--- | :--- | :--- |
@@ -48,7 +48,10 @@ To ensure system reliability during sea trials and survey operations, technician
 <br>
 
 
-## Individual Cable Specifications & Wiring Diagrams
+## Individual Cable Specs
+<div align="center">
+ <img width="1265" height="892" alt="Camera_Power" src="https://github.com/user-attachments/assets/1adccfc7-2298-4c57-984e-4bfab114408a" />
+</div>
 
 <p><b>Schematic Reference:</b> HabCamV4 - Chanos Cable</p>
 <p><b>Primary Function:</b> Connects the Chanos in-situ biogeochemical analyzer to the HabCamV4 system for ocean chemistry data collection and sensor power.</p>
