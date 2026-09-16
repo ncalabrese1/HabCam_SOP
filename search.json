@@ -111,9 +111,9 @@
   {
     "objectID": "01-data-use.html",
     "href": "01-data-use.html",
-    "title": "Data Use & Scientific Documents",
+    "title": "Data Use",
     "section": "",
-    "text": "Data Use\nThe data is used to develop indices of abundance and size composition of Atlantic sea scallop for the stock assessments. Additional fisheries and ecosystem data collected from the images is also processed for use in future stock and ecosystem assessment needs.\nA number of other surveys collect data on scallop distribution, abundance, and size supported by the Center’s Scallop Dredge survey and the Research Set Aside Program (including dredge, video drop camera, and an additional HabCam survey). The intent of these multiple surveys is to increase the accuracy and precision of the sea scallop assessment through thorough fisheries-independent surveys.",
+    "text": "Access Our Data & Scientific Documents\nThe data is used to develop indices of abundance and size composition of Atlantic sea scallop for the stock assessments. Additional fisheries and ecosystem data collected from the images is also processed for use in future stock and ecosystem assessment needs.\nA number of other surveys collect data on scallop distribution, abundance, and size supported by the Center’s Scallop Dredge survey and the Research Set Aside Program (including dredge, video drop camera, and an additional HabCam survey). The intent of these multiple surveys is to increase the accuracy and precision of the sea scallop assessment through thorough fisheries-independent surveys.\nOur HabCam survey data are available by request. To request data, please contact Cam Fairclough or Conor McManus.",
     "crumbs": [
       "Overview & Species",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Use</span>"
@@ -122,9 +122,9 @@
   {
     "objectID": "01-data-use.html#access-our-data-scientific-documents",
     "href": "01-data-use.html#access-our-data-scientific-documents",
-    "title": "Data Use & Scientific Documents",
-    "section": "Access Our Data & Scientific Documents",
-    "text": "Access Our Data & Scientific Documents\nOur HabCam survey data are available by request. To request data, please contact Cam Fairclough or Conor McManus.\n\nBenthic habitat influences sea scallop distributions and swimming behavior based on underwater imagery and machine learning[cite: 9]\nCombining imperfect automated annotations of underwater images with human annotations to obtain precise and unbiased population estimates[cite: 9]\nModeling the spatiotemporal effects of ocean acidification and warming on Atlantic sea scallop growth to guide adaptive fisheries management[cite: 9]",
+    "title": "Data Use",
+    "section": "",
+    "text": "Benthic habitat influences sea scallop distributions and swimming behavior based on underwater imagery and machine learning[cite: 9]\nCombining imperfect automated annotations of underwater images with human annotations to obtain precise and unbiased population estimates[cite: 9]\nModeling the spatiotemporal effects of ocean acidification and warming on Atlantic sea scallop growth to guide adaptive fisheries management[cite: 9]",
     "crumbs": [
       "Overview & Species",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Use</span>"
