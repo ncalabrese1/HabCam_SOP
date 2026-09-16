@@ -347,7 +347,7 @@ toc-depth: 3
 <br>
 <hr>
 
-### The 2018 Calibration Experiment (Chang and Godlewski) {#sec-6wk-2018-experiment}
+### The 2018 Experiment {#sec-6wk-2018-experiment}
 
 #### Rationale
 
