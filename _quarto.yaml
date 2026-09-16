@@ -98,3 +98,5 @@ format:
     theme: cosmo
     toc: true
     number-sections: false
+    fig-align: center
+    css: styles.css
