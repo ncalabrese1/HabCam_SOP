@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cable Harness Specifications &amp; Wiring Schematics – HabCam SOP</title>
+<title>Cable Harness Specifications – HabCam SOP</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -374,20 +374,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">1. System Overview</a></li>
-  <li><a href="#cable-harness-design-standards" id="toc-cable-harness-design-standards" class="nav-link" data-scroll-target="#cable-harness-design-standards">2. Cable Harness Design Standards</a></li>
-  <li><a href="#maintenance-deck-handling-quality-assurance" id="toc-maintenance-deck-handling-quality-assurance" class="nav-link" data-scroll-target="#maintenance-deck-handling-quality-assurance">3. Maintenance, Deck Handling &amp; Quality Assurance</a></li>
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">System Overview</a></li>
+  <li><a href="#cable-harness-design-standards" id="toc-cable-harness-design-standards" class="nav-link" data-scroll-target="#cable-harness-design-standards">Cable Harness Design Standards</a></li>
+  <li><a href="#maintenance-deck-handling-quality-assurance" id="toc-maintenance-deck-handling-quality-assurance" class="nav-link" data-scroll-target="#maintenance-deck-handling-quality-assurance">Maintenance, Deck Handling &amp; Quality Assurance</a></li>
   <li><a href="#cable-harness-master-reference" id="toc-cable-harness-master-reference" class="nav-link" data-scroll-target="#cable-harness-master-reference">Cable Harness Master Reference</a></li>
-  <li><a href="#individual-cable-specifications-wiring-diagrams" id="toc-individual-cable-specifications-wiring-diagrams" class="nav-link" data-scroll-target="#individual-cable-specifications-wiring-diagrams">Individual Cable Specifications &amp; Wiring Diagrams</a>
-  <ul class="collapse">
-  <li><a href="#chanos-cable" id="toc-chanos-cable" class="nav-link" data-scroll-target="#chanos-cable">Chanos Cable</a></li>
-  <li><a href="#camera-power-ethernet-cable" id="toc-camera-power-ethernet-cable" class="nav-link" data-scroll-target="#camera-power-ethernet-cable">Camera Power Ethernet Cable</a></li>
-  <li><a href="#a-sphere-cable-wiring" id="toc-a-sphere-cable-wiring" class="nav-link" data-scroll-target="#a-sphere-cable-wiring">A-Sphere Cable Wiring</a></li>
-  <li><a href="#microstrain-cable" id="toc-microstrain-cable" class="nav-link" data-scroll-target="#microstrain-cable">Microstrain Cable</a></li>
-  <li><a href="#blueview-cable" id="toc-blueview-cable" class="nav-link" data-scroll-target="#blueview-cable">BlueView Cable</a></li>
-  <li><a href="#sonar-altimeter-cable" id="toc-sonar-altimeter-cable" class="nav-link" data-scroll-target="#sonar-altimeter-cable">Sonar Altimeter Cable</a></li>
-  <li><a href="#eco-triplet-cable" id="toc-eco-triplet-cable" class="nav-link" data-scroll-target="#eco-triplet-cable">Eco-Triplet Cable</a></li>
-  </ul></li>
+  <li><a href="#individual-cable-specifications-wiring-diagrams" id="toc-individual-cable-specifications-wiring-diagrams" class="nav-link" data-scroll-target="#individual-cable-specifications-wiring-diagrams">Individual Cable Specifications &amp; Wiring Diagrams</a></li>
   </ul>
 </nav>
     </div>
@@ -396,7 +387,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-hardware-components.html">Hardware &amp; Schematics</a></li><li class="breadcrumb-item"><a href="./02-harness-schematics.html"><span class="chapter-title">Cable Harness Specs</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Cable Harness Specifications &amp; Wiring Schematics</span></h1>
+<h1 class="title"><span class="chapter-title">Cable Harness Specifications</span></h1>
 </div>
 
 
@@ -413,27 +404,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="system-overview" class="level3">
-<h3 class="anchored" data-anchor-id="system-overview">1. System Overview</h3>
-<p>This slide set contains the electrical schematics, pinout diagrams, cable harness routing plans, and interconnect specifications for the Habitat Mapping Camera System (HabCam)[cite: 8].</p>
-<p>As a continuously towed underwater imaging vehicle operating near the seabed, the HabCam relies on oceanographic sensors, imaging systems, and acoustic tools[cite: 8]. The cable harnesses described herein provide the link between the centralized vehicle telemetry housing, power distribution manifolds, and individual payload sensors[cite: 8].</p>
+<section id="system-overview" class="level2">
+<h2 class="anchored" data-anchor-id="system-overview">System Overview</h2>
+<p>This slide set contains the electrical schematics, pinout diagrams, cable harness routing plans, and interconnect specifications for the Habitat Mapping Camera System (HabCam).</p>
+<p>As a continuously towed underwater imaging vehicle operating near the seabed, the HabCam relies on oceanographic sensors, imaging systems, and acoustic tools. The cable harnesses described herein provide the link between the centralized vehicle telemetry housing, power distribution manifolds, and individual payload sensors.</p>
 </section>
-<section id="cable-harness-design-standards" class="level3">
-<h3 class="anchored" data-anchor-id="cable-harness-design-standards">2. Cable Harness Design Standards</h3>
-<p>All HabCam cable assemblies are engineered to withstand prolonged immersion in seawater under hydrostatic pressure, high tension, and continuous vibration[cite: 8]. Design criteria include[cite: 8]: * <strong>Wet-Pluggable Connectors:</strong> Utilize marine-grade wet-mate circular connectors (e.g., SubConn, Impulse, Glenair) rated for deep-water hydrostatic pressures[cite: 8]. * <strong>Mechanical Protection:</strong> Cables feature heavy-duty polyurethane or neoprene outer jackets with embedded water-blocking compounds and Kevlar strain-relief strength members[cite: 8]. * <strong>Noise Mitigation:</strong> High-speed data pairs and sensitive optical feedback lines utilize individual foil wrapping, tinned-copper braided shielding, and isolated analog/digital ground returns to eliminate EMI and crosstalk from power lines[cite: 8]. * <strong>Color-Coded Conductor Wiring:</strong> Standardized color coding (following marine instrumentation standards) is maintained across all sub-assemblies to facilitate rapid deck repairs[cite: 8].</p>
+<section id="cable-harness-design-standards" class="level2">
+<h2 class="anchored" data-anchor-id="cable-harness-design-standards">Cable Harness Design Standards</h2>
+<p>All HabCam cable assemblies are engineered to withstand prolonged immersion in seawater under hydrostatic pressure, high tension, and continuous vibration. Design criteria include: * <strong>Wet-Pluggable Connectors:</strong> Utilize marine-grade wet-mate circular connectors (e.g., SubConn, Impulse, Glenair) rated for deep-water hydrostatic pressures. * <strong>Mechanical Protection:</strong> Cables feature heavy-duty polyurethane or neoprene outer jackets with embedded water-blocking compounds and Kevlar strain-relief strength members. * <strong>Noise Mitigation:</strong> High-speed data pairs and sensitive optical feedback lines utilize individual foil wrapping, tinned-copper braided shielding, and isolated analog/digital ground returns to eliminate EMI and crosstalk from power lines. * <strong>Color-Coded Conductor Wiring:</strong> Standardized color coding (following marine instrumentation standards) is maintained across all sub-assemblies to facilitate rapid deck repairs.</p>
 </section>
-<section id="maintenance-deck-handling-quality-assurance" class="level3">
-<h3 class="anchored" data-anchor-id="maintenance-deck-handling-quality-assurance">3. Maintenance, Deck Handling &amp; Quality Assurance</h3>
-<p>To ensure system reliability during sea trials and survey operations, technicians must adhere to the following servicing guidelines[cite: 8]:</p>
-<p><strong>Connector Care &amp; Lubrication:</strong> * Inspect rubber faces and O-rings for grit, salt crystals, or hair prior to deployment[cite: 8]. * Apply a light coating of Dow Corning 111 silicone grease to neoprene connector faces[cite: 8]. * Never use petroleum-based lubricants, as they degrade neoprene seals[cite: 8].</p>
-<p><strong>Bend Radius &amp; Mechanical Anchoring:</strong> * Maintain a minimum static bend radius of 6x the cable diameter, and a dynamic bend radius of 10x the cable diameter[cite: 8]. * Secure all cables along the 304 Stainless Steel frame using rubber-lined P-clamps and heavy-duty UV-resistant cable ties[cite: 8].</p>
-<p><strong>Dummy Plug Usage:</strong> * Always cap un-mated bulkhead connectors with protective dummy plugs immediately upon disconnect on deck to protect pin contacts from salt spray[cite: 8].</p>
+<section id="maintenance-deck-handling-quality-assurance" class="level2">
+<h2 class="anchored" data-anchor-id="maintenance-deck-handling-quality-assurance">Maintenance, Deck Handling &amp; Quality Assurance</h2>
+<p>To ensure system reliability during sea trials and survey operations, technicians must adhere to the following servicing guidelines:</p>
+<p><strong>Connector Care &amp; Lubrication:</strong> * Inspect rubber faces and O-rings for grit, salt crystals, or hair prior to deployment. * Apply a light coating of Dow Corning 111 silicone grease to neoprene connector faces. * Never use petroleum-based lubricants, as they degrade neoprene seals.</p>
+<p><strong>Bend Radius &amp; Mechanical Anchoring:</strong> * Maintain a minimum static bend radius of 6x the cable diameter, and a dynamic bend radius of 10x the cable diameter. * Secure all cables along the 304 Stainless Steel frame using rubber-lined P-clamps and heavy-duty UV-resistant cable ties.</p>
+<p><strong>Dummy Plug Usage:</strong> * Always cap un-mated bulkhead connectors with protective dummy plugs immediately upon disconnect on deck to protect pin contacts from salt spray.</p>
 <br>
 <hr>
 <p><br></p>
 </section>
-<section id="cable-harness-master-reference" class="level3">
-<h3 class="anchored" data-anchor-id="cable-harness-master-reference">Cable Harness Master Reference</h3>
+<section id="cable-harness-master-reference" class="level2">
+<h2 class="anchored" data-anchor-id="cable-harness-master-reference">Cable Harness Master Reference</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -509,73 +500,522 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="individual-cable-specifications-wiring-diagrams" class="level2">
 <h2 class="anchored" data-anchor-id="individual-cable-specifications-wiring-diagrams">Individual Cable Specifications &amp; Wiring Diagrams</h2>
-<section id="chanos-cable" class="level3">
-<h3 class="anchored" data-anchor-id="chanos-cable">Chanos Cable</h3>
-<div data-align="center">
-<p><img width="1265" height="892" alt="Chanos" src="https://github.com/user-attachments/assets/861b8031-917e-4d75-b12a-1a85c9511a82"></p>
-</div>
-<p><br></p>
-<p><strong>Schematic Reference:</strong> HabCamV4 - Chanos Cable[cite: 8]<br>
-<strong>Primary Function:</strong> Connects the Chanos in-situ biogeochemical analyzer to the HabCamV4 system for ocean chemistry data collection and sensor power[cite: 8].</p>
-<p><strong>Key Specifications:</strong> * <strong>Connector Configuration:</strong> 13-pin circular connector on the vehicle hub end (P1) to a 13-pin circular connector on the Chanos sensor end (P2)[cite: 8]. * <strong>Power Conductors:</strong> Dual +12 VDC power rails using 18 AWG conductors (#18 WHT and #18 RED) paired with dual 18 AWG ground returns (#18 BLK and #18 GRN)[cite: 8]. * <strong>Data &amp; Signal Lines:</strong> 24 AWG color-coded twisted pairs for differential communications and control lines[cite: 8]. * <strong>Cable Shielding:</strong> Pin 2 on both ends is dedicated to the cable screen/shield grounding[cite: 8].</p>
-</section>
-<section id="camera-power-ethernet-cable" class="level3">
-<h3 class="anchored" data-anchor-id="camera-power-ethernet-cable">Camera Power Ethernet Cable</h3>
+<p>
+<b>Schematic Reference:</b> HabCamV4 - Chanos Cable
+</p>
+<p>
+<b>Primary Function:</b> Connects the Chanos in-situ biogeochemical analyzer to the HabCamV4 system for ocean chemistry data collection and sensor power.
+</p>
+<p>
+<b>Key Specifications:</b>
+</p>
+<ul>
+<li>
+<b>Connector Configuration:</b> 13-pin circular connector on the vehicle hub end (P1) to a 13-pin circular connector on the Chanos sensor end (P2).
+</li>
+<li>
+<b>Power Conductors:</b> Dual +12 VDC power rails using 18 AWG conductors (#18 WHT and #18 RED) paired with dual 18 AWG ground returns (#18 BLK and #18 GRN).
+</li>
+<li>
+<b>Data &amp; Signal Lines:</b> 24 AWG color-coded twisted pairs for differential communications and control lines.
+</li>
+<li>
+<b>Cable Shielding:</b> Pin 2 on both ends is dedicated to the cable screen/shield grounding.
+</li>
+</ul>
+<p>
+<b>Pin Allocation Callouts:</b>
+</p>
+<ul>
+<li>
+<b>Power Supply (+12V DC):</b> P1 Pins 3 &amp; 12 (#18 WHT &amp; #18 RED) → P2 Pins 3 &amp; 12
+</li>
+<li>
+<b>Power Ground (GND):</b> P1 Pins 1 &amp; 13 (#18 BLK &amp; #18 GRN) → P2 Pins 1 &amp; 13
+</li>
+<li>
+<b>Screen / Cable Shield:</b> P1 Pin 2 → P2 Pin 2
+</li>
+<li>
+<b>Signal Lines (24 AWG):</b>
+<ul>
+<li>
+P1 Pin 4 (#24 BRN) → P2 Pin 4
+</li>
+<li>
+P1 Pin 5 (#24 BRN/WHT) → P2 Pin 5
+</li>
+<li>
+P1 Pin 6 (#24 BLU) → P2 Pin 7
+</li>
+<li>
+P1 Pin 7 (#24 BLU/WHT) → P2 Pin 6
+</li>
+<li>
+P1 Pin 8 (#24 ORN) → P2 Pin 8
+</li>
+<li>
+P1 Pin 9 (#24 ORN/WHT) → P2 Pin 9
+</li>
+<li>
+P1 Pin 10 (#24 GRN) → P2 Pin 10
+</li>
+<li>
+P1 Pin 11 (#24 GRN/WHT) → P2 Pin 11
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<hr>
+<br>
+<h3 id="camera-power-ethernet-cable" class="anchored">
+Camera Power Ethernet Cable
+</h3>
 <div data-align="center">
 <p><img width="1265" height="892" alt="Camera_Power" src="https://github.com/user-attachments/assets/1adccfc7-2298-4c57-984e-4bfab114408a"></p>
 </div>
 <p><br></p>
-<p><strong>Schematic Reference:</strong> HabCamV4 Wiring - Camera Power Ethernet Cable[cite: 8]<br>
-<strong>Primary Function:</strong> Delivers primary system power, strobe synchronization signals, and high-speed Ethernet data between the central telemetry hub and the main camera system[cite: 8].</p>
-<p><strong>Key Specifications:</strong> * <strong>Connector Configuration:</strong> 13-pin circular connector on the hub end (P1) to a 13-pin rectangular connector on the camera housing end (P2)[cite: 8]. * <strong>Power &amp; Strobe Conductors:</strong> Heavy-gauge 18 AWG conductors dedicated to camera power delivery and strobe pulse timing (#18 RED/BLK for power, #18 WHT/GRN for strobe)[cite: 8]. * <strong>Ethernet Data Lines:</strong> 8 color-coded 24 AWG conductors forming four twisted pairs for high-speed Ethernet telemetry[cite: 8].</p>
-</section>
-<section id="a-sphere-cable-wiring" class="level3">
-<h3 class="anchored" data-anchor-id="a-sphere-cable-wiring">A-Sphere Cable Wiring</h3>
+<p>
+<b>Schematic Reference:</b> HabCamV4 Wiring - Camera Power Ethernet Cable
+</p>
+<p>
+<b>Primary Function:</b> Delivers primary system power, strobe synchronization signals, and high-speed Ethernet data between the central telemetry hub and the main camera system.
+</p>
+<p>
+<b>Key Specifications:</b>
+</p>
+<ul>
+<li>
+<b>Connector Configuration:</b> 13-pin circular connector on the hub end (P1) to a 13-pin rectangular connector on the camera housing end (P2).
+</li>
+<li>
+<b>Power &amp; Strobe Conductors:</b> Heavy-gauge 18 AWG conductors dedicated to camera power delivery and strobe pulse timing:
+<ul>
+<li>
+Camera Power: #18 RED (Camera Power) paired with #18 BLK (Camera Ret)
+</li>
+<li>
+Strobe Control: #18 WHT (Strobe Signal) paired with #18 GRN (Strobe Ret)
+</li>
+</ul>
+</li>
+<li>
+<b>Ethernet Data Lines:</b> 8 color-coded 24 AWG conductors forming four twisted pairs for high-speed Ethernet telemetry.
+</li>
+<li>
+<b>Cable Shielding:</b> Pin 2 on both connectors connects directly to the cable screen/shield for noise suppression.
+</li>
+</ul>
+<p>
+<b>Pin Allocation Callouts:</b>
+</p>
+<ul>
+<li>
+<b>Camera Return (GND):</b> P1 Pin 1 (#18 BLK) → P2 Pin 1
+</li>
+<li>
+<b>Screen / Cable Shield:</b> P1 Pin 2 → P2 Pin 2
+</li>
+<li>
+<b>Strobe Signal:</b> P1 Pin 3 (#18 WHT) → P2 Pin 3
+</li>
+<li>
+<b>Ethernet Data Lines (24 AWG):</b>
+<ul>
+<li>
+P1 Pin 4 (#24 BRN/WHT) → P2 Pin 4
+</li>
+<li>
+P1 Pin 5 (#24 BRN) → P2 Pin 5
+</li>
+<li>
+P1 Pin 6 (#24 BLU) → P2 Pin 6
+</li>
+<li>
+P1 Pin 7 (#24 BLU/WHT) → P2 Pin 7
+</li>
+<li>
+P1 Pin 8 (#24 ORN/WHT) → P2 Pin 8
+</li>
+<li>
+P1 Pin 9 (#24 ORN) → P2 Pin 9
+</li>
+<li>
+P1 Pin 10 (#24 GRN) → P2 Pin 10
+</li>
+<li>
+P1 Pin 11 (#24 GRN/WHT) → P2 Pin 11
+</li>
+</ul>
+</li>
+<li>
+<b>Camera Power:</b> P1 Pin 12 (#18 RED) → P2 Pin 12
+</li>
+<li>
+<b>Strobe Return:</b> P1 Pin 13 (#18 GRN) → P2 Pin 13
+</li>
+</ul>
+<br>
+<hr>
+<br>
+<h3 id="a-sphere-cable-wiring" class="anchored">
+A-Sphere Cable Wiring
+</h3>
 <div data-align="center">
 <p><img width="1249" height="878" alt="A-Sphere" src="https://github.com/user-attachments/assets/7b16fff8-3262-47b5-923d-b643877b3de8"></p>
 </div>
 <p><br></p>
-<p><strong>Schematic Reference:</strong> Cable Wiring - A-Sphere[cite: 8]<br>
-<strong>Primary Function:</strong> Connects the A-Sphere instrument to the HabCam system to supply system power (+24V DC) and handle RS232 serial data communication[cite: 8].</p>
-</section>
-<section id="microstrain-cable" class="level3">
-<h3 class="anchored" data-anchor-id="microstrain-cable">Microstrain Cable</h3>
+<p>
+<b>Schematic Reference:</b> Cable Wiring - A-Sphere
+</p>
+<p>
+<b>Primary Function:</b> Connects the A-Sphere instrument to the HabCam system to supply system power (+24V DC) and handle RS232 serial data communication.
+</p>
+<p>
+<b>Key Specifications:</b>
+</p>
+<ul>
+<li>
+<b>Connector Configuration:</b> SubConn 4-pin inline female connector (MCIL4F) with lock collar and snap ring (MCDLS-M / MCDLS Snap Ring) on the HabCam side (P1) to a SubConn 6-pin inline female connector (MCIL6F) on the A-Sphere instrument side (P2).
+</li>
+<li>
+<b>Power Lines (P1 - HabCam Side):</b> Dual 18 AWG conductors for +24V DC power (#18 RED &amp; #18 GRN) and dual 18 AWG conductors for Power Ground (#18 BLK &amp; #18 WHT).
+</li>
+<li>
+<b>Serial Communication (P2 - Instrument Side):</b> 20 AWG color-coded conductors providing RS232 transmit, receive, and signal ground connections between the instrument and the internal Moxa serial server.
+</li>
+</ul>
+<p>
+<b>Pin Allocation Callouts:</b>
+</p>
+<ul>
+<li>
+<b>P1 (HabCam Side - Power):</b>
+<ul>
+<li>
+Pins 1 &amp; 2 (#18 BLK &amp; #18 WHT): Power Ground
+</li>
+<li>
+Pins 3 &amp; 4 (#18 RED &amp; #18 GRN): +24V DC
+</li>
+</ul>
+</li>
+<li>
+<b>P2 (A-Sphere Side - RS232 Serial Data):</b>
+<ul>
+<li>
+Pin 1 (BLK #20): RS232 RX (Instrument)
+</li>
+<li>
+Pin 2 (WHT #20): RS232 TX (Instrument)
+</li>
+<li>
+Pin 3 (GRN #20): RS232 TX (Moxa)
+</li>
+<li>
+Pin 4 (ORN #20): RS232 RX (Moxa)
+</li>
+<li>
+Pin 5 (BLU #20): RS232 Signal Ground
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<hr>
+<br>
+<h3 id="microstrain-cable" class="anchored">
+Microstrain Cable
+</h3>
 <div data-align="center">
 <p><img width="1243" height="872" alt="Microstrain" src="https://github.com/user-attachments/assets/c90159af-3fc6-4f7c-897f-2826acea4ef9"></p>
 </div>
 <p><br></p>
-<p><strong>Schematic Reference:</strong> Cable Wiring - Microstrain 3DM-GX3-25 AHRS[cite: 8]<br>
-<strong>Primary Function:</strong> Connects the Microstrain 3DM-GX3-25 AHRS bottle to the HabCam telemetry bottle for real-time orientation tracking via an internal Moxa serial server[cite: 8].</p>
-</section>
-<section id="blueview-cable" class="level3">
-<h3 class="anchored" data-anchor-id="blueview-cable">BlueView Cable</h3>
+<p>
+<b>Schematic Reference:</b> Cable Wiring - Microstrain 3DM-GX3-25 AHRS
+</p>
+<p>
+<b>Primary Function:</b> Connects the Microstrain 3DM-GX3-25 AHRS (Attitude and Heading Reference System) bottle to the HabCam telemetry bottle for real-time roll, pitch, and orientation tracking via an internal Moxa serial server.
+</p>
+<p>
+<b>Key Specifications:</b>
+</p>
+<ul>
+<li>
+<b>Connector Configuration:</b> SubConn 4-pin inline female connector (MCIL4F) on the AHRS Bottle side (P1) to a SubConn 6-pin inline female connector (MCIL6F) on the HabCam Bottle side (P2). Both connectors utilize locking collars and snap rings (MCDLS-M / MCDLS Snap Ring).
+</li>
+<li>
+<b>Power Supply:</b> +12 VDC power rail and dedicated power ground bridging the two bottles.
+</li>
+<li>
+<b>Serial Communication:</b> RS232 serial telemetry links the AHRS instrument transmit/receive lines directly to the Moxa serial port interface.
+</li>
+</ul>
+<p>
+<b>Pin Allocation Callouts:</b>
+</p>
+<ul>
+<li>
+<b>P1 (AHRS Bottle Side):</b>
+<ul>
+<li>
+Pin 1 (#18 BLK): Power Ground
+</li>
+<li>
+Pin 2 (#18 WHT): +12V DC
+</li>
+<li>
+Pin 3 (#18 RED): Instrument RS232 TX (signals to Moxa RX)
+</li>
+<li>
+Pin 4 (#18 GRN): Instrument RS232 RX (signals from Moxa TX)
+</li>
+</ul>
+</li>
+<li>
+<b>P2 (Electronics Bottle Side):</b>
+<ul>
+<li>
+Pin 1 (BLK #20): Power Ground
+</li>
+<li>
+Pin 2: Unused / No Connection (NC)
+</li>
+<li>
+Pin 3 (RED #20): +12V DC
+</li>
+<li>
+Pin 4 (GRN #20): Moxa RS232 RX
+</li>
+<li>
+Pin 5 (ORN #20): Moxa RS232 TX
+</li>
+<li>
+Pin 6 (BLU #20): Moxa RS232 GND
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<hr>
+<br>
+<h3 id="blueview-cable" class="anchored">
+BlueView Cable
+</h3>
 <div data-align="center">
 <p><img width="995" height="700" alt="Blueview" src="https://github.com/user-attachments/assets/a90c4bdc-8003-4ed6-a2f9-6bcc87025911"></p>
 </div>
 <p><br></p>
-<p><strong>Schematic Reference:</strong> HabCamV4 - BlueView Cable[cite: 8]<br>
-<strong>Primary Function:</strong> Connects the BlueView Mk2 multibeam acoustic imaging sonar to the HabCam central telemetry hub for forward obstacle avoidance[cite: 8].</p>
-</section>
-<section id="sonar-altimeter-cable" class="level3">
-<h3 class="anchored" data-anchor-id="sonar-altimeter-cable">Sonar Altimeter Cable</h3>
+<p>
+<b>Schematic Reference:</b> HabCamV4 - BlueView Cable
+</p>
+<p>
+<b>Primary Function:</b> Connects the BlueView Mk2 multibeam acoustic imaging sonar to the HabCam central telemetry hub for real-time forward obstacle avoidance and seabed monitoring.
+</p>
+<p>
+<b>Key Specifications:</b>
+</p>
+<ul>
+<li>
+<b>Connector Configuration:</b> SubConn 13-pin circular male connector (DIL13M) with a locking sleeve collar (DLSA-M / DLSA-Snap Ring) on the vehicle hub end (P1) to a Teledyne Impulse Titan Series 10-pin right-angle connector (MKS(W)-10-CCP-RA) on the sonar end (P2).
+</li>
+<li>
+<b>Cable Stock:</b> Underwater ethernet-rated cable (D-P4TP24#SW or equivalent).
+</li>
+<li>
+<b>Signal Protocol:</b> Differential Sonar TX/RX data communications using 24 AWG color-coded conductors.
+</li>
+<li>
+<b>Operating Voltage:</b> Wide-range input (12–48 VDC) utilizing 18 AWG primary power conductors feeding split 24 AWG pin terminations at the sonar connector.
+</li>
+</ul>
+<p>
+<b>Pin Allocation Callouts:</b>
+</p>
+<ul>
+<li>
+<b>Power Ground:</b> P1 Pin 1 (#18 BLK) → P2 Pins 7 &amp; 8 (#24 YEL/WHT &amp; YEL)
+</li>
+<li>
+<b>Power Supply (12–48 VDC):</b> P1 Pins 2 &amp; 3 (#18 WHT) → P2 Pins 4 &amp; 5 (#24 BLU/WHT &amp; BLU)
+</li>
+<li>
+<b>Sonar RX+ / RX-:</b> P1 Pin 8 (#24 ORN) &amp; Pin 9 (#24 ORN/WHT) → P2 Pin 1 &amp; Pin 2
+</li>
+<li>
+<b>Sonar TX+ / TX-:</b> P1 Pin 11 (#24 GRN/WHT) &amp; Pin 10 (#24 GRN) → P2 Pin 3 &amp; Pin 6
+</li>
+<li>
+<b>Unused Terminations:</b> P1 Pins 4, 5, 6, 7, 12, 13; P2 Pins 9, 10
+</li>
+</ul>
+<br>
+<hr>
+<br>
+<h3 id="sonar-altimeter-cable" class="anchored">
+Sonar Altimeter Cable
+</h3>
 <div data-align="center">
 <p><img width="1245" height="881" alt="Altimeter" src="https://github.com/user-attachments/assets/a46ecd7c-a77a-49b4-9b27-b9b9f1c37974"></p>
 </div>
 <p><br></p>
-<p><strong>Schematic Reference:</strong> Cable Wiring - Benthos PSA916 Sonar Altimeter[cite: 8]<br>
-<strong>Primary Function:</strong> Connects the Teledyne Benthos PSA-916 Sonar Altimeter directly to the electronics bottle to deliver height-above-seabed measurements[cite: 8].</p>
-</section>
-<section id="eco-triplet-cable" class="level3">
-<h3 class="anchored" data-anchor-id="eco-triplet-cable">Eco-Triplet Cable</h3>
+<p>
+<b>Schematic Reference:</b> Cable Wiring - Benthos PSA916 Sonar Altimeter
+</p>
+<p>
+<b>Primary Function:</b> Connects the Teledyne Benthos PSA-916 Sonar Altimeter directly to the electronics bottle to deliver height-above-seabed measurements to an internal Moxa serial interface.
+</p>
+<p>
+<b>Key Specifications:</b>
+</p>
+<ul>
+<li>
+<b>Connector Configuration:</b> Impulse 6-pin female connector with locking sleeve (RMG-6FS -w/ Sleeve) on the altimeter end (P1) to a SubConn 6-pin inline female connector (MCIL6F) with snap ring and locking collar (MCDLS Snap Ring / MCDLS-F) on the electronics bottle end (P2).
+</li>
+<li>
+<b>Power Supply:</b> Accepts wide input range (+6 to 24V) at the altimeter, powered via a +12V DC rail and external power ground line from the electronics bottle.
+</li>
+<li>
+<b>Serial Communication:</b> RS-232 input/output lines route directly to the Moxa serial port interface (Rx, Tx, and RS-232 GND).
+</li>
+</ul>
+<p>
+<b>Pin Allocation Callouts:</b>
+</p>
+<ul>
+<li>
+<b>P1 (Altimeter Side - Impulse RMG-6FS):</b>
+<ul>
+<li>
+Pin 1: RS-232 Input / External Key Input
+</li>
+<li>
+Pin 2: External Power GND
+</li>
+<li>
+Pin 4: RS-232 Output / Error Output
+</li>
+<li>
+Pin 5: External Power (+6–24V)
+</li>
+<li>
+Pins 3 &amp; 6: Unused / No Connection (NC)
+</li>
+</ul>
+</li>
+<li>
+<b>P2 (Electronics Bottle Side - SubConn MCIL6F):</b>
+<ul>
+<li>
+Pin 1: Power GND
+</li>
+<li>
+Pin 2: Unused / No Connection (NC)
+</li>
+<li>
+Pin 3: +12V DC
+</li>
+<li>
+Pin 4: Moxa RS-232 Tx
+</li>
+<li>
+Pin 5: Moxa RS-232 Rx
+</li>
+<li>
+Pin 6: RS-232 GND
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<hr>
+<br>
+<h3 id="eco-triplet-cable" class="anchored">
+Eco-Triplet Cable
+</h3>
 <div data-align="center">
 <p><img width="1232" height="867" alt="Eco-Triplet" src="https://github.com/user-attachments/assets/6b8aa09c-f0d6-455f-8388-0fbc7dcf5e35"></p>
 </div>
 <p><br></p>
-<p><strong>Schematic Reference:</strong> Cable Wiring - HabCamV4 Eco-Triplet[cite: 8]<br>
-<strong>Primary Function:</strong> Connects the Sea-Bird / WET Labs ECO Triplet fluorometer bulkhead directly to the HabCam electronics bottle[cite: 8].</p>
+<p>
+<b>Schematic Reference:</b> Cable Wiring - HabCamV4 Eco-Triplet
+</p>
+<p>
+<b>Primary Function:</b> Connects the Sea-Bird / WET Labs ECO Triplet fluorometer bulkhead directly to the HabCam electronics bottle for environmental optical sampling and data transmission.
+</p>
+<p>
+<b>Key Specifications:</b>
+</p>
+<ul>
+<li>
+<b>Connector Configuration:</b> SubConn 6-pin inline female connector (MCIL6F) on the ECO Triplet bulkhead side (P1) to a matching SubConn 6-pin inline female connector (MCIL6F) on the electronics bottle side (P2). Both ends are secured with locking collars and snap rings (MCDLS-M / MCDLS Snap Ring).
+</li>
+<li>
+<b>Power Supply:</b> Delivered over a +12 VDC power line with a shared power ground return using 20 AWG conductors.
+</li>
+<li>
+<b>Serial Communication:</b> RS232 serial interface routing instrument transmit and receive lines to the internal Moxa serial server.
+</li>
+</ul>
+<p>
+<b>Pin Allocation Callouts:</b>
+</p>
+<ul>
+<li>
+<b>P1 (ECO Triplet Bulkhead Side):</b>
+<ul>
+<li>
+Pin 1 (#20 BLK): Power Ground
+</li>
+<li>
+Pin 2 (#20 WHT): Instrument RS232 RX (connects to Moxa TX)
+</li>
+<li>
+Pin 3: Unused / No Connection (NC)
+</li>
+<li>
+Pin 4 (#20 GRN): +12V DC
+</li>
+<li>
+Pin 5 (#20 ORN): Instrument RS232 TX (connects to Moxa RX)
+</li>
+<li>
+Pin 6: Unused / No Connection (NC)
+</li>
+</ul>
+</li>
+<li>
+<b>P2 (Electronics Bottle Side):</b>
+<ul>
+<li>
+Pin 1 (BLK #20): Power Ground
+</li>
+<li>
+Pin 2: Unused / No Connection (NC)
+</li>
+<li>
+Pin 3 (RED #20): +12V DC
+</li>
+<li>
+Pin 4 (GRN #20): Moxa RS232 TX
+</li>
+<li>
+Pin 5 (ORN #20): Moxa RS232 RX
+</li>
+<li>
+Pin 6 (BLU #20): Moxa RS232 GND
+</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr>
+<br>
+<div data-align="center">
 
 
-</section>
+</div>
 </section>
 
 </main> <!-- /main -->
