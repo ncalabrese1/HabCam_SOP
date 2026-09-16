@@ -1,5 +1,3 @@
-# Data Use & Scientific Documents
-
 ## Data Use
 
 The data is used to develop indices of abundance and size composition of Atlantic sea scallop for the stock assessments. Additional fisheries and ecosystem data collected from the images is also processed for use in future stock and ecosystem assessment needs.
