@@ -1,18 +1,19 @@
-/* Center all Quarto figure wrappers and image containers */
-div.quarto-figure, 
-figure, 
-div[align="center"], 
-p:has(> img) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+/* Target only text and inline elements inside align="center" containers */
+div[align="center"] {
+  text-align: center !important;
 }
 
-/* Center all Markdown and HTML images */
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Center tables only when explicitly placed inside an align="center" div */
+div[align="center"] table {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Center images and figures only when explicitly placed inside an align="center" div */
+div[align="center"] img,
+div[align="center"] figure,
+div[align="center"] .quarto-figure {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
