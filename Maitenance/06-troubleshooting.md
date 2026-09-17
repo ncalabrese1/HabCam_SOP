@@ -10,6 +10,7 @@ Multiple junctions (coupling points) exist throughout the system where improper 
 
 ### Connection Flowchart
 
+```{=html}
 <div class="d-flex flex-column align-items-center my-4">
 
   <!-- Submerged Connections Container -->
@@ -106,10 +107,9 @@ Multiple junctions (coupling points) exist throughout the system where improper 
   </div>
 
 </div>
+```
 
 ---
-
-## Field Procedures
 
 ::: {.grid}
 
