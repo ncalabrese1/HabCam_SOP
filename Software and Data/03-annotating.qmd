@@ -1,4 +1,2 @@
 # Annotating
-::: {=html}
 {{< include training-carousel.html >}}
-:::
