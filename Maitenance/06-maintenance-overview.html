@@ -48,9 +48,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-dabb4177d918b2a71d8bf8ab8beb4a59.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -376,10 +373,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#replace-doors" id="toc-replace-doors" class="nav-link active" data-scroll-target="#replace-doors">Replace Doors</a></li>
+  <li><a href="#maintenance" id="toc-maintenance" class="nav-link active" data-scroll-target="#maintenance">Maintenance</a>
+  <ul class="collapse">
+  <li><a href="#replace-doors" id="toc-replace-doors" class="nav-link" data-scroll-target="#replace-doors">Replace Doors</a></li>
   <li><a href="#sand-habcam" id="toc-sand-habcam" class="nav-link" data-scroll-target="#sand-habcam">Sand HabCam</a></li>
   <li><a href="#splice-cables" id="toc-splice-cables" class="nav-link" data-scroll-target="#splice-cables">Splice Cables</a></li>
   <li><a href="#fabricate-camera-plate" id="toc-fabricate-camera-plate" class="nav-link" data-scroll-target="#fabricate-camera-plate">Fabricate Camera Plate</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -405,48 +405,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="maintenance" class="level1">
+<h1>Maintenance</h1>
 <section id="replace-doors" class="level2">
 <h2 class="anchored" data-anchor-id="replace-doors">Replace Doors</h2>
 <ol type="1">
-<li>Drill out three holes down the side of the door, with a 5/16 drill bit (you can use an old door as a template).[cite: 1]</li>
-</ol>
-<div id="fig-door-side" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-door-side-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="img width=&quot;1536&quot; height=&quot;2048&quot; alt=&quot;Front View&quot; src=&quot;https://github.com/user-attachments/assets/c8fd5820-7e82-42ab-b46b-8371bb8f1700&quot; /.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;33.1: Side view of HABCAM door panel mounted inside frame."><img src="img width=&quot;1536&quot; height=&quot;2048&quot; alt=&quot;Front View&quot; src=&quot;https://github.com/user-attachments/assets/c8fd5820-7e82-42ab-b46b-8371bb8f1700&quot; /.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-door-side-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;33.1: Side view of HABCAM door panel mounted inside frame.
-</figcaption>
-</figure>
-</div>
-<ol start="2" type="1">
-<li>Attach the door to HABCAM by threading a 3/8 bolt through a washer and fender washer (fender washer against door, washer on top of fender washer) with the door on the inside of the door frame and the shank facing away from the vehicle. Secure the shank end of the bolt with washer, lock washer and nut.[cite: 1]</li>
-</ol>
-<div id="fig-door-cables" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-door-cables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="img width=&quot;1536&quot; height=&quot;2048&quot; alt=&quot;Back View&quot; src=&quot;https://github.com/user-attachments/assets/7155e0e0-2679-41b8-b6ad-f64bace48e05&quot; /.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;33.2: Door panel alignment showing cable harness routing."><img src="img width=&quot;1536&quot; height=&quot;2048&quot; alt=&quot;Back View&quot; src=&quot;https://github.com/user-attachments/assets/7155e0e0-2679-41b8-b6ad-f64bace48e05&quot; /.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-door-cables-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;33.2: Door panel alignment showing cable harness routing.
-</figcaption>
-</figure>
-</div>
-<ol start="3" type="1">
-<li>Position the door and door latches, so that the top of the door is on the first hole (from the outside edge) on the door latch and the bottom of the door is on the second hole (from the outside edge).[cite: 1]</li>
-</ol>
-<div id="fig-door-latch" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-door-latch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="img width=&quot;2048&quot; height=&quot;1536&quot; alt=&quot;Bottom View&quot; src=&quot;https://github.com/user-attachments/assets/56f60b06-9bcf-48eb-bfaa-55517c7fbee6&quot; /.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;33.3: Bottom latch assembly and bolt placement view."><img src="img width=&quot;2048&quot; height=&quot;1536&quot; alt=&quot;Bottom View&quot; src=&quot;https://github.com/user-attachments/assets/56f60b06-9bcf-48eb-bfaa-55517c7fbee6&quot; /.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-door-latch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;33.3: Bottom latch assembly and bolt placement view.
-</figcaption>
-</figure>
-</div>
-<ol start="4" type="1">
+<li><p>Drill out three holes down the side of the door, with a 5/16 drill bit (you can use an old door as a template).[cite: 1]</p>
+<p><img src="https://github.com/user-attachments/assets/c8fd5820-7e82-42ab-b46b-8371bb8f1700" style="max-width: 100%; height: auto;"></p>
+<p><em>Side view of HABCAM door panel mounted inside frame.</em></p></li>
+<li><p>Attach the door to HABCAM by threading a 3/8 bolt through a washer and fender washer (fender washer against door, washer on top of fender washer) with the door on the inside of the door frame and the shank facing away from the vehicle. Secure the shank end of the bolt with washer, lock washer and nut.[cite: 1]</p>
+<p><img src="https://github.com/user-attachments/assets/7155e0e0-2679-41b8-b6ad-f64bace48e05" style="max-width: 100%; height: auto;"></p>
+<p><em>Door panel alignment showing cable harness routing.</em></p></li>
+<li><p>Position the door and door latches, so that the top of the door is on the first hole (from the outside edge) on the door latch and the bottom of the door is on the second hole (from the outside edge).[cite: 1]</p>
+<p><img src="https://github.com/user-attachments/assets/56f60b06-9bcf-48eb-bfaa-55517c7fbee6" style="max-width: 100%; height: auto;"></p>
+<p><em>Bottom latch assembly and bolt placement view.</em></p></li>
 <li><p>On door, Measure with a tape measure and/or mark hole placement with a sharpie.[cite: 1]</p></li>
 <li><p>Remove door, and use a 3-16 thread tapper to drill a shallow hole for the top and bottom door latch bolt to sit in.[cite: 1]</p></li>
 <li><p>Reattach door to door frame (door on the inside of the door frame and the shank facing away from the vehicle) by threading bolt through washer and fender washer. Prior to adding the stainless-steel washer, lock washer and nut, apply aqua shield over all of the threads on the side of the door (no need to do this on the top bolts).[cite: 1]</p></li>
@@ -469,6 +441,7 @@ Figure&nbsp;33.3: Bottom latch assembly and bolt placement view.
 <p><em>[Placeholder: Insert instructions for fabricating camera plate here]</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -885,38 +858,6 @@ Figure&nbsp;33.3: Bottom latch assembly and bolt placement view.
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
