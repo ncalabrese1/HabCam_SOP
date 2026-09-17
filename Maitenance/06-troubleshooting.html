@@ -81,6 +81,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -380,6 +409,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#fiber-optics" id="toc-fiber-optics" class="nav-link active" data-scroll-target="#fiber-optics">Fiber Optics</a></li>
   <li><a href="#optolink-connectors" id="toc-optolink-connectors" class="nav-link" data-scroll-target="#optolink-connectors">OptoLink Connectors</a></li>
+  <li><a href="#subconn-connectors" id="toc-subconn-connectors" class="nav-link" data-scroll-target="#subconn-connectors">SubConn Connectors</a></li>
   </ul>
 </nav>
     </div>
@@ -639,9 +669,135 @@ ul.task-list li input[type="checkbox"] {
 <section id="pressure-balanced-systems" class="level4">
 <h4 class="anchored" data-anchor-id="pressure-balanced-systems">Pressure Balanced Systems</h4>
 <p>FCR and BCR are rated to 600 bar back pressure. MacArtney recommends DC-200/350 or PMX-200/350 in oil compensated systems.</p>
-
-
 </section>
+</section>
+</section>
+<section id="subconn-connectors" class="level2">
+<h2 class="anchored" data-anchor-id="subconn-connectors">SubConn Connectors</h2>
+<p>Follow these handling instructions carefully to ensure correct operation and longevity of your SubConn underwater environment connectors.</p>
+<hr>
+<section id="general-handling-guidelines" class="level3">
+<h3 class="anchored" data-anchor-id="general-handling-guidelines">General Handling Guidelines</h3>
+<ul>
+<li><strong>Greasing Standard:</strong> Connectors must be greased with <strong>MOLYKOTE 44 Medium</strong> before every mating.</li>
+<li><strong>O-Ring Care:</strong> Always grease O-rings on BH, BCR, and FCR connectors with <strong>Molykote 111</strong>.</li>
+<li><strong>Disconnect Technique:</strong> Pull straight out when disconnecting; do not pull at an angle.</li>
+<li><strong>Cable Safety:</strong> Do not pull directly on the cable and avoid sharp bends at the cable entry point.</li>
+<li><strong>Bulkhead Loads:</strong> Ensure there are no angular loads on bulkhead connectors and apply recommended torque when tightening bulkhead nuts.</li>
+<li><strong>Environmental Exposure:</strong> Do not expose connectors to extended periods of heat or direct sunlight. If a connector becomes very dry, soak it in fresh water before use.</li>
+<li><strong>Electrical &amp; Sleeves:</strong> All current ratings are based on the connector being submerged in water. The locking sleeve must be hand-tightened only.</li>
+</ul>
+<hr>
+</section>
+<section id="greasing-and-mating-procedures" class="level3">
+<h3 class="anchored" data-anchor-id="greasing-and-mating-procedures">Greasing and Mating Procedures</h3>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Above Water (Dry-Mate)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Apply a layer of MOLYKOTE 44 Medium corresponding to a minimum of <strong>1/10 of the socket depth</strong> to the female connector.</li>
+<li>Ensure the inner edge of all sockets is completely covered, leaving a thin layer of grease visible on the connector face.</li>
+<li>Fully mate the male and female connectors to distribute grease across all contacts and sockets.</li>
+<li>De-mate to verify grease coverage on every male pin, then re-mate.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="g-col-12 g-col-md-6">
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Under Water (Wet-Mate)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Apply a layer of MOLYKOTE 44 Medium corresponding to approximately <strong>1/3 of the socket depth</strong> to the female connector.</li>
+<li>Completely seal all sockets, leaving a transparent layer of grease visible on the connector face.</li>
+<li>Fully mate the connectors underwater and wipe away any excess grease extruded from the joint.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="maintenance-thread-locking" class="level3">
+<h3 class="anchored" data-anchor-id="maintenance-thread-locking">Maintenance &amp; Thread Locking</h3>
+<!-- PLACEHOLDER: Image showing Kontakt spray cleaner bottle and liquid soap / hot water cleaning options -->
+<p><a href="../images/subconn-cleaning-products.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="SubConn Approved Cleaning Products"><img src="../images/subconn-cleaning-products.png" class="img-fluid" alt="SubConn Approved Cleaning Products"></a> <em>Figure 1: Approved general contact cleaner spray (Isopropyl alcohol) and liquid soap with hot water.</em></p>
+<section id="cleaning-protocol" class="level4">
+<h4 class="anchored" data-anchor-id="cleaning-protocol">Cleaning Protocol</h4>
+<ul>
+<li><strong>General Cleaning:</strong> Remove accumulated contaminants using spray-based contact cleaner (Isopropyl alcohol) or liquid soap with hot water.</li>
+<li><strong>Re-Greasing:</strong> Fresh MOLYKOTE 44 Medium must be re-applied prior to mating whenever connectors are cleaned.</li>
+</ul>
+</section>
+<section id="thread-locking-specifications" class="level4">
+<h4 class="anchored" data-anchor-id="thread-locking-specifications">Thread Locking Specifications</h4>
+<p>Ensure all threads and threaded holes are clean and completely free of foreign particles prior to application.</p>
+<ul>
+<li><strong>Metallic Connectors:</strong> Apply <strong>LOCTITE 243</strong>.</li>
+<li><strong>Non-Metallic (PEEK) Connectors:</strong> Apply <strong>LOCTITE 5910</strong>.</li>
+</ul>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Critical PEEK Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Never use Acetone on PEEK non-metallic connectors, as it causes severe stress-induced cracking in the material.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="bending-radius-coax-specifications" class="level3">
+<h3 class="anchored" data-anchor-id="bending-radius-coax-specifications">Bending Radius &amp; Coax Specifications</h3>
+<!-- PLACEHOLDER: Diagram showing correct 10x OD static bend radius vs incorrect sharp cable bend -->
+<p><a href="../images/subconn-bending-radius.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Inline Cable Bending Radius Guidelines"><img src="../images/subconn-bending-radius.png" class="img-fluid" alt="Inline Cable Bending Radius Guidelines"></a> <em>Figure 2: Minimum static cable bend radius must be 10x cable diameter (top); avoid sharp bends at cable entry (bottom).</em></p>
+<section id="recommended-cable-bending-radius" class="level4">
+<h4 class="anchored" data-anchor-id="recommended-cable-bending-radius">Recommended Cable Bending Radius</h4>
+<ul>
+<li><strong>Static Minimum Bend:</strong> <strong>10× Cable Outer Diameter (<span class="math inline">\(10 \times \text{OD}\)</span>)</strong>.</li>
+<li>Avoid sharp localized bends directly behind the connector strain relief boot.</li>
+</ul>
+<!-- PLACEHOLDER: End-face photograph of SubConn coax connector socket array -->
+<p><a href="../images/subconn-coax-face.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="SubConn Coax Connector Face Detail"><img src="../images/subconn-coax-face.png" class="img-fluid" alt="SubConn Coax Connector Face Detail"></a> <em>Figure 3: SubConn coax connector pin and rubber face configuration.</em></p>
+</section>
+<section id="coax-connector-requirements" class="level4">
+<h4 class="anchored" data-anchor-id="coax-connector-requirements">Coax Connector Requirements</h4>
+<ul>
+<li><strong>Mating Limit:</strong> <strong>Dry mating only</strong>. Not suitable for open-face pressure or water-block applications.</li>
+<li><strong>Hardware:</strong> Locking sleeves are strictly required, and dummy connectors must be installed whenever coax connectors are unmated.</li>
+<li><strong>Greasing Coax:</strong> Avoid applying grease to the actual central coaxial contact. Grease only the outer rubber socket components. De-mate after greasing to verify no grease contaminated the coax center before final re-mating.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="pressure-balanced-systems-1" class="level3">
+<h3 class="anchored" data-anchor-id="pressure-balanced-systems-1">Pressure Balanced Systems</h3>
+<ul>
+<li><strong>Compensated Systems:</strong> MacArtney recommends <strong>DC-200/350</strong> or <strong>PMX-200/350</strong> fluid in oil-compensated pressure-balanced systems.</li>
+</ul>
+
+
 </section>
 </section>
 
