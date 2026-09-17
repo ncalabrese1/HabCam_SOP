@@ -417,13 +417,10 @@ ul.task-list li input[type="checkbox"] {
     subgraph Submerged["Submerged Connections"]
         direction TD
         
-        subgraph Sub_Inputs[" "]
-            direction LR
-            Cam1_Sub["Cam1"]
-            Cam2_Sub["Cam2"]
-            Data_Sub["Data Network"]
-            Spare_Sub["Spare"]
-        end
+        Cam1_Sub["Cam1"]
+        Cam2_Sub["Cam2"]
+        Data_Sub["Data Network"]
+        Spare_Sub["Spare"]
 
         Mux_Sub(["Multiplexer"])
 
@@ -436,42 +433,47 @@ ul.task-list li input[type="checkbox"] {
         Spare_Sub --&gt; Mux_Sub
         Spare_Sub --&gt; Mux_Sub
 
-        Mux_Sub --&gt; Bulkhead{"Fiber Optic&lt;br/&gt;Bulkhead"}
-        Bulkhead --&gt;|⬇️&lt;br/&gt;Common Issue| FOCable{"Fiber Optic&lt;br/&gt;Cable"}
-        FOCable --&gt; OFJBox(["Oil Filled&lt;br/&gt;Junction Box"])
+        Bulkhead{"Fiber Optic&lt;br/&gt;Bulkhead"}
+        FOCable{"Fiber Optic&lt;br/&gt;Cable"}
+        OFJBox(["Oil Filled&lt;br/&gt;Junction Box"])
+
+        Mux_Sub --&gt; Bulkhead
+        Bulkhead --&gt;|"Common Issue"| FOCable
+        FOCable --&gt; OFJBox
     end
 
-    OFJBox --&gt; WinchCable(("Winch Cable"))
+    WinchCable(("Winch Cable"))
+    OFJBox --&gt; WinchCable
 
     subgraph TopSide["Top-side Connections"]
         direction TD
-        WinchCable --&gt; SlipRing(["Winch&lt;br/&gt;Slip Ring"])
-        SlipRing --&gt;|⬇️&lt;br/&gt;Common Issue| DryLabJBox(["Dry Lab&lt;br/&gt;Junction Box"])
-        DryLabJBox --&gt;|⬇️&lt;br/&gt;Common Issue| Mux_Top(["Multiplexer"])
         
-        Mux_Top --&gt; Cam1_Top
-        Mux_Top --&gt; Cam1_Top
-        Mux_Top --&gt; Cam2_Top
-        Mux_Top --&gt; Cam2_Top
-        Mux_Top --&gt; Data_Top
-        Mux_Top --&gt; Data_Top
-        Mux_Top --&gt; Spare_Top
-        Mux_Top --&gt; Spare_Top
+        SlipRing(["Winch&lt;br/&gt;Slip Ring"])
+        DryLabJBox(["Dry Lab&lt;br/&gt;Junction Box"])
+        Mux_Top(["Multiplexer"])
 
-        subgraph Top_Outputs[" "]
-            direction LR
-            Cam1_Top["Cam1"]
-            Cam2_Top["Cam2"]
-            Data_Top["Data Network"]
-            Spare_Top["Spare"]
-        end
+        WinchCable --&gt; SlipRing
+        SlipRing --&gt;|"Common Issue"| DryLabJBox
+        DryLabJBox --&gt;|"Common Issue"| Mux_Top
+
+        Cam1_Top["Cam1"]
+        Cam2_Top["Cam2"]
+        Data_Top["Data Network"]
+        Spare_Top["Spare"]
+
+        Mux_Top --&gt; Cam1_Top
+        Mux_Top --&gt; Cam1_Top
+        Mux_Top --&gt; Cam2_Top
+        Mux_Top --&gt; Cam2_Top
+        Mux_Top --&gt; Data_Top
+        Mux_Top --&gt; Data_Top
+        Mux_Top --&gt; Spare_Top
+        Mux_Top --&gt; Spare_Top
     end
 
     %% Diagram Styling
     style Submerged fill:#ffffff,stroke:#4a90e2,stroke-width:1.5px,stroke-dasharray: 4 4
     style TopSide fill:#ffffff,stroke:#f5a623,stroke-width:1.5px,stroke-dasharray: 4 4
-    style Sub_Inputs fill:none,stroke:none
-    style Top_Outputs fill:none,stroke:none
     style Mux_Sub fill:#ffffff,stroke:#000000,stroke-width:2px
     style Mux_Top fill:#ffffff,stroke:#000000,stroke-width:2px
     style OFJBox fill:#ffffff,stroke:#000000,stroke-width:2px
@@ -484,8 +486,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<hr>
-<hr>
 <div class="grid">
 <div class="g-col-12 g-col-md-6">
 <div class="callout callout-style-simple callout-warning callout-titled">
