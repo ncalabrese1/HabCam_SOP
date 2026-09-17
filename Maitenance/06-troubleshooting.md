@@ -10,65 +10,73 @@ Multiple junctions (coupling points) exist throughout the system where improper 
 
 ### Connection Flowchart
 
-<div class="d-flex flex-column align-items-center my-4">
-<div class="border border-primary rounded p-4 w-100 position-relative bg-light text-center" style="max-width: 650px; border-style: dashed !important;">
-<span class="badge bg-primary position-absolute top-0 start-0 translate-middle-y ms-3 fs-6">Submerged Connections</span>
-<div class="row g-2 justify-content-center mb-3 mt-2">
-<div class="col-auto"><span class="badge bg-secondary p-2">Cam1</span></div>
-<div class="col-auto"><span class="badge bg-secondary p-2">Cam2</span></div>
-<div class="col-auto"><span class="badge bg-secondary p-2">Data Network</span></div>
-<div class="col-auto"><span class="badge bg-secondary p-2">Spare</span></div>
-</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;">
-<div class="card-body p-2 fw-bold bg-white">Submerged Multiplexer</div>
-</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;">
-<div class="card-body p-2 bg-white">Fiber Optic Bulkhead</div>
-</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="alert alert-warning border-warning py-1 px-3 d-inline-block my-1 fw-bold shadow-sm">⚠️ Common Issue</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;">
-<div class="card-body p-2 bg-white">Fiber Optic Cable</div>
-</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;">
-<div class="card-body p-2 bg-white">Oil Filled Junction Box</div>
-</div>
-</div>
-<div class="my-3 text-center">
-<div class="text-secondary fs-3">&#8595;</div>
-<div class="rounded-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto my-2 shadow" style="width: 110px; height: 110px; font-weight: bold; font-size: 0.95rem;">Winch Cable</div>
-<div class="text-secondary fs-3">&#8595;</div>
-</div>
-<div class="border border-warning rounded p-4 w-100 position-relative bg-light text-center" style="max-width: 650px; border-style: dashed !important;">
-<span class="badge bg-warning text-dark position-absolute top-0 start-0 translate-middle-y ms-3 fs-6">Top-side Connections</span>
-<div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;">
-<div class="card-body p-2 bg-white">Winch Slip Ring</div>
-</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="alert alert-warning border-warning py-1 px-3 d-inline-block my-1 fw-bold shadow-sm">⚠️ Common Issue</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;">
-<div class="card-body p-2 bg-white">Dry Lab Junction Box</div>
-</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="alert alert-warning border-warning py-1 px-3 d-inline-block my-1 fw-bold shadow-sm">⚠️ Common Issue</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;">
-<div class="card-body p-2 fw-bold bg-white">Demultiplexer</div>
-</div>
-<div class="text-secondary fs-4">&#8595;</div>
-<div class="row g-2 justify-content-center mt-3 mb-2">
-<div class="col-auto"><span class="badge bg-secondary p-2">Cam1</span></div>
-<div class="col-auto"><span class="badge bg-secondary p-2">Cam2</span></div>
-<div class="col-auto"><span class="badge bg-secondary p-2">Data Network</span></div>
-<div class="col-auto"><span class="badge bg-secondary p-2">Spare</span></div>
-</div>
-</div>
-</div>
+```mermaid
+graph TD
+    subgraph Submerged["Submerged Connections"]
+        direction TD
+        
+        subgraph Sub_Inputs[" "]
+            direction LR
+            Cam1_Sub["Cam1"]
+            Cam2_Sub["Cam2"]
+            Data_Sub["Data Network"]
+            Spare_Sub["Spare"]
+        end
+
+        Mux_Sub(["Multiplexer"])
+
+        Cam1_Sub --> Mux_Sub
+        Cam1_Sub --> Mux_Sub
+        Cam2_Sub --> Mux_Sub
+        Cam2_Sub --> Mux_Sub
+        Data_Sub --> Mux_Sub
+        Data_Sub --> Mux_Sub
+        Spare_Sub --> Mux_Sub
+        Spare_Sub --> Mux_Sub
+
+        Mux_Sub --> Bulkhead{"Fiber Optic<br/>Bulkhead"}
+        Bulkhead -->|⬇️<br/>Common Issue| FOCable{"Fiber Optic<br/>Cable"}
+        FOCable --> OFJBox(["Oil Filled<br/>Junction Box"])
+    end
+
+    OFJBox --> WinchCable(("Winch Cable"))
+
+    subgraph TopSide["Top-side Connections"]
+        direction TD
+        WinchCable --> SlipRing(["Winch<br/>Slip Ring"])
+        SlipRing -->|⬇️<br/>Common Issue| DryLabJBox(["Dry Lab<br/>Junction Box"])
+        DryLabJBox -->|⬇️<br/>Common Issue| Mux_Top(["Multiplexer"])
+        
+        Mux_Top --> Cam1_Top
+        Mux_Top --> Cam1_Top
+        Mux_Top --> Cam2_Top
+        Mux_Top --> Cam2_Top
+        Mux_Top --> Data_Top
+        Mux_Top --> Data_Top
+        Mux_Top --> Spare_Top
+        Mux_Top --> Spare_Top
+
+        subgraph Top_Outputs[" "]
+            direction LR
+            Cam1_Top["Cam1"]
+            Cam2_Top["Cam2"]
+            Data_Top["Data Network"]
+            Spare_Top["Spare"]
+        end
+    end
+
+    %% Diagram Styling
+    style Submerged fill:#ffffff,stroke:#4a90e2,stroke-width:1.5px,stroke-dasharray: 4 4
+    style TopSide fill:#ffffff,stroke:#f5a623,stroke-width:1.5px,stroke-dasharray: 4 4
+    style Sub_Inputs fill:none,stroke:none
+    style Top_Outputs fill:none,stroke:none
+    style Mux_Sub fill:#ffffff,stroke:#000000,stroke-width:2px
+    style Mux_Top fill:#ffffff,stroke:#000000,stroke-width:2px
+    style OFJBox fill:#ffffff,stroke:#000000,stroke-width:2px
+    style SlipRing fill:#ffffff,stroke:#000000,stroke-width:2px
+    style DryLabJBox fill:#ffffff,stroke:#000000,stroke-width:2px
+    style WinchCable fill:#ffffff,stroke:#000000,stroke-width:2px
+```
 
 ---
 
