@@ -62,7 +62,7 @@ book:
           text: "Data Acquisition"
         - href: "Software and Data/03-server-framework.md"
           text: "Server Framework"
-        - href: "Software and Data/03-qannotating.md"
+        - href: "Software and Data/03-annotating.qmd"
           text: "Annotating"
         - href: "Software and Data/03-database.md"
           text: "Database"
