@@ -15,13 +15,10 @@ graph TD
     subgraph Submerged["Submerged Connections"]
         direction TD
         
-        subgraph Sub_Inputs[" "]
-            direction LR
-            Cam1_Sub["Cam1"]
-            Cam2_Sub["Cam2"]
-            Data_Sub["Data Network"]
-            Spare_Sub["Spare"]
-        end
+        Cam1_Sub["Cam1"]
+        Cam2_Sub["Cam2"]
+        Data_Sub["Data Network"]
+        Spare_Sub["Spare"]
 
         Mux_Sub(["Multiplexer"])
 
@@ -34,42 +31,47 @@ graph TD
         Spare_Sub --> Mux_Sub
         Spare_Sub --> Mux_Sub
 
-        Mux_Sub --> Bulkhead{"Fiber Optic<br/>Bulkhead"}
-        Bulkhead -->|⬇️<br/>Common Issue| FOCable{"Fiber Optic<br/>Cable"}
-        FOCable --> OFJBox(["Oil Filled<br/>Junction Box"])
+        Bulkhead{"Fiber Optic<br/>Bulkhead"}
+        FOCable{"Fiber Optic<br/>Cable"}
+        OFJBox(["Oil Filled<br/>Junction Box"])
+
+        Mux_Sub --> Bulkhead
+        Bulkhead -->|"Common Issue"| FOCable
+        FOCable --> OFJBox
     end
 
-    OFJBox --> WinchCable(("Winch Cable"))
+    WinchCable(("Winch Cable"))
+    OFJBox --> WinchCable
 
     subgraph TopSide["Top-side Connections"]
         direction TD
-        WinchCable --> SlipRing(["Winch<br/>Slip Ring"])
-        SlipRing -->|⬇️<br/>Common Issue| DryLabJBox(["Dry Lab<br/>Junction Box"])
-        DryLabJBox -->|⬇️<br/>Common Issue| Mux_Top(["Multiplexer"])
         
-        Mux_Top --> Cam1_Top
-        Mux_Top --> Cam1_Top
-        Mux_Top --> Cam2_Top
-        Mux_Top --> Cam2_Top
-        Mux_Top --> Data_Top
-        Mux_Top --> Data_Top
-        Mux_Top --> Spare_Top
-        Mux_Top --> Spare_Top
+        SlipRing(["Winch<br/>Slip Ring"])
+        DryLabJBox(["Dry Lab<br/>Junction Box"])
+        Mux_Top(["Multiplexer"])
 
-        subgraph Top_Outputs[" "]
-            direction LR
-            Cam1_Top["Cam1"]
-            Cam2_Top["Cam2"]
-            Data_Top["Data Network"]
-            Spare_Top["Spare"]
-        end
+        WinchCable --> SlipRing
+        SlipRing -->|"Common Issue"| DryLabJBox
+        DryLabJBox -->|"Common Issue"| Mux_Top
+
+        Cam1_Top["Cam1"]
+        Cam2_Top["Cam2"]
+        Data_Top["Data Network"]
+        Spare_Top["Spare"]
+
+        Mux_Top --> Cam1_Top
+        Mux_Top --> Cam1_Top
+        Mux_Top --> Cam2_Top
+        Mux_Top --> Cam2_Top
+        Mux_Top --> Data_Top
+        Mux_Top --> Data_Top
+        Mux_Top --> Spare_Top
+        Mux_Top --> Spare_Top
     end
 
     %% Diagram Styling
     style Submerged fill:#ffffff,stroke:#4a90e2,stroke-width:1.5px,stroke-dasharray: 4 4
     style TopSide fill:#ffffff,stroke:#f5a623,stroke-width:1.5px,stroke-dasharray: 4 4
-    style Sub_Inputs fill:none,stroke:none
-    style Top_Outputs fill:none,stroke:none
     style Mux_Sub fill:#ffffff,stroke:#000000,stroke-width:2px
     style Mux_Top fill:#ffffff,stroke:#000000,stroke-width:2px
     style OFJBox fill:#ffffff,stroke:#000000,stroke-width:2px
@@ -77,10 +79,6 @@ graph TD
     style DryLabJBox fill:#ffffff,stroke:#000000,stroke-width:2px
     style WinchCable fill:#ffffff,stroke:#000000,stroke-width:2px
 ```
-
----
-
----
 
 ::: {.grid}
 
