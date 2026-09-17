@@ -412,6 +412,7 @@ window.Quarto = {
   <li><a href="#subconn-connectors" id="toc-subconn-connectors" class="nav-link" data-scroll-target="#subconn-connectors">SubConn Connectors</a></li>
   <li><a href="#vehicle-start-up-flow-chart" id="toc-vehicle-start-up-flow-chart" class="nav-link" data-scroll-target="#vehicle-start-up-flow-chart">Vehicle Start-Up Flow Chart</a></li>
   <li><a href="#general-vehicle-set-up" id="toc-general-vehicle-set-up" class="nav-link" data-scroll-target="#general-vehicle-set-up">General Vehicle Set Up</a></li>
+  <li><a href="#general-vehicle-set-up-1" id="toc-general-vehicle-set-up-1" class="nav-link" data-scroll-target="#general-vehicle-set-up-1">General Vehicle Set Up</a></li>
   </ul>
 </nav>
     </div>
@@ -818,21 +819,22 @@ window.Quarto = {
 </section>
 <section id="general-vehicle-set-up" class="level1">
 <h1>General Vehicle Set Up</h1>
+</section>
+<section id="general-vehicle-set-up-1" class="level1">
+<h1>General Vehicle Set Up</h1>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph TD
-    %% Top Row Alignment (Process Start Left, Title Block Right)
-    Pwr["Power on HabCam&lt;br/&gt;with 240v AC"] ~~~ Title["HabCam Troubleshooting Diagram:&lt;br/&gt;&lt;br/&gt;General Vehicle Set Up"]
-
     %% Main Process Spine (Left Column - Pink Boxes)
-    FO_Check["Are fiber optics and&lt;br/&gt;data networks online?"]
-    Eng_GUI["Start Engineering GUI"]
-    Img_GUI["Start Image&lt;br/&gt;Viewer GUI"]
-    Data_Verify["Verify images and&lt;br/&gt;vehicle data are being&lt;br/&gt;written"]
-    Sonar_Start["Start BlueView and&lt;br/&gt;Side Scan Sonars"]
+    Pwr["&lt;b&gt;Power on HabCam&lt;br/&gt;with 240v AC&lt;/b&gt;"]
+    FO_Check["&lt;b&gt;Are fiber optics and&lt;br/&gt;data networks online?&lt;/b&gt;"]
+    Eng_GUI["&lt;b&gt;Start Engineering GUI&lt;/b&gt;"]
+    Img_GUI["&lt;b&gt;Start Image&lt;br/&gt;Viewer GUI&lt;/b&gt;"]
+    Data_Verify["&lt;b&gt;Verify images and&lt;br/&gt;vehicle data are being&lt;br/&gt;written&lt;/b&gt;"]
+    Sonar_Start["&lt;b&gt;Start BlueView and&lt;br/&gt;Side Scan Sonars&lt;/b&gt;"]
 
     %% Action Checks (Middle Column - Blue Diamonds)
     FO_Action{"Check Fiber optic connectivity links"}
@@ -842,11 +844,11 @@ window.Quarto = {
     Sonar_Action{"Connect to BlueView in&lt;br/&gt;ProViewer Software,&lt;br/&gt;Connect to Side Scan&lt;br/&gt;in Seanet Pro Software"}
 
     %% Troubleshooting Navigation (Right Column - Blue Flags)
-    Ref_FO&gt;See&lt;br/&gt;Troubleshooting&lt;br/&gt;Fiber Optics]
-    Ref_Eng&gt;See&lt;br/&gt;Troubleshooting&lt;br/&gt;Engineering GUI]
-    Ref_Cam&gt;See&lt;br/&gt;Troubleshooting&lt;br/&gt;Cameras]
-    Ref_Data&gt;See&lt;br/&gt;Troubleshooting&lt;br/&gt;vehicle data]
-    Ref_Sonar&gt;See&lt;br/&gt;Troubleshooting&lt;br/&gt;Sonars]
+    Ref_FO&gt;"See&lt;br/&gt;Troubleshooting&lt;br/&gt;Fiber Optics"
+    Ref_Eng&gt;"See&lt;br/&gt;Troubleshooting&lt;br/&gt;Engineering GUI"
+    Ref_Cam&gt;"See&lt;br/&gt;Troubleshooting&lt;br/&gt;Cameras"
+    Ref_Data&gt;"See&lt;br/&gt;Troubleshooting&lt;br/&gt;vehicle data"
+    Ref_Sonar&gt;"See&lt;br/&gt;Troubleshooting&lt;br/&gt;Sonars"
 
     %% Connections
     Pwr --&gt; FO_Check
@@ -866,19 +868,17 @@ window.Quarto = {
     Data_Action --&gt;|Issues?| Ref_Data
     
     Data_Verify --&gt;|Data is being written| Sonar_Start
-    Sonar_Start --&gt;|Caution:&lt;br/&gt;Do not leave sonars running&lt;br/&gt;out of water, transducers may&lt;br/&gt;burn out| Sonar_Action
+    Sonar_Start --&gt;|Caution: Do not run out of water| Sonar_Action
     Sonar_Action --&gt;|Issues?| Ref_Sonar
 
     %% Styling Classes
     classDef spine fill:#ffe4f1,stroke:#ff52a0,stroke-width:1.5px,color:#000000;
     classDef diamond fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
     classDef flag fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
-    classDef title fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
 
     class Pwr,FO_Check,Eng_GUI,Img_GUI,Data_Verify,Sonar_Start spine;
     class FO_Action,Eng_Action,Img_Action,Data_Action,Sonar_Action diamond;
     class Ref_FO,Ref_Eng,Ref_Cam,Ref_Data,Ref_Sonar flag;
-    class Title title;
 
     %% Explicit Edge Color Formatting
     linkStyle 1,2,5,8,11,14 stroke:#ff0000,stroke-width:2px,color:#ff0000;
