@@ -164,3 +164,96 @@ For locking metallic connectors, the use of Loctite 243 is recommended.
 
 #### Pressure Balanced Systems
 FCR and BCR are rated to 600 bar back pressure. MacArtney recommends DC-200/350 or PMX-200/350 in oil compensated systems.
+
+## SubConn Connectors
+
+Follow these handling instructions carefully to ensure correct operation and longevity of your SubConn underwater environment connectors.
+
+---
+
+### General Handling Guidelines
+
+* **Greasing Standard:** Connectors must be greased with **MOLYKOTE 44 Medium** before every mating.
+* **O-Ring Care:** Always grease O-rings on BH, BCR, and FCR connectors with **Molykote 111**.
+* **Disconnect Technique:** Pull straight out when disconnecting; do not pull at an angle.
+* **Cable Safety:** Do not pull directly on the cable and avoid sharp bends at the cable entry point.
+* **Bulkhead Loads:** Ensure there are no angular loads on bulkhead connectors and apply recommended torque when tightening bulkhead nuts.
+* **Environmental Exposure:** Do not expose connectors to extended periods of heat or direct sunlight. If a connector becomes very dry, soak it in fresh water before use.
+* **Electrical & Sleeves:** All current ratings are based on the connector being submerged in water. The locking sleeve must be hand-tightened only.
+
+---
+
+### Greasing and Mating Procedures
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.callout-note appearance="simple"}
+### Above Water (Dry-Mate)
+1. Apply a layer of MOLYKOTE 44 Medium corresponding to a minimum of **1/10 of the socket depth** to the female connector.
+2. Ensure the inner edge of all sockets is completely covered, leaving a thin layer of grease visible on the connector face.
+3. Fully mate the male and female connectors to distribute grease across all contacts and sockets.
+4. De-mate to verify grease coverage on every male pin, then re-mate.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.callout-note appearance="simple"}
+### Under Water (Wet-Mate)
+1. Apply a layer of MOLYKOTE 44 Medium corresponding to approximately **1/3 of the socket depth** to the female connector.
+2. Completely seal all sockets, leaving a transparent layer of grease visible on the connector face.
+3. Fully mate the connectors underwater and wipe away any excess grease extruded from the joint.
+:::
+:::
+
+:::
+
+---
+
+### Maintenance & Thread Locking
+
+<!-- PLACEHOLDER: Image showing Kontakt spray cleaner bottle and liquid soap / hot water cleaning options -->
+![SubConn Approved Cleaning Products](../images/subconn-cleaning-products.png){.lightbox}
+*Figure 1: Approved general contact cleaner spray (Isopropyl alcohol) and liquid soap with hot water.*
+
+#### Cleaning Protocol
+* **General Cleaning:** Remove accumulated contaminants using spray-based contact cleaner (Isopropyl alcohol) or liquid soap with hot water.
+* **Re-Greasing:** Fresh MOLYKOTE 44 Medium must be re-applied prior to mating whenever connectors are cleaned.
+
+#### Thread Locking Specifications
+Ensure all threads and threaded holes are clean and completely free of foreign particles prior to application.
+
+* **Metallic Connectors:** Apply **LOCTITE 243**.
+* **Non-Metallic (PEEK) Connectors:** Apply **LOCTITE 5910**.
+
+::: {.callout-warning appearance="simple"}
+#### Critical PEEK Warning
+Never use Acetone on PEEK non-metallic connectors, as it causes severe stress-induced cracking in the material.
+:::
+
+---
+
+### Bending Radius & Coax Specifications
+
+<!-- PLACEHOLDER: Diagram showing correct 10x OD static bend radius vs incorrect sharp cable bend -->
+![Inline Cable Bending Radius Guidelines](../images/subconn-bending-radius.png){.lightbox}
+*Figure 2: Minimum static cable bend radius must be 10x cable diameter (top); avoid sharp bends at cable entry (bottom).*
+
+#### Recommended Cable Bending Radius
+* **Static Minimum Bend:** **10× Cable Outer Diameter ($10 \times \text{OD}$)**.
+* Avoid sharp localized bends directly behind the connector strain relief boot.
+
+<!-- PLACEHOLDER: End-face photograph of SubConn coax connector socket array -->
+![SubConn Coax Connector Face Detail](../images/subconn-coax-face.png){.lightbox}
+*Figure 3: SubConn coax connector pin and rubber face configuration.*
+
+#### Coax Connector Requirements
+* **Mating Limit:** **Dry mating only**. Not suitable for open-face pressure or water-block applications.
+* **Hardware:** Locking sleeves are strictly required, and dummy connectors must be installed whenever coax connectors are unmated.
+* **Greasing Coax:** Avoid applying grease to the actual central coaxial contact. Grease only the outer rubber socket components. De-mate after greasing to verify no grease contaminated the coax center before final re-mating.
+
+---
+
+### Pressure Balanced Systems
+
+* **Compensated Systems:** MacArtney recommends **DC-200/350** or **PMX-200/350** fluid in oil-compensated pressure-balanced systems.
