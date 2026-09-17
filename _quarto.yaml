@@ -92,7 +92,7 @@ book:
           text: "Maintenance Overview"
         - href: Maitenance/06-inventory.md
           text: "Inventory"
-        - href: Maitenance/06-troubleshooting.md
+        - href: Maitenance/06-troubleshooting.qmd
           text: "Troubleshooting"
 
 format:
