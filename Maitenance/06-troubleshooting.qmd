@@ -259,6 +259,7 @@ Never use Acetone on PEEK non-metallic connectors, as it causes severe stress-in
 
 ## Vehicle Start-Up Flow Chart
 
+```{mermaid}
 graph TD
     %% Diagram Title Block
     Title["HabCam Troubleshooting Diagram:<br/><b>General Vehicle Set Up</b>"]
@@ -272,7 +273,7 @@ graph TD
     Sonar_Start["Start BlueView and<br/>Side Scan Sonars"]
 
     %% Caution Note
-    Sonar_Caution><b>Caution:</b><br/>Do not leave sonars running out of water,<br/>transducers may burn out]
+    Sonar_Caution>"<b>Caution:</b><br/>Do not leave sonars running out of water,<br/>transducers may burn out"]
 
     %% Right-side Action & Verification Checks
     FO_Action{"Check Fiber optic<br/>connectivity links"}
@@ -282,11 +283,11 @@ graph TD
     Sonar_Action{"Connect to BlueView in ProViewer Software,<br/>Connect to Side Scan in Seanet Pro Software"}
 
     %% Reference Pages / Subroutines
-    Ref_FO>See Troubleshooting<br/>Fiber Optics]
-    Ref_Eng>See Troubleshooting<br/>Engineering GUI]
-    Ref_Cam>See Troubleshooting<br/>Cameras]
-    Ref_Data>See Troubleshooting<br/>vehicle data]
-    Ref_Sonar>See Troubleshooting<br/>Sonars]
+    Ref_FO>"See Troubleshooting<br/>Fiber Optics"]
+    Ref_Eng>"See Troubleshooting<br/>Engineering GUI"]
+    Ref_Cam>"See Troubleshooting<br/>Cameras"]
+    Ref_Data>"See Troubleshooting<br/>vehicle data"]
+    Ref_Sonar>"See Troubleshooting<br/>Sonars"]
 
     %% Connections - Main Startup Flow
     Title --- Pwr
@@ -324,4 +325,4 @@ graph TD
     class FO_Check,FO_Action,Eng_Action,Img_Action,Data_Action,Sonar_Action check;
     class Ref_FO,Ref_Eng,Ref_Cam,Ref_Data,Ref_Sonar ref;
     class Sonar_Caution caution;
-
+```
