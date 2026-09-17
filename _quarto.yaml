@@ -86,12 +86,12 @@ book:
           text: "After-Cruise"
     - part: "Maintenance & Inventory"
       chapters:
+        - href: Maitenance/06-maintenance-schedule.md
+          text: "Maintenance Schedule"
         - href: Maitenance/06-maintenance-overview.md
           text: "Maintenance Overview"
         - href: Maitenance/06-inventory.md
           text: "Inventory"
-        - href: Maitenance/06-maintenance-schedule.md
-          text: "Maintenance Schedule"
         - href: Maitenance/06-troubleshooting.md
           text: "Troubleshooting"
 
