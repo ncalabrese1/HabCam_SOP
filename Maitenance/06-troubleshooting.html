@@ -414,7 +414,7 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph TD
-    subgraph Submerged["Submerged Connections"]
+    subgraph Submerged ["&lt;div align='left'&gt;Submerged Connections&lt;/div&gt;"]
         Cam1_Sub["Cam1"]
         Cam2_Sub["Cam2"]
         Data_Sub["Data Network"]
@@ -441,14 +441,14 @@ ul.task-list li input[type="checkbox"] {
     end
 
     WinchCable(("Winch Cable"))
+    
     OFJBox --&gt; WinchCable
 
-    subgraph TopSide["Top-side Connections"]
+    subgraph TopSide ["&lt;div align='left'&gt;Top-side Connections&lt;/div&gt;"]
         SlipRing(["Winch Slip Ring"])
         DryLabJBox(["Dry Lab Junction Box"])
         Mux_Top(["Multiplexer"])
 
-        WinchCable --&gt; SlipRing
         SlipRing --&gt;|Common Issue| DryLabJBox
         DryLabJBox --&gt;|Common Issue| Mux_Top
 
@@ -467,9 +467,11 @@ ul.task-list li input[type="checkbox"] {
         Mux_Top --&gt;|Rx| Spare_Top
     end
 
+    WinchCable --&gt; SlipRing
+
     %% Diagram Styling
-    style Submerged fill:#ffffff,stroke:#4a90e2,stroke-width:1.5px,stroke-dasharray: 4 4
-    style TopSide fill:#ffffff,stroke:#f5a623,stroke-width:1.5px,stroke-dasharray: 4 4
+    style Submerged fill:rgba(74,144,226,0.06),stroke:#4a90e2,stroke-width:1.5px,stroke-dasharray: 4 4
+    style TopSide fill:rgba(245,166,35,0.06),stroke:#f5a623,stroke-width:1.5px,stroke-dasharray: 4 4
     style Mux_Sub fill:#ffffff,stroke:#000000,stroke-width:2px
     style Mux_Top fill:#ffffff,stroke:#000000,stroke-width:2px
     style OFJBox fill:#ffffff,stroke:#000000,stroke-width:2px
