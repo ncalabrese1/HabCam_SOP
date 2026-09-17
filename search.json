@@ -740,7 +740,7 @@
     "href": "Maitenance/06-inventory.html",
     "title": "Inventory",
     "section": "",
-    "text": "[Insert spare parts inventory tracking, serial number logs, tool inventories, and storage bin locations here]",
+    "text": "Location\n\n\nBox\n\n\nItem\n\n\nQuantity",
     "crumbs": [
       "Maintenance & Inventory",
       "<span class='chapter-number'>34</span>  <span class='chapter-title'>Inventory</span>"
