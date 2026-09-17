@@ -415,8 +415,6 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">graph TD
     subgraph Submerged["Submerged Connections"]
-        direction TD
-        
         Cam1_Sub["Cam1"]
         Cam2_Sub["Cam2"]
         Data_Sub["Data Network"]
@@ -424,21 +422,21 @@ ul.task-list li input[type="checkbox"] {
 
         Mux_Sub(["Multiplexer"])
 
-        Cam1_Sub --&gt;|1| Mux_Sub
-        Cam1_Sub --&gt;|2| Mux_Sub
-        Cam2_Sub --&gt;|1| Mux_Sub
-        Cam2_Sub --&gt;|2| Mux_Sub
-        Data_Sub --&gt;|1| Mux_Sub
-        Data_Sub --&gt;|2| Mux_Sub
-        Spare_Sub --&gt;|1| Mux_Sub
-        Spare_Sub --&gt;|2| Mux_Sub
+        Cam1_Sub --&gt;|Tx| Mux_Sub
+        Cam1_Sub --&gt;|Rx| Mux_Sub
+        Cam2_Sub --&gt;|Tx| Mux_Sub
+        Cam2_Sub --&gt;|Rx| Mux_Sub
+        Data_Sub --&gt;|Tx| Mux_Sub
+        Data_Sub --&gt;|Rx| Mux_Sub
+        Spare_Sub --&gt;|Tx| Mux_Sub
+        Spare_Sub --&gt;|Rx| Mux_Sub
 
-        Bulkhead{"Fiber Optic&lt;br/&gt;Bulkhead"}
-        FOCable{"Fiber Optic&lt;br/&gt;Cable"}
-        OFJBox(["Oil Filled&lt;br/&gt;Junction Box"])
+        Bulkhead{"Fiber Optic Bulkhead"}
+        FOCable{"Fiber Optic Cable"}
+        OFJBox(["Oil Filled Junction Box"])
 
         Mux_Sub --&gt; Bulkhead
-        Bulkhead -- "Common Issue" --&gt; FOCable
+        Bulkhead --&gt;|Common Issue| FOCable
         FOCable --&gt; OFJBox
     end
 
@@ -446,29 +444,27 @@ ul.task-list li input[type="checkbox"] {
     OFJBox --&gt; WinchCable
 
     subgraph TopSide["Top-side Connections"]
-        direction TD
-        
-        SlipRing(["Winch&lt;br/&gt;Slip Ring"])
-        DryLabJBox(["Dry Lab&lt;br/&gt;Junction Box"])
+        SlipRing(["Winch Slip Ring"])
+        DryLabJBox(["Dry Lab Junction Box"])
         Mux_Top(["Multiplexer"])
 
         WinchCable --&gt; SlipRing
-        SlipRing -- "Common Issue" --&gt; DryLabJBox
-        DryLabJBox -- "Common Issue" --&gt; Mux_Top
+        SlipRing --&gt;|Common Issue| DryLabJBox
+        DryLabJBox --&gt;|Common Issue| Mux_Top
 
         Cam1_Top["Cam1"]
         Cam2_Top["Cam2"]
         Data_Top["Data Network"]
         Spare_Top["Spare"]
 
-        Mux_Top --&gt;|1| Cam1_Top
-        Mux_Top --&gt;|2| Cam1_Top
-        Mux_Top --&gt;|1| Cam2_Top
-        Mux_Top --&gt;|2| Cam2_Top
-        Mux_Top --&gt;|1| Data_Top
-        Mux_Top --&gt;|2| Data_Top
-        Mux_Top --&gt;|1| Spare_Top
-        Mux_Top --&gt;|2| Spare_Top
+        Mux_Top --&gt;|Tx| Cam1_Top
+        Mux_Top --&gt;|Rx| Cam1_Top
+        Mux_Top --&gt;|Tx| Cam2_Top
+        Mux_Top --&gt;|Rx| Cam2_Top
+        Mux_Top --&gt;|Tx| Data_Top
+        Mux_Top --&gt;|Rx| Data_Top
+        Mux_Top --&gt;|Tx| Spare_Top
+        Mux_Top --&gt;|Rx| Spare_Top
     end
 
     %% Diagram Styling
