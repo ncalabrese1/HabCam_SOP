@@ -814,86 +814,68 @@ window.Quarto = {
 </section>
 <section id="vehicle-start-up-flow-chart" class="level2">
 <h2 class="anchored" data-anchor-id="vehicle-start-up-flow-chart">Vehicle Start-Up Flow Chart</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    %% Main Process Spine (Left Column - Pink Boxes)
-    Pwr["Power on HabCam&lt;br/&gt;with 240v AC"]
-    FO_Check["Are fiber optics and&lt;br/&gt;data networks online?"]
-    Eng_GUI["Start Engineering GUI"]
-    Img_GUI["Start Image&lt;br/&gt;Viewer GUI"]
-    Data_Verify["Verify images and&lt;br/&gt;vehicle data are being&lt;br/&gt;written"]
-    Sonar_Start["Start BlueView and&lt;br/&gt;Side Scan Sonars"]
+<p>graph TD %% Main Process Spine (Left Column - Pink Boxes) Pwr[“Power on HabCam<br>with 240v AC”] FO_Check[“Are fiber optics and<br>data networks online?”] Eng_GUI[“Start Engineering GUI”] Img_GUI[“Start Image<br>Viewer GUI”] Data_Verify[“Verify images and<br>vehicle data are being<br>written”] Sonar_Start[“Start BlueView and<br>Side Scan Sonars”]</p>
+<pre><code>%% Action Checks (Middle Column - Blue Diamonds)
+FO_Action{"Check Fiber optic connectivity links"}
+Eng_Action{"Check Sensors, CruiseID, GPS,&lt;br/&gt;Fathometer"}
+Img_Action{"Start Stereo&lt;br/&gt;Acquisition Script"}
+Data_Action{"Check Dixon metadata&lt;br/&gt;directories /hab, /img&lt;br/&gt;Check mounted /tif directories"}
+Sonar_Action{"Connect to BlueView in&lt;br/&gt;ProViewer Software,&lt;br/&gt;Connect to Side Scan&lt;br/&gt;in Seanet Pro Software"}
 
-    %% Action Checks (Middle Column - Blue Diamonds)
-    FO_Action{"Check Fiber optic connectivity links"}
-    Eng_Action{"Check Sensors, CruiseID, GPS,&lt;br/&gt;Fathometer"}
-    Img_Action{"Start Stereo&lt;br/&gt;Acquisition Script"}
-    Data_Action{"Check Dixon metadata&lt;br/&gt;directories /hab, /img&lt;br/&gt;Check mounted /tif directories"}
-    Sonar_Action{"Connect to BlueView in&lt;br/&gt;ProViewer Software,&lt;br/&gt;Connect to Side Scan&lt;br/&gt;in Seanet Pro Software"}
+%% Troubleshooting Navigation (Right Column - Blue Boxes)
+Ref_FO["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Fiber Optics"]
+Ref_Eng["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Engineering GUI"]
+Ref_Cam["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Cameras"]
+Ref_Data["See&lt;br/&gt;Troubleshooting&lt;br/&gt;vehicle data"]
+Ref_Sonar["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Sonars"]
 
-    %% Troubleshooting Navigation (Right Column - Blue Boxes)
-    Ref_FO["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Fiber Optics"]
-    Ref_Eng["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Engineering GUI"]
-    Ref_Cam["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Cameras"]
-    Ref_Data["See&lt;br/&gt;Troubleshooting&lt;br/&gt;vehicle data"]
-    Ref_Sonar["See&lt;br/&gt;Troubleshooting&lt;br/&gt;Sonars"]
+%% Process Connections
+Pwr --&gt; FO_Check
+FO_Check --&gt;|"No"| FO_Action
+FO_Action --&gt;|"Issues?"| Ref_FO
 
-    %% Process Connections
-    Pwr --&gt; FO_Check
-    FO_Check --&gt;|"No"| FO_Action
-    FO_Action --&gt;|"Issues?"| Ref_FO
-    
-    FO_Check --&gt;|"Yes"| Eng_GUI
-    Eng_GUI --&gt; Eng_Action
-    Eng_Action --&gt;|"Issues?"| Ref_Eng
-    
-    Eng_GUI --&gt;|"Sensors online"| Img_GUI
-    Img_GUI --&gt; Img_Action
-    Img_Action --&gt;|"Issues?"| Ref_Cam
-    
-    Img_GUI --&gt;|"Cameras online"| Data_Verify
-    Data_Verify --&gt; Data_Action
-    Data_Action --&gt;|"Issues?"| Ref_Data
-    
-    Data_Verify --&gt;|"Data is being written"| Sonar_Start
-    Sonar_Start --&gt;|"Caution: Do not run out of water"| Sonar_Action
-    Sonar_Action --&gt;|"Issues?"| Ref_Sonar
+FO_Check --&gt;|"Yes"| Eng_GUI
+Eng_GUI --&gt; Eng_Action
+Eng_Action --&gt;|"Issues?"| Ref_Eng
 
-    %% Styling Classes
-    classDef spine fill:#ffe4f1,stroke:#ff52a0,stroke-width:1.5px,color:#000000;
-    classDef diamond fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
-    classDef flag fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
+Eng_GUI --&gt;|"Sensors online"| Img_GUI
+Img_GUI --&gt; Img_Action
+Img_Action --&gt;|"Issues?"| Ref_Cam
 
-    class Pwr,FO_Check,Eng_GUI,Img_GUI,Data_Verify,Sonar_Start spine;
-    class FO_Action,Eng_Action,Img_Action,Data_Action,Sonar_Action diamond;
-    class Ref_FO,Ref_Eng,Ref_Cam,Ref_Data,Ref_Sonar flag;
+Img_GUI --&gt;|"Cameras online"| Data_Verify
+Data_Verify --&gt; Data_Action
+Data_Action --&gt;|"Issues?"| Ref_Data
 
-    %% Individual Link Styles
-    linkStyle 0 stroke:#000000,stroke-width:1.5px,color:#000000;
-    linkStyle 1 stroke:#ff0000,stroke-width:2px,color:#ff0000;
-    linkStyle 2 stroke:#ff0000,stroke-width:2px,color:#ff0000;
-    linkStyle 3 stroke:#00c853,stroke-width:2px,color:#00c853;
-    linkStyle 4 stroke:#000000,stroke-width:1.5px,color:#000000;
-    linkStyle 5 stroke:#ff0000,stroke-width:2px,color:#ff0000;
-    linkStyle 6 stroke:#00c853,stroke-width:2px,color:#00c853;
-    linkStyle 7 stroke:#000000,stroke-width:1.5px,color:#000000;
-    linkStyle 8 stroke:#ff0000,stroke-width:2px,color:#ff0000;
-    linkStyle 9 stroke:#00c853,stroke-width:2px,color:#00c853;
-    linkStyle 10 stroke:#000000,stroke-width:1.5px,color:#000000;
-    linkStyle 11 stroke:#ff0000,stroke-width:2px,color:#ff0000;
-    linkStyle 12 stroke:#00c853,stroke-width:2px,color:#00c853;
-    linkStyle 13 stroke:#000000,stroke-width:1.5px,color:#000000;
-    linkStyle 14 stroke:#ff0000,stroke-width:2px,color:#ff0000;
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+Data_Verify --&gt;|"Data is being written"| Sonar_Start
+Sonar_Start --&gt;|"Caution: Do not run out of water"| Sonar_Action
+Sonar_Action --&gt;|"Issues?"| Ref_Sonar
+
+%% Styling Classes
+classDef spine fill:#ffe4f1,stroke:#ff52a0,stroke-width:1.5px,color:#000000
+classDef diamond fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000
+classDef flag fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000
+
+class Pwr,FO_Check,Eng_GUI,Img_GUI,Data_Verify,Sonar_Start spine
+class FO_Action,Eng_Action,Img_Action,Data_Action,Sonar_Action diamond
+class Ref_FO,Ref_Eng,Ref_Cam,Ref_Data,Ref_Sonar flag
+
+%% Individual Link Styles
+linkStyle 0 stroke:#000000,stroke-width:1.5px
+linkStyle 1 stroke:#ff0000,stroke-width:2px
+linkStyle 2 stroke:#ff0000,stroke-width:2px
+linkStyle 3 stroke:#00c853,stroke-width:2px
+linkStyle 4 stroke:#000000,stroke-width:1.5px
+linkStyle 5 stroke:#ff0000,stroke-width:2px
+linkStyle 6 stroke:#00c853,stroke-width:2px
+linkStyle 7 stroke:#000000,stroke-width:1.5px
+linkStyle 8 stroke:#ff0000,stroke-width:2px
+linkStyle 9 stroke:#00c853,stroke-width:2px
+linkStyle 10 stroke:#000000,stroke-width:1.5px
+linkStyle 11 stroke:#ff0000,stroke-width:2px
+linkStyle 12 stroke:#00c853,stroke-width:2px
+linkStyle 13 stroke:#000000,stroke-width:1.5px
+linkStyle 14 stroke:#ff0000,stroke-width:2px</code></pre>
+<hr>
 
 
 </section>
