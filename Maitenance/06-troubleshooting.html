@@ -424,21 +424,21 @@ ul.task-list li input[type="checkbox"] {
 
         Mux_Sub(["Multiplexer"])
 
-        Cam1_Sub --&gt; Mux_Sub
-        Cam1_Sub --&gt; Mux_Sub
-        Cam2_Sub --&gt; Mux_Sub
-        Cam2_Sub --&gt; Mux_Sub
-        Data_Sub --&gt; Mux_Sub
-        Data_Sub --&gt; Mux_Sub
-        Spare_Sub --&gt; Mux_Sub
-        Spare_Sub --&gt; Mux_Sub
+        Cam1_Sub --&gt;|1| Mux_Sub
+        Cam1_Sub --&gt;|2| Mux_Sub
+        Cam2_Sub --&gt;|1| Mux_Sub
+        Cam2_Sub --&gt;|2| Mux_Sub
+        Data_Sub --&gt;|1| Mux_Sub
+        Data_Sub --&gt;|2| Mux_Sub
+        Spare_Sub --&gt;|1| Mux_Sub
+        Spare_Sub --&gt;|2| Mux_Sub
 
         Bulkhead{"Fiber Optic&lt;br/&gt;Bulkhead"}
         FOCable{"Fiber Optic&lt;br/&gt;Cable"}
         OFJBox(["Oil Filled&lt;br/&gt;Junction Box"])
 
         Mux_Sub --&gt; Bulkhead
-        Bulkhead --&gt;|"Common Issue"| FOCable
+        Bulkhead -- "Common Issue" --&gt; FOCable
         FOCable --&gt; OFJBox
     end
 
@@ -453,22 +453,22 @@ ul.task-list li input[type="checkbox"] {
         Mux_Top(["Multiplexer"])
 
         WinchCable --&gt; SlipRing
-        SlipRing --&gt;|"Common Issue"| DryLabJBox
-        DryLabJBox --&gt;|"Common Issue"| Mux_Top
+        SlipRing -- "Common Issue" --&gt; DryLabJBox
+        DryLabJBox -- "Common Issue" --&gt; Mux_Top
 
         Cam1_Top["Cam1"]
         Cam2_Top["Cam2"]
         Data_Top["Data Network"]
         Spare_Top["Spare"]
 
-        Mux_Top --&gt; Cam1_Top
-        Mux_Top --&gt; Cam1_Top
-        Mux_Top --&gt; Cam2_Top
-        Mux_Top --&gt; Cam2_Top
-        Mux_Top --&gt; Data_Top
-        Mux_Top --&gt; Data_Top
-        Mux_Top --&gt; Spare_Top
-        Mux_Top --&gt; Spare_Top
+        Mux_Top --&gt;|1| Cam1_Top
+        Mux_Top --&gt;|2| Cam1_Top
+        Mux_Top --&gt;|1| Cam2_Top
+        Mux_Top --&gt;|2| Cam2_Top
+        Mux_Top --&gt;|1| Data_Top
+        Mux_Top --&gt;|2| Data_Top
+        Mux_Top --&gt;|1| Spare_Top
+        Mux_Top --&gt;|2| Spare_Top
     end
 
     %% Diagram Styling
