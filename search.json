@@ -729,7 +729,51 @@
     "href": "Maitenance/06-maintenance-overview.html",
     "title": "Maintenance",
     "section": "",
-    "text": "[Insert general maintenance philosophies, post-cruise refurbishment overviews, and safety practices here]",
+    "text": "Replace Doors",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Maintenance Overview</span>"
+    ]
+  },
+  {
+    "objectID": "Maitenance/06-maintenance-overview.html#replace-doors",
+    "href": "Maitenance/06-maintenance-overview.html#replace-doors",
+    "title": "Maintenance",
+    "section": "",
+    "text": "Drill out three holes down the side of the door, with a 5/16 drill bit (you can use an old door as a template).[cite: 1]\n\n\n\nPlaceholder: Drill holes down side of door\n\n\nAttach the door to HABCAM by threading a 3/8 bolt through a washer and fender washer (fender washer against door, washer on top of fender washer) with the door on the inside of the door frame and the shank facing away from the vehicle. Secure the shank end of the bolt with washer, lock washer and nut.[cite: 1]\n\n\n\nPlaceholder: Attach door to frame with shank facing away\n\n\nPosition the door and door latches, so that the top of the door is on the first hole (from the outside edge) on the door latch and the bottom of the door is on the second hole (from the outside edge).[cite: 1]\nOn door, Measure with a tape measure and/or mark hole placement with a sharpie.[cite: 1]\n\n\n\nPlaceholder: Marking hole placement with sharpie\n\n\nRemove door, and use a 3-16 thread tapper to drill a shallow hole for the top and bottom door latch bolt to sit in.[cite: 1]\nReattach door to door frame (door on the inside of the door frame and the shank facing away from the vehicle) by threading bolt through washer and fender washer. Prior to adding the stainless-steel washer, lock washer and nut, apply aqua shield over all of the threads on the side of the door (no need to do this on the top bolts).[cite: 1]\n\n\n\nPlaceholder: Applying Aqua Shield to threads\n\n\nSecure door on top and bottom latch using a 3/8 bolt with washer and lock washer (washer against head of bolt). Use a 3/8 ratcheting wrench to pinch the door “closed” into a fixed position.[cite: 1]\n\n\n\nPlaceholder: Secure door top and bottom latch",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Maintenance Overview</span>"
+    ]
+  },
+  {
+    "objectID": "Maitenance/06-maintenance-overview.html#sand-habcam",
+    "href": "Maitenance/06-maintenance-overview.html#sand-habcam",
+    "title": "Maintenance",
+    "section": "Sand HabCam",
+    "text": "Sand HabCam\n[Placeholder: Insert sanding procedure and safety instructions here]\n\n\n\nPlaceholder: Sanding HabCam frame",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Maintenance Overview</span>"
+    ]
+  },
+  {
+    "objectID": "Maitenance/06-maintenance-overview.html#splice-cables",
+    "href": "Maitenance/06-maintenance-overview.html#splice-cables",
+    "title": "Maintenance",
+    "section": "Splice Cables",
+    "text": "Splice Cables\n[Placeholder: Insert cable splicing and pinout instructions here]\n\n\n\nPlaceholder: Cable splicing diagram",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Maintenance Overview</span>"
+    ]
+  },
+  {
+    "objectID": "Maitenance/06-maintenance-overview.html#fabricate-camera-plate",
+    "href": "Maitenance/06-maintenance-overview.html#fabricate-camera-plate",
+    "title": "Maintenance",
+    "section": "Fabricate Camera Plate",
+    "text": "Fabricate Camera Plate\n[Placeholder: Insert fabrication specs and mounting instructions here]\n\n\n\nPlaceholder: Camera plate schematic\n\n\n\n[Placeholder: Insert instructions for fabricating camera plate here]",
     "crumbs": [
       "Maintenance & Inventory",
       "<span class='chapter-number'>33</span>  <span class='chapter-title'>Maintenance Overview</span>"
