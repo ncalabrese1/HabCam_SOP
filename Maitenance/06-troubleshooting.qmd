@@ -22,21 +22,21 @@ graph TD
 
         Mux_Sub(["Multiplexer"])
 
-        Cam1_Sub --> Mux_Sub
-        Cam1_Sub --> Mux_Sub
-        Cam2_Sub --> Mux_Sub
-        Cam2_Sub --> Mux_Sub
-        Data_Sub --> Mux_Sub
-        Data_Sub --> Mux_Sub
-        Spare_Sub --> Mux_Sub
-        Spare_Sub --> Mux_Sub
+        Cam1_Sub -->|1| Mux_Sub
+        Cam1_Sub -->|2| Mux_Sub
+        Cam2_Sub -->|1| Mux_Sub
+        Cam2_Sub -->|2| Mux_Sub
+        Data_Sub -->|1| Mux_Sub
+        Data_Sub -->|2| Mux_Sub
+        Spare_Sub -->|1| Mux_Sub
+        Spare_Sub -->|2| Mux_Sub
 
         Bulkhead{"Fiber Optic<br/>Bulkhead"}
         FOCable{"Fiber Optic<br/>Cable"}
         OFJBox(["Oil Filled<br/>Junction Box"])
 
         Mux_Sub --> Bulkhead
-        Bulkhead -->|"Common Issue"| FOCable
+        Bulkhead -- "Common Issue" --> FOCable
         FOCable --> OFJBox
     end
 
@@ -51,22 +51,22 @@ graph TD
         Mux_Top(["Multiplexer"])
 
         WinchCable --> SlipRing
-        SlipRing -->|"Common Issue"| DryLabJBox
-        DryLabJBox -->|"Common Issue"| Mux_Top
+        SlipRing -- "Common Issue" --> DryLabJBox
+        DryLabJBox -- "Common Issue" --> Mux_Top
 
         Cam1_Top["Cam1"]
         Cam2_Top["Cam2"]
         Data_Top["Data Network"]
         Spare_Top["Spare"]
 
-        Mux_Top --> Cam1_Top
-        Mux_Top --> Cam1_Top
-        Mux_Top --> Cam2_Top
-        Mux_Top --> Cam2_Top
-        Mux_Top --> Data_Top
-        Mux_Top --> Data_Top
-        Mux_Top --> Spare_Top
-        Mux_Top --> Spare_Top
+        Mux_Top -->|1| Cam1_Top
+        Mux_Top -->|2| Cam1_Top
+        Mux_Top -->|1| Cam2_Top
+        Mux_Top -->|2| Cam2_Top
+        Mux_Top -->|1| Data_Top
+        Mux_Top -->|2| Data_Top
+        Mux_Top -->|1| Spare_Top
+        Mux_Top -->|2| Spare_Top
     end
 
     %% Diagram Styling
