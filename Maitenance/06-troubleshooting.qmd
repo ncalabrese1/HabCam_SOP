@@ -113,14 +113,14 @@ Follow these instructions carefully to ensure correct use of your OptoLink conne
 
 #### OptoLink A-CCP to OptoLink A-FCR, BCR or CCR Receptacle
 
-![OptoLink Assembly](../images/optolink.png){.lightbox}
+![OptoLink Assembly](optolink.png){.lightbox}
 
 * A: Keyway visual alignment; B: Push connection path; C: Locking sleeve rotation direction.*
 
-1. Inspect the connector face and O-rings.[cite: 1] Grease the O-rings with Molykote 111.
-2. Inspect the connector surface.[cite: 1] If the connector surface is dirty, follow the OptoLink maintenance instructions below.
+1. Inspect the connector face and O-rings. Grease the O-rings with Molykote 111.
+2. Inspect the connector surface. If the connector surface is dirty, follow the OptoLink maintenance instructions below.
 3. Visually align the key way on the CCP connector with the key pin tip on the receptacle before mating (illustration A).
-4. Do not twist the connector to align it during mating.[cite: 1] Push to mate the connector (illustration B).
+4. Do not twist the connector to align it during mating. Push to mate the connector (illustration B).
 5. Engage connector whilst turning the locking sleeve (illustration C).
 
 ::: {.callout-note appearance="simple"}
@@ -134,8 +134,8 @@ The connector must be hand tightened.
 #### Receptacle Maintenance (A-CCP, A-FCR, BCR or CCR)
 
 * **Dirty Lenses:** Clean with a dry cotton swab and isopropyl alcohol.
-* **Greasy Lenses:** Clean with an isopropyl alcohol soaked cotton swab followed by a dry cotton swab.[cite: 1] Repeat the cleaning process if necessary.
-* **O-Ring Care:** Check O-rings before mating/mounting; replace if showing signs of damage.[cite: 1] Always grease O-rings with Molykote 111.
+* **Greasy Lenses:** Clean with an isopropyl alcohol soaked cotton swab followed by a dry cotton swab. Repeat the cleaning process if necessary.
+* **O-Ring Care:** Check O-rings before mating/mounting; replace if showing signs of damage. Always grease O-rings with Molykote 111.
 
 ::: {.callout-note appearance="simple"}
 Always install dust caps when connectors are unmated.
@@ -148,9 +148,9 @@ Always install dust caps when connectors are unmated.
 
 ---
 
-#### Torque & Mounting Specifications
+### Torque & Mounting Specifications
 
-### Thread Locking
+#### Thread Locking
 For locking metallic connectors, the use of Loctite 243 is recommended.
 
 #### Bulkhead Connectors Tightening Force
@@ -163,4 +163,4 @@ For locking metallic connectors, the use of Loctite 243 is recommended.
 | 7/8"-14 UNF | Stainless steel, titanium | 80.0 |
 
 #### Pressure Balanced Systems
-FCR and BCR are rated to 600 bar back pressure.[cite: 1] MacArtney recommends DC-200/350 or PMX-200/350 in oil compensated systems.[cite: 1]
+FCR and BCR are rated to 600 bar back pressure. MacArtney recommends DC-200/350 or PMX-200/350 in oil compensated systems.
