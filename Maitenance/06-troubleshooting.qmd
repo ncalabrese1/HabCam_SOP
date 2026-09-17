@@ -12,7 +12,7 @@ Multiple junctions (coupling points) exist throughout the system where improper 
 
 ```{mermaid}
 graph TD
-    subgraph Submerged["Submerged Connections"]
+    subgraph Submerged ["<span style='color:#000000; font-weight:bold; float:left;'>Submerged Connections</span>"]
         Cam1_Sub["Cam1"]
         Cam2_Sub["Cam2"]
         Data_Sub["Data Network"]
@@ -42,7 +42,7 @@ graph TD
     
     OFJBox --> WinchCable
 
-    subgraph TopSide["Top-side Connections"]
+    subgraph TopSide ["<span style='color:#000000; font-weight:bold; float:left;'>Top-side Connections</span>"]
         SlipRing(["Winch Slip Ring"])
         DryLabJBox(["Dry Lab Junction Box"])
         Mux_Top(["Multiplexer"])
@@ -77,6 +77,7 @@ graph TD
     style DryLabJBox fill:#ffffff,stroke:#000000,stroke-width:2px
     style WinchCable fill:#ffffff,stroke:#000000,stroke-width:2px
 ```
+
 
 
 ::: {.grid}
