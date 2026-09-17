@@ -261,17 +261,17 @@ Never use Acetone on PEEK non-metallic connectors, as it causes severe stress-in
 
 # General Vehicle Set Up
 
+# General Vehicle Set Up
+
 ```{mermaid}
 graph TD
-    %% Top Row Alignment (Process Start Left, Title Block Right)
-    Pwr["Power on HabCam<br/>with 240v AC"] ~~~ Title["HabCam Troubleshooting Diagram:<br/><br/>General Vehicle Set Up"]
-
     %% Main Process Spine (Left Column - Pink Boxes)
-    FO_Check["Are fiber optics and<br/>data networks online?"]
-    Eng_GUI["Start Engineering GUI"]
-    Img_GUI["Start Image<br/>Viewer GUI"]
-    Data_Verify["Verify images and<br/>vehicle data are being<br/>written"]
-    Sonar_Start["Start BlueView and<br/>Side Scan Sonars"]
+    Pwr["<b>Power on HabCam<br/>with 240v AC</b>"]
+    FO_Check["<b>Are fiber optics and<br/>data networks online?</b>"]
+    Eng_GUI["<b>Start Engineering GUI</b>"]
+    Img_GUI["<b>Start Image<br/>Viewer GUI</b>"]
+    Data_Verify["<b>Verify images and<br/>vehicle data are being<br/>written</b>"]
+    Sonar_Start["<b>Start BlueView and<br/>Side Scan Sonars</b>"]
 
     %% Action Checks (Middle Column - Blue Diamonds)
     FO_Action{"Check Fiber optic connectivity links"}
@@ -281,11 +281,11 @@ graph TD
     Sonar_Action{"Connect to BlueView in<br/>ProViewer Software,<br/>Connect to Side Scan<br/>in Seanet Pro Software"}
 
     %% Troubleshooting Navigation (Right Column - Blue Flags)
-    Ref_FO>See<br/>Troubleshooting<br/>Fiber Optics]
-    Ref_Eng>See<br/>Troubleshooting<br/>Engineering GUI]
-    Ref_Cam>See<br/>Troubleshooting<br/>Cameras]
-    Ref_Data>See<br/>Troubleshooting<br/>vehicle data]
-    Ref_Sonar>See<br/>Troubleshooting<br/>Sonars]
+    Ref_FO>"See<br/>Troubleshooting<br/>Fiber Optics"
+    Ref_Eng>"See<br/>Troubleshooting<br/>Engineering GUI"
+    Ref_Cam>"See<br/>Troubleshooting<br/>Cameras"
+    Ref_Data>"See<br/>Troubleshooting<br/>vehicle data"
+    Ref_Sonar>"See<br/>Troubleshooting<br/>Sonars"
 
     %% Connections
     Pwr --> FO_Check
@@ -305,19 +305,17 @@ graph TD
     Data_Action -->|Issues?| Ref_Data
     
     Data_Verify -->|Data is being written| Sonar_Start
-    Sonar_Start -->|Caution:<br/>Do not leave sonars running<br/>out of water, transducers may<br/>burn out| Sonar_Action
+    Sonar_Start -->|Caution: Do not run out of water| Sonar_Action
     Sonar_Action -->|Issues?| Ref_Sonar
 
     %% Styling Classes
     classDef spine fill:#ffe4f1,stroke:#ff52a0,stroke-width:1.5px,color:#000000;
     classDef diamond fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
     classDef flag fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
-    classDef title fill:#dbeafe,stroke:#3b82f6,stroke-width:1.5px,color:#000000;
 
     class Pwr,FO_Check,Eng_GUI,Img_GUI,Data_Verify,Sonar_Start spine;
     class FO_Action,Eng_Action,Img_Action,Data_Action,Sonar_Action diamond;
     class Ref_FO,Ref_Eng,Ref_Cam,Ref_Data,Ref_Sonar flag;
-    class Title title;
 
     %% Explicit Edge Color Formatting
     linkStyle 1,2,5,8,11,14 stroke:#ff0000,stroke-width:2px,color:#ff0000;
