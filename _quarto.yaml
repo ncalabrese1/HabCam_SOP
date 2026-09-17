@@ -1,8 +1,10 @@
 project:
   type: book
+  output-dir: _book
 
 book:
   title: "HabCam SOP"
+  site-url: "https://ncalabrese1.github.io/HabCam_SOP/"
   sidebar:
     logo: "Round Logo.jpg"
     style: "docked"
@@ -101,5 +103,6 @@ format:
     number-sections: false
     fig-align: center
     lightbox: true
-    css: styles.css
-    include-in-header: header.html
+    # Temporarily commented out to ensure missing files don't block page render:
+    # css: styles.css
+    # include-in-header: header.html
