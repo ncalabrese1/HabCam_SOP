@@ -367,8 +367,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#fiber-optics" id="toc-fiber-optics" class="nav-link active" data-scroll-target="#fiber-optics">Fiber Optics</a></li>
+  <li><a href="#field-procedures" id="toc-field-procedures" class="nav-link" data-scroll-target="#field-procedures">Field Procedures</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -392,9 +399,153 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>[Insert common hardware/software failure modes, diagnostic decision trees, and emergency field repair procedures here]</em></p>
+<section id="fiber-optics" class="level2">
+<h2 class="anchored" data-anchor-id="fiber-optics">Fiber Optics</h2>
+<p>Inside the HabCam main electronics bottle there are four media converters: one for each camera, one for the data network (all other sensors, sonars, moxas, gardasofts, expansion bottle, and the chanos sensor), and a spare port not actively used. When the vehicle is powered on, full link lights on the front of each media converter indicate functional fiber optic connectivity per channel.</p>
+<p>Multiple junctions (coupling points) exist throughout the system where improper seating or contamination will cause data loss.</p>
+<hr>
+<section id="connection-flowchart" class="level3">
+<h3 class="anchored" data-anchor-id="connection-flowchart">Connection Flowchart</h3>
+<div class="d-flex flex-column align-items-center my-4">
+<!-- Submerged Connections Container -->
+<div class="border border-primary rounded p-4 w-100 position-relative bg-light text-center" style="max-width: 650px; border-style: dashed !important;">
+<pre><code>&lt;span class="badge bg-primary position-absolute top-0 start-0 translate-middle-y ms-3 fs-6"&gt;Submerged Connections&lt;/span&gt;
+
+&lt;div class="row g-2 justify-content-center mb-3 mt-2"&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Cam1&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Cam2&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Data Network&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Spare&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;"&gt;
+  &lt;div class="card-body p-2 fw-bold bg-white"&gt;Submerged Multiplexer&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;"&gt;
+  &lt;div class="card-body p-2 bg-white"&gt;Fiber Optic Bulkhead&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="alert alert-warning border-warning py-1 px-3 d-inline-block my-1 fw-bold shadow-sm"&gt;
+  ⚠️ Common Issue
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;"&gt;
+  &lt;div class="card-body p-2 bg-white"&gt;Fiber Optic Cable&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;"&gt;
+  &lt;div class="card-body p-2 bg-white"&gt;Oil Filled Junction Box&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<!-- Winch Cable Junction -->
+<div class="my-3 text-center">
+<pre><code>&lt;div class="text-secondary fs-3"&gt;&amp;#8595;&lt;/div&gt;
+&lt;div class="rounded-circle bg-dark text-white d-flex align-items-center justify-content-center mx-auto my-2 shadow" style="width: 110px; height: 110px; font-weight: bold; font-size: 0.95rem;"&gt;
+  Winch Cable
+&lt;/div&gt;
+&lt;div class="text-secondary fs-3"&gt;&amp;#8595;&lt;/div&gt;</code></pre>
+</div>
+<!-- Top-side Connections Container -->
+<div class="border border-warning rounded p-4 w-100 position-relative bg-light text-center" style="max-width: 650px; border-style: dashed !important;">
+<pre><code>&lt;span class="badge bg-warning text-dark position-absolute top-0 start-0 translate-middle-y ms-3 fs-6"&gt;Top-side Connections&lt;/span&gt;
+
+&lt;div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;"&gt;
+  &lt;div class="card-body p-2 bg-white"&gt;Winch Slip Ring&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="alert alert-warning border-warning py-1 px-3 d-inline-block my-1 fw-bold shadow-sm"&gt;
+  ⚠️ Common Issue
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;"&gt;
+  &lt;div class="card-body p-2 bg-white"&gt;Dry Lab Junction Box&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="alert alert-warning border-warning py-1 px-3 d-inline-block my-1 fw-bold shadow-sm"&gt;
+  ⚠️ Common Issue
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="card mx-auto my-2 shadow-sm" style="max-width: 320px;"&gt;
+  &lt;div class="card-body p-2 fw-bold bg-white"&gt;Demultiplexer&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="text-secondary fs-4"&gt;&amp;#8595;&lt;/div&gt;
+
+&lt;div class="row g-2 justify-content-center mt-3 mb-2"&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Cam1&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Cam2&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Data Network&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="col-auto"&gt;&lt;span class="badge bg-secondary p-2"&gt;Spare&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="field-procedures" class="level2">
+<h2 class="anchored" data-anchor-id="field-procedures">Field Procedures</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Inspection Checklist
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Carefully inspect designated high-failure points:</p>
+<ul>
+<li><strong>OptoLink bulkhead &amp; mating cable</strong> on the main electronics bottle</li>
+<li><strong>Ship’s slip ring</strong> assembly</li>
+<li><strong>Dry lab junction box to demultiplexer</strong> interconnects</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="g-col-12 g-col-md-6">
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Cleaning Protocols
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>ST Connectors:</strong> Clean using isopropyl alcohol and CLETOP fiber optic wipes. Use fiber optic insert cleaning pens for couplers.</li>
+<li><strong>Subconn OptoLink Series:</strong> Ensure mating surfaces are dry and clean using <strong>only</strong> isopropyl alcohol and Kimtech wipes. Apply <strong>Molykote Series 55</strong> o-ring grease to o-rings.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
