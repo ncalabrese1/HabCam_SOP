@@ -259,16 +259,15 @@ Never use Acetone on PEEK non-metallic connectors, as it causes severe stress-in
 
 ## Vehicle Start-Up Flow Chart
 
-
 ```{mermaid}
 graph TD
     %% Main Process Spine (Left Column - Pink Boxes)
-    Pwr["<b>Power on HabCam<br/>with 240v AC</b>"]
-    FO_Check["<b>Are fiber optics and<br/>data networks online?</b>"]
-    Eng_GUI["<b>Start Engineering GUI</b>"]
-    Img_GUI["<b>Start Image<br/>Viewer GUI</b>"]
-    Data_Verify["<b>Verify images and<br/>vehicle data are being<br/>written</b>"]
-    Sonar_Start["<b>Start BlueView and<br/>Side Scan Sonars</b>"]
+    Pwr["Power on HabCam<br/>with 240v AC"]
+    FO_Check["Are fiber optics and<br/>data networks online?"]
+    Eng_GUI["Start Engineering GUI"]
+    Img_GUI["Start Image<br/>Viewer GUI"]
+    Data_Verify["Verify images and<br/>vehicle data are being<br/>written"]
+    Sonar_Start["Start BlueView and<br/>Side Scan Sonars"]
 
     %% Action Checks (Middle Column - Blue Diamonds)
     FO_Action{"Check Fiber optic connectivity links"}
@@ -277,33 +276,33 @@ graph TD
     Data_Action{"Check Dixon metadata<br/>directories /hab, /img<br/>Check mounted /tif directories"}
     Sonar_Action{"Connect to BlueView in<br/>ProViewer Software,<br/>Connect to Side Scan<br/>in Seanet Pro Software"}
 
-    %% Troubleshooting Navigation (Right Column - Blue Reference Boxes)
+    %% Troubleshooting Navigation (Right Column - Blue Boxes)
     Ref_FO["See<br/>Troubleshooting<br/>Fiber Optics"]
     Ref_Eng["See<br/>Troubleshooting<br/>Engineering GUI"]
     Ref_Cam["See<br/>Troubleshooting<br/>Cameras"]
     Ref_Data["See<br/>Troubleshooting<br/>vehicle data"]
     Ref_Sonar["See<br/>Troubleshooting<br/>Sonars"]
 
-    %% Connections
+    %% Process Connections
     Pwr --> FO_Check
-    FO_Check -->|No| FO_Action
-    FO_Action -->|Issues?| Ref_FO
+    FO_Check -->|"No"| FO_Action
+    FO_Action -->|"Issues?"| Ref_FO
     
-    FO_Check -->|Yes| Eng_GUI
+    FO_Check -->|"Yes"| Eng_GUI
     Eng_GUI --> Eng_Action
-    Eng_Action -->|Issues?| Ref_Eng
+    Eng_Action -->|"Issues?"| Ref_Eng
     
-    Eng_GUI -->|Sensors online| Img_GUI
+    Eng_GUI -->|"Sensors online"| Img_GUI
     Img_GUI --> Img_Action
-    Img_Action -->|Issues?| Ref_Cam
+    Img_Action -->|"Issues?"| Ref_Cam
     
-    Img_GUI -->|Cameras online| Data_Verify
+    Img_GUI -->|"Cameras online"| Data_Verify
     Data_Verify --> Data_Action
-    Data_Action -->|Issues?| Ref_Data
+    Data_Action -->|"Issues?"| Ref_Data
     
-    Data_Verify -->|Data is being written| Sonar_Start
-    Sonar_Start -->|Caution: Do not run out of water| Sonar_Action
-    Sonar_Action -->|Issues?| Ref_Sonar
+    Data_Verify -->|"Data is being written"| Sonar_Start
+    Sonar_Start -->|"Caution: Do not run out of water"| Sonar_Action
+    Sonar_Action -->|"Issues?"| Ref_Sonar
 
     %% Styling Classes
     classDef spine fill:#ffe4f1,stroke:#ff52a0,stroke-width:1.5px,color:#000000;
@@ -314,8 +313,20 @@ graph TD
     class FO_Action,Eng_Action,Img_Action,Data_Action,Sonar_Action diamond;
     class Ref_FO,Ref_Eng,Ref_Cam,Ref_Data,Ref_Sonar flag;
 
-    %% Explicit Edge Color Formatting (Green for Yes/Pass, Red for No/Issues)
-    linkStyle 1,2,5,8,11,14 stroke:#ff0000,stroke-width:2px,color:#ff0000;
-    linkStyle 3,6,9,12 stroke:#00c853,stroke-width:2px,color:#00c853;
-    linkStyle 0,4,7,10,13 stroke:#000000,stroke-width:1.5px,color:#000000;
+    %% Individual Link Styles
+    linkStyle 0 stroke:#000000,stroke-width:1.5px,color:#000000;
+    linkStyle 1 stroke:#ff0000,stroke-width:2px,color:#ff0000;
+    linkStyle 2 stroke:#ff0000,stroke-width:2px,color:#ff0000;
+    linkStyle 3 stroke:#00c853,stroke-width:2px,color:#00c853;
+    linkStyle 4 stroke:#000000,stroke-width:1.5px,color:#000000;
+    linkStyle 5 stroke:#ff0000,stroke-width:2px,color:#ff0000;
+    linkStyle 6 stroke:#00c853,stroke-width:2px,color:#00c853;
+    linkStyle 7 stroke:#000000,stroke-width:1.5px,color:#000000;
+    linkStyle 8 stroke:#ff0000,stroke-width:2px,color:#ff0000;
+    linkStyle 9 stroke:#00c853,stroke-width:2px,color:#00c853;
+    linkStyle 10 stroke:#000000,stroke-width:1.5px,color:#000000;
+    linkStyle 11 stroke:#ff0000,stroke-width:2px,color:#ff0000;
+    linkStyle 12 stroke:#00c853,stroke-width:2px,color:#00c853;
+    linkStyle 13 stroke:#000000,stroke-width:1.5px,color:#000000;
+    linkStyle 14 stroke:#ff0000,stroke-width:2px,color:#ff0000;
 ```
