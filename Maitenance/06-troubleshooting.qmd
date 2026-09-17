@@ -113,6 +113,7 @@ Follow these instructions carefully to ensure correct use of your OptoLink conne
 
 #### OptoLink A-CCP to OptoLink A-FCR, BCR or CCR Receptacle
 
+![OptoLink Assembly](../images/optolink.png){.lightbox}
 
 * A: Keyway visual alignment; B: Push connection path; C: Locking sleeve rotation direction.*
 
