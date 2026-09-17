@@ -75,62 +75,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
-  /* Show zoom cursor on content images */
-  main img {
-    cursor: zoom-in;
-    transition: opacity 0.2s ease;
-  }
-  main img:hover {
-    opacity: 0.9;
-  }
-
-  /* Full-screen dark overlay */
-  .lightbox-modal {
-    display: none;
-    position: fixed;
-    z-index: 99999;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    align-items: center;
-    cursor: zoom-out;
-  }
-  .lightbox-modal img {
-    max-width: 90vw;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 4px;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.8);
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const modal = document.createElement("div");
-    modal.className = "lightbox-modal";
-    const modalImg = document.createElement("img");
-    modal.appendChild(modalImg);
-    document.body.appendChild(modal);
-
-    document.querySelectorAll("main img").forEach(img => {
-      img.addEventListener("click", () => {
-        modalImg.src = img.src;
-        modal.style.display = "flex";
-      });
-    });
-
-    modal.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-  });
-</script>
 
 
-<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -655,7 +601,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ncalabrese1\.github\.io\/HabCam_SOP\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
