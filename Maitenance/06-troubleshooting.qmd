@@ -12,7 +12,7 @@ Multiple junctions (coupling points) exist throughout the system where improper 
 
 ```{mermaid}
 graph TD
-    subgraph Submerged ["<div align='left'>Submerged Connections</div>"]
+    subgraph Submerged["Submerged Connections"]
         Cam1_Sub["Cam1"]
         Cam2_Sub["Cam2"]
         Data_Sub["Data Network"]
@@ -42,7 +42,7 @@ graph TD
     
     OFJBox --> WinchCable
 
-    subgraph TopSide ["<div align='left'>Top-side Connections</div>"]
+    subgraph TopSide["Top-side Connections"]
         SlipRing(["Winch Slip Ring"])
         DryLabJBox(["Dry Lab Junction Box"])
         Mux_Top(["Multiplexer"])
@@ -68,8 +68,8 @@ graph TD
     WinchCable --> SlipRing
 
     %% Diagram Styling
-    style Submerged fill:rgba(74,144,226,0.06),stroke:#4a90e2,stroke-width:1.5px,stroke-dasharray: 4 4
-    style TopSide fill:rgba(245,166,35,0.06),stroke:#f5a623,stroke-width:1.5px,stroke-dasharray: 4 4
+    style Submerged fill:#4a90e212,stroke:#4a90e2,stroke-width:1.5px,stroke-dasharray: 4 4
+    style TopSide fill:#f5a62312,stroke:#f5a623,stroke-width:1.5px,stroke-dasharray: 4 4
     style Mux_Sub fill:#ffffff,stroke:#000000,stroke-width:2px
     style Mux_Top fill:#ffffff,stroke:#000000,stroke-width:2px
     style OFJBox fill:#ffffff,stroke:#000000,stroke-width:2px
@@ -77,7 +77,6 @@ graph TD
     style DryLabJBox fill:#ffffff,stroke:#000000,stroke-width:2px
     style WinchCable fill:#ffffff,stroke:#000000,stroke-width:2px
 ```
-
 
 
 ::: {.grid}
