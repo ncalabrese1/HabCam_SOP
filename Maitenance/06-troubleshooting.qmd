@@ -191,7 +191,7 @@ Follow these handling instructions carefully to ensure correct operation and lon
 ::: {.callout-note appearance="simple"}
 ### Above Water (Dry-Mate)
 
-![Dry-Mate Greasing Level](../images/subconn-dry-mate.jpg){.lightbox}
+![Dry-Mate Greasing Level](subconn-dry-mate.jpg){.lightbox}
 
 1. Apply a layer of MOLYKOTE 44 Medium corresponding to a minimum of **1/10 of the socket depth** to the female connector.
 2. Ensure the inner edge of all sockets is completely covered, leaving a thin layer of grease visible on the connector face.
@@ -204,7 +204,7 @@ Follow these handling instructions carefully to ensure correct operation and lon
 ::: {.callout-note appearance="simple"}
 ### Under Water (Wet-Mate)
 
-![Wet-Mate Greasing Level](../images/subconn-wet-mate.jpg){.lightbox}
+![Wet-Mate Greasing Level](subconn-wet-mate.jpg){.lightbox}
 
 1. Apply a layer of MOLYKOTE 44 Medium corresponding to approximately **1/3 of the socket depth** to the female connector.
 2. Completely seal all sockets, leaving a transparent layer of grease visible on the connector face.
@@ -237,7 +237,7 @@ Never use Acetone on PEEK non-metallic connectors, as it causes severe stress-in
 
 ### Bending Radius & Coax Specifications
 
-![Inline Cable Bending Radius Guidelines](../images/subconn-bending-radius.jpg){.lightbox}
+![Inline Cable Bending Radius Guidelines](subconn-bending-radius.jpg){.lightbox}
 
 *Minimum static cable bend radius must be 10x cable diameter (top); avoid sharp bends at cable entry (bottom).*
 
