@@ -10,7 +10,7 @@ Multiple junctions (coupling points) exist throughout the system where improper 
 
 ### Connection Flowchart
 
-```mermaid
+```{mermaid}
 graph TD
     subgraph Submerged["Submerged Connections"]
         direction TD
@@ -77,6 +77,8 @@ graph TD
     style DryLabJBox fill:#ffffff,stroke:#000000,stroke-width:2px
     style WinchCable fill:#ffffff,stroke:#000000,stroke-width:2px
 ```
+
+---
 
 ---
 
