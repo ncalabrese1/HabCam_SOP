@@ -411,6 +411,7 @@ window.Quarto = {
   <li><a href="#optolink-connectors" id="toc-optolink-connectors" class="nav-link" data-scroll-target="#optolink-connectors">OptoLink Connectors</a></li>
   <li><a href="#subconn-connectors" id="toc-subconn-connectors" class="nav-link" data-scroll-target="#subconn-connectors">SubConn Connectors</a></li>
   <li><a href="#vehicle-start-up-flow-chart" id="toc-vehicle-start-up-flow-chart" class="nav-link" data-scroll-target="#vehicle-start-up-flow-chart">Vehicle Start-Up Flow Chart</a></li>
+  <li><a href="#troubleshooting-during-survey" id="toc-troubleshooting-during-survey" class="nav-link" data-scroll-target="#troubleshooting-during-survey">Troubleshooting During Survey</a></li>
   </ul>
 </nav>
     </div>
@@ -894,8 +895,86 @@ window.Quarto = {
 </div>
 </div>
 </div>
+</section>
+<section id="troubleshooting-during-survey" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting-during-survey">Troubleshooting During Survey</h2>
+<p>During active surveys, software programs may encounter imaging freezes, application dropouts, or setting failures. Use these steps to resolve issues without interrupting survey operations.</p>
+<hr>
+<section id="examples-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="examples-solutions">Examples &amp; Solutions</h3>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Example 1: Co-Pilot Image Viewer Frozen (One or Both Cameras)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the image viewer freezes on one or both cameras at the Co-Pilot position:</p>
+<ol type="1">
+<li>Check <strong>RunVimCam</strong>.</li>
+<li>Double-click and restart <strong>Stereo Acquisition</strong>.</li>
+<li>Confirm that <strong>Rate</strong> is set back to <strong>6.00 Hz</strong> and restore gain to preferred survey settings.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Example 2: Pilot Image Viewer Frozen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If only the Pilot station image viewer freezes:</p>
+<ol type="1">
+<li>Hover over any indicator lights that turned red to see if they return to green.</li>
+<li>Click <strong>“show and un-show”</strong> on <code>port</code> or <code>stbd</code> (located under the two running image waterfalls) to restart data flow.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Example 3: Pilot Winchfly Frozen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If Winchfly freezes at the Pilot station:</p>
+<ol type="1">
+<li>Hover over the running application to confirm it has not entered sleep mode.</li>
+<li>Click <strong>“un-show and show winchfly”</strong> (located under the two running image waterfalls) to open a new Winchfly window.</li>
+<li>Re-adjust settings back to operational standards.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Example 4: Total Application Crash (Viewers &amp; Winchfly Down)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If both image viewers AND Winchfly crash simultaneously, stereo acquisition has likely stopped:</p>
+<ol type="1">
+<li>Double-click the <strong>Stereo Acquisition</strong> app icon to restart application capture and re-adjust settings. <!-- PLACEHOLDER: Screenshot of Stereo Acquisition app icon --> <a href="../images/stereo-acquisition-icon.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Stereo Acquisition App Icon"><img src="../images/stereo-acquisition-icon.png" class="img-fluid quarto-figure quarto-figure-right" width="200" alt="Stereo Acquisition App Icon"></a></li>
+<li><strong>Fallback Procedure:</strong> If restarting fails, close the image viewer completely, open a fresh viewer instance, reset rate back to <strong>6.00 Hz</strong>, and verify all settings.</li>
+</ol>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

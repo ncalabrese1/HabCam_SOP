@@ -855,5 +855,16 @@
       "Maintenance & Inventory",
       "<span class='chapter-number'>36</span>  <span class='chapter-title'>Troubleshooting</span>"
     ]
+  },
+  {
+    "objectID": "Maitenance/06-troubleshooting.html#troubleshooting-during-survey",
+    "href": "Maitenance/06-troubleshooting.html#troubleshooting-during-survey",
+    "title": "Troubleshooting",
+    "section": "Troubleshooting During Survey",
+    "text": "Troubleshooting During Survey\nDuring active surveys, software programs may encounter imaging freezes, application dropouts, or setting failures. Use these steps to resolve issues without interrupting survey operations.\n\n\nExamples & Solutions\n\n\n\n\n\n\nWarningExample 1: Co-Pilot Image Viewer Frozen (One or Both Cameras)\n\n\n\nIf the image viewer freezes on one or both cameras at the Co-Pilot position:\n\nCheck RunVimCam.\nDouble-click and restart Stereo Acquisition.\nConfirm that Rate is set back to 6.00 Hz and restore gain to preferred survey settings.\n\n\n\n\n\n\n\n\n\nWarningExample 2: Pilot Image Viewer Frozen\n\n\n\nIf only the Pilot station image viewer freezes:\n\nHover over any indicator lights that turned red to see if they return to green.\nClick “show and un-show” on port or stbd (located under the two running image waterfalls) to restart data flow.\n\n\n\n\n\n\n\n\n\nWarningExample 3: Pilot Winchfly Frozen\n\n\n\nIf Winchfly freezes at the Pilot station:\n\nHover over the running application to confirm it has not entered sleep mode.\nClick “un-show and show winchfly” (located under the two running image waterfalls) to open a new Winchfly window.\nRe-adjust settings back to operational standards.\n\n\n\n\n\n\n\n\n\nWarningExample 4: Total Application Crash (Viewers & Winchfly Down)\n\n\n\nIf both image viewers AND Winchfly crash simultaneously, stereo acquisition has likely stopped:\n\nDouble-click the Stereo Acquisition app icon to restart application capture and re-adjust settings.  \nFallback Procedure: If restarting fails, close the image viewer completely, open a fresh viewer instance, reset rate back to 6.00 Hz, and verify all settings.",
+    "crumbs": [
+      "Maintenance & Inventory",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Troubleshooting</span>"
+    ]
   }
 ]
