@@ -190,6 +190,9 @@ Follow these handling instructions carefully to ensure correct operation and lon
 ::: {.g-col-12 .g-col-md-6}
 ::: {.callout-note appearance="simple"}
 ### Above Water (Dry-Mate)
+
+![Dry-Mate Greasing Level](../images/subconn-dry-mate.png){.lightbox}
+
 1. Apply a layer of MOLYKOTE 44 Medium corresponding to a minimum of **1/10 of the socket depth** to the female connector.
 2. Ensure the inner edge of all sockets is completely covered, leaving a thin layer of grease visible on the connector face.
 3. Fully mate the male and female connectors to distribute grease across all contacts and sockets.
@@ -200,6 +203,9 @@ Follow these handling instructions carefully to ensure correct operation and lon
 ::: {.g-col-12 .g-col-md-6}
 ::: {.callout-note appearance="simple"}
 ### Under Water (Wet-Mate)
+
+![Dry-Mate Greasing Level](../images/subconn-dry-mate.png){.lightbox}
+
 1. Apply a layer of MOLYKOTE 44 Medium corresponding to approximately **1/3 of the socket depth** to the female connector.
 2. Completely seal all sockets, leaving a transparent layer of grease visible on the connector face.
 3. Fully mate the connectors underwater and wipe away any excess grease extruded from the joint.
@@ -211,10 +217,6 @@ Follow these handling instructions carefully to ensure correct operation and lon
 ---
 
 ### Maintenance & Thread Locking
-
-<!-- PLACEHOLDER: Image showing Kontakt spray cleaner bottle and liquid soap / hot water cleaning options -->
-![SubConn Approved Cleaning Products](../images/subconn-cleaning-products.png){.lightbox}
-*Figure 1: Approved general contact cleaner spray (Isopropyl alcohol) and liquid soap with hot water.*
 
 #### Cleaning Protocol
 * **General Cleaning:** Remove accumulated contaminants using spray-based contact cleaner (Isopropyl alcohol) or liquid soap with hot water.
@@ -237,15 +239,13 @@ Never use Acetone on PEEK non-metallic connectors, as it causes severe stress-in
 
 <!-- PLACEHOLDER: Diagram showing correct 10x OD static bend radius vs incorrect sharp cable bend -->
 ![Inline Cable Bending Radius Guidelines](../images/subconn-bending-radius.png){.lightbox}
-*Figure 2: Minimum static cable bend radius must be 10x cable diameter (top); avoid sharp bends at cable entry (bottom).*
+
+*Minimum static cable bend radius must be 10x cable diameter (top); avoid sharp bends at cable entry (bottom).*
 
 #### Recommended Cable Bending Radius
 * **Static Minimum Bend:** **10× Cable Outer Diameter ($10 \times \text{OD}$)**.
 * Avoid sharp localized bends directly behind the connector strain relief boot.
 
-<!-- PLACEHOLDER: End-face photograph of SubConn coax connector socket array -->
-![SubConn Coax Connector Face Detail](../images/subconn-coax-face.png){.lightbox}
-*Figure 3: SubConn coax connector pin and rubber face configuration.*
 
 #### Coax Connector Requirements
 * **Mating Limit:** **Dry mating only**. Not suitable for open-face pressure or water-block applications.
