@@ -393,6 +393,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div id="habcamSlideCarousel" class="carousel slide" data-bs-ride="false" style="position: relative; max-width: 850px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background: #f9f9f9;">
+<p><!-- Fullscreen Button --> <button type="button" class="fullscreen-toggle-btn" onclick="toggleCarouselFullscreen()"> ⛶ Fullscreen </button></p>
+<div class="carousel-inner">
+<pre><code>&lt;!-- Your slide items 01 to 100 stay here --&gt;</code></pre>
+</div>
+<p><!-- Carousel nav controls stay here --></p>
+</div>
 <style>
   /* Styling when full screen is active */
   #habcamSlideCarousel:fullscreen {
@@ -739,6 +746,24 @@ ul.task-list li input[type="checkbox"] {
 </button>
 </div>
 </main></div>
+<script>
+function toggleCarouselFullscreen() {
+  const elem = document.getElementById('habcamSlideCarousel');
+  if (!document.fullscreenElement) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+</script>
 
 
 
