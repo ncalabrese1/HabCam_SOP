@@ -429,27 +429,45 @@ background-color: #000 !important;
 padding: 0 !important;
 border: none !important;
 margin: 0 !important;
-}
-#habcamSlideCarousel:fullscreen .carousel-item.active,
-#habcamSlideCarousel:-webkit-full-screen .carousel-item.active {
-height: 100vh;
 display: flex !important;
 align-items: center;
 justify-content: center;
 }
+#habcamSlideCarousel:fullscreen .carousel-inner,
+#habcamSlideCarousel:-webkit-full-screen .carousel-inner {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+}
+#habcamSlideCarousel:fullscreen .carousel-item.active,
+#habcamSlideCarousel:-webkit-full-screen .carousel-item.active {
+display: flex !important;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+}
 #habcamSlideCarousel:fullscreen .carousel-item img,
 #habcamSlideCarousel:-webkit-full-screen .carousel-item img {
-max-height: 90vh;
-max-width: 95vw;
+max-height: 85vh;
+max-width: 85vw;
 width: auto !important;
 height: auto !important;
 object-fit: contain;
+}
+#habcamSlideCarousel:fullscreen .carousel-control-prev,
+#habcamSlideCarousel:fullscreen .carousel-control-next,
+#habcamSlideCarousel:-webkit-full-screen .carousel-control-prev,
+#habcamSlideCarousel:-webkit-full-screen .carousel-control-next {
+z-index: 1050 !important;
+width: 10%;
 }
 .fullscreen-toggle-btn {
 position: absolute;
 top: 15px;
 right: 15px;
-z-index: 100;
+z-index: 1100;
 background: rgba(0, 0, 0, 0.75);
 color: #fff;
 border: 1px solid rgba(255, 255, 255, 0.5);
