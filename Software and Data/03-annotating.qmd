@@ -1,2 +1,16 @@
 # Annotating
+
+<div id="habcamSlideCarousel" class="carousel slide" data-bs-ride="false" style="position: relative; max-width: 850px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background: #f9f9f9;">
+  
+  <!-- Fullscreen Button -->
+  <button type="button" class="fullscreen-toggle-btn" onclick="toggleCarouselFullscreen()">
+    ⛶ Fullscreen
+  </button>
+
+  <div class="carousel-inner">
+    <!-- Your slide items 01 to 100 stay here -->
+  </div>
+
+  <!-- Carousel nav controls stay here -->
+</div>
 {{< include training-carousel.html >}}
