@@ -1,24 +1,14 @@
-import fitz
-import os
-
-pdf_file = "HabCam Annotation Training (2026).pdf"
+# Set your slide folder, total count, and file extension (.png or .jpg)
 output_folder = "training-slides"
+total_slides = 100
+file_extension = "png"  # Change to "jpg" if your files use .jpg
 
-os.makedirs(output_folder, exist_ok=True)
-doc = fitz.open(pdf_file)
-
-# Save lightweight JPEGs
-for i, page in enumerate(doc):
-    pix = page.get_pixmap(dpi=100)
-    pix.save(f"{output_folder}/slide-{i+1:02d}.jpg")
-
-# Generate carousel slides without leading indent spaces
 items = []
-for i in range(len(doc)):
-    active = " active" if i == 0 else ""
+for i in range(1, total_slides + 1):
+    active = " active" if i == 1 else ""
     items.append(
         f'<div class="carousel-item{active}">\n'
-        f'<img src="{output_folder}/slide-{i+1:02d}.jpg" class="d-block w-100" alt="Slide {i+1}">\n'
+        f'<img src="{output_folder}/slide-{i:02d}.{file_extension}" class="d-block w-100" alt="Slide {i}">\n'
         f'</div>'
     )
 
@@ -114,4 +104,4 @@ document.webkitExitFullscreen();
 with open("training-carousel.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("Successfully regenerated 'training-carousel.html' with zero indentation!")
+print("Created 'training-carousel.html' with 0 indentation spaces!")
