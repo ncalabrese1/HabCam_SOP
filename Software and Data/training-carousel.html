@@ -1,38 +1,76 @@
 <style>
-  /* Styling when full screen is active */
-  #habcamSlideCarousel:fullscreen {
+  #habcamSlideCarousel {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+  }
+
+  /* Fullscreen container styling */
+  #habcamSlideCarousel:fullscreen,
+  #habcamSlideCarousel:-webkit-full-screen {
+    width: 100vw !important;
+    height: 100vh !important;
     max-width: 100% !important;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #000 !important;
     padding: 0 !important;
     border: none !important;
+    margin: 0 !important;
   }
-  #habcamSlideCarousel:fullscreen .carousel-item img {
+
+  /* Apply display flex only to the active item to avoid breaking Bootstrap transitions */
+  #habcamSlideCarousel:fullscreen .carousel-item.active,
+  #habcamSlideCarousel:-webkit-full-screen .carousel-item.active {
+    height: 100vh;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #habcamSlideCarousel:fullscreen .carousel-item img,
+  #habcamSlideCarousel:-webkit-full-screen .carousel-item img {
     max-height: 90vh;
+    max-width: 95vw;
+    width: auto !important;
+    height: auto !important;
     object-fit: contain;
   }
+
   .fullscreen-toggle-btn {
     position: absolute;
     top: 15px;
     right: 15px;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.65);
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.75);
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     padding: 6px 12px;
     font-size: 13px;
     cursor: pointer;
-    transition: background 0.2s ease;
   }
+
   .fullscreen-toggle-btn:hover {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
   }
 </style>
+
+<div id="habcamSlideCarousel" class="carousel slide" data-bs-ride="false">
+  
+  <button type="button" class="fullscreen-toggle-btn" onclick="toggleCarouselFullscreen()">
+    ⛶ Fullscreen
+  </button>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="training-slides/slide-01.png" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="training-slides/slide-02.png" class="d-block w-100" alt="Slide 2">
+    </div>
 
 
 <div id="habcamSlideCarousel" class="carousel slide" data-bs-ride="false" style="max-width: 850px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background: #f9f9f9;">
@@ -338,6 +376,7 @@
 <img src="training-slides/slide-100.png" class="d-block w-100" alt="Slide 100">
 </div>
 </div>
+
 <button class="carousel-control-prev" type="button" data-bs-target="#habcamSlideCarousel" data-bs-slide="prev">
 <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
 <span class="visually-hidden">Previous</span>
@@ -345,25 +384,31 @@
 <button class="carousel-control-next" type="button" data-bs-target="#habcamSlideCarousel" data-bs-slide="next">
 <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
 <span class="visually-hidden">Next</span>
-</button>
+<button class="carousel-control-prev" type="button" data-bs-target="#habcamSlideCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#habcamSlideCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-</div>
-
 
 <script>
 function toggleCarouselFullscreen() {
-  const elem = document.getElementById('habcamSlideCarousel');
-  if (!document.fullscreenElement) {
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 */
-      elem.msRequestFullscreen();
+  const carousel = document.getElementById('habcamSlideCarousel');
+  
+  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+    if (carousel.requestFullscreen) {
+      carousel.requestFullscreen();
+    } else if (carousel.webkitRequestFullscreen) {
+      carousel.webkitRequestFullscreen();
     }
   } else {
     if (document.exitFullscreen) {
       document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
     }
   }
 }
