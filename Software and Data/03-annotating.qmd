@@ -1,5 +1,11 @@
 # Annotating
 
+## Annotation Training Guide
+
+This section provides background on the annotator interface design, key workflow considerations, and standard operating procedures for how optical data is reviewed and annotated within the HabCam program. 
+
+Review the interactive slide deck below for step-by-step annotation guidelines and species identification standards.
+
 <div id="habcamSlideCarousel" class="carousel slide" data-bs-ride="false" style="position: relative; max-width: 850px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background: #f9f9f9;">
   
   <!-- Fullscreen Button -->
