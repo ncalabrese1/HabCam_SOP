@@ -7,6 +7,9 @@
 <div>
 <h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">M. Conor McManus, Ph.D.</h2>
 <p style="margin: 0; color: #555; font-size: 1.1em;">Supervisory Research Fish Biologist</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
