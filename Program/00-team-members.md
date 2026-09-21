@@ -77,7 +77,7 @@ Relevant links:
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
 <h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Shannen M. Allen</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Biological Technician III</p>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Biological Technician III (Affiliate)</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
@@ -85,7 +85,9 @@ Relevant links:
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
 
-Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+Shannen earned a BS in Marine Science, Safety, and Environmental Protection with a concentration in Marine Biology from Massachusetts Maritime Academy in 2023. Prior to joining the Northeast Fisheries Science Center, Shannen worked as a Hydrographer and Marine Scientist supporting NOAA’s Office of Coast Survey, where she specialized in the acquisition, processing, and analysis of hydrographic and acoustic survey data. She also conducted fisheries and oceanographic research with NOAA Fisheries, focusing on the impacts of changing ocean chemistry on Atlantic Surfclam population and benthic ecosystem.
+
+Shannen joined the NEFSC Advanced Technology and Marine Development Program in 2026 as a Biological Technician III Affiliate. Within the Advanced Technology Group, she supports the fisheries-independent survey operations through the deployment and operation of advanced survey technologies, including HabCam imaging systems, CTD rosettes, multibeam and single-beam sonar systems, and other acoustic and oceanographic instrumentation. Her work includes at-sea data collection, quality assurance and quality control of multisensor datasets, equipment calibration and troubleshooting, and supporting the development and implementation of emerging technologies used for fisheries and ecosystem research. Shannen’s Experience spans marine field operations, underwater imaging, habitat mapping, environmental monitoring, and interdisciplinary research aimed at improving the understanding and management of marine ecosystems.
 
 Relevant links:
 <a href="https://example.com">ORCID</a>
