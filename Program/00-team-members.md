@@ -38,8 +38,6 @@ GoogleScholar: https://scholar.google.com/citations?view_op=list_works&hl=en&use
 
 Cameron earned a BA in Marine Biology from Roger Williams University in 2019. Previously, Cameron worked for Woods Hole Oceanographic Institution in various roles in the Biology and Applied Ocean Physics and Engineering departments. Cameron joined the NEFSC in 2022 as an Electronics Engineer contractor before transitioning to an Advanced Technology Specialist in 2024. Within the Advanced Technology Group, Cameron develops and implements advanced technologies for ecosystem surveys including towed benthic imaging systems and autonomous underwater vehicles (AUVs). He also supports fishery-independent resource survey operations through at-sea data collection and storage, analysis, and research.
 
-Relevant links:
-
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 3 ==================== -->
@@ -188,11 +186,7 @@ Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 
 </div>
 
-Zachary graduated from Michigan State University with a Bachelor of Science in Fisheries and Wildlife in June of 2017. He started his career in Marine Science as a fisheries observer, based out of Point Judith, Rhode Island. After two years of observing, he came in-house to work at the Northeast Fisheries Observer Training Center in North Falmouth, Massachusetts. After a year working as the observer compliance liaison, Zachary started a federal position with NOAA Office of Law Enforcement, in the Vessel Monitoring Department. After a year there, Zachary knew he wanted to get back to the sea, so he transferred to the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. As part of ESB, Zachary primarily works on the Shellfish Surveys. These surveys include Atlantic Sea Scallop, Northern Shrimp, Ocean Quahog, and Atlantic Surfclam. 
-
-Relevant links:
-<a href="https://example.com">ResearchGate</a><br>
-<a href="https://example.com">ORCID</a>
+Zachary graduated from Michigan State University with a Bachelor of Science in Fisheries and Wildlife in June of 2017. He started his career in Marine Science as a fisheries observer, based out of Point Judith, Rhode Island. After two years of observing, he came in-house to work at the Northeast Fisheries Observer Training Center in North Falmouth, Massachusetts. After a year working as the observer compliance liaison, Zachary started a federal position with NOAA Office of Law Enforcement, in the Vessel Monitoring Department. After a year there, Zachary knew he wanted to get back to the sea, so he transferred to the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. As part of ESB, Zachary primarily works on the Shellfish Surveys. These surveys include Atlantic Sea Scallop, Northern Shrimp, Ocean Quahog, and Atlantic Surfclam.
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
@@ -212,10 +206,6 @@ Relevant links:
 Jonathan Duquette is a Biological Science Technician with the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. Specializing in fisheries science and marine data collection, Jonathan plays an integral role in critical research initiatives, including the high-resolution HabCam (Habitat Camera Array) and sea scallop dredge surveys. His work at sea and ashore supports the rigorous monitoring, data analysis, and ecological assessments essential for sustainable fisheries management and marine ecosystem conservation in the Northeast.
 
 Jonathan has had a lifelong obsession with the sea, sharks, and fishing starting at an early age. After graduating with a BS in Marine Biology from the University of New England, Jonathan became a fisheries observer, collecting data for the federal government on fishing vessels in Alaska. After working as an observer on king crab fishing vessels (think TV's "Deadliest Catch"), longline vessels, and scallop vessels, Jonathan returned to the East Coast, where he worked as a sternman on lobster fishing vessels in Boothbay Harbor, Maine. In 2003, Jonathan joined the Ecosystems Surveys Branch as a Biological Science Technician, a role that continues today.
-
-Relevant links:
-<a href="https://example.com">ResearchGate</a><br>
-<a href="https://example.com">ORCID</a>
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
@@ -237,8 +227,18 @@ Dvora is the lead assessment scientist for Atlantic sea scallops, and secondary 
 Before joining the NEFSC in 1999, Dvora was on the Mathematics faculty of two liberal arts colleges, and did research in Mathematical Ecology at Oak Ridge National Laboratory and Tel Aviv University. At NEFSC, she, together with colleagues, has developed length-based and spatial stock assessment methods that are in particular applicable to the sea scallop fishery. The spatial SAMS model that she began developing soon after arriving at NEFSC is the primary forecasting tool used by the New England Fishery Management Council to aid in management of sea scallops. More recently, she and her colleagues have been developing tools to analyze data from the HabCam towed camera survey, including geostatistical modeling and automated image analysis.
 
 Relevant links:
-<a href="https://example.com">ResearchGate</a><br>
-<a href="https://example.com">ORCID</a>
+
+</div>
+
+ResearchGate: https://www.researchgate.net/profile/Dvora-Hart
+
+</div>
+
+Scopus: https://www.scopus.com/authid/detail.uri?authorId=7402132627
+
+</div>
+
+OrcID: https://orcid.org/0000-0002-0406-0751
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
