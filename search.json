@@ -552,8 +552,8 @@
     "objectID": "Software and Data/03-software-overview.html#winch-joystick-control",
     "href": "Software and Data/03-software-overview.html#winch-joystick-control",
     "title": "Software & Data Overview",
-    "section": "2. Winch Joystick Control",
-    "text": "2. Winch Joystick Control\n\nManual Winch Panel\n\n\n\n\n\n\n\n\n\nApplication Control\nField\nExample Value\nDefinition\n\n\n\n\nPilot\nCast Duration\n26:26\nElapsed time since the current cast was initiated.\n\n\nPilot\nSet Length\n500 meter\nMaximum allowable winch cable payload payout limit.\n\n\nPilot\nTension\n5.77 tons\nMechanical load threshold protecting cable from over-strain.\n\n\nPilot\nLinespeed\n0 meter/min\nRate at which cable spools on/off the winch drum.\n\n\nPilot\nLength\n91.2 meter\nTotal cable paid out in meters.\n\n\n\n\nExamples referenced from HabCam Survey 2026 operations.",
+    "section": "Winch Joystick Control",
+    "text": "Winch Joystick Control\n\nManual Winch Panel\n\n\n\n\n\n\n\n\n\nApplication Control\nField\nExample Value\nDefinition\n\n\n\n\nPilot\nCast Duration\n26:26\nElapsed time since the current cast was initiated.\n\n\nPilot\nSet Length\n500 meter\nMaximum allowable winch cable payload payout limit.\n\n\nPilot\nTension\n5.77 tons\nMechanical load threshold protecting cable from over-strain.\n\n\nPilot\nLinespeed\n0 meter/min\nRate at which cable spools on/off the winch drum.\n\n\nPilot\nLength\n91.2 meter\nTotal cable paid out in meters.\n\n\n\n\nExamples referenced from HabCam Survey 2026 operations.",
     "crumbs": [
       "Software & Data",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Software Overview</span>"
