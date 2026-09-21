@@ -220,7 +220,7 @@ Relevant links:
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
 <h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Alexander Hansell, Ph.D.</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Fish Biologist</p>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Fish Biologist</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Resource Evaluation & Assessment Division</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Populations Dynamics Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Stock Assessment Methods Task Program</p>
