@@ -368,8 +368,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
+  <li><a href="#key-definitions" id="toc-key-definitions" class="nav-link" data-scroll-target="#key-definitions">Key Definitions</a></li>
+  <li><a href="#roles-responsibilities" id="toc-roles-responsibilities" class="nav-link" data-scroll-target="#roles-responsibilities">Roles &amp; Responsibilities</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -393,9 +402,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>[Insert raw image storage rules, directory tree templates, compression workflows, and archiving steps here]</em></p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This document outlines standard procedures for managing, storing, and analyzing optical data and related data products to ensure accuracy, consistency, and compliance with regulatory and organizational standards.</p>
+</section>
+<section id="scope" class="level2">
+<h2 class="anchored" data-anchor-id="scope">Scope</h2>
+<p>This Standard Operating Procedure (SOP) applies to all personnel involved in collecting, processing, and maintaining optical data across the <strong>NOAA NEFSC HabCam</strong> and <strong>Tethys AUV</strong> teams.</p>
+<hr>
+</section>
+<section id="key-definitions" class="level2">
+<h2 class="anchored" data-anchor-id="key-definitions">Key Definitions</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Term</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Raw Optical Data</strong></td>
+<td style="text-align: left;">Unprocessed imagery collected via optical instruments (e.g., machine vision or stereo cameras) and stored in RAW formats such as Grayscale TIFFs or Bayer-encoded files.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Processed Optical Data</strong></td>
+<td style="text-align: left;">Optical images that have undergone stereo calibration, stereo rectification, debayering, color correction, lightmap calibration, or lightmap smoothing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Annotated Optical Data</strong></td>
+<td style="text-align: left;">Optical images manually annotated using HabCam annotation software, with recorded data stored in HabCam relational databases.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Raw Data</strong></td>
+<td style="text-align: left;">Unprocessed oceanographic data directly collected from instruments on HabCam or Tethys stereo imaging payloads.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Image Metadata</strong></td>
+<td style="text-align: left;">Raw sensor streams processed into standardized formats for ingestion into HabCam relational databases and processing pipelines.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Relational Databases</strong></td>
+<td style="text-align: left;">PostgreSQL or Oracle database systems containing survey image metadata and annotated optical datasets.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="roles-responsibilities" class="level2">
+<h2 class="anchored" data-anchor-id="roles-responsibilities">Roles &amp; Responsibilities</h2>
+<ul>
+<li><strong>Technicians:</strong> Execute live data collection and perform initial data validation.</li>
+<li><strong>Data Managers:</strong> Oversee proper storage architecture, access permissions, and maintenance of optical data repositories and relational databases.</li>
+<li><strong>Quality Assurance Team:</strong> Periodically review data accuracy and compliance across all operational phases—including calibration, lightmapping, processing, database ingestion, and manual annotations.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

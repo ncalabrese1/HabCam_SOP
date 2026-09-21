@@ -707,7 +707,40 @@
     "href": "Software and Data/03-optical-data.html",
     "title": "Optical Data Management",
     "section": "",
-    "text": "[Insert raw image storage rules, directory tree templates, compression workflows, and archiving steps here]",
+    "text": "Purpose\nThis document outlines standard procedures for managing, storing, and analyzing optical data and related data products to ensure accuracy, consistency, and compliance with regulatory and organizational standards.",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Optical Data</span>"
+    ]
+  },
+  {
+    "objectID": "Software and Data/03-optical-data.html#scope",
+    "href": "Software and Data/03-optical-data.html#scope",
+    "title": "Optical Data Management",
+    "section": "Scope",
+    "text": "Scope\nThis Standard Operating Procedure (SOP) applies to all personnel involved in collecting, processing, and maintaining optical data across the NOAA NEFSC HabCam and Tethys AUV teams.",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Optical Data</span>"
+    ]
+  },
+  {
+    "objectID": "Software and Data/03-optical-data.html#key-definitions",
+    "href": "Software and Data/03-optical-data.html#key-definitions",
+    "title": "Optical Data Management",
+    "section": "Key Definitions",
+    "text": "Key Definitions\n\n\n\n\n\n\n\nTerm\nDefinition\n\n\n\n\nRaw Optical Data\nUnprocessed imagery collected via optical instruments (e.g., machine vision or stereo cameras) and stored in RAW formats such as Grayscale TIFFs or Bayer-encoded files.\n\n\nProcessed Optical Data\nOptical images that have undergone stereo calibration, stereo rectification, debayering, color correction, lightmap calibration, or lightmap smoothing.\n\n\nAnnotated Optical Data\nOptical images manually annotated using HabCam annotation software, with recorded data stored in HabCam relational databases.\n\n\nRaw Data\nUnprocessed oceanographic data directly collected from instruments on HabCam or Tethys stereo imaging payloads.\n\n\nImage Metadata\nRaw sensor streams processed into standardized formats for ingestion into HabCam relational databases and processing pipelines.\n\n\nRelational Databases\nPostgreSQL or Oracle database systems containing survey image metadata and annotated optical datasets.",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Optical Data</span>"
+    ]
+  },
+  {
+    "objectID": "Software and Data/03-optical-data.html#roles-responsibilities",
+    "href": "Software and Data/03-optical-data.html#roles-responsibilities",
+    "title": "Optical Data Management",
+    "section": "Roles & Responsibilities",
+    "text": "Roles & Responsibilities\n\nTechnicians: Execute live data collection and perform initial data validation.\nData Managers: Oversee proper storage architecture, access permissions, and maintenance of optical data repositories and relational databases.\nQuality Assurance Team: Periodically review data accuracy and compliance across all operational phases—including calibration, lightmapping, processing, database ingestion, and manual annotations.",
     "crumbs": [
       "Software & Data",
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>Optical Data</span>"
