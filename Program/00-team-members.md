@@ -90,7 +90,7 @@ Shannen earned a BS in Marine Science, Safety, and Environmental Protection with
 Shannen joined the NEFSC Advanced Technology and Marine Development Program in 2026 as a Biological Technician III Affiliate. Within the Advanced Technology Group, she supports the fisheries-independent survey operations through the deployment and operation of advanced survey technologies, including HabCam imaging systems, CTD rosettes, multibeam and single-beam sonar systems, and other acoustic and oceanographic instrumentation. Her work includes at-sea data collection, quality assurance and quality control of multisensor datasets, equipment calibration and troubleshooting, and supporting the development and implementation of emerging technologies used for fisheries and ecosystem research. Shannen’s Experience spans marine field operations, underwater imaging, habitat mapping, environmental monitoring, and interdisciplinary research aimed at improving the understanding and management of marine ecosystems.
 
 Relevant links:
-<a href="https://example.com">ORCID</a>
+<a Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
