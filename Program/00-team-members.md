@@ -141,7 +141,8 @@ Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Shellfish Survey Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img src=<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/ebcc7c93-0a66-4c50-a9a2-68e2f1af7e5d" />
+
 </div>
 
 Zachary graduated from Michigan State University with a Bachelor of Science in Fisheries and Wildlife in June of 2017. He started his career in Marine Science as a fisheries observer, based out of Point Judith, Rhode Island. After two years of observing, he came in-house to work at the Northeast Fisheries Observer Training Center in North Falmouth, Massachusetts. After a year working as the observer compliance liaison, Zachary started a federal position with NOAA Office of Law Enforcement, in the Vessel Monitoring Department. After a year there, Zachary knew he wanted to get back to the sea, so he transferred to the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. As part of ESB, Zachary primarily works on the Shellfish Surveys. These surveys include Atlantic Sea Scallop, Northern Shrimp, Ocean Quahog, and Atlantic Surfclam. 
