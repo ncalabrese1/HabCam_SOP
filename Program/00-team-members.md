@@ -205,7 +205,8 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Populations Dynamics Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Stock Assessment Methods Task Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img <img width="366" height="549" alt="image" src="https://github.com/user-attachments/assets/58dc8398-64fa-47e2-aaff-943d3003d5a6" />
+ 
 </div>
 
 Ph.D. Interdisciplinary (Marine Sciences, Statistics, and Resource Economics) University of Maine
