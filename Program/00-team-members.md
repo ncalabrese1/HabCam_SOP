@@ -22,6 +22,10 @@ Relevant links:
 GoogleScholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=0lPpwIcAAAAJ
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
+</div>
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 2 ==================== -->
