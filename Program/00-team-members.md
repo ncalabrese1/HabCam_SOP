@@ -23,11 +23,11 @@ GoogleScholar: https://scholar.google.com/citations?view_op=list_works&hl=en&use
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (401) 859-3404
 
 </div>
 
-Email:
+Email: michael.conor.mcmanus@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 2 ==================== -->
@@ -47,11 +47,11 @@ Cameron earned a BA in Marine Biology from Roger Williams University in 2019. Pr
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (774) 704-2274
 
 </div>
 
-Email:
+Email: cameron.fairclough@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 3 ==================== -->
@@ -101,11 +101,11 @@ GoogleScholar: https://scholar.google.com/citations?user=YbjulGsAAAAJ&hl=en
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (401) 307-1599
 
 </div>
 
-Email:
+Email: nicholas.calabrese@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 4 ==================== -->
@@ -131,11 +131,11 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (508) 645-6731
 
 </div>
 
-Email:
+Email: shannen.allen@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 5 ==================== -->
@@ -177,11 +177,11 @@ Personal Website: https://jeremyjenrette.weebly.com/
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (540) 577-6500
 
 </div>
 
-Email:
+Email: jeremy.jenrette@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 6 ==================== -->
@@ -208,11 +208,11 @@ Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (774) 238-7424
 
 </div>
 
-Email:
+Email: dana.morton@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 7 ==================== -->
@@ -232,11 +232,11 @@ Zachary graduated from Michigan State University with a Bachelor of Science in F
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (508) 495-2002
 
 </div>
 
-Email:
+Email: zachary.fyke@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 8 ==================== -->
@@ -258,11 +258,11 @@ Jonathan has had a lifelong obsession with the sea, sharks, and fishing starting
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (508) 495-2034
 
 </div>
 
-Email:
+Email: jonathan.duquette@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 9 ==================== -->
@@ -298,11 +298,11 @@ OrcID: https://orcid.org/0000-0002-0406-0751
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (508) 495-2369
 
 </div>
 
-Email:
+Email: deborah.hart@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 10 ==================== -->
@@ -324,11 +324,11 @@ B.B.A. International Trade, Aletheia University
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (508) 495-2052
 
 </div>
 
-Email:
+Email: jui-han.chang@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 11 ==================== -->
@@ -355,10 +355,10 @@ GoogleScholar: https://scholar.google.com/citations?user=d8gvRasAAAAJ&hl=en
 </div>
 <h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
 </div>
-Office:
+Office: (508) 203-6894
 
 </div>
 
-Email:
+Email: alex.hansell@noaa.gov
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
