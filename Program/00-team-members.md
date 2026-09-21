@@ -63,7 +63,7 @@ Email: cameron.fairclough@noaa.gov
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
-<img width="288" height="288" alt="Nick" src="https://github.com/user-attachments/assets/ae9f1c1c-f883-44d1-a6d7-7d11571fb5e9" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/43316965-20e2-40a4-960b-05b1ebe6050a" />
 
 </div>
 
