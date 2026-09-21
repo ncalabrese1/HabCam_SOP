@@ -126,3 +126,63 @@ Bio text goes here. Enter background details regarding degree history, previous 
 Relevant links:
 <a href="https://example.com">ResearchGate</a><br>
 <a href="https://example.com">ORCID</a>
+
+<!-- ==================== TEAM MEMBER 7 ==================== -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
+<div>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+</div>
+<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+</div>
+
+Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+
+Relevant links:
+<a href="https://example.com">ResearchGate</a><br>
+<a href="https://example.com">ORCID</a>
+
+<!-- ==================== TEAM MEMBER 8 ==================== -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
+<div>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+</div>
+<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+</div>
+
+Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+
+Relevant links:
+<a href="https://example.com">ResearchGate</a><br>
+<a href="https://example.com">ORCID</a>
+
+<!-- ==================== TEAM MEMBER 9 ==================== -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
+<div>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+</div>
+<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+</div>
+
+Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+
+Relevant links:
+<a href="https://example.com">ResearchGate</a><br>
+<a href="https://example.com">ORCID</a>
+
+<!-- ==================== TEAM MEMBER 10 ==================== -->
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
+<div>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+</div>
+<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+</div>
+
+Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+
+Relevant links:
+<a href="https://example.com">ResearchGate</a><br>
+<a href="https://example.com">ORCID</a>
