@@ -81,7 +81,8 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/ae8bc355-f36e-4853-bdca-d1f1c71669be" />
+
 </div>
 
 Shannen earned a BS in Marine Science, Safety, and Environmental Protection with a concentration in Marine Biology from Massachusetts Maritime Academy in 2023. Prior to joining the Northeast Fisheries Science Center, Shannen worked as a Hydrographer and Marine Scientist supporting NOAA’s Office of Coast Survey, where she specialized in the acquisition, processing, and analysis of hydrographic and acoustic survey data. She also conducted fisheries and oceanographic research with NOAA Fisheries, focusing on the impacts of changing ocean chemistry on Atlantic Surfclam population and benthic ecosystem.
@@ -102,7 +103,7 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
-<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/756ddf3a-030b-4a67-8a36-ce46b7f19584" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/fff7511b-b182-4389-9991-4dc6da1c2a62" />
 
 </div>
 
