@@ -102,7 +102,8 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/5ae09589-4fd1-4dab-9fef-d0a0174b72c5" />
+
 </div>
 
 Jeremy earned a BS in Biochemistry in 2018 and a PhD in Fish and Wildlife Conservation from Virginia Tech in 2025. As a graduate student, he focused on data science and machine learning applications for monitoring global shark and ray populations. In 2026, Jeremy began working for NOAA’s Advanced Technology Program at the Northeast Fisheries Science Center developing image-recognition software for assessing sea scallop populations from the Habitat Camera Trawl Surveys. This work involves automatically counting sea scallops with trained models, quantifying uncertainty, and extrapolating population abundance to the larger Northeast region.
