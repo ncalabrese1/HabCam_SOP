@@ -121,7 +121,8 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Shellfish Survey Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img src="<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/fa70c66a-daa0-4cd4-baf9-092daaf7e242" />
+
 </div>
 
 Dana is a marine ecologist with research interests in shellfish biology, invertebrate zoology, food webs, parasite ecology, and spatial ecology. Her work uses a combination of quantitative approaches and natural history to gain mechanistic understanding of ecosystem processes and inform management issues. Dana earned a Ph.D. in Ecology, Evolution, and Marine Biology from University of California, Santa Barbara, a M.Sc. in Ecology from San Diego State University, and a B.S. in Marine Biology from University of California, Santa Cruz. She began working at NOAA in 2023 following a postdoctoral fellowship at Colby College.
