@@ -15,7 +15,7 @@ Conor earned a BA in Marine Science from Boston University, and a MS and PhD in 
 
 Relevant links:
 <a href="https://example.com">ResearchGate</a><br>
-<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=0lPpwIcAAAAJ</a>
+<Google Scholar: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=0lPpwIcAAAAJ</a>
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
