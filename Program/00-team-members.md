@@ -161,7 +161,8 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Shellfish Survey Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/c20df02d-b212-48b9-a2f3-c91e587a2067" />
+ 
 </div>
 
 Jonathan Duquette is a Biological Science Technician with the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. Specializing in fisheries science and marine data collection, Jonathan plays an integral role in critical research initiatives, including the high-resolution HabCam (Habitat Camera Array) and sea scallop dredge surveys. His work at sea and ashore supports the rigorous monitoring, data analysis, and ecological assessments essential for sustainable fisheries management and marine ecosystem conservation in the Northeast.
