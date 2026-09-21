@@ -9,7 +9,7 @@
 <p style="margin: 0; color: #555; font-size: 1.1em;">Supervisory Research Fish Biologist</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
-<p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
@@ -25,13 +25,16 @@ Google Scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&us
 <!-- ==================== TEAM MEMBER 2 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
-<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Cameron Fairclough</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Advanced Technology Specialist</p>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Population & Ecosystems Monitoring & Analysis Division</p>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Ecosystems Surveys Branch</p>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Marine Development & Advanced Technology Program</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
 
-Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+Cameron earned a BA in Marine Biology from Roger Williams University in 2019. Previously, Cameron worked for Woods Hole Oceanographic Institution in various roles in the Biology and Applied Ocean Physics and Engineering departments. Cameron joined the NEFSC in 2022 as an Electronics Engineer contractor before transitioning to an Advanced Technology Specialist in 2024. Within the Advanced Technology Group, Cameron develops and implements advanced technologies for ecosystem surveys including towed benthic imaging systems and autonomous underwater vehicles (AUVs). He also supports fishery-independent resource survey operations through at-sea data collection and storage, analysis, and research.
 
 Relevant links:
 <a href="https://example.com">LinkedIn</a>
