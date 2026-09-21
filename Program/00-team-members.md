@@ -226,7 +226,7 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Stock Assessment Methods Task Program</p>
 </div>
 <img src="https://github.com/user-attachments/assets/9465f3cf-2c5d-4762-a8a6-e0fbe7d065e8" />
- />
+ 
 </div>
 
 Alex earned a BS in Biology from Northeastern University and a PhD in Fisheries Oceanography from the University of Massachusetts. Alex is the lead assessment scientist for Georges Bank yellowtail flounder, Georges Bank winter flounder and Southern New England Cod.
