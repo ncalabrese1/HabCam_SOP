@@ -128,7 +128,24 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 Jeremy earned a BS in Biochemistry in 2018 and a PhD in Fish and Wildlife Conservation from Virginia Tech in 2025. As a graduate student, he focused on data science and machine learning applications for monitoring global shark and ray populations. In 2026, Jeremy began working for NOAA’s Advanced Technology Program at the Northeast Fisheries Science Center developing image-recognition software for assessing sea scallop populations from the Habitat Camera Trawl Surveys. This work involves automatically counting sea scallops with trained models, quantifying uncertainty, and extrapolating population abundance to the larger Northeast region.
 
 Relevant links:
-<a href="https://example.com">LinkedIn</a>
+</div>
+LinkedIn: https://www.linkedin.com/in/jeremy-jenrette-5579a4105/?trk=opento_sprofile_topcard
+
+</div>
+
+ResearchGate: https://www.researchgate.net/profile/Jeremy-Jenrette?ev=hdr_xprf
+
+</div>
+
+OrcID: https://orcid.org/my-orcid?orcid=0000-0003-2511-9334
+
+</div>
+
+GoogleScholar: https://scholar.google.com/citations?hl=en&user=IgYt-j0AAAAJ&view_op=list_works&gmla=APjjwuZgS8m4fMQUc10p1jsYKxn0XGil12F9EdyQdqESEWfhwF7IKk1iqv0YhxIIKysUTLJfq6JcAyTrhVOSni1c
+
+</div>
+
+Personal Website: https://jeremyjenrette.weebly.com/
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
