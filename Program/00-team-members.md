@@ -209,16 +209,17 @@ Relevant links:
 <!-- ==================== TEAM MEMBER 11 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
-<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Alexander Hansell, Ph.D.</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Fish Biologist</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Resource Evaluation & Assessment Division</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Populations Dynamics Branch</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Stock Assessment Methods Task Program</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
 
-Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+Alex earned a BS in Biology from Northeastern University and a PhD in Fisheries Oceanography from the University of Massachusetts. Alex is the lead assessment scientist for Georges Bank yellowtail flounder, Georges Bank winter flounder and Southern New England Cod.
 
 Relevant links:
-<a href="https://example.com">ResearchGate</a><br>
-<a href="https://example.com">ORCID</a>
 <a href="https://example.com">ResearchGate</a><br>
 <a href="https://example.com">ORCID</a>
