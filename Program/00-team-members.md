@@ -133,13 +133,16 @@ Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 <!-- ==================== TEAM MEMBER 7 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
-<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Zachary Fyke</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Biological Science Technician</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Shellfish Survey Program</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
 
-Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+Zachary graduated from Michigan State University with a Bachelor of Science in Fisheries and Wildlife in June of 2017. He started his career in Marine Science as a fisheries observer, based out of Point Judith, Rhode Island. After two years of observing, he came in-house to work at the Northeast Fisheries Observer Training Center in North Falmouth, Massachusetts. After a year working as the observer compliance liaison, Zachary started a federal position with NOAA Office of Law Enforcement, in the Vessel Monitoring Department. After a year there, Zachary knew he wanted to get back to the sea, so he transferred to the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. As part of ESB, Zachary primarily works on the Shellfish Surveys. These surveys include Atlantic Sea Scallop, Northern Shrimp, Ocean Quahog, and Atlantic Surfclam. 
 
 Relevant links:
 <a href="https://example.com">ResearchGate</a><br>
