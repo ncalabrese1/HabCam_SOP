@@ -7,13 +7,25 @@ Review the interactive slide deck below for step-by-step annotation guidelines a
 {{< include training-carousel.html >}}
 
 ## Annotation Quiz
+
+Put your training into practice before starting live annotation. Work through the self-assessment quiz below to verify your understanding of species identification criteria, bounding box conventions, and quality control flags.
+
 {{< include carousel-habcam-annotation-quiz-2026.html >}}
 
 ## Species Guide: Seastars
+
+PLACEHOLDER Explain when and why we annotate these...
+
 {{< include carousel-habcam_id_guide_seastars.html >}}
 
 ## Species Guide: Fishes
+
+PLACEHOLDER Explain when and why we annotate these...
+
 {{< include carousel-habcam_id_guide_fishes.html >}}
 
 ## Species Guide: Invertebrates
+
+PLACEHOLDER Explain when and why we annotate these...
+
 {{< include carousel-habcam_id_guide_inverts.html >}}
