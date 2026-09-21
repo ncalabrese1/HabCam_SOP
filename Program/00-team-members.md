@@ -69,8 +69,7 @@ M.S. Living Marine Resource Science and Management, UMass Dartmouth SMAST, MA
 Ph.D Living Marine Resource Science and Management, UMass Dartmouth SMAST, MA
 
 Relevant links:
-<a href="https://example.com">ResearchGate</a><br>
-<a href="https://example.com">LinkedIn</a>
+<a href="https://orcid.org/0000-0001-6798-8584">ORCID</a><br>
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
