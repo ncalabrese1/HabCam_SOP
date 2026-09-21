@@ -5,3 +5,15 @@ This section provides background on the annotator interface design, key workflow
 Review the interactive slide deck below for step-by-step annotation guidelines and species identification standards.
 
 {{< include training-carousel.html >}}
+
+## Annotation Quiz
+{{< include carousel-habcam-annotation-quiz-2026.html >}}
+
+## Species Guide: Seastars
+{{< include carousel-habcam_id_guide_seastars.html >}}
+
+## Species Guide: Fishes
+{{< include carousel-habcam_id_guide_fishes.html >}}
+
+## Species Guide: Invertebrates
+{{< include carousel-habcam_id_guide_inverts.html >}}
