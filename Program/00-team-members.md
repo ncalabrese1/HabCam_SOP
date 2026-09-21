@@ -259,8 +259,6 @@ Ph.D. Interdisciplinary (Marine Sciences, Statistics, and Resource Economics) Un
 M.S. Marine Resource Assessment and Management, National Taiwan Ocean University
 B.B.A. International Trade, Aletheia University
 
-Relevant links:
-
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 11 ==================== -->
@@ -279,7 +277,10 @@ Relevant links:
 Alex earned a BS in Biology from Northeastern University and a PhD in Fisheries Oceanography from the University of Massachusetts. Alex is the lead assessment scientist for Georges Bank yellowtail flounder, Georges Bank winter flounder and Southern New England Cod.
 
 Relevant links:
-<a href="https://example.com">ResearchGate</a><br>
+
+<div>
+ 
+GoogleScholar: https://scholar.google.com/citations?user=d8gvRasAAAAJ&hl=en
 <a href="https://example.com">ORCID</a>
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
