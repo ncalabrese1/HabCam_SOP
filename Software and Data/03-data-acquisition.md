@@ -1,7 +1,5 @@
 # Data Acquisition
 
-# Data Acquisition Software
-
 ## Overview of Software Components
 
 * **Part 1: Engineering GUI**
