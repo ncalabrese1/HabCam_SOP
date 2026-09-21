@@ -96,13 +96,13 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 <!-- ==================== TEAM MEMBER 5 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
-<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Jeremy F. Jenrette, Ph.D</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Data Scientist (Affiliate)</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
 
-Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+Jeremy earned a BS in Biochemistry in 2018 and a PhD in Fish and Wildlife Conservation from Virginia Tech in 2025. As a graduate student, he focused on data science and machine learning applications for monitoring global shark and ray populations. In 2026, Jeremy began working for NOAA’s Advanced Technology Program at the Northeast Fisheries Science Center developing image-recognition software for assessing sea scallop populations from the Habitat Camera Trawl Surveys. This work involves automatically counting sea scallops with trained models, quantifying uncertainty, and extrapolating population abundance to the larger Northeast region.
 
 Relevant links:
 <a href="https://example.com">LinkedIn</a>
