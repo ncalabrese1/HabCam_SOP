@@ -368,8 +368,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#archiving-and-data-processing" id="toc-archiving-and-data-processing" class="nav-link active" data-scroll-target="#archiving-and-data-processing">Archiving and Data Processing</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -393,9 +399,117 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>[Insert PostgreSQL database schemas, table structures, metadata fields, and connection scripts here]</em></p>
+<section id="archiving-and-data-processing" class="level2">
+<h2 class="anchored" data-anchor-id="archiving-and-data-processing">Archiving and Data Processing</h2>
+<section id="database-archiving" class="level3">
+<h3 class="anchored" data-anchor-id="database-archiving">Database Archiving</h3>
+<ul>
+<li><strong>Realtime Image Check:</strong> During realtime processing, the HabCam software periodically checks for newly created <code>.img</code> files.</li>
+<li><strong>Write Verification Buffer:</strong> To ensure a file is fully written before processing, the software never archives the newest <code>.img</code> file immediately; it waits until the subsequent <code>.img</code> file is created (e.g., <code>20250110_2010.img</code> is not archived until <code>20250110_2020.img</code> exists).</li>
+<li><strong>Database Ingestion:</strong> Archiving ingests the <code>.img</code> file into the active survey’s PostgreSQL database under the <code>IMG</code> table, which serves as a virtual archive for all metadata and parameters pertaining to each image.</li>
+<li><strong>Access Tools:</strong> Software applications used to access and query this metadata include <strong>pgAdmin</strong> (PostgreSQL client), <strong>R</strong>, and <strong>Matlab</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="realtime-processing-annotation-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="realtime-processing-annotation-pipeline">Realtime Processing &amp; Annotation Pipeline</h3>
+<section id="processing-gui-functions" class="level4">
+<h4 class="anchored" data-anchor-id="processing-gui-functions">Processing GUI Functions</h4>
+<p>The HabCam realtime processing GUI is used for image processing, creating annotation assignments, generating lightmaps, and serving images to annotators. The PostgreSQL database provides the GUI with metadata required for: 1. <strong>Lightmap Construction:</strong> Building lightmaps using survey images collected at vehicle altitudes between 1 and 4 meters above the seafloor. 2. <strong>Stereo Image Processing:</strong> Processing images using vehicle altimeter depth (height above seafloor), combining intrinsic/extrinsic parameters calculated from pre-survey stereo camera calibrations with the survey’s generated lightmap.</p>
+</section>
+<section id="annotation-workflow" class="level4">
+<h4 class="anchored" data-anchor-id="annotation-workflow">Annotation Workflow</h4>
+<ul>
+<li>Processed images are organized into <strong>primary</strong>, <strong>secondary</strong>, and <strong>special assignments</strong>.</li>
+<li>Assignments are served via the HabCam annotation webserver, allowing scientists to annotate and analyze images in near-realtime while at sea.</li>
+<li>All annotation records and metadata are immediately written back to the PostgreSQL database.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="data-review-and-quality-assurance-qa" class="level3">
+<h3 class="anchored" data-anchor-id="data-review-and-quality-assurance-qa">Data Review and Quality Assurance (QA)</h3>
+<ul>
+<li><strong>Watch Chief Responsibilities:</strong> At sea, the watch chief is responsible for training scientific party members and conducting periodic QA reviews on completed annotations.</li>
+<li><strong>Validation Criteria:</strong> QA personnel review annotated images for completeness, taxonomic accuracy, and bounding box consistency.</li>
+<li><strong>Error Tracking:</strong> Any discrepancies or errors identified during review are logged and reviewed directly with the annotator to ensure proper corrections are executed.</li>
+</ul>
+<hr>
+</section>
+<section id="survey-archival-workflows" class="level3">
+<h3 class="anchored" data-anchor-id="survey-archival-workflows">Survey Archival Workflows</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Phase</th>
+<th style="text-align: left;">Operational Steps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>At-Sea Archival</strong></td>
+<td style="text-align: left;">Data managers continuously back up all metadata and raw optical data onto external hard drives. Processed images are redundantly backed up across multiple onboard HabCam servers.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Post-Survey / Inter-Leg</strong></td>
+<td style="text-align: left;">External hard drives and a complete PostgreSQL database export are handed over to NOAA ITD for backup on landservers. The database is restored on land to allow processing and annotation to continue seamlessly between survey legs.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="data-archival-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="data-archival-infrastructure">Data Archival Infrastructure</h3>
+<section id="physical-physical-server-methods" class="level4">
+<h4 class="anchored" data-anchor-id="physical-physical-server-methods">Physical &amp; Physical Server Methods</h4>
+<ul>
+<li><strong>Physical Media:</strong> Raw optical data and metadata are continuously written to formatted external hard drives at sea. Raw metadata is also continuously <code>rsync</code>-ed across onboard servers.</li>
+</ul>
+</section>
+<section id="landserver-infrastructure-habcam-ds-series" class="level4">
+<h4 class="anchored" data-anchor-id="landserver-infrastructure-habcam-ds-series">Landserver Infrastructure (Habcam-DS Series)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Server</th>
+<th style="text-align: left;">Primary Purpose &amp; Workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong><code>Habcam-DS1</code></strong></td>
+<td style="text-align: left;"><strong>Backup Server:</strong> Automatically and recursively archives all relevant data directories from <code>Habcam-DS2</code> every 24 hours, maintaining daily execution log files.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><code>Habcam-DS2</code></strong></td>
+<td style="text-align: left;"><strong>Processing &amp; Annotation Duplicate:</strong> Mirrors the seagoing realtime processing and annotation server. Used on land to continue processing optical data, serving assignments, and providing assessment scientists with relational database access.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><code>Habcam-DS3</code></strong></td>
+<td style="text-align: left;"><strong>Storage &amp; Media Swap Server:</strong> Functions as a software backup for <code>DS2</code> and serves as the primary node for swapping hard disks containing images and metadata. Processed images from <code>DS2</code> are transferred here before being backed up offline.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="relational-database-architecture" class="level4">
+<h4 class="anchored" data-anchor-id="relational-database-architecture">Relational Database Architecture</h4>
+<ul>
+<li><strong>PostgreSQL (pgAdmin):</strong> Serves as the primary operational database engine for HabCam survey data and image metadata.</li>
+<li><strong>Oracle Cloud Infrastructure:</strong> Databases are migrated into an Oracle cloud database to provide an additional layer of security, disaster recovery, and long-term archival safety.</li>
+</ul>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
