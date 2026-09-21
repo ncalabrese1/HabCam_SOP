@@ -130,6 +130,8 @@ Relevant links:
 Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 <a href="https://example.com">ORCID</a>
 
+<hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
+
 <!-- ==================== TEAM MEMBER 7 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
@@ -147,6 +149,8 @@ Zachary graduated from Michigan State University with a Bachelor of Science in F
 Relevant links:
 <a href="https://example.com">ResearchGate</a><br>
 <a href="https://example.com">ORCID</a>
+
+<hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 8 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
@@ -168,6 +172,8 @@ Relevant links:
 <a href="https://example.com">ResearchGate</a><br>
 <a href="https://example.com">ORCID</a>
 
+<hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
+
 <!-- ==================== TEAM MEMBER 9 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
@@ -188,6 +194,8 @@ Relevant links:
 <a href="https://example.com">ResearchGate</a><br>
 <a href="https://example.com">ORCID</a>
 
+<hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
+
 <!-- ==================== TEAM MEMBER 10 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
@@ -205,6 +213,8 @@ M.S. Marine Resource Assessment and Management, National Taiwan Ocean University
 B.B.A. International Trade, Aletheia University
 
 Relevant links:
+
+<hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 11 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
@@ -224,3 +234,6 @@ Alex earned a BS in Biology from Northeastern University and a PhD in Fisheries 
 Relevant links:
 <a href="https://example.com">ResearchGate</a><br>
 <a href="https://example.com">ORCID</a>
+
+<hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
+
