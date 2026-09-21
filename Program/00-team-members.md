@@ -74,8 +74,11 @@ Relevant links:
 </div>
 
 Linkedin: https://www.linkedin.com/in/nicholas-calabrese-95996b164
+</div>
 ResearchGate: https://www.researchgate.net/profile/Nicholas-Calabrese
+</div>
 OrcID: https://orcid.org/0000-0001-6798-8584
+</div>
 GoogleScholar: https://scholar.google.com/citations?user=YbjulGsAAAAJ&hl=en
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
