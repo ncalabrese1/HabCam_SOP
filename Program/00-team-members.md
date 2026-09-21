@@ -45,7 +45,7 @@ Relevant links:
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
 <h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Nicholas M. Calabrese, Ph.D</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Fish Biologist</p>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Fish Biologist</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
@@ -53,7 +53,7 @@ Relevant links:
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
 
-BiNicholas Calabrese is a fisheries scientist specializing in the development and application of advanced technologies for fisheries-independent surveys. His research focuses on integrating optical imaging systems, artificial intelligence, and innovative sampling approaches to improve the accuracy, efficiency, and sustainability of marine resource assessments.
+Nicholas Calabrese is a fisheries scientist specializing in the development and application of advanced technologies for fisheries-independent surveys. His research focuses on integrating optical imaging systems, artificial intelligence, and innovative sampling approaches to improve the accuracy, efficiency, and sustainability of marine resource assessments.
 
 Prior to joining NOAA, Nicholas led the development of optical video trawl systems and other optical survey technologies at the University of Massachusetts Dartmouth's School for Marine Science and Technology (SMAST). His work has advanced minimally invasive survey methods for Atlantic cod, scallops, and other commercially important species while contributing to stock assessments, capture efficiency estimation, and real-time fisheries monitoring.
 
