@@ -98,6 +98,9 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 <div>
 <h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Jeremy F. Jenrette, Ph.D</h2>
 <p style="margin: 0; color: #555; font-size: 1.1em;">Data Scientist (Affiliate)</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
