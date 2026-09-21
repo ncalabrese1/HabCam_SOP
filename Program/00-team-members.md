@@ -19,7 +19,7 @@ Conor earned a BA in Marine Science from Boston University, and a MS and PhD in 
 
 Relevant links:
 </div>
-Google Scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=0lPpwIcAAAAJ
+GoogleScholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=0lPpwIcAAAAJ
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
@@ -39,7 +39,6 @@ Google Scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&us
 Cameron earned a BA in Marine Biology from Roger Williams University in 2019. Previously, Cameron worked for Woods Hole Oceanographic Institution in various roles in the Biology and Applied Ocean Physics and Engineering departments. Cameron joined the NEFSC in 2022 as an Electronics Engineer contractor before transitioning to an Advanced Technology Specialist in 2024. Within the Advanced Technology Group, Cameron develops and implements advanced technologies for ecosystem surveys including towed benthic imaging systems and autonomous underwater vehicles (AUVs). He also supports fishery-independent resource survey operations through at-sea data collection and storage, analysis, and research.
 
 Relevant links:
-<a href="https://example.com">LinkedIn</a>
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
@@ -71,7 +70,13 @@ M.S. Living Marine Resource Science and Management, UMass Dartmouth SMAST, MA
 Ph.D Living Marine Resource Science and Management, UMass Dartmouth SMAST, MA
 
 Relevant links:
-<a href="https://orcid.org/0000-0001-6798-8584">ORCID</a><br>
+
+</div>
+
+Linkedin: https://www.linkedin.com/in/nicholas-calabrese-95996b164
+ResearchGate: https://www.researchgate.net/profile/Nicholas-Calabrese
+OrcID: https://orcid.org/0000-0001-6798-8584
+GoogleScholar: https://scholar.google.com/citations?user=YbjulGsAAAAJ&hl=en
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
