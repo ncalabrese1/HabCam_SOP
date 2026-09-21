@@ -50,7 +50,8 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img width="288" height="288" alt="Nick" src="https://github.com/user-attachments/assets/ae9f1c1c-f883-44d1-a6d7-7d11571fb5e9" />
+
 </div>
 
 Nicholas Calabrese is a fisheries scientist specializing in the development and application of advanced technologies for fisheries-independent surveys. His research focuses on integrating optical imaging systems, artificial intelligence, and innovative sampling approaches to improve the accuracy, efficiency, and sustainability of marine resource assessments.
