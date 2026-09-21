@@ -101,7 +101,7 @@
 
 ---
 
-## 2. Winch Joystick Control
+## Winch Joystick Control
 
 ### Manual Winch Panel
 | Application Control | Field | Example Value | Definition |
