@@ -213,7 +213,7 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Populations Dynamics Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Stock Assessment Methods Task Program</p>
 </div>
-<img <img width="366" height="549" alt="image" src="https://github.com/user-attachments/assets/58dc8398-64fa-47e2-aaff-943d3003d5a6" />
+<img width="167" height="250" alt="656012793-58dc8398-64fa-47e2-aaff-943d3003d5a6" src="https://github.com/user-attachments/assets/1e50cd9f-0d3e-4341-9496-b7d30f99bd43" />
  
 </div>
 
