@@ -43,7 +43,7 @@ Relevant links:
 <!-- ==================== TEAM MEMBER 3 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
-<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Nicholas M. Calabrese, Ph.D</h2>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Nicholas M. Calabrese, Ph.D.</h2>
 <p style="margin: 0; color: #555; font-size: 1.1em;">Fish Biologist</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
@@ -96,7 +96,7 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 <!-- ==================== TEAM MEMBER 5 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
-<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Jeremy F. Jenrette, Ph.D</h2>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Jeremy F. Jenrette, Ph.D.</h2>
 <p style="margin: 0; color: #555; font-size: 1.1em;">Data Scientist (Affiliate)</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
@@ -115,16 +115,19 @@ Relevant links:
 <!-- ==================== TEAM MEMBER 6 ==================== -->
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
 <div>
-<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Name Here</h2>
-<p style="margin: 0; color: #555; font-size: 1.1em;">Position / Title Here</p>
+<h2 style="margin-top: 0; margin-bottom: 6px; font-weight: bold; border-bottom: none;">Dana Morton, Ph.D.</h2>
+<p style="margin: 0; color: #555; font-size: 1.1em;">Fishery Biologist</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Population & Ecosystems Monitoring & Analysis Division</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
+<p style="margin: 0; color: #555; font-size: 0.8em;">Shellfish Survey Program</p>
 </div>
 <img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
 </div>
 
-Bio text goes here. Enter background details regarding degree history, previous post-doctoral research positions, field experience, and current role within the HabCam team.
+Dana is a marine ecologist with research interests in shellfish biology, invertebrate zoology, food webs, parasite ecology, and spatial ecology. Her work uses a combination of quantitative approaches and natural history to gain mechanistic understanding of ecosystem processes and inform management issues. Dana earned a Ph.D. in Ecology, Evolution, and Marine Biology from University of California, Santa Barbara, a M.Sc. in Ecology from San Diego State University, and a B.S. in Marine Biology from University of California, Santa Cruz. She began working at NOAA in 2023 following a postdoctoral fellowship at Colby College.
 
 Relevant links:
-<a href="https://example.com">ResearchGate</a><br>
+Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 <a href="https://example.com">ORCID</a>
 
 <!-- ==================== TEAM MEMBER 7 ==================== -->
