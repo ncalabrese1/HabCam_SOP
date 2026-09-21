@@ -368,8 +368,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#stereo-acquisition-suite" id="toc-stereo-acquisition-suite" class="nav-link active" data-scroll-target="#stereo-acquisition-suite">Stereo Acquisition Suite</a></li>
+  <li><a href="#winch-joystick-control" id="toc-winch-joystick-control" class="nav-link" data-scroll-target="#winch-joystick-control">2. Winch Joystick Control</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -393,9 +400,624 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>[Insert high-level summary of the HabCam software suite, logging pipelines, and data architectures here]</em></p>
+<section id="stereo-acquisition-suite" class="level2">
+<h2 class="anchored" data-anchor-id="stereo-acquisition-suite">Stereo Acquisition Suite</h2>
+<section id="topside-status" class="level3">
+<h3 class="anchored" data-anchor-id="topside-status">Topside Status</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Control / Field</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Survey/Cruise (HabCam) ID</td>
+<td style="text-align: left;"><code>2026/HabCam/Bigelow</code></td>
+<td style="text-align: left;">Designates the survey type and vessel (typically <code>Year/ID</code>).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Survey/Cruise (AUV) ID</td>
+<td style="text-align: left;"><code>2026/AUV/Smallboat</code></td>
+<td style="text-align: left;">Designates the survey type and vessel for AUV operations.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">OP Area</td>
+<td style="text-align: left;"><code>Newport, RI to Newport, RI</code></td>
+<td style="text-align: left;">Operation Area where data is currently being collected.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sensor-status" class="level3">
+<h3 class="anchored" data-anchor-id="sensor-status">Sensor Status</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Sensor</th>
+<th style="text-align: left;">Status Light</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;"><strong>AHRS</strong></td>
+<td style="text-align: left;">Green = ON<br>Red = OFF</td>
+<td style="text-align: left;">Attitude and Heading Reference System; computes 3D orientation (roll, pitch, yaw) and direction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;"><strong>CTD</strong></td>
+<td style="text-align: left;">Green = ON<br>Red = OFF</td>
+<td style="text-align: left;">Conductivity, Temperature, and Depth sensor; determines salinity, density, and sound velocity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;"><strong>ECO Triplet</strong></td>
+<td style="text-align: left;">Green = ON<br>Red = OFF</td>
+<td style="text-align: left;">Environmental Characterization Optics; highly customizable 3-channel optical sensor.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;"><strong>SeaFET</strong></td>
+<td style="text-align: left;">Green = ON<br>Red = OFF</td>
+<td style="text-align: left;">Ocean pH sensor designed for long-term, high-precision marine monitoring.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;"><strong>GPS</strong></td>
+<td style="text-align: left;">Green = ON<br>Red = OFF</td>
+<td style="text-align: left;">Global Positioning System; tracks physical location (latitude, longitude) and altitude.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;"><strong>Fathometer</strong></td>
+<td style="text-align: left;">Green = ON<br>Red = OFF</td>
+<td style="text-align: left;">Active sonar device measuring water depth beneath the vessel via acoustic echo travel time.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;"><strong>Altimeter 1</strong></td>
+<td style="text-align: left;">Green = ON<br>Red = OFF</td>
+<td style="text-align: left;">Sensor measuring vehicle altitude above a fixed reference point (seafloor).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vehicle-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="vehicle-metrics">Vehicle Metrics</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Heading</td>
+<td style="text-align: left;"><code>226.75°</code></td>
+<td style="text-align: left;">Compass direction in which the front of the vehicle is pointing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Pitch</td>
+<td style="text-align: left;"><code>-5.0°</code></td>
+<td style="text-align: left;">Vehicle attitude along the lateral axis in decimal degrees.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Roll</td>
+<td style="text-align: left;"><code>46.3°</code></td>
+<td style="text-align: left;">Vehicle attitude along the longitudinal axis in decimal degrees.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Depth</td>
+<td style="text-align: left;"><code>60.72m</code></td>
+<td style="text-align: left;">Depth of the vehicle in the water column.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Altitude</td>
+<td style="text-align: left;"><code>2.32m</code></td>
+<td style="text-align: left;">Vertical distance between the vehicle and the ocean floor.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ctd-module" class="level3">
+<h3 class="anchored" data-anchor-id="ctd-module">CTD Module</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Conductivity</td>
+<td style="text-align: left;"><code>3.208770 S/m</code></td>
+<td style="text-align: left;">Measures the water’s ability to conduct an electrical current.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Salinity</td>
+<td style="text-align: left;"><code>32.836000 psu</code></td>
+<td style="text-align: left;">Concentration of dissolved salts in the water column.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Sound Speed</td>
+<td style="text-align: left;"><code>1471.20 m/s</code></td>
+<td style="text-align: left;">Rate at which acoustic waves travel through the water column.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;"><code>5.55°C</code></td>
+<td style="text-align: left;">Water temperature measured directly using thermistors or platinum thermometers.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;"><code>61.147000 dbar</code></td>
+<td style="text-align: left;">Barometric pressure used to calculate precise vehicle depth.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vessel-data" class="level3">
+<h3 class="anchored" data-anchor-id="vessel-data">Vessel Data</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;"><code>40° 0.8764</code></td>
+<td style="text-align: left;">Geographic north-south position coordinate.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;"><code>-72° 35.5802</code></td>
+<td style="text-align: left;">Geographic east-west position coordinate.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Depth Below Transducer</td>
+<td style="text-align: left;"><code>65.76m</code></td>
+<td style="text-align: left;">Vertical distance from the sonar sensor to the seafloor.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Heading</td>
+<td style="text-align: left;"><code>0.00°</code></td>
+<td style="text-align: left;">Compass direction in which the vessel’s bow is pointing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">COG</td>
+<td style="text-align: left;"><code>59.6°</code></td>
+<td style="text-align: left;">Course Over Ground; actual direction moving across Earth’s surface (0° to 360°).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">SOG</td>
+<td style="text-align: left;"><code>5.559 knots</code></td>
+<td style="text-align: left;">Speed Over Ground; actual speed relative to Earth’s surface.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="oxygen-sensor" class="level3">
+<h3 class="anchored" data-anchor-id="oxygen-sensor">Oxygen Sensor</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Conductivity</td>
+<td style="text-align: left;"><code>3.208770 S/m</code></td>
+<td style="text-align: left;">Water’s ability to transmit electrical current; indicates total dissolved ions/salts.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Salinity</td>
+<td style="text-align: left;"><code>32.836000 psu</code></td>
+<td style="text-align: left;">Total concentration of dissolved salts in water.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Dissolved Oxygen</td>
+<td style="text-align: left;"><code>6.418000 ml/L</code></td>
+<td style="text-align: left;">Measurement of free, non-compound O₂ molecules mixed into liquid.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;"><code>5.56°C</code></td>
+<td style="text-align: left;">Temperature of the water environment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;"><code>61.603000 dbar</code></td>
+<td style="text-align: left;">Ambient pressure measurement.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="seafet-ph-sensor" class="level3">
+<h3 class="anchored" data-anchor-id="seafet-ph-sensor">SeaFET (pH Sensor)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Int pH</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Internal pH calculated via closed KCl reference electrode.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">t</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Water temperature.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Int V</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Raw voltage from internal reference electrode.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Therm V</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Thermistor voltage reading for internal sensor temperature.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Supply V</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Main supply voltage.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">5V</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Regulated DC power for integrated system components.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Ext pH</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">External pH calculated using seawater-exposed reference electrode.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">hum</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Internal moisture/humidity level inside housing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Ext V</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Raw voltage from external solid-state reference electrode.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">stat</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Instrument operational status and configuration state.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Supply 1</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Sensor power usage / current draw.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Iso V</td>
+<td style="text-align: left;"><code>N/A</code></td>
+<td style="text-align: left;">Isolation voltage limit for safety components.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="attitude-plots" class="level3">
+<h3 class="anchored" data-anchor-id="attitude-plots">Attitude Plots</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Range Limits</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Heading</td>
+<td style="text-align: left;">No Min/Max</td>
+<td style="text-align: left;">Compass direction of the vehicle’s bow.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Pitch</td>
+<td style="text-align: left;">Max: 0 / Min: -12</td>
+<td style="text-align: left;">Vehicle lateral axis tilt limits in decimal degrees.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Roll</td>
+<td style="text-align: left;">Max: 50 / Min: 45</td>
+<td style="text-align: left;">Vehicle longitudinal axis tilt limits in decimal degrees.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dsvimview-cameras-winchfly" class="level3">
+<h3 class="anchored" data-anchor-id="dsvimview-cameras-winchfly">Dsvimview (Cameras &amp; Winchfly)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Control / Setting</th>
+<th style="text-align: left;">Example Setting</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Show Histogram</td>
+<td style="text-align: left;">Toggled off</td>
+<td style="text-align: left;">Visual chart grouping pixel response values across brightness ranges.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Histogram Equalize</td>
+<td style="text-align: left;">Toggled off</td>
+<td style="text-align: left;">Contrast adjustment technique spreading pixel intensities across full dynamic range.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Histogram Stretch</td>
+<td style="text-align: left;">Toggled off</td>
+<td style="text-align: left;">Contrast adjustment technique expanding cramped brightness ranges to highlight shadows/details.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Gain</td>
+<td style="text-align: left;"><code>6.00 hz</code></td>
+<td style="text-align: left;">Signal amplification control to distinguish seabed substrate types.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Exposure</td>
+<td style="text-align: left;">Max: 10.00 ms<br>Min: 0.00 ms</td>
+<td style="text-align: left;">Camera exposure control balancing brightness while preventing glare or shadow detail loss.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">RCVD</td>
+<td style="text-align: left;">Gain: 18.0<br>Exposure: 1.5 ms</td>
+<td style="text-align: left;">Received signal strength control filtering out water column acoustic noise.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Co-Pilot</strong></td>
+<td style="text-align: left;">Show Winchfly</td>
+<td style="text-align: left;">Toggled on Green</td>
+<td style="text-align: left;">Enables automated vehicle steering to maintain set altitude above seafloor.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Bottom</td>
+<td style="text-align: left;"><code>-50 m</code></td>
+<td style="text-align: left;">Strongest acoustic return indicating the physical seafloor.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Fish Depth</td>
+<td style="text-align: left;"><code>59.9 m</code></td>
+<td style="text-align: left;">Calculated vertical distance from water surface to vehicle.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Computed Bottom</td>
+<td style="text-align: left;"><code>-75 m</code></td>
+<td style="text-align: left;">Algorithmically calculated seabed boundary correcting for false echoes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Alt</td>
+<td style="text-align: left;"><code>3.5 m</code></td>
+<td style="text-align: left;">Vertical distance between vehicle and seafloor.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Fathometer</td>
+<td style="text-align: left;"><code>65.5 m</code></td>
+<td style="text-align: left;">Echo sounder water depth measurement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Fathometer Filter</td>
+<td style="text-align: left;"><code>0.8</code></td>
+<td style="text-align: left;">Acoustic noise filter smoothing depth readings.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Depth Filter</td>
+<td style="text-align: left;"><code>0.8</code></td>
+<td style="text-align: left;">Restricts sonar/mapping display to specific vertical bounds.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Calc Depth</td>
+<td style="text-align: left;"><code>63.3 m</code></td>
+<td style="text-align: left;">Depth compensation setting adjusting image brightness/color for light attenuation.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="winch-joystick-control" class="level2">
+<h2 class="anchored" data-anchor-id="winch-joystick-control">2. Winch Joystick Control</h2>
+<section id="manual-winch-panel" class="level3">
+<h3 class="anchored" data-anchor-id="manual-winch-panel">Manual Winch Panel</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Application Control</th>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Cast Duration</td>
+<td style="text-align: left;"><code>26:26</code></td>
+<td style="text-align: left;">Elapsed time since the current cast was initiated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Set Length</td>
+<td style="text-align: left;"><code>500 meter</code></td>
+<td style="text-align: left;">Maximum allowable winch cable payload payout limit.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Tension</td>
+<td style="text-align: left;"><code>5.77 tons</code></td>
+<td style="text-align: left;">Mechanical load threshold protecting cable from over-strain.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Linespeed</td>
+<td style="text-align: left;"><code>0 meter/min</code></td>
+<td style="text-align: left;">Rate at which cable spools on/off the winch drum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pilot</strong></td>
+<td style="text-align: left;">Length</td>
+<td style="text-align: left;"><code>91.2 meter</code></td>
+<td style="text-align: left;">Total cable paid out in meters.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><em>Examples referenced from HabCam Survey 2026 operations.</em></p>
+</blockquote>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
