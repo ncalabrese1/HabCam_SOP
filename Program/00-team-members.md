@@ -141,7 +141,7 @@ Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Shellfish Survey Program</p>
 </div>
-<img src=<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/ebcc7c93-0a66-4c50-a9a2-68e2f1af7e5d" />
+<img <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/0356e12d-0273-44f1-94d2-d042a53904f6" />
 
 </div>
 
