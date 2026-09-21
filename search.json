@@ -542,7 +542,51 @@
     "href": "Software and Data/03-data-acquisition.html",
     "title": "Data Acquisition",
     "section": "",
-    "text": "[Insert live image capture protocols, sensor logging routines, and acquisition software instructions here]",
+    "text": "Overview of Software Components",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "Software and Data/03-data-acquisition.html#overview-of-software-components",
+    "href": "Software and Data/03-data-acquisition.html#overview-of-software-components",
+    "title": "Data Acquisition",
+    "section": "",
+    "text": "Part 1: Engineering GUI\n\nSensor Status: Displays real-time operational status for all acquiring sensors (indicated in green). At sea, all sensors except the deprecated SeaFET will show green.\nMonitored Sensors:\n\nAHRS: Attitude sensor\nCTD: Sea-Bird 49\nOxygen: Sea-Bird 39\nGPS: Ship’s GPS feed\nFathometer: Ship’s fathometer feed\nAltimeter: Benthos PSA 916\n\n\nPart 2: Image Viewer (Both Cameras Online)\n\nDisplays the live feed of the stereo cameras in real time as frames are acquired.\nControls the winchfly plot display as well as the trigger rate for both cameras and strobes.\n\nPart 3: Stereo Acquisition\n\nA terminal script that loads configuration files onto each camera and initiates the acquisition feed.\n\nPart 4: Event Logger\n\nUtilized by the co-pilot to record timestamped operational notes, trackline changes, image highlights, shift changes, and system events.",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "Software and Data/03-data-acquisition.html#habcam-vehicle-network-addresses",
+    "href": "Software and Data/03-data-acquisition.html#habcam-vehicle-network-addresses",
+    "title": "Data Acquisition",
+    "section": "HabCam Vehicle Network Addresses",
+    "text": "HabCam Vehicle Network Addresses\n\n\n\nComponent / Device\nIP Address\n\n\n\n\nPort Camera\n192.168.125.120\n\n\nStarboard Camera\n192.168.125.121\n\n\nMoxa Nport #1\n192.168.135.200\n\n\nMoxa Nport #2\n192.168.135.202\n\n\nGardasoft #1\n192.168.135.91\n\n\nGardasoft #2\n192.168.135.92\n\n\nBlueView Sonar\n192.168.1.45",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "Software and Data/03-data-acquisition.html#at-sea-data-management-workflow",
+    "href": "Software and Data/03-data-acquisition.html#at-sea-data-management-workflow",
+    "title": "Data Acquisition",
+    "section": "At-Sea Data Management Workflow",
+    "text": "At-Sea Data Management Workflow\n\nSystem Initialization & Time Synchronization\n\nAll HabCam computers and servers are time-synchronized to the NOAA time server using Network Time Protocol (NTP).\nThe main topside computer (Dixon) connects directly to the HabCam vehicle, onboard servers, ship GPS, and ship fathometer.\nRaw unprocessed environmental data is recorded directly into text files with associated timestamps for every entry.\nA processed CSV file is continuously generated to store vehicle sensor measurements, GPS coordinates, and corresponding stereo-paired image filenames formatted as cruiseID.Timestamp.image#.tif.\n\n\n\nStarting Acquisition\n\nPower on the HabCam vehicle and launch the habcamDataAq software suite.\n\n\n\n\nTopside Workstation showing Engineering GUI and Image Viewer\n\n\n\nLaunch the following desktop shortcuts: Engineering GUI, Image Viewer, and StereoAq.\nVerify in the Engineering GUI that all active sensor indicators display a green light. &gt; Note: A red light indicates an offline or inactive sensor. The only expected red indicator during sea operations is the 5th sensor down on the left sidebar (the deprecated SeaFET sensor).\nOpen the Image Viewer GUI to confirm live video streams from both Port and Starboard cameras. Ensure the 3 status indicators relating to recording, writing, and acquisition are green.",
+    "crumbs": [
+      "Software & Data",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "Software and Data/03-data-acquisition.html#metadata-directories-verification",
+    "href": "Software and Data/03-data-acquisition.html#metadata-directories-verification",
+    "title": "Data Acquisition",
+    "section": "Metadata Directories & Verification",
+    "text": "Metadata Directories & Verification\n\nData File Formats\n\n.hab Files: Hourly raw data logs containing raw output streams from every sensor connected to the vehicle according to the HabCam v4 architecture.\n.img Files: Processed metadata CSV files containing timestamped image names, geospatial location coordinates, and aligned sensor metrics.\n\n\n\nDirectory Structures\nVerify that hourly raw data (.hab) and processed metadata (.img) files are actively being written to the following topside paths:\n\nHourly Raw Sensor Data (.hab): ```bash /mnt/dixon-data/YYYY/hab/",
     "crumbs": [
       "Software & Data",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Data Acquisition</span>"

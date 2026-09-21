@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-dabb4177d918b2a71d8bf8ab8beb4a59.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -368,8 +371,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#overview-of-software-components" id="toc-overview-of-software-components" class="nav-link active" data-scroll-target="#overview-of-software-components">Overview of Software Components</a></li>
+  <li><a href="#habcam-vehicle-network-addresses" id="toc-habcam-vehicle-network-addresses" class="nav-link" data-scroll-target="#habcam-vehicle-network-addresses">HabCam Vehicle Network Addresses</a></li>
+  <li><a href="#at-sea-data-management-workflow" id="toc-at-sea-data-management-workflow" class="nav-link" data-scroll-target="#at-sea-data-management-workflow">At-Sea Data Management Workflow</a></li>
+  <li><a href="#metadata-directories-verification" id="toc-metadata-directories-verification" class="nav-link" data-scroll-target="#metadata-directories-verification">Metadata Directories &amp; Verification</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -393,9 +405,129 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>[Insert live image capture protocols, sensor logging routines, and acquisition software instructions here]</em></p>
+<section id="overview-of-software-components" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-software-components">Overview of Software Components</h2>
+<ul>
+<li><strong>Part 1: Engineering GUI</strong>
+<ul>
+<li><strong>Sensor Status:</strong> Displays real-time operational status for all acquiring sensors (indicated in green). At sea, all sensors except the deprecated SeaFET will show green.</li>
+<li><strong>Monitored Sensors:</strong>
+<ul>
+<li><strong>AHRS:</strong> Attitude sensor</li>
+<li><strong>CTD:</strong> Sea-Bird 49</li>
+<li><strong>Oxygen:</strong> Sea-Bird 39</li>
+<li><strong>GPS:</strong> Ship’s GPS feed</li>
+<li><strong>Fathometer:</strong> Ship’s fathometer feed</li>
+<li><strong>Altimeter:</strong> Benthos PSA 916</li>
+</ul></li>
+</ul></li>
+<li><strong>Part 2: Image Viewer (Both Cameras Online)</strong>
+<ul>
+<li>Displays the live feed of the stereo cameras in real time as frames are acquired.</li>
+<li>Controls the winchfly plot display as well as the trigger rate for both cameras and strobes.</li>
+</ul></li>
+<li><strong>Part 3: Stereo Acquisition</strong>
+<ul>
+<li>A terminal script that loads configuration files onto each camera and initiates the acquisition feed.</li>
+</ul></li>
+<li><strong>Part 4: Event Logger</strong>
+<ul>
+<li>Utilized by the co-pilot to record timestamped operational notes, trackline changes, image highlights, shift changes, and system events.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="habcam-vehicle-network-addresses" class="level2">
+<h2 class="anchored" data-anchor-id="habcam-vehicle-network-addresses">HabCam Vehicle Network Addresses</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component / Device</th>
+<th style="text-align: left;">IP Address</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Port Camera</strong></td>
+<td style="text-align: left;"><code>192.168.125.120</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Starboard Camera</strong></td>
+<td style="text-align: left;"><code>192.168.125.121</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Moxa Nport #1</strong></td>
+<td style="text-align: left;"><code>192.168.135.200</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Moxa Nport #2</strong></td>
+<td style="text-align: left;"><code>192.168.135.202</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Gardasoft #1</strong></td>
+<td style="text-align: left;"><code>192.168.135.91</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Gardasoft #2</strong></td>
+<td style="text-align: left;"><code>192.168.135.92</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>BlueView Sonar</strong></td>
+<td style="text-align: left;"><code>192.168.1.45</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="at-sea-data-management-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="at-sea-data-management-workflow">At-Sea Data Management Workflow</h2>
+<section id="system-initialization-time-synchronization" class="level3">
+<h3 class="anchored" data-anchor-id="system-initialization-time-synchronization">System Initialization &amp; Time Synchronization</h3>
+<ul>
+<li>All HabCam computers and servers are time-synchronized to the NOAA time server using Network Time Protocol (NTP).</li>
+<li>The main topside computer (<code>Dixon</code>) connects directly to the HabCam vehicle, onboard servers, ship GPS, and ship fathometer.</li>
+<li>Raw unprocessed environmental data is recorded directly into text files with associated timestamps for every entry.</li>
+<li>A processed CSV file is continuously generated to store vehicle sensor measurements, GPS coordinates, and corresponding stereo-paired image filenames formatted as <code>cruiseID.Timestamp.image#.tif</code>.</li>
+</ul>
+</section>
+<section id="starting-acquisition" class="level3">
+<h3 class="anchored" data-anchor-id="starting-acquisition">Starting Acquisition</h3>
+<ol type="1">
+<li>Power on the HabCam vehicle and launch the <code>habcamDataAq</code> software suite.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img width=&quot;780&quot; height=&quot;579&quot; alt=&quot;Data Acquisition&quot; src=&quot;https://github.com/user-attachments/assets/bb6b4c41-2fd1-4ab3-b57d-4075d76de282&quot; /.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Topside Workstation showing Engineering GUI and Image Viewer"><img src="img width=&quot;780&quot; height=&quot;579&quot; alt=&quot;Data Acquisition&quot; src=&quot;https://github.com/user-attachments/assets/bb6b4c41-2fd1-4ab3-b57d-4075d76de282&quot; /.png" class="img-fluid figure-img" alt="Topside Workstation showing Engineering GUI and Image Viewer"></a></p>
+<figcaption>Topside Workstation showing Engineering GUI and Image Viewer</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Launch the following desktop shortcuts: <strong>Engineering GUI</strong>, <strong>Image Viewer</strong>, and <strong>StereoAq</strong>.</li>
+<li>Verify in the <strong>Engineering GUI</strong> that all active sensor indicators display a green light. &gt; <strong>Note:</strong> A red light indicates an offline or inactive sensor. The only expected red indicator during sea operations is the 5th sensor down on the left sidebar (the deprecated SeaFET sensor).</li>
+<li>Open the <strong>Image Viewer GUI</strong> to confirm live video streams from both Port and Starboard cameras. Ensure the 3 status indicators relating to <strong>recording</strong>, <strong>writing</strong>, and <strong>acquisition</strong> are green.</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="metadata-directories-verification" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-directories-verification">Metadata Directories &amp; Verification</h2>
+<section id="data-file-formats" class="level3">
+<h3 class="anchored" data-anchor-id="data-file-formats">Data File Formats</h3>
+<ul>
+<li><strong><code>.hab</code> Files:</strong> Hourly raw data logs containing raw output streams from every sensor connected to the vehicle according to the HabCam v4 architecture.</li>
+<li><strong><code>.img</code> Files:</strong> Processed metadata CSV files containing timestamped image names, geospatial location coordinates, and aligned sensor metrics.</li>
+</ul>
+</section>
+<section id="directory-structures" class="level3">
+<h3 class="anchored" data-anchor-id="directory-structures">Directory Structures</h3>
+<p>Verify that hourly raw data (<code>.hab</code>) and processed metadata (<code>.img</code>) files are actively being written to the following topside paths:</p>
+<ul>
+<li><strong>Hourly Raw Sensor Data (<code>.hab</code>):</strong> ```bash /mnt/dixon-data/YYYY/hab/</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -811,6 +943,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
