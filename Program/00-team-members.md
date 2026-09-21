@@ -128,7 +128,9 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 Jeremy earned a BS in Biochemistry in 2018 and a PhD in Fish and Wildlife Conservation from Virginia Tech in 2025. As a graduate student, he focused on data science and machine learning applications for monitoring global shark and ray populations. In 2026, Jeremy began working for NOAA’s Advanced Technology Program at the Northeast Fisheries Science Center developing image-recognition software for assessing sea scallop populations from the Habitat Camera Trawl Surveys. This work involves automatically counting sea scallops with trained models, quantifying uncertainty, and extrapolating population abundance to the larger Northeast region.
 
 Relevant links:
+
 </div>
+
 LinkedIn: https://www.linkedin.com/in/jeremy-jenrette-5579a4105/?trk=opento_sprofile_topcard
 
 </div>
@@ -165,6 +167,9 @@ Personal Website: https://jeremyjenrette.weebly.com/
 Dana is a marine ecologist with research interests in shellfish biology, invertebrate zoology, food webs, parasite ecology, and spatial ecology. Her work uses a combination of quantitative approaches and natural history to gain mechanistic understanding of ecosystem processes and inform management issues. Dana earned a Ph.D. in Ecology, Evolution, and Marine Biology from University of California, Santa Barbara, a M.Sc. in Ecology from San Diego State University, and a B.S. in Marine Biology from University of California, Santa Cruz. She began working at NOAA in 2023 following a postdoctoral fellowship at Colby College.
 
 Relevant links:
+
+</div>
+
 Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 <a href="https://example.com">ORCID</a>
 
