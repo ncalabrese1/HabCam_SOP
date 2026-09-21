@@ -121,7 +121,7 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Shellfish Survey Program</p>
 </div>
-<img src="<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/fa70c66a-daa0-4cd4-baf9-092daaf7e242" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/7cefab01-d689-4623-b3d5-2024e3c6faa3" />
 
 </div>
 
