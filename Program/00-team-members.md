@@ -183,7 +183,8 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Populations Dynamics Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Stock Assessment Methods Task Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/e523b7b4-70d9-41b3-8f12-8183409c477d" />
+ 
 </div>
 
 Dvora is the lead assessment scientist for Atlantic sea scallops, and secondary for spiny dogfish. She is a member of Automated Image Analysis Strategic Initiative Committee, ICES Stock Assessment Methods Working Group, and the NEFMC Sea Scallop PDT. 
