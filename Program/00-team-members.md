@@ -321,7 +321,14 @@ Email:
 Ph.D. Interdisciplinary (Marine Sciences, Statistics, and Resource Economics) University of Maine
 M.S. Marine Resource Assessment and Management, National Taiwan Ocean University
 B.B.A. International Trade, Aletheia University
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 11 ==================== -->
