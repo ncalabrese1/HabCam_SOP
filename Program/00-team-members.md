@@ -44,7 +44,14 @@ Email:
 </div>
 
 Cameron earned a BA in Marine Biology from Roger Williams University in 2019. Previously, Cameron worked for Woods Hole Oceanographic Institution in various roles in the Biology and Applied Ocean Physics and Engineering departments. Cameron joined the NEFSC in 2022 as an Electronics Engineer contractor before transitioning to an Advanced Technology Specialist in 2024. Within the Advanced Technology Group, Cameron develops and implements advanced technologies for ecosystem surveys including towed benthic imaging systems and autonomous underwater vehicles (AUVs). He also supports fishery-independent resource survey operations through at-sea data collection and storage, analysis, and research.
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 3 ==================== -->
@@ -91,7 +98,14 @@ OrcID: https://orcid.org/0000-0001-6798-8584
 </div>
 
 GoogleScholar: https://scholar.google.com/citations?user=YbjulGsAAAAJ&hl=en
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 4 ==================== -->
@@ -114,7 +128,14 @@ Shannen joined the NEFSC Advanced Technology and Marine Development Program in 2
 Relevant links:
 </div>
 Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 5 ==================== -->
@@ -153,7 +174,14 @@ GoogleScholar: https://scholar.google.com/citations?hl=en&user=IgYt-j0AAAAJ&view
 </div>
 
 Personal Website: https://jeremyjenrette.weebly.com/
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 6 ==================== -->
@@ -177,7 +205,14 @@ Relevant links:
 
 Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 <a href="https://example.com">ORCID</a>
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 7 ==================== -->
@@ -194,7 +229,14 @@ Google Scholar: https://scholar.google.com/citations?user=GUCJgkwAAAAJ&hl=en
 </div>
 
 Zachary graduated from Michigan State University with a Bachelor of Science in Fisheries and Wildlife in June of 2017. He started his career in Marine Science as a fisheries observer, based out of Point Judith, Rhode Island. After two years of observing, he came in-house to work at the Northeast Fisheries Observer Training Center in North Falmouth, Massachusetts. After a year working as the observer compliance liaison, Zachary started a federal position with NOAA Office of Law Enforcement, in the Vessel Monitoring Department. After a year there, Zachary knew he wanted to get back to the sea, so he transferred to the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. As part of ESB, Zachary primarily works on the Shellfish Surveys. These surveys include Atlantic Sea Scallop, Northern Shrimp, Ocean Quahog, and Atlantic Surfclam.
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 8 ==================== -->
@@ -213,7 +255,14 @@ Zachary graduated from Michigan State University with a Bachelor of Science in F
 Jonathan Duquette is a Biological Science Technician with the Ecosystems Surveys Branch at the Northeast Fisheries Science Center. Specializing in fisheries science and marine data collection, Jonathan plays an integral role in critical research initiatives, including the high-resolution HabCam (Habitat Camera Array) and sea scallop dredge surveys. His work at sea and ashore supports the rigorous monitoring, data analysis, and ecological assessments essential for sustainable fisheries management and marine ecosystem conservation in the Northeast.
 
 Jonathan has had a lifelong obsession with the sea, sharks, and fishing starting at an early age. After graduating with a BS in Marine Biology from the University of New England, Jonathan became a fisheries observer, collecting data for the federal government on fishing vessels in Alaska. After working as an observer on king crab fishing vessels (think TV's "Deadliest Catch"), longline vessels, and scallop vessels, Jonathan returned to the East Coast, where he worked as a sternman on lobster fishing vessels in Boothbay Harbor, Maine. In 2003, Jonathan joined the Ecosystems Surveys Branch as a Biological Science Technician, a role that continues today.
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 9 ==================== -->
@@ -246,7 +295,14 @@ Scopus: https://www.scopus.com/authid/detail.uri?authorId=7402132627
 </div>
 
 OrcID: https://orcid.org/0000-0002-0406-0751
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
 <!-- ==================== TEAM MEMBER 10 ==================== -->
@@ -289,6 +345,13 @@ Relevant links:
  
 GoogleScholar: https://scholar.google.com/citations?user=d8gvRasAAAAJ&hl=en
 <a href="https://example.com">ORCID</a>
+</div>
+<h2 style="margin-top: 0; margin-bottom: 4px; font-weight: bold; border-bottom: none;">Contact</h2>
+</div>
+Office:
 
+</div>
+
+Email:
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
