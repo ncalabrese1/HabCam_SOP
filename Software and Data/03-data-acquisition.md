@@ -49,7 +49,7 @@
 ### Starting Acquisition
 1. Power on the HabCam vehicle and launch the `habcamDataAq` software suite.
 
-![Topside Workstation showing Engineering GUI and Image Viewer](<img width="780" height="579" alt="Data Acquisition" src="https://github.com/user-attachments/assets/bb6b4c41-2fd1-4ab3-b57d-4075d76de282" />)
+![Topside Workstation showing Engineering GUI and Image Viewer](https://github.com/user-attachments/assets/bb6b4c41-2fd1-4ab3-b57d-4075d76de282)
 
 3. Launch the following desktop shortcuts: **Engineering GUI**, **Image Viewer**, and **StereoAq**.
 4. Verify in the **Engineering GUI** that all active sensor indicators display a green light. 
