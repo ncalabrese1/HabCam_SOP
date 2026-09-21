@@ -102,7 +102,7 @@ Linkedin:"https://www.linkedin.com/in/shannen-allen"</a>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Ecosystems Surveys Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Marine Development & Advanced Technology Program</p>
 </div>
-<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/5ae09589-4fd1-4dab-9fef-d0a0174b72c5" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/756ddf3a-030b-4a67-8a36-ce46b7f19584" />
 
 </div>
 
