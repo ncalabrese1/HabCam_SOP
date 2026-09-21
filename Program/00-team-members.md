@@ -215,7 +215,8 @@ Relevant links:
 <p style="margin: 0; color: #555; font-size: 0.8em;">Populations Dynamics Branch</p>
 <p style="margin: 0; color: #555; font-size: 0.8em;">Stock Assessment Methods Task Program</p>
 </div>
-<img src="https://via.placeholder.com/160" alt="Profile Photo" style="width: 160px; height: 160px; object-fit: cover; margin-left: 20px;" />
+<img src=<img width="288" height="288" <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/9465f3cf-2c5d-4762-a8a6-e0fbe7d065e8" />
+ />
 </div>
 
 Alex earned a BS in Biology from Northeastern University and a PhD in Fisheries Oceanography from the University of Massachusetts. Alex is the lead assessment scientist for Georges Bank yellowtail flounder, Georges Bank winter flounder and Southern New England Cod.
