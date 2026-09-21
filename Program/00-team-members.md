@@ -18,7 +18,8 @@
 Conor earned a BA in Marine Science from Boston University, and a MS and PhD in Oceanography from the University of Rhode Island’s Graduate School of Oceanography. Previously, Conor worked for Applied Science Associates, and then the Rhode Island Department of Environmental Management’s Division of Marine Fisheries. Conor joined the NEFSC in 2024 and leads the Marine Development and Advanced Technology Program, which has several aims including modernizing surveys using advanced technologies and analytics, developing survey mitigation strategies that can support continued data acquisition in the face of various survey challenges, and understanding the interaction between marine development and marine ecosystems. The program's research and science products aim to improve fish, protected species, and ecosystem assessments. Conor’s research interests are in the fields of fisheries oceanography, population and ecosystem dynamics, survey design, and fisheries management.
 
 Relevant links:
-Google Scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=0lPpwIcAAAAJ</a>
+</div>
+Google Scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=0lPpwIcAAAAJ
 
 <hr style="margin: 35px 0; border: 0; border-top: 1px solid #e0e0e0;" />
 
