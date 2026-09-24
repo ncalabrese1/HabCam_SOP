@@ -76,10 +76,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #1e293b; margin: 0; padding: 20px;" class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -368,8 +397,19 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#marine-development-advanced-technology-program" id="toc-marine-development-advanced-technology-program" class="nav-link active" data-scroll-target="#marine-development-advanced-technology-program">Marine Development &amp; Advanced Technology Program</a>
+  <ul class="collapse">
+  <li><a href="#addressing-marine-development-survey-challenges" id="toc-addressing-marine-development-survey-challenges" class="nav-link" data-scroll-target="#addressing-marine-development-survey-challenges">Addressing Marine Development &amp; Survey Challenges</a></li>
+  <li><a href="#core-technologies-research-initiatives" id="toc-core-technologies-research-initiatives" class="nav-link" data-scroll-target="#core-technologies-research-initiatives">Core Technologies &amp; Research Initiatives</a></li>
+  <li><a href="#future-strategic-directions" id="toc-future-strategic-directions" class="nav-link" data-scroll-target="#future-strategic-directions">Future Strategic Directions</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -393,170 +433,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-&lt;!DOCTYPE html&gt;
+<section id="marine-development-advanced-technology-program" class="level1">
+<h1>Marine Development &amp; Advanced Technology Program</h1>
+<p><em>(Formerly Advanced Technology Program)</em></p>
+<p><strong>Population &amp; Ecosystems Monitoring &amp; Analysis Division • Ecosystems Surveys Branch</strong></p>
+<hr>
+<blockquote class="blockquote">
+<h3 id="program-mission" class="anchored">Program Mission</h3>
+<p><strong>To develop surveys, technologies, and analytical approaches to inform stock and ecosystem assessments across the Northeast region.</strong></p>
+</blockquote>
+<hr>
+<section id="addressing-marine-development-survey-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="addressing-marine-development-survey-challenges">Addressing Marine Development &amp; Survey Challenges</h2>
+<p>Offshore wind energy development in the U.S. Northeast region interacts with <strong>14 long-term scientific surveys</strong>. These developments introduce significant survey challenges, including physical preclusion from traditional sampling areas, impacts on statistical survey designs, habitat changes, and operational sampling constraints.</p>
+<section id="step-framework-for-survey-mitigation-adaptation" class="level3">
+<h3 class="anchored" data-anchor-id="step-framework-for-survey-mitigation-adaptation">6-Step Framework for Survey Mitigation &amp; Adaptation:</h3>
+<ol type="1">
+<li><strong>Evaluate Designs &amp; Impacts</strong></li>
+<li><strong>Design New Methods</strong></li>
+<li><strong>Calibrate New &amp; Existing Surveys</strong></li>
+<li><strong>Bridge Solutions</strong></li>
+<li><strong>Conduct New Surveys</strong></li>
+<li><strong>Communications &amp; New Data</strong></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="core-technologies-research-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="core-technologies-research-initiatives">Core Technologies &amp; Research Initiatives</h2>
+<section id="habitat-camera-habcam-survey-operations" class="level3">
+<h3 class="anchored" data-anchor-id="habitat-camera-habcam-survey-operations">1. Habitat Camera (HabCam) Survey Operations</h3>
+<p><em>Jointly managed by the Program and the Shellfish Survey Group.</em></p>
+<ul>
+<li><strong>Lead Operations:</strong> Responsible for survey scheduling, vessel logistics, vehicle maintenance, electronics, camera calibrations, database architecture, and assessment analytics.</li>
+<li><strong>Ocean Acidification Monitoring:</strong> In 2024, a channelized optical system was integrated into HabCam to characterize ocean chemistry alongside benthic surveys.</li>
+<li><strong>Scallop Assessment:</strong> Directly couples sea scallop biomass estimates with bottom water DIC and <span class="math inline">\(p\text{CO}_2\)</span> data to evaluate ocean chemistry impacts on scallop distribution.</li>
+</ul>
+<hr>
+</section>
+<section id="long-range-autonomous-underwater-vehicles-lrauv" class="level3">
+<h3 class="anchored" data-anchor-id="long-range-autonomous-underwater-vehicles-lrauv">2. Long-Range Autonomous Underwater Vehicles (LRAUV)</h3>
+<p><em>Designed by MBARI; modified for fisheries science.</em></p>
+<ul>
+<li><strong>Wind Farm Access:</strong> Autonomous underwater vehicles can follow target depths or oceanographic features for days/weeks, enabling survey access inside wind energy areas while reducing vessel days at sea.</li>
+<li><strong>Stereo Camera Payloads:</strong> NEFSC and WHOI equipped two payloads with stereo cameras to replicate the HabCam imaging setup.</li>
+<li><strong>Field Deployments:</strong> Sampled over 200 nautical miles during scallop surveys and completed nearshore deployments around South Fork Wind Farm.</li>
+<li><strong>Calibration Studies:</strong> Active research evaluating catchability differences between AUV, HabCam, and traditional dredge gear.</li>
+</ul>
+<hr>
+</section>
+<section id="active-acoustics-uncrewed-surface-vehicles-drix-usv" class="level3">
+<h3 class="anchored" data-anchor-id="active-acoustics-uncrewed-surface-vehicles-drix-usv">3. Active Acoustics &amp; Uncrewed Surface Vehicles (DriX USV)</h3>
+<p><em>Safely sampling around offshore turbine structures.</em></p>
+<ul>
+<li><strong>24-Hour Continuous Operations:</strong> Uncrewed Surface Vehicles (USVs) carry out continuous active acoustic sampling within 20–30 meters of wind turbine structures where crewed ships face navigational risks.</li>
+<li><strong>Offshore Missions:</strong> Deployed the DriX18 USV across offshore wind areas including Block Island, Cox Ledge, and Vineyard Wind.</li>
+<li><strong>Forage Habitat Research:</strong> Acoustic survey designs evaluate prey field dynamics and North Atlantic Right Whale forage habitats.</li>
+<li><strong>Cooperative Acoustics:</strong> Partnering with industry to assess fish life history, infer catchability, and study species like Atlantic mackerel.</li>
+</ul>
+<hr>
+</section>
+<section id="machine-learning-artificial-intelligence-for-optical-data" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-artificial-intelligence-for-optical-data">4. Machine Learning &amp; Artificial Intelligence for Optical Data</h3>
+<p><em>Transitioning from manual image processing to automated computer vision.</em></p>
+<ul>
+<li><strong>Automated Annotations:</strong> Training machine learning algorithms (using tools like VIAME) under the NOAA IRA Optical Strategic Initiative to detect and count sea scallops and benthic fauna from optical datasets.</li>
+<li><strong>Scalable Analytics:</strong> Developing automated uncertainty quantification and extrapolation models for regional stock abundance assessments.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="future-strategic-directions" class="level2">
+<h2 class="anchored" data-anchor-id="future-strategic-directions">Future Strategic Directions</h2>
+<ul>
+<li><strong>Passive Acoustics Surveys:</strong> Developing fisheries-independent passive acoustic monitoring for groundfish such as Atlantic cod and haddock.</li>
+<li><strong>AUV &amp; eDNA Integration:</strong> Expanding AUV capabilities by combining optical imaging payloads with environmental DNA (eDNA) sampling.</li>
+<li><strong>Model-Based Data Integration:</strong> Integrating traditional survey data with advanced technology datasets using advanced geostatistical models.</li>
+<li><strong>Catchability Studies:</strong> Conducting directed field studies to evaluate gear efficiency and catchability across gear types.</li>
+</ul>
+<hr>
+<section id="program-contact-information" class="level3">
+<h3 class="anchored" data-anchor-id="program-contact-information">Program Contact Information</h3>
+<ul>
+<li><strong>Program Lead:</strong> M. Conor McManus, Ph.D.&nbsp;<em>(Supervisory Research Fish Biologist)</em></li>
+<li><strong>Email:</strong> <a href="mailto:michael.conor.mcmanus@noaa.gov">michael.conor.mcmanus@noaa.gov</a></li>
+<li><strong>Office:</strong> (401) 859-3404</li>
+</ul>
 
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-Marine Development &amp; Advanced Technology Program | NOAA Fisheries
-</title>
-
-
-<div style="max-width: 950px; margin: 0 auto;">
-<pre><code>&lt;!-- HEADER / BREADCRUMB SECTION --&gt;
-&lt;div style="margin-bottom: 24px;"&gt;
-  &lt;p style="margin: 0 0 6px 0; font-size: 0.85rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;"&gt;
-    Population &amp; Ecosystems Monitoring &amp; Analysis Division &amp;bull; Ecosystems Surveys Branch
-  &lt;/p&gt;
-  &lt;h1 style="color: #003087; margin: 0 0 12px 0; font-size: 2.2rem; font-weight: 800; border-bottom: 4px solid #0085ca; padding-bottom: 10px;"&gt;
-    Marine Development &amp; Advanced Technology Program
-  &lt;/h1&gt;
-  &lt;p style="margin: 0; font-size: 0.95rem; color: #64748b; font-style: italic;"&gt;
-    (Formerly Advanced Technology Program)
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;!-- MISSION BANNER --&gt;
-&lt;div style="background-color: #003087; color: #ffffff; border-radius: 8px; padding: 24px; margin-bottom: 32px; box-shadow: 0 2px 6px rgba(0,0,0,0.12);"&gt;
-  &lt;h2 style="margin: 0 0 8px 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #93c5fd;"&gt;Program Mission&lt;/h2&gt;
-  &lt;p style="margin: 0; font-size: 1.25rem; font-weight: 600; line-height: 1.5;"&gt;
-    To develop surveys, technologies, and analytical approaches to inform stock and ecosystem assessments across the Northeast region.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;!-- PROGRAM OVERVIEW &amp; OFFSHORE WIND CONTEXT --&gt;
-&lt;div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 28px; margin-bottom: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"&gt;
-  &lt;h2 style="margin: 0 0 12px 0; color: #003087; font-size: 1.4rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;"&gt;
-    Addressing Marine Development &amp; Survey Challenges
-  &lt;/h2&gt;
-  &lt;p style="margin: 0 0 16px 0; font-size: 0.95rem; line-height: 1.6; color: #334155;"&gt;
-    Offshore wind energy development in the U.S. Northeast region interacts with 14 long-term scientific surveys. These developments introduce significant survey challenges, including physical preclusion from traditional sampling areas, impacts on statistical survey designs, habitat changes, and operational sampling constraints.
-  &lt;/p&gt;
-
-  &lt;div style="background-color: #f1f5f9; border-left: 4px solid #0085ca; padding: 18px; border-radius: 0 6px 6px 0; margin-bottom: 20px;"&gt;
-    &lt;h3 style="margin: 0 0 10px 0; font-size: 1rem; color: #003087; font-weight: 700;"&gt;6-Step Framework for Survey Mitigation &amp; Adaptation:&lt;/h3&gt;
-    &lt;div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; font-size: 0.88rem; color: #1e293b; font-weight: 600;"&gt;
-      &lt;div style="background: #ffffff; padding: 8px 12px; border-radius: 4px; border: 1px solid #cbd5e1;"&gt;1. Evaluate Designs &amp; Impacts&lt;/div&gt;
-      &lt;div style="background: #ffffff; padding: 8px 12px; border-radius: 4px; border: 1px solid #cbd5e1;"&gt;2. Design New Methods&lt;/div&gt;
-      &lt;div style="background: #ffffff; padding: 8px 12px; border-radius: 4px; border: 1px solid #cbd5e1;"&gt;3. Calibrate New &amp; Existing Surveys&lt;/div&gt;
-      &lt;div style="background: #ffffff; padding: 8px 12px; border-radius: 4px; border: 1px solid #cbd5e1;"&gt;4. Bridge Solutions&lt;/div&gt;
-      &lt;div style="background: #ffffff; padding: 8px 12px; border-radius: 4px; border: 1px solid #cbd5e1;"&gt;5. Conduct New Surveys&lt;/div&gt;
-      &lt;div style="background: #ffffff; padding: 8px 12px; border-radius: 4px; border: 1px solid #cbd5e1;"&gt;6. Communications &amp; New Data&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- CORE INITIATIVES &amp; ADVANCED TECHNOLOGIES --&gt;
-&lt;h2 style="color: #003087; font-size: 1.6rem; font-weight: 800; margin: 0 0 20px 0;"&gt;Core Technologies &amp; Research Initiatives&lt;/h2&gt;
-
-&lt;!-- INITIATIVE 1: HABCAM --&gt;
-&lt;div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"&gt;
-  &lt;div style="display: flex; flex-wrap: wrap-reverse; justify-content: space-between; align-items: flex-start; gap: 20px; border-bottom: 2px solid #0085ca; padding-bottom: 12px; margin-bottom: 16px;"&gt;
-    &lt;div&gt;
-      &lt;h3 style="margin: 0 0 4px 0; color: #003087; font-size: 1.3rem; font-weight: 700;"&gt;Habitat Camera (HabCam) Survey Operations&lt;/h3&gt;
-      &lt;span style="display: inline-block; background-color: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;"&gt;Optical Benthic Imaging&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;p style="margin: 0 0 12px 0; font-size: 0.95rem; line-height: 1.6; color: #334155;"&gt;
-    Jointly managed by the Program and the Shellfish Survey Group, HabCam operations lead in survey scheduling, vessel logistics, vehicle maintenance, electronics, camera calibrations, database architecture, and assessment analytics.
-  &lt;/p&gt;
-  &lt;ul style="margin: 0; padding-left: 20px; font-size: 0.9rem; color: #475569; line-height: 1.6;"&gt;
-    &lt;li&gt;&lt;strong&gt;Ocean Acidification Monitoring:&lt;/strong&gt; In 2024, a channelized optical system was integrated into HabCam to characterize ocean chemistry alongside benthic surveys.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Scallop Assessment:&lt;/strong&gt; Directly couples sea scallop biomass estimates with bottom water DIC and $p\text{CO}_2$ data to evaluate distribution impacts.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;!-- INITIATIVE 2: LRAUV --&gt;
-&lt;div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"&gt;
-  &lt;div style="display: flex; flex-wrap: wrap-reverse; justify-content: space-between; align-items: flex-start; gap: 20px; border-bottom: 2px solid #0085ca; padding-bottom: 12px; margin-bottom: 16px;"&gt;
-    &lt;div&gt;
-      &lt;h3 style="margin: 0 0 4px 0; color: #003087; font-size: 1.3rem; font-weight: 700;"&gt;Long-Range Autonomous Underwater Vehicles (LRAUV)&lt;/h3&gt;
-      &lt;span style="display: inline-block; background-color: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;"&gt;Uncrewed Underwater Systems&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;p style="margin: 0 0 12px 0; font-size: 0.95rem; line-height: 1.6; color: #334155;"&gt;
-    Designed by MBARI, LRAUVs follow target oceanographic features or depths for days to weeks. NEFSC and WHOI equipped two payloads with stereo cameras to replicate the HabCam imaging setup.
-  &lt;/p&gt;
-  &lt;ul style="margin: 0; padding-left: 20px; font-size: 0.9rem; color: #475569; line-height: 1.6;"&gt;
-    &lt;li&gt;&lt;strong&gt;Wind Farm Access:&lt;/strong&gt; Enables survey access inside wind energy areas while reducing vessel days at sea.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Field Deployments:&lt;/strong&gt; Sampled over 200 nautical miles during scallop surveys and completed nearshore deployments around South Fork Wind Farm.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Calibration Studies:&lt;/strong&gt; Active research evaluating catchability differences between AUV, HabCam, and traditional dredge gear.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;!-- INITIATIVE 3: DRIX USV --&gt;
-&lt;div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"&gt;
-  &lt;div style="display: flex; flex-wrap: wrap-reverse; justify-content: space-between; align-items: flex-start; gap: 20px; border-bottom: 2px solid #0085ca; padding-bottom: 12px; margin-bottom: 16px;"&gt;
-    &lt;div&gt;
-      &lt;h3 style="margin: 0 0 4px 0; color: #003087; font-size: 1.3rem; font-weight: 700;"&gt;Active Acoustics &amp; Uncrewed Surface Vehicles (DriX USV)&lt;/h3&gt;
-      &lt;span style="display: inline-block; background-color: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;"&gt;Acoustics &amp; USVs&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;p style="margin: 0 0 12px 0; font-size: 0.95rem; line-height: 1.6; color: #334155;"&gt;
-    Uncrewed Surface Vehicles (USVs) safely execute 24-hour continuous active acoustic sampling within 20–30 meters of wind turbine structures where crewed ships face navigational risks.
-  &lt;/p&gt;
-  &lt;ul style="margin: 0; padding-left: 20px; font-size: 0.9rem; color: #475569; line-height: 1.6;"&gt;
-    &lt;li&gt;&lt;strong&gt;Offshore Missions:&lt;/strong&gt; Deployed the DriX18 USV across offshore wind areas including Block Island, Cox Ledge, and Vineyard Wind.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Forage Habitat Research:&lt;/strong&gt; Acoustic survey designs evaluate prey field dynamics and North Atlantic Right Whale forage habitats.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Cooperative Acoustics:&lt;/strong&gt; Partnering with industry to assess fish life history, infer catchability, and study species like Atlantic mackerel.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;!-- INITIATIVE 4: MACHINE LEARNING --&gt;
-&lt;div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 24px; margin-bottom: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"&gt;
-  &lt;div style="display: flex; flex-wrap: wrap-reverse; justify-content: space-between; align-items: flex-start; gap: 20px; border-bottom: 2px solid #0085ca; padding-bottom: 12px; margin-bottom: 16px;"&gt;
-    &lt;div&gt;
-      &lt;h3 style="margin: 0 0 4px 0; color: #003087; font-size: 1.3rem; font-weight: 700;"&gt;Machine Learning &amp; Artificial Intelligence for Optical Data&lt;/h3&gt;
-      &lt;span style="display: inline-block; background-color: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;"&gt;Data Science &amp; AI&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;p style="margin: 0 0 12px 0; font-size: 0.95rem; line-height: 1.6; color: #334155;"&gt;
-    Transitioning from manual image processing to automated computer vision pipelines under the NOAA IRA Optical Strategic Initiative.
-  &lt;/p&gt;
-  &lt;ul style="margin: 0; padding-left: 20px; font-size: 0.9rem; color: #475569; line-height: 1.6;"&gt;
-    &lt;li&gt;&lt;strong&gt;Automated Annotations:&lt;/strong&gt; Training machine learning algorithms (using tools like VIAME) to detect and count sea scallops and benthic fauna from optical datasets.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Scalable Analytics:&lt;/strong&gt; Developing automated uncertainty quantification and extrapolation models for regional stock abundance assessments.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;!-- FUTURE DIRECTIONS --&gt;
-&lt;div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 28px; margin-bottom: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"&gt;
-  &lt;h2 style="margin: 0 0 12px 0; color: #003087; font-size: 1.4rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;"&gt;
-    Future Strategic Directions
-  &lt;/h2&gt;
-  &lt;div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 16px;"&gt;
-    &lt;div style="background: #f8fafc; padding: 14px; border-radius: 6px; border: 1px solid #e2e8f0;"&gt;
-      &lt;h4 style="margin: 0 0 6px 0; color: #003087; font-size: 0.95rem;"&gt;Passive Acoustics Surveys&lt;/h4&gt;
-      &lt;p style="margin: 0; font-size: 0.85rem; color: #475569;"&gt;Developing fisheries-independent passive acoustic monitoring for groundfish such as Atlantic cod and haddock.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="background: #f8fafc; padding: 14px; border-radius: 6px; border: 1px solid #e2e8f0;"&gt;
-      &lt;h4 style="margin: 0 0 6px 0; color: #003087; font-size: 0.95rem;"&gt;AUV &amp; eDNA Integration&lt;/h4&gt;
-      &lt;p style="margin: 0; font-size: 0.85rem; color: #475569;"&gt;Expanding AUV capabilities by combining optical imaging payloads with environmental DNA (eDNA) sampling.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="background: #f8fafc; padding: 14px; border-radius: 6px; border: 1px solid #e2e8f0;"&gt;
-      &lt;h4 style="margin: 0 0 6px 0; color: #003087; font-size: 0.95rem;"&gt;Model-Based Data Integration&lt;/h4&gt;
-      &lt;p style="margin: 0; font-size: 0.85rem; color: #475569;"&gt;Integrating traditional survey data with advanced technology datasets using advanced geostatistical models.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="background: #f8fafc; padding: 14px; border-radius: 6px; border: 1px solid #e2e8f0;"&gt;
-      &lt;h4 style="margin: 0 0 6px 0; color: #003087; font-size: 0.95rem;"&gt;Catchability Studies&lt;/h4&gt;
-      &lt;p style="margin: 0; font-size: 0.85rem; color: #475569;"&gt;Conducting directed field studies to evaluate gear efficiency and catchability across gear types.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- CONTACT / FOOTER CARD --&gt;
-&lt;div style="background-color: #f1f5f9; padding: 20px; border-radius: 8px; border-left: 4px solid #003087; margin-bottom: 24px;"&gt;
-  &lt;h3 style="margin: 0 0 6px 0; font-size: 1rem; color: #003087; font-weight: 700;"&gt;Program Contact Information&lt;/h3&gt;
-  &lt;p style="margin: 0 0 4px 0; font-size: 0.9rem; color: #334155;"&gt;&lt;strong&gt;Program Lead:&lt;/strong&gt; M. Conor McManus, Ph.D. (Supervisory Research Fish Biologist)&lt;/p&gt;
-  &lt;p style="margin: 0 0 4px 0; font-size: 0.9rem; color: #334155;"&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:michael.conor.mcmanus@noaa.gov" style="color: #0085ca; text-decoration: underline;"&gt;michael.conor.mcmanus@noaa.gov&lt;/a&gt;&lt;/p&gt;
-  &lt;p style="margin: 0; font-size: 0.9rem; color: #334155;"&gt;&lt;strong&gt;Office:&lt;/strong&gt; (401) 859-3404&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-</div>
-
-
-
-
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
