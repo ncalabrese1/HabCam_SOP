@@ -29,7 +29,9 @@ Offshore wind energy development in the U.S. Northeast region interacts with **1
 *Jointly managed by the Program and the Shellfish Survey Group.*
 
 <p naming="habcam-image">
-  <img src="YOUR_HABCAM_IMAGE_URL_HERE" width="100%" max-width="600" style="border-radius: 8px; border: 1px solid #cbd5e1;" alt="HabCam Tow Vehicle and Benthic Imagery" />
+  <img src="<img width="569" height="379" alt="image" src="https://github.com/user-attachments/assets/05da04f4-fcc6-45d2-9e53-3013aca7c396" />
+" width="100%" max-width="600" style="border-radius: 8px; border: 1px solid #cbd5e1;" alt="HabCam Tow Vehicle and Benthic Imagery" />
+  <img width="567" height="378" alt="image" src="https://github.com/user-attachments/assets/7bd756ad-81fa-4fdc-807c-d685aa1c46a6" />
   <br><em>Figure 1: HabCam towed vehicle deployment and high-resolution seafloor optical imaging.</em>
 </p>
 
@@ -43,7 +45,9 @@ Offshore wind energy development in the U.S. Northeast region interacts with **1
 *Designed by MBARI; modified for fisheries science.*
 
 <p naming="lrauv-image">
-  <img src="YOUR_LRAUV_RED_SUBMARINE_IMAGE_URL_HERE" width="100%" max-width="600" style="border-radius: 8px; border: 1px solid #cbd5e1;" alt="Red Long Range AUV" />
+  <img src="<img width="538" height="388" alt="image" src="https://github.com/user-attachments/assets/af39388a-46ce-49c1-8b36-c341794c61cd" />
+" width="100%" max-width="600" style="border-radius: 8px; border: 1px solid #cbd5e1;" alt="Red Long Range AUV" />
+  <img width="607" height="341" alt="image" src="https://github.com/user-attachments/assets/400ebae4-ae17-4214-9ee1-2e5071ef44ff" />
   <br><em>Figure 2: Long-Range AUV (LRAUV) equipped with stereo optical camera payloads for autonomous survey operations.</em>
 </p>
 
@@ -75,7 +79,9 @@ E<img width="460" height="348" alt="image" src="https://github.com/user-attachme
 *Transitioning from manual image processing to automated computer vision.*
 
 <p naming="viame-image">
-  <img src="YOUR_MACHINE_LEARNING_SCALLOP_IMAGE_URL_HERE" width="100%" max-width="600" style="border-radius: 8px; border: 1px solid #cbd5e1;" alt="AI Machine Learning Bounding Boxes on Sea Scallops" />
+  <img src="<img width="417" height="255" alt="image" src="https://github.com/user-attachments/assets/7ead8308-262f-447c-a3fa-0be0ad93ed4e" />
+  <img width="436" height="274" alt="image" src="https://github.com/user-attachments/assets/8344a041-4cd1-4525-a8ad-f784b144282d" />
+" width="100%" max-width="600" style="border-radius: 8px; border: 1px solid #cbd5e1;" alt="AI Machine Learning Bounding Boxes on Sea Scallops" />
   <br><em>Figure 4: Automated sea scallop detection and bounding box tagging using VIAME machine learning models.</em>
 </p>
 
