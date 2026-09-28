@@ -96,6 +96,7 @@ E<img width="460" height="348" alt="image" src="https://github.com/user-attachme
 * **AUV & eDNA Integration:** Expanding AUV capabilities by combining optical imaging payloads with environmental DNA (eDNA) sampling.
 * **Model-Based Data Integration:** Integrating traditional survey data with advanced technology datasets using advanced geostatistical models.
 * **Catchability Studies:** Conducting directed field studies to evaluate gear efficiency and catchability across gear types.
+<img width="390" height="258" alt="image" src="https://github.com/user-attachments/assets/34e38a54-37a2-4272-bfd2-53c1715ab7f2" />
 
 ---
 
