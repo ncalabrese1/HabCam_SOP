@@ -58,7 +58,7 @@ Offshore wind energy development in the U.S. Northeast region interacts with **1
 *Safely sampling around offshore turbine structures.*
 
 <p naming="drix-image">
-  <img src="YOUR_DRIX_SURFACE_VEHICLE_IMAGE_URL_HER<img width="460" height="348" alt="image" src="https://github.com/user-attachments/assets/df4d832b-e7ae-46e8-af25-7c5e15e1692f" />
+  <img src="<img width="656" height="493" alt="image" src="https://github.com/user-attachments/assets/640722fd-071e-41fe-b0c1-30d741f0e110" />
 E<img width="460" height="348" alt="image" src="https://github.com/user-attachments/assets/d0ead67e-82c5-41b4-ad37-c6dc9308e99b" />
 " width="100%" max-width="600" style="border-radius: 8px; border: 1px solid #cbd5e1;" alt="DriX Uncrewed Surface Vehicle" />
   <br><em>Figure 3: DriX Uncrewed Surface Vehicle (USV) deployed for continuous acoustic sampling in offshore wind areas.</em>
