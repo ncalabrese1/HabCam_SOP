@@ -12,42 +12,31 @@
   {
     "objectID": "Program/00-the-program.html",
     "href": "Program/00-the-program.html",
-    "title": "Marine Development & Advanced Technology Program",
+    "title": "Marine Development & Advanced Technology",
     "section": "",
-    "text": "Addressing Marine Development & Survey Challenges\nPopulation & Ecosystems Monitoring & Analysis Division • Ecosystems Surveys Branch\nOffshore wind energy development in the U.S. Northeast region interacts with 14 long-term scientific surveys. These developments introduce significant survey challenges, including physical preclusion from traditional sampling areas, impacts on statistical survey designs, habitat changes, and operational sampling constraints.",
+    "text": "Interactions with Offshore Wind\nNOAA Fisheries | Northeast Fisheries Science Center\nOffshore wind energy developments impact at least 14 long-term scientific surveys in the U.S. Northeast region (e.g., bottom trawl, scallop, ecosystem monitoring) through preclusion, habitat change, and survey design disruptions.",
     "crumbs": [
       "Program Information",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Program</span>"
     ]
   },
   {
-    "objectID": "Program/00-the-program.html#addressing-marine-development-survey-challenges",
-    "href": "Program/00-the-program.html#addressing-marine-development-survey-challenges",
-    "title": "Marine Development & Advanced Technology Program",
-    "section": "",
-    "text": "6-Step Framework for Survey Mitigation & Adaptation:\n\nEvaluate Designs & Impacts\nDesign New Methods\nCalibrate New & Existing Surveys\nBridge Solutions\nConduct New Surveys\nCommunications & New Data",
+    "objectID": "Program/00-the-program.html#key-technological-initiatives",
+    "href": "Program/00-the-program.html#key-technological-initiatives",
+    "title": "Marine Development & Advanced Technology",
+    "section": "Key Technological Initiatives",
+    "text": "Key Technological Initiatives\n\n1. Long-Range AUV (LRAUV) Development\n\nPlatform & Payload: Developed in collaboration with MBARI and WHOI, incorporating dual stereo camera payloads to mimic the Habitat Camera (HabCam) setup.\nObjectives: Access wind farm lease areas and reduce total days at sea required for HabCam survey coverage.\n2024 Deployments: Sampled over 200 nautical miles in May and June 2024. Calibrations with dredge and HabCam V4 showed no significant bias in scallop shell height measurements.\nNearshore & Offshore Operations: Successfully tested operating from small vessels nearshore (e.g., South Fork Wind Farm in November 2024).\n\n\n\n2. Uncrewed Surface Vehicles (USV - DriX)\n\nOperational Value: Designed to sample close (20–30 meters) to wind turbine structures, operate 24/7 safely, and maneuver efficiently around complex installations.\nMissions: Conducted a 20-day survey covering three offshore wind areas (including Block Island, Cox Ledge, and Vineyard Wind) in late 2023. Continued sampling scheduled focusing on North Atlantic right whale forage habitat questions.\n\n\n\n3. Machine Learning & Optical Enhancements\n\nAutomated Processing: Developing machine learning tools (e.g., VIAME software) under the NOAA Inflation Reduction Act (IRA) Optical Strategic Initiative to automate scallop identification and measurements, replacing manual annotation.\nOcean Acidification Monitoring: Integrated a channelized optical system into HabCam in 2024 to measure bottom water dissolved inorganic carbon (DIC) and pCO₂, pairing scallop biomass with ocean chemistry data.\n\n\n\n4. Active Acoustics & Cooperative Research\n\nLong-Term Data: Active acoustic data collected continuously since 1998 across multiple frequency bands (18, 38, 120 kHz).\nIndustry Collaboration: Partnering with commercial fishing vessels to evaluate catchability, study fish life history, and develop acoustic survey methods for species like Atlantic mackerel.",
     "crumbs": [
       "Program Information",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Program</span>"
     ]
   },
   {
-    "objectID": "Program/00-the-program.html#core-technologies-research-initiatives",
-    "href": "Program/00-the-program.html#core-technologies-research-initiatives",
-    "title": "Marine Development & Advanced Technology Program",
-    "section": "Core Technologies & Research Initiatives",
-    "text": "Core Technologies & Research Initiatives\n\n1. Habitat Camera (HabCam) Survey Operations\nJointly managed by the Program and the Shellfish Survey Group.\n\n&lt;img src=“” width=“100%” max-width=“600” style=“border-radius: 8px; border: 1px solid #cbd5e1;” alt=“HabCam Tow Vehicle and Benthic Imagery” /&gt;  Figure 1: HabCam towed vehicle deployment and high-resolution seafloor optical imaging.\n\n\nLead Operations: Responsible for survey scheduling, vessel logistics, vehicle maintenance, electronics, camera calibrations, database architecture, and assessment analytics.\nOcean Acidification Monitoring: In 2024, a channelized optical system was integrated into HabCam to characterize ocean chemistry alongside benthic surveys.\nScallop Assessment: Directly couples sea scallop biomass estimates with bottom water DIC and \\(p\\text{CO}_2\\) data to evaluate ocean chemistry impacts on scallop distribution.\n\n\n\n\n2. Long-Range Autonomous Underwater Vehicles (LRAUV)\nDesigned by MBARI; modified for fisheries science.\n\n&lt;img src=“” width=“100%” max-width=“600” style=“border-radius: 8px; border: 1px solid #cbd5e1;” alt=“Red Long Range AUV” /&gt;  Figure 2: Long-Range AUV (LRAUV) equipped with stereo optical camera payloads for autonomous survey operations.\n\n\nWind Farm Access: Autonomous underwater vehicles can follow target depths or oceanographic features for days/weeks, enabling survey access inside wind energy areas while reducing vessel days at sea.\nStereo Camera Payloads: NEFSC and WHOI equipped two payloads with stereo cameras to replicate the HabCam imaging setup.\nField Deployments: Sampled over 200 nautical miles during scallop surveys and completed nearshore deployments around South Fork Wind Farm.\nCalibration Studies: Active research evaluating catchability differences between AUV, HabCam, and traditional dredge gear.\n\n\n\n\n3. Active Acoustics & Uncrewed Surface Vehicles (DriX USV)\nSafely sampling around offshore turbine structures.\n\n&lt;img src=“ E” width=“100%” max-width=“600” style=“border-radius: 8px; border: 1px solid #cbd5e1;” alt=“DriX Uncrewed Surface Vehicle” /&gt; Figure 3: DriX Uncrewed Surface Vehicle (USV) deployed for continuous acoustic sampling in offshore wind areas.\n\n\n24-Hour Continuous Operations: Uncrewed Surface Vehicles (USVs) carry out continuous active acoustic sampling within 20–30 meters of wind turbine structures where crewed ships face navigational risks.\nOffshore Missions: Deployed the DriX18 USV across offshore wind areas including Block Island, Cox Ledge, and Vineyard Wind.\nForage Habitat Research: Acoustic survey designs evaluate prey field dynamics and North Atlantic Right Whale forage habitats.\nCooperative Acoustics: Partnering with industry to assess fish life history, infer catchability, and study species like Atlantic mackerel.\n\n\n\n\n4. Machine Learning & Artificial Intelligence for Optical Data\nTransitioning from manual image processing to automated computer vision.\n\n&lt;img src=“ ” width=“100%” max-width=“600” style=“border-radius: 8px; border: 1px solid #cbd5e1;” alt=“AI Machine Learning Bounding Boxes on Sea Scallops” /&gt; Figure 4: Automated sea scallop detection and bounding box tagging using VIAME machine learning models.\n\n\nAutomated Annotations: Training machine learning algorithms (using tools like VIAME) under the NOAA IRA Optical Strategic Initiative to detect and count sea scallops and benthic fauna from optical datasets.\nScalable Analytics: Developing automated uncertainty quantification and extrapolation models for regional stock abundance assessments.",
-    "crumbs": [
-      "Program Information",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Program</span>"
-    ]
-  },
-  {
-    "objectID": "Program/00-the-program.html#future-strategic-directions",
-    "href": "Program/00-the-program.html#future-strategic-directions",
-    "title": "Marine Development & Advanced Technology Program",
-    "section": "Future Strategic Directions",
-    "text": "Future Strategic Directions\n\nPassive Acoustics Surveys: Developing fisheries-independent passive acoustic monitoring for groundfish such as Atlantic cod and haddock.\nAUV & eDNA Integration: Expanding AUV capabilities by combining optical imaging payloads with environmental DNA (eDNA) sampling.\nModel-Based Data Integration: Integrating traditional survey data with advanced technology datasets using advanced geostatistical models.\nCatchability Studies: Conducting directed field studies to evaluate gear efficiency and catchability across gear types. \n\n\n\nProgram Contact Information\n\nProgram Lead: M. Conor McManus, Ph.D. (Supervisory Research Fish Biologist)[cite: 1]\nEmail: michael.conor.mcmanus@noaa.gov[cite: 1]\nOffice: (401) 859-3404[cite: 1]",
+    "objectID": "Program/00-the-program.html#administrative-future-directions",
+    "href": "Program/00-the-program.html#administrative-future-directions",
+    "title": "Marine Development & Advanced Technology",
+    "section": "Administrative & Future Directions",
+    "text": "Administrative & Future Directions\n\nProposals & Funding: Submitted 7 proposals since May 2024 across VIAME machine learning, mackerel acoustics, oceanographic USV sampling, and AUV-ABIS development.\nStaffing Updates: Hiring underway for a HabCam Scientist, Biological Science Technician, and Electronics Engineers.\nFuture Priorities:\n\nPassive acoustics for groundfish (e.g., Atlantic cod, haddock).\nExpanding AUV optical applications to complementary technologies like eDNA.\nModel-based integration of traditional and advanced technology survey data.\nDirected catchability and mitigation studies for marine energy development.",
     "crumbs": [
       "Program Information",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Program</span>"
