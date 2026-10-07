@@ -100,7 +100,7 @@ Once QA/QC is complete, the finalized current-year dataset is migrated into the 
 
 ---
 
-## 2. PostgreSQL vs. Oracle Schema Comparison
+## 3. PostgreSQL vs. Oracle Schema Comparison
 
 While the relational structures mirror each other logically, technical schema differences exist between the operational PostgreSQL database and the enterprise Oracle warehouse.
 
@@ -115,7 +115,7 @@ While the relational structures mirror each other logically, technical schema di
 
 ---
 
-## 3. PostgreSQL Database Schema Architecture
+## 4. PostgreSQL Database Schema Architecture
 
 The active PostgreSQL database contains 20 tables categorized into four functional modules.
 
@@ -247,7 +247,7 @@ Dedicated telemetry schema for long-range autonomous underwater vehicle payloads
 
 ---
 
-## 4. Oracle Query Filtering (`HABCAM_DATA_IDENTIFIER`)
+## 5. Oracle Query Filtering (`HABCAM_DATA_IDENTIFIER`)
 
 When querying the enterprise Oracle Cloud database (`ORAPROD.HABCAM`), queries **must filter by `DATA_IDENTIFIER`** to separate assessment-grade data from training, calibration, and historical RSA surveys.
 
