@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Pulls – HabCam SOP</title>
+<title>NEFSC HabCam &amp; AUV Data Query Pipeline – HabCam SOP</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -363,15 +398,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#habcam-database-architecture-reference-tables" id="toc-habcam-database-architecture-reference-tables" class="nav-link active" data-scroll-target="#habcam-database-architecture-reference-tables">1. HABCAM Database Architecture &amp; Reference Tables</a></li>
+  <li><a href="#setup-pipeline-prerequisites" id="toc-setup-pipeline-prerequisites" class="nav-link" data-scroll-target="#setup-pipeline-prerequisites">2. Setup &amp; Pipeline Prerequisites</a></li>
+  <li><a href="#oracle-database-queries" id="toc-oracle-database-queries" class="nav-link" data-scroll-target="#oracle-database-queries">3. Oracle Database Queries</a></li>
+  <li><a href="#data-cleaning-unusable-image-filtering" id="toc-data-cleaning-unusable-image-filtering" class="nav-link" data-scroll-target="#data-cleaning-unusable-image-filtering">4. Data Cleaning &amp; Unusable Image Filtering</a></li>
+  <li><a href="#target-species-isolation-pipelines" id="toc-target-species-isolation-pipelines" class="nav-link" data-scroll-target="#target-species-isolation-pipelines">5. Target Species Isolation Pipelines</a></li>
+  <li><a href="#output-file-structure-export" id="toc-output-file-structure-export" class="nav-link" data-scroll-target="#output-file-structure-export">6. Output File Structure &amp; Export</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Software and Data/03-software-overview.html">Software &amp; Data</a></li><li class="breadcrumb-item"><a href="../Software and Data/03-data-pulls.html"><span class="chapter-title">Data Pulls</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Data Pulls</span></h1>
+<h1 class="title"><span class="chapter-title">NEFSC HabCam &amp; AUV Data Query Pipeline</span></h1>
 </div>
 
 
@@ -388,9 +434,554 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>[Insert query templates, data extraction protocols, export formats, and access permissions here]</em></p>
+<p>This pipeline extracts, cleans, and structures image annotations and associated telemetry metadata for NEFSC HabCam (V4, V3) and Tethys-Class LRAUV (<em>Stella</em> and <em>Polaris</em>) surveys from the NEFSC Oracle database (<code>ORAPROD</code>, <code>HABCAM</code> schema). The workflow filters out unusable images, applies environmental quality thresholds, isolates target taxa (such as live sea scallops or specific fish/invertebrate phyla), and generates standardized outputs for species analyses.</p>
+<hr>
+<section id="habcam-database-architecture-reference-tables" class="level2">
+<h2 class="anchored" data-anchor-id="habcam-database-architecture-reference-tables">1. HABCAM Database Architecture &amp; Reference Tables</h2>
+<section id="relational-table-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="relational-table-architecture">1.1 Relational Table Architecture</h3>
+<p>The enterprise Oracle database (<code>ORAPROD.HABCAM</code>) consists of core relational tables used for tracking cruise assignments, image metadata, and species annotations.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Table Name</th>
+<th style="text-align: left;">Years Available</th>
+<th style="text-align: left;">Description &amp; Usage Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>HABCAM_ANNOTATIONS</code></td>
+<td style="text-align: left;">2009 – Present</td>
+<td style="text-align: left;">Master image annotation records. Includes manual, AI, and Research Set-Aside (RSA) records.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>HABCAM_ASSIGNMENTS</code></td>
+<td style="text-align: left;">2012 – Present</td>
+<td style="text-align: left;">Web annotator assignment records and project goals (information incomplete prior to 2018).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>HABCAM_CLASSES</code></td>
+<td style="text-align: left;">2012 – Present</td>
+<td style="text-align: left;">Species names and class ID lookup table (mapped via <code>SpeciesList_V6.csv</code>).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>HABCAM_DATA_IDENTIFIER</code></td>
+<td style="text-align: left;">2012 – Present</td>
+<td style="text-align: left;">Defines gear, purpose, and QA/QC status codes for query filtering.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>HABCAM_ID_MODES</code></td>
+<td style="text-align: left;">2012 – Present</td>
+<td style="text-align: left;">Target species lists enabled for specific annotation assignments.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>HABCAM_IMAGE_LIST</code></td>
+<td style="text-align: left;">2012 – Present</td>
+<td style="text-align: left;">Image manifest lists assigned per annotation assignment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>HABCAM_IMAGE_METADATA</code></td>
+<td style="text-align: left;">2012 – Present</td>
+<td style="text-align: left;">Vehicle telemetry and sensor metadata for NEFSC HabCam V4.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>HABCAM_IMAGE_METADATA_LRAUV</code></td>
+<td style="text-align: left;">2024 – Present</td>
+<td style="text-align: left;">Vehicle telemetry and sensor metadata for NEFSC Tethys LRAUVs (<em>Stella</em> / <em>Polaris</em>).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>HABCAM_IMAGE_METADATA_V3</code></td>
+<td style="text-align: left;">2017</td>
+<td style="text-align: left;">Image metadata for CFF HabCam V3 surveys (contains no annotations).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="data-identifier-reference-table-data_identifier" class="level3">
+<h3 class="anchored" data-anchor-id="data-identifier-reference-table-data_identifier">1.2 Data Identifier Reference Table (<code>DATA_IDENTIFIER</code>)</h3>
+<p>The <code>DATA_IDENTIFIER</code> attribute is the primary quality-control filter used when querying HabCam and AUV records.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><code>DATA_IDENTIFIER</code></th>
+<th style="text-align: left;">Operational Category &amp; Assessment Status</th>
+<th style="text-align: left;">Description &amp; Usage Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong><code>1.0</code></strong></td>
+<td style="text-align: left;"><strong>NEFSC V4 Assessment (QA/QCed)</strong></td>
+<td style="text-align: left;">Official HabCam V4 survey data used in scallop stock assessments; fully QA/QCed since 2019.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><code>1.1</code></strong></td>
+<td style="text-align: left;"><strong>NEFSC V4 Invalid / Excluded</strong></td>
+<td style="text-align: left;">Data NOT used and should not be used in scallop assessments.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong><code>1.2</code></strong></td>
+<td style="text-align: left;"><strong>NEFSC V4 Assessment Usable (QA/QCed)</strong></td>
+<td style="text-align: left;">Supplemental survey data cleared for assessment use.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><code>1.3</code></strong></td>
+<td style="text-align: left;"><strong>NEFSC V4 Assessment Usable (Pending QA/QC)</strong></td>
+<td style="text-align: left;">Valid survey data pending final QA/QC sign-off; use with caution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong><code>2.0</code></strong></td>
+<td style="text-align: left;"><strong>Annotator Training</strong></td>
+<td style="text-align: left;">Internal training assignments used for onboarding annotators.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><code>3.0</code></strong></td>
+<td style="text-align: left;"><strong>Vehicle Calibration</strong></td>
+<td style="text-align: left;">Vehicle, optical, or sensor calibration runs.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong><code>4.0</code> – <code>4.2</code></strong></td>
+<td style="text-align: left;"><strong>Special Projects</strong></td>
+<td style="text-align: left;">Special research projects (<code>4.1</code> = 2022 Hollings Sand Dollar project; <code>4.2</code> = 2018 Testset selection).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><code>5.0</code></strong></td>
+<td style="text-align: left;"><strong>Unknown / Unverified</strong></td>
+<td style="text-align: left;">Unverified annotation data (most likely wrong assignment numbers).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong><code>6.0</code></strong></td>
+<td style="text-align: left;"><strong>Historical RSA (No Metadata)</strong></td>
+<td style="text-align: left;">Historical RSA annotations (2009, 2011, 2012) without image metadata.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><code>6.1</code></strong></td>
+<td style="text-align: left;"><strong>RSA CFF V3 (2016)</strong></td>
+<td style="text-align: left;">RSA CFF HabCam V3 2016 annotation data used in scallop assessments (no metadata).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong><code>6.2</code> – <code>6.4</code></strong></td>
+<td style="text-align: left;"><strong>RSA Richard Taylor V2</strong></td>
+<td style="text-align: left;">Historical V2 RSA annotation data (2012, 2014).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><code>7.0</code></strong></td>
+<td style="text-align: left;"><strong>NEFSC LRAUV Assessment Data (QA/QCed)</strong></td>
+<td style="text-align: left;">Official LRAUV AUV survey data cleared and QA/QCed for stock assessment use.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong><code>7.1</code> – <code>7.3</code></strong></td>
+<td style="text-align: left;"><strong>NEFSC LRAUV Secondary / Pending</strong></td>
+<td style="text-align: left;">LRAUV AUV datasets categorized by assessment usability and QA/QC status (<code>7.3</code> pending QA/QC).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="setup-pipeline-prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="setup-pipeline-prerequisites">2. Setup &amp; Pipeline Prerequisites</h2>
+<section id="required-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="required-r-packages">2.1 Required R Packages</h3>
+<p>Ensure the following R libraries are installed and loaded prior to executing the pipeline:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"dbplyr"</span>, <span class="st">"DBI"</span>, <span class="st">"ROracle"</span>, <span class="st">"stringr"</span>, <span class="st">"tictoc"</span>, <span class="st">"arrow"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DBI)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ROracle)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dbplyr)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="configure-query-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="configure-query-parameters">2.2 Configure Query Parameters</h3>
+<p>Set the Oracle connection credentials, target survey year, taxonomic target, vehicle gear type, altitude cutoffs, and output preferences in the parameter block:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Oracle Credentials</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ora_username <span class="ot">&lt;-</span> <span class="st">"your_oracle_username"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>ora_password <span class="ot">&lt;-</span> <span class="st">"your_oracle_password"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>tns_alias    <span class="ot">&lt;-</span> <span class="st">"NEFSC_pw_oraprod"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Target Year &amp; Species Query Mode</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>year <span class="ot">&lt;-</span> <span class="dv">2024</span>  <span class="co"># Target survey year (some years include multiple cruises)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>using_what_to_query <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"class_id_list"</span>, <span class="st">"class_phylum_list"</span>)[<span class="dv">2</span>]</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Option A: Query by specific numeric class_ids</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>class_id_list <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">258</span>, <span class="dv">268</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Option B: Query by broader taxonomic phylum/category</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: "Live Scallop" must be queried independently on its own</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>class_phylum_list <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Live Scallop"</span>, <span class="st">"Scallop"</span>, <span class="st">"Fish"</span>, <span class="st">"Roundfish"</span>)[<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>]</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Available phylum options in SpeciesList_V6.csv:</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co"># "Live Scallop", "Scallop", "Fish", "Roundfish", "Flatfish", "Skate", "Algae", </span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co"># "Proteobacteria", "Chordata - Tunicate", "Invertebrate", "Invertebrate - Echinodermata", </span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># "Invertebrate - Crustacean", "Invertebrate - Cnidaria", "Invertebrate - Mollusca", </span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># "Invertebrate - Annelida", "Invertebrate - Porifera", "Invertebrate - Brachiopoda", </span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># "Invertebrate - Bryozoa", "Invertebrate - Ctenophora", "Invertebrate - Chelicerata", </span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># "Substrate", "Message", "Misc", "Man-made Object"</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Vehicle Gear &amp; Environmental Cutoffs</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>gear <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Habcam-V4"</span>, <span class="st">"AUV"</span>, <span class="st">"Habcam-V3"</span>)[<span class="dv">1</span>]</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Match DATA_IDENTIFIER list to selected gear:</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="co"># HabCam: c(1, 1.2, 1.3) | AUV: c(7, 7.2, 7.3)</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>data_identifier_list <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">Habcam =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="fl">1.2</span>, <span class="fl">1.3</span>),</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">AUV    =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="fl">7.2</span>, <span class="fl">7.3</span>)</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>)[[<span class="dv">1</span>]]</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Altitude Cutoff (m): &lt;= 2.5m for HabCam V4; &gt;= 3.0m for AUV (flies ~2.6m)</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>alt_cutoff <span class="ot">&lt;-</span> <span class="fl">2.5</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Input &amp; Output Configuration</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>species_list <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"SpeciesList_V6.csv"</span>)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>output_dir   <span class="ot">&lt;-</span> <span class="st">"C:/Users/jui-han.chang/Desktop/"</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>target_label <span class="ot">&lt;-</span> <span class="st">"live_scallop"</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>output_name  <span class="ot">&lt;-</span> <span class="fu">paste0</span>(gear, <span class="st">"_"</span>, year, <span class="st">"_"</span>, target_label)</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>output_type  <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"rds"</span>, <span class="st">"csv"</span>)[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="oracle-database-queries" class="level2">
+<h2 class="anchored" data-anchor-id="oracle-database-queries">3. Oracle Database Queries</h2>
+<section id="open-oracle-connection" class="level3">
+<h3 class="anchored" data-anchor-id="open-oracle-connection">3.1 Open Oracle Connection</h3>
+<p>Connects to the NEFSC Oracle database instance using <code>ROracle</code> and <code>DBI</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>connec <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>({</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  conn <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    DBI<span class="sc">::</span><span class="fu">dbDriver</span>(<span class="st">"Oracle"</span>),</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">username =</span> ora_username,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">password =</span> ora_password,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">dbname   =</span> tns_alias</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Database connected successfully!"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  conn</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>}, <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Unable to connect to database."</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="fu">paste</span>(<span class="st">"Error details:"</span>, e<span class="sc">$</span>message))</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="cn">NULL</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="execute-database-queries" class="level3">
+<h3 class="anchored" data-anchor-id="execute-database-queries">3.2 Execute Database Queries</h3>
+<p>Extracts cruise metadata, data identifiers, image telemetry, and annotations. Applies environmental and operational filters directly within the lazy query before downloading data to local memory (<code>collect()</code>):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">is.null</span>(connec)) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"Script halted: Could not connect to the database."</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 1. Query Master Cruise Details for target year</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  cruise_id <span class="ot">&lt;-</span> <span class="fu">dbGetQuery</span>(</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    connec,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(<span class="st">"</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="st">      SELECT</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="st">        a.CRUISE6 AS CRUISE_ID,</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="st">        a.YEAR,</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="st">        b.SEASON,</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="st">        b.STARTDATE,</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="st">        b.ENDDATE,</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="st">        d.PURPOSE,</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="st">        c.VESSEL_NAME,</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="st">        e.GEAR_DEFINITION</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="st">      FROM SVDBS.MASTER_CRUISE_DETAILS a</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="st">      INNER JOIN SVDBS.MASTER_CRUISE_TABLE b</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="st">        ON a.SVVESSEL = b.SVVESSEL AND a.VESSEL_NUM = b.VESSEL_NUM AND a.YEAR = b.YEAR AND a.PURPOSE_CODE = b.PURPOSE_CODE</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="st">      INNER JOIN SVDBS.SV_VESSEL c ON a.SVVESSEL = c.VESSEL_ABBREV</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="st">      INNER JOIN SVDBS.SVCRUISE_PURPOSE d ON a.PURPOSE_CODE = d.PURPOSE_CODE</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="st">      INNER JOIN SVDBS.SVGEAR e ON b.SVGEAR = e.SVGEAR</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="st">      WHERE (UPPER(e.GEAR_DEFINITION) LIKE '%HABCAM%' OR UPPER(e.GEAR_DEFINITION) LIKE '%AUV%')</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="st">        AND a.YEAR = "</span>, year, <span class="st">"</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="st">      ORDER BY CRUISE_ID"</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 2. Query Data Identifier Reference Table</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  data_identifier <span class="ot">&lt;-</span> <span class="fu">dbGetQuery</span>(connec, <span class="st">"SELECT * FROM HABCAM.HABCAM_DATA_IDENTIFIER"</span>)</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 3. Lazy Connection to Annotation &amp; Metadata Tables</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  ann_memory <span class="ot">&lt;-</span> <span class="fu">tbl</span>(connec, <span class="fu">in_schema</span>(<span class="st">"HABCAM"</span>, <span class="st">"HABCAM_ANNOTATIONS"</span>))</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (gear <span class="sc">==</span> <span class="st">"Habcam-V4"</span>) {</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>    img_memory <span class="ot">&lt;-</span> <span class="fu">tbl</span>(connec, <span class="fu">in_schema</span>(<span class="st">"HABCAM"</span>, <span class="st">"HABCAM_IMAGE_METADATA"</span>))</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (gear <span class="sc">==</span> <span class="st">"AUV"</span>) {</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>    img_memory <span class="ot">&lt;-</span> <span class="fu">tbl</span>(connec, <span class="fu">in_schema</span>(<span class="st">"HABCAM"</span>, <span class="st">"HABCAM_IMAGE_METADATA_LRAUV"</span>))</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (gear <span class="sc">==</span> <span class="st">"Habcam-V3"</span>) {</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    img_memory <span class="ot">&lt;-</span> <span class="fu">tbl</span>(connec, <span class="fu">in_schema</span>(<span class="st">"HABCAM"</span>, <span class="st">"HABCAM_IMAGE_METADATA_V3"</span>))</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Invalid gear selected."</span>)</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 4. Filter Image Metadata (Lazy Query)</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>  img_lazy <span class="ot">&lt;-</span> img_memory <span class="sc">|&gt;</span></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(CRUISE_ID <span class="sc">%like%</span> <span class="fu">paste0</span>(<span class="sc">!!</span>year, <span class="st">"%"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(ALTIMETER_ALTITUDE_METER <span class="sc">&lt;=</span> <span class="sc">!!</span>alt_cutoff) <span class="sc">|&gt;</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(FIELD_OF_VIEW_SQ_METER <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(SHIP_LATITUDE <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(SHIP_LONGITUDE <span class="sc">&gt;=</span> <span class="sc">-</span><span class="dv">180</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(CTD_VEHICLE_DEPTH_METER <span class="sc">&gt;</span> <span class="dv">5</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="fu">abs</span>(VEHICLE_PITCH_ANGLE) <span class="sc">&lt;</span> <span class="dv">15</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="fu">abs</span>(VEHICLE_ROLL_ANGLE) <span class="sc">&lt;</span> <span class="dv">15</span>)</span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 5. Join Annotations to Filtered Image Telemetry &amp; Download</span></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>  start_time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>  ann <span class="ot">&lt;-</span> ann_memory <span class="sc">|&gt;</span></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(CRUISE_ID <span class="sc">%like%</span> <span class="fu">paste0</span>(<span class="sc">!!</span>year, <span class="st">"%"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(DATA_IDENTIFIER <span class="sc">%in%</span> <span class="sc">!!</span>data_identifier_list) <span class="sc">|&gt;</span></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(ANNOTATION_DEPRECATED <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>      CRUISE_ID, DATA_IDENTIFIER, ASSIGNMENT_ID, IMAGE_NAME,</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>      ANNOTATION_TIMESTAMP, ANNOTATOR_USER_ID, GEOMETRY_TEXT, CLASS_ID</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">GEOMETRY_TEXT =</span> <span class="fu">sql</span>(<span class="st">"CAST(GEOMETRY_TEXT AS VARCHAR2(4000))"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>    <span class="fu">inner_join</span>(img_lazy, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"IMAGE_NAME"</span>, <span class="st">"CRUISE_ID"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>HABCAM_PK) <span class="sc">|&gt;</span></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(IMAGE_NAME)) <span class="sc">|&gt;</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>    <span class="fu">collect</span>()</span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>  end_time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Finished annotation query. Downloaded "</span>, <span class="fu">nrow</span>(ann), <span class="st">" rows."</span>))</span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 6. Download Full Filtered Image Metadata</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>  start_time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>  img <span class="ot">&lt;-</span> img_lazy <span class="sc">|&gt;</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>HABCAM_PK) <span class="sc">|&gt;</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(IMAGE_NAME)) <span class="sc">|&gt;</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a>    <span class="fu">collect</span>()</span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>  end_time <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Finished image metadata query. Downloaded "</span>, <span class="fu">nrow</span>(img), <span class="st">" rows."</span>))</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 7. Close Database Connection</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>  DBI<span class="sc">::</span><span class="fu">dbDisconnect</span>(connec)</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Finished all queries; Oracle database connection closed successfully."</span>)</span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="data-cleaning-unusable-image-filtering" class="level2">
+<h2 class="anchored" data-anchor-id="data-cleaning-unusable-image-filtering">4. Data Cleaning &amp; Unusable Image Filtering</h2>
+<p>Images flagged as <code>"unusable"</code> during annotation (due to turbidity, dark frames, or deck frames) and all annotations associated with those images must be removed prior to analysis.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Join downloaded annotations with master species list</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>ann <span class="ot">&lt;-</span> ann <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(species_list, <span class="at">by =</span> <span class="st">"CLASS_ID"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate summary of total vs. unusable image and annotation counts</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>dashboard_ann_summary <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Category =</span> <span class="fu">c</span>(<span class="st">"Images"</span>, <span class="st">"Annotations"</span>),</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Total    =</span> <span class="fu">c</span>(<span class="fu">n_distinct</span>(ann<span class="sc">$</span>IMAGE_NAME), <span class="fu">nrow</span>(ann)),</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">Unusable =</span> <span class="fu">c</span>(</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">n_distinct</span>(ann<span class="sc">$</span>IMAGE_NAME[ann<span class="sc">$</span>CLASS_NAME <span class="sc">==</span> <span class="st">"unusable"</span>]),</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sum</span>(ann<span class="sc">$</span>IMAGE_NAME <span class="sc">%in%</span> ann<span class="sc">$</span>IMAGE_NAME[ann<span class="sc">$</span>CLASS_NAME <span class="sc">==</span> <span class="st">"unusable"</span>])</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Usable   =</span> Total <span class="sc">-</span> Unusable</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(dashboard_ann_summary)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract list of unusable image names and filter them out</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>images_to_remove <span class="ot">&lt;-</span> ann <span class="sc">|&gt;</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(CLASS_NAME <span class="sc">==</span> <span class="st">"unusable"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(IMAGE_NAME)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>ann_usable <span class="ot">&lt;-</span> ann <span class="sc">|&gt;</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(images_to_remove, <span class="at">by =</span> <span class="st">"IMAGE_NAME"</span>)</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify that usable counts match expected totals</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>dashboard_ann_summary <span class="sc">|&gt;</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">ann_usable =</span> <span class="fu">c</span>(<span class="fu">n_distinct</span>(ann_usable<span class="sc">$</span>IMAGE_NAME), <span class="fu">nrow</span>(ann_usable)),</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">Match      =</span> (Usable <span class="sc">==</span> ann_usable)</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="target-species-isolation-pipelines" class="level2">
+<h2 class="anchored" data-anchor-id="target-species-isolation-pipelines">5. Target Species Isolation Pipelines</h2>
+<p>The pipeline branches into two specialized processing tracks depending on whether the query targets <strong>Live Sea Scallops</strong> or <strong>Other Taxonomic Groups</strong>.</p>
+<section id="track-a-live-sea-scallop-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="track-a-live-sea-scallop-pipeline">5.1 Track A: Live Sea Scallop Pipeline</h3>
+<p>Isolates live sea scallops, removes clappers/dead shell counts, and builds a zero-count image manifest (<code>ann_scallop_zero</code>) containing one record per usable image where no live scallops were observed.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Filter all scallop annotations</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ann_scallop <span class="ot">&lt;-</span> ann_usable <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(CLASS_CATEGORY_PHYLUM <span class="sc">==</span> <span class="st">"Scallop"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Exclude dead/clapper classes</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>ann_scallop_live <span class="ot">&lt;-</span> ann_scallop <span class="sc">|&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(CLASS_NAME, <span class="fu">regex</span>(<span class="st">"clapper|dead"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)))</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Create zero-count image manifest (one row per image with no live scallops)</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>ann_scallop_zero <span class="ot">&lt;-</span> ann_usable <span class="sc">|&gt;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(ann_scallop_live, <span class="at">by =</span> <span class="st">"IMAGE_NAME"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(IMAGE_NAME, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">GEOMETRY_TEXT         =</span> <span class="cn">NA</span>,</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">CLASS_ID              =</span> <span class="dv">1102</span>,</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">CLASS_NAME            =</span> <span class="st">"Sediment Unassessed"</span>,</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">CLASS_CATEGORY_PHYLUM =</span> <span class="st">"Substrate"</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Verify that live_images + zero_images = total_usable_images</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>dashboard_ann_summary <span class="sc">|&gt;</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">ann_scallop_live           =</span> <span class="fu">c</span>(<span class="fu">n_distinct</span>(ann_scallop_live<span class="sc">$</span>IMAGE_NAME), <span class="fu">nrow</span>(ann_scallop_live)),</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">ann_scallop_zero           =</span> <span class="fu">c</span>(<span class="fu">n_distinct</span>(ann_scallop_zero<span class="sc">$</span>IMAGE_NAME), <span class="cn">NA</span>),</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">ann_scallop_live_plus_zero =</span> ann_scallop_live <span class="sc">+</span> ann_scallop_zero,</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">Match                      =</span> (Usable <span class="sc">==</span> ann_scallop_live_plus_zero)</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Compile output list</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>output_list <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">cruise     =</span> cruise_id,</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">identifier =</span> data_identifier,</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">usable     =</span> ann_usable,</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">live       =</span> ann_scallop_live,</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">zero       =</span> ann_scallop_zero,</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">img        =</span> img</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="track-b-other-species-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="track-b-other-species-pipeline">5.2 Track B: Other Species Pipeline</h3>
+<p>Isolates target fish or invertebrate species (via <code>class_id_list</code> or <code>class_phylum_list</code>) and constructs a corresponding zero-count image manifest.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Filter target species annotations by Class ID or Phylum</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (using_what_to_query <span class="sc">==</span> <span class="st">"class_id_list"</span>) {</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  ann_species <span class="ot">&lt;-</span> ann_usable <span class="sc">|&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(CLASS_ID <span class="sc">%in%</span> class_id_list)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  ann_species <span class="ot">&lt;-</span> ann_usable <span class="sc">|&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(CLASS_CATEGORY_PHYLUM <span class="sc">%in%</span> class_phylum_list)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Create zero-count image manifest</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>ann_species_zero <span class="ot">&lt;-</span> ann_usable <span class="sc">|&gt;</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(ann_species, <span class="at">by =</span> <span class="st">"IMAGE_NAME"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(IMAGE_NAME, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">GEOMETRY_TEXT         =</span> <span class="cn">NA</span>,</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">CLASS_ID              =</span> <span class="dv">1102</span>,</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">CLASS_NAME            =</span> <span class="st">"Sediment Unassessed"</span>,</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">CLASS_CATEGORY_PHYLUM =</span> <span class="st">"Substrate"</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Verify image count alignment</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>dashboard_ann_summary <span class="sc">|&gt;</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">ann_species           =</span> <span class="fu">c</span>(<span class="fu">n_distinct</span>(ann_species<span class="sc">$</span>IMAGE_NAME), <span class="fu">nrow</span>(ann_species)),</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">ann_species_zero       =</span> <span class="fu">c</span>(<span class="fu">n_distinct</span>(ann_species_zero<span class="sc">$</span>IMAGE_NAME), <span class="cn">NA</span>),</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">ann_species_plus_zero =</span> ann_species <span class="sc">+</span> ann_species_zero,</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">Match                 =</span> (Usable <span class="sc">==</span> ann_species_plus_zero)</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Compile output list</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>output_list <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">cruise     =</span> cruise_id,</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">identifier =</span> data_identifier,</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">usable     =</span> ann_usable,</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">species    =</span> ann_species,</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">zero       =</span> ann_species_zero,</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">img        =</span> img</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="output-file-structure-export" class="level2">
+<h2 class="anchored" data-anchor-id="output-file-structure-export">6. Output File Structure &amp; Export</h2>
+<section id="pipeline-output-definitions" class="level3">
+<h3 class="anchored" data-anchor-id="pipeline-output-definitions">6.1 Pipeline Output Definitions</h3>
+<p>The pipeline generates structured R list objects (<code>output_list</code>) or exported <code>.csv</code> files.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Output Element</th>
+<th style="text-align: left;">Description &amp; Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong><code>cruise</code></strong></td>
+<td style="text-align: left;">Summary table of active cruise IDs, season, operational dates, vessel, and gear definitions.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><code>identifier</code></strong></td>
+<td style="text-align: left;">Reference table of <code>HABCAM_DATA_IDENTIFIER</code> descriptions used in the query.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><code>img</code></strong></td>
+<td style="text-align: left;">Telemetry and metadata for all collected images meeting core environmental criteria.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><code>ann</code></strong></td>
+<td style="text-align: left;">Raw annotations matching image filtering criteria, joined with class names and phyla.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><code>usable</code> / <code>ann_usable</code></strong></td>
+<td style="text-align: left;">Primary dataset of all annotations associated strictly with usable images.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><code>live</code> / <code>ann_scallop_live</code></strong></td>
+<td style="text-align: left;">Live sea scallop annotations on usable images (excluding clappers and dead shells).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><code>species</code> / <code>ann_species</code></strong></td>
+<td style="text-align: left;">Target species annotations on usable images for requested Class IDs or Phyla.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><code>zero</code> (<code>ann_scallop_zero</code> / <code>ann_species_zero</code>)</strong></td>
+<td style="text-align: left;">Manifest of usable images containing zero target species (one record per zero-count image).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="export-output-code" class="level3">
+<h3 class="anchored" data-anchor-id="export-output-code">6.2 Export Output Code</h3>
+<p>Saves finalized pipeline outputs as serialized <code>.rds</code> workspace files or flat <code>.csv</code> spreadsheets:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (output_type <span class="sc">==</span> <span class="st">"rds"</span>) {</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">saveRDS</span>(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    output_list, </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">file =</span> <span class="fu">file.path</span>(output_dir, <span class="fu">paste0</span>(output_name, <span class="st">"."</span>, output_type))</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (output_type <span class="sc">==</span> <span class="st">"csv"</span>) {</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="st">"Live Scallop"</span> <span class="sc">%in%</span> class_phylum_list) {</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write_csv</span>(</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>      ann_scallop_live, </span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="fu">file.path</span>(output_dir, <span class="fu">paste0</span>(output_name, <span class="st">"_ann_live."</span>, output_type))</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write_csv</span>(</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>      ann_scallop_zero, </span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="fu">file.path</span>(output_dir, <span class="fu">paste0</span>(output_name, <span class="st">"_ann_zero."</span>, output_type))</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write_csv</span>(</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>      ann_species, </span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="fu">file.path</span>(output_dir, <span class="fu">paste0</span>(output_name, <span class="st">"_ann_species."</span>, output_type))</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write_csv</span>(</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>      ann_species_zero, </span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="fu">file.path</span>(output_dir, <span class="fu">paste0</span>(output_name, <span class="st">"_ann_zero."</span>, output_type))</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
