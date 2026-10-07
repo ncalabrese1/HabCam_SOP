@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1. Archiving and Data Processing Workflow – HabCam SOP</title>
+<title>Database Architecture &amp; Operations – HabCam SOP</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -368,7 +368,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#two-stage-database-lifecycle" id="toc-two-stage-database-lifecycle" class="nav-link active" data-scroll-target="#two-stage-database-lifecycle">2. Two-Stage Database Lifecycle</a></li>
+  <li><a href="#archiving-and-data-processing-workflow" id="toc-archiving-and-data-processing-workflow" class="nav-link active" data-scroll-target="#archiving-and-data-processing-workflow">1. Archiving and Data Processing Workflow</a></li>
+  <li><a href="#two-stage-database-lifecycle" id="toc-two-stage-database-lifecycle" class="nav-link" data-scroll-target="#two-stage-database-lifecycle">2. Two-Stage Database Lifecycle</a></li>
   <li><a href="#postgresql-vs.-oracle-schema-comparison" id="toc-postgresql-vs.-oracle-schema-comparison" class="nav-link" data-scroll-target="#postgresql-vs.-oracle-schema-comparison">2. PostgreSQL vs.&nbsp;Oracle Schema Comparison</a></li>
   <li><a href="#postgresql-database-schema-architecture" id="toc-postgresql-database-schema-architecture" class="nav-link" data-scroll-target="#postgresql-database-schema-architecture">3. PostgreSQL Database Schema Architecture</a></li>
   <li><a href="#oracle-query-filtering-habcam_data_identifier" id="toc-oracle-query-filtering-habcam_data_identifier" class="nav-link" data-scroll-target="#oracle-query-filtering-habcam_data_identifier">4. Oracle Query Filtering (<code>HABCAM_DATA_IDENTIFIER</code>)</a></li>
@@ -380,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Software and Data/03-software-overview.html">Software &amp; Data</a></li><li class="breadcrumb-item"><a href="../Software and Data/03-database.html"><span class="chapter-title">Database</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">1. Archiving and Data Processing Workflow</span></h1>
+<h1 class="title"><span class="chapter-title">Database Architecture &amp; Operations</span></h1>
 </div>
 
 
@@ -397,7 +398,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>atabase Architecture &amp; Operations</p>
+<section id="archiving-and-data-processing-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="archiving-and-data-processing-workflow">1. Archiving and Data Processing Workflow</h2>
 <section id="database-archiving" class="level3">
 <h3 class="anchored" data-anchor-id="database-archiving">Database Archiving</h3>
 <ul>
@@ -503,6 +505,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Oracle Cloud Infrastructure (<code>ORAPROD</code>):</strong> Databases are migrated into an Oracle cloud database (<code>HABCAM</code> schema) to provide an additional layer of security, disaster recovery, and long-term multi-cruise archival safety.</li>
 </ul>
 <hr>
+</section>
 </section>
 </section>
 <section id="two-stage-database-lifecycle" class="level2">
