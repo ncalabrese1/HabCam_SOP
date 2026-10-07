@@ -18,8 +18,6 @@ book:
           text: "The Program"
         - href: Program/00-team-members.md
           text: "Team Members"
-        - href: Program/00-onboarding.md
-          text: "Onboarding"
         - href: Program/00-interns.md
           text: "Interns"
         - href: Program/00-publications.md
