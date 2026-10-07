@@ -8,7 +8,7 @@ A number of other surveys collect data on scallop distribution, abundance, and s
 
 ## Access Our Data & Scientific Documents
 
-Our HabCam survey data are available by request. To request data, please contact **Cam Fairclough** or **Conor McManus**.
+Our HabCam survey data are available by request. To request data, please contact **Cam Fairclough** (Cameron.Fairclough@noaa.gov) or **Nicholas Calabrese** (Nicholas.Calabrese@noaa.gov).
 
 * [Benthic habitat influences sea scallop distributions and swimming behavior based on underwater imagery and machine learning](https://www.sciencedirect.com/science/article/pii/S1574954125005862#bb0160)
 * [Combining imperfect automated annotations of underwater images with human annotations to obtain precise and unbiased population estimates](https://www.sciencedirect.com/science/article/abs/pii/S2211122015300219)
