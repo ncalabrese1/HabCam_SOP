@@ -1,4 +1,4 @@
-atabase Architecture & Operations
+# Database Architecture & Operations
 
 ## 1. Archiving and Data Processing Workflow
 
