@@ -370,9 +370,9 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#archiving-and-data-processing-workflow" id="toc-archiving-and-data-processing-workflow" class="nav-link active" data-scroll-target="#archiving-and-data-processing-workflow">1. Archiving and Data Processing Workflow</a></li>
   <li><a href="#two-stage-database-lifecycle" id="toc-two-stage-database-lifecycle" class="nav-link" data-scroll-target="#two-stage-database-lifecycle">2. Two-Stage Database Lifecycle</a></li>
-  <li><a href="#postgresql-vs.-oracle-schema-comparison" id="toc-postgresql-vs.-oracle-schema-comparison" class="nav-link" data-scroll-target="#postgresql-vs.-oracle-schema-comparison">2. PostgreSQL vs.&nbsp;Oracle Schema Comparison</a></li>
-  <li><a href="#postgresql-database-schema-architecture" id="toc-postgresql-database-schema-architecture" class="nav-link" data-scroll-target="#postgresql-database-schema-architecture">3. PostgreSQL Database Schema Architecture</a></li>
-  <li><a href="#oracle-query-filtering-habcam_data_identifier" id="toc-oracle-query-filtering-habcam_data_identifier" class="nav-link" data-scroll-target="#oracle-query-filtering-habcam_data_identifier">4. Oracle Query Filtering (<code>HABCAM_DATA_IDENTIFIER</code>)</a></li>
+  <li><a href="#postgresql-vs.-oracle-schema-comparison" id="toc-postgresql-vs.-oracle-schema-comparison" class="nav-link" data-scroll-target="#postgresql-vs.-oracle-schema-comparison">3. PostgreSQL vs.&nbsp;Oracle Schema Comparison</a></li>
+  <li><a href="#postgresql-database-schema-architecture" id="toc-postgresql-database-schema-architecture" class="nav-link" data-scroll-target="#postgresql-database-schema-architecture">4. PostgreSQL Database Schema Architecture</a></li>
+  <li><a href="#oracle-query-filtering-habcam_data_identifier" id="toc-oracle-query-filtering-habcam_data_identifier" class="nav-link" data-scroll-target="#oracle-query-filtering-habcam_data_identifier">5. Oracle Query Filtering (<code>HABCAM_DATA_IDENTIFIER</code>)</a></li>
   </ul>
 </nav>
     </div>
@@ -544,7 +544,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="postgresql-vs.-oracle-schema-comparison" class="level2">
-<h2 class="anchored" data-anchor-id="postgresql-vs.-oracle-schema-comparison">2. PostgreSQL vs.&nbsp;Oracle Schema Comparison</h2>
+<h2 class="anchored" data-anchor-id="postgresql-vs.-oracle-schema-comparison">3. PostgreSQL vs.&nbsp;Oracle Schema Comparison</h2>
 <p>While the relational structures mirror each other logically, technical schema differences exist between the operational PostgreSQL database and the enterprise Oracle warehouse.</p>
 <table class="caption-top table">
 <colgroup>
@@ -603,7 +603,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="postgresql-database-schema-architecture" class="level2">
-<h2 class="anchored" data-anchor-id="postgresql-database-schema-architecture">3. PostgreSQL Database Schema Architecture</h2>
+<h2 class="anchored" data-anchor-id="postgresql-database-schema-architecture">4. PostgreSQL Database Schema Architecture</h2>
 <p>The active PostgreSQL database contains 20 tables categorized into four functional modules.</p>
 <section id="schema-overview" class="level3">
 <h3 class="anchored" data-anchor-id="schema-overview">Schema Overview</h3>
@@ -1321,7 +1321,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="oracle-query-filtering-habcam_data_identifier" class="level2">
-<h2 class="anchored" data-anchor-id="oracle-query-filtering-habcam_data_identifier">4. Oracle Query Filtering (<code>HABCAM_DATA_IDENTIFIER</code>)</h2>
+<h2 class="anchored" data-anchor-id="oracle-query-filtering-habcam_data_identifier">5. Oracle Query Filtering (<code>HABCAM_DATA_IDENTIFIER</code>)</h2>
 <p>When querying the enterprise Oracle Cloud database (<code>ORAPROD.HABCAM</code>), queries <strong>must filter by <code>DATA_IDENTIFIER</code></strong> to separate assessment-grade data from training, calibration, and historical RSA surveys.</p>
 <table class="caption-top table">
 <colgroup>
