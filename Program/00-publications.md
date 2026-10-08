@@ -59,21 +59,4 @@ Survey operations in 2020 were canceled due to COVID-19 safety protocols. Report
 * **2019 NEFSC HabCam V4 Sea Scallop Survey Short Report**  
   Hart, D., & Chang, J.-H. (2019). *2019 Scallop Survey Short Report: HabCam V4*. Northeast Fisheries Science Center. Presented to the NEFMC Scallop Plan Development Team (PDT). [View Direct PDF](https://d23h0vhsm26o6d.cloudfront.net/Doc.8e-NEFSC-Habcam-short-report-2019-v2.pdf)
 
-* **2018 NEFSC Sea Scallop Survey Short Report (Dredge & HabCam V4)**  
-  Northeast Fisheries Science Center. (2018). *2018 Scallop Survey Short Report: Dredge and HabCam*. Presented to the NEFMC Scallop Plan Development Team (PDT). [View Direct PDF](https://s3.amazonaws.com/nefmc.org/PDT_ShortReport_dr.pdf)
-
-* **2017 NEFSC Sea Scallop Survey Results (HabCam V4 & Dredge)**  
-  Northeast Fisheries Science Center. (2017). *2017 NEFSC Sea Scallop Survey Results*. Presented to the NEFMC Scallop Plan Development Team (PDT). [View Direct PDF](http://s3.amazonaws.com/nefmc.org/Doc.3-170920_NewBedford_CTE_Summary_DRAFT_v2.pdf)
-
-* **2016 NEFSC Sea Scallop Survey Results (HabCam V4 & Dredge)**  
-  Northeast Fisheries Science Center. (2016). *Doc. 1a: 2016 NEFSC Scallop Survey Results*. Presented to the NEFMC Scallop Plan Development Team (PDT). [View Meeting Archive](https://www.nefmc.org/management-plans/scallops)
-
-* **2015 NEFSC Sea Scallop Survey Results (HabCam V4 & Dredge)**  
-  Northeast Fisheries Science Center. (2015). *Doc. 1a: 2015 NEFSC Scallop Survey Results*. Presented to the NEFMC Scallop Plan Development Team (PDT). [View Meeting Archive](https://www.nefmc.org/management-plans/scallops)
-
-* **2014 NEFSC Sea Scallop Survey Results (HabCam & Dredge)**  
-  Northeast Fisheries Science Center. (2014). *Doc. 1a: 2014 NEFSC Scallop Survey Results*. Presented to the NEFMC Scallop Plan Development Team (PDT). [View Meeting Archive](https://www.nefmc.org/management-plans/scallops)
-
-* **2013 NEFSC Sea Scallop Survey Results (HabCam & Dredge)**  
-  Northeast Fisheries Science Center. (2013). *Doc. 1a: 2013 NEFSC Scallop Survey Results*. Presented to the NEFMC Scallop Plan Development Team (PDT). [View Meeting Archive](https://www.nefmc.org/management-plans/scallops)
 
