@@ -13,8 +13,8 @@
 | PARAMETER | SPECIFICATION | NOTES/DETAILS |
 | :--- | :--- | :--- |
 | **Frame Material** | 304 Stainless Steel | Welded tubular roll-cage assembly |
-| **Dry Weight (In Air)** | Insert weight | Fully loaded with primary payload |
-| **Wet Weight (In Water)** | Insert weight | Positive/negative buoyancy metrics |
+| **Dry Weight (In Air)** | 3200 lbs | Fully loaded with primary payload |
+| **Wet Weight (In Water)** | 3200 lbs | Positive/negative buoyancy metrics |
 | **Overall Dimensions (Without Tailside)** | 108.0in. x 62.0in. x 41.0in. | Max clearance envelope |
 | **Overall Dimensions (With Tailside)** | 155.52in. x 62.0in. x | |
 | **Max Depth Rating** | 110 to 113 meters (360 to 370 feet) | Frame & housing operational limit |
